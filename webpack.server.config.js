@@ -4,9 +4,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'},
-      {test: /\.json$/, loader: 'json'}
+      {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'}
     ]
   },
-  resolve: {extensions: ['', '.js', '.json', '.jsx']}
+  resolve: {extensions: ['', '.js', '.jsx']}
 }

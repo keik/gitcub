@@ -33,7 +33,7 @@ lint: node_modules
 
 test: node_modules
 	@echo $(TAG)$@$(END)
-	$(npm)/standard '{lib/**/*,test/**/*}'
+	$(npm)/standard '{lib/**/*.js,test/**/*.js}'
 	$(npm)/nyc --require babel-register --all \
 		--include 'lib/**' \
 		--exclude 'lib/{server/index.js,client/app.js}' \
