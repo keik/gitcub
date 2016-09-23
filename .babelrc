@@ -1,0 +1,12 @@
+{
+  presets: ['es2015', 'react'],
+  plugins: [
+    [
+      'babel-plugin-webpack-loaders',
+      {
+        config: 'webpack.server.config.js',
+        verbose: false
+      }
+    ]
+  ]
+}
