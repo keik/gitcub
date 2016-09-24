@@ -12,7 +12,8 @@ const plugins_for_production = plugins.concat([
 
 module.exports = {
   entry: {
-    main: './lib/client/main.js'
+    main: './lib/client/main.js',
+    repository: './lib/client/repository.js'
   },
   output: {
     path: './build/assets',
