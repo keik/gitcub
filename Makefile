@@ -37,7 +37,7 @@ test: node_modules
 	$(npm)/nyc --require babel-register --all \
 		--include 'lib/**' \
 		--exclude 'lib/{server/index.js,client/app.js}' \
-		$(npm)/tape 'tests/*.js'
+		$(npm)/ava 'test/test-*.js'
 
 clean:
 	@echo $(TAG)$@$(END)
