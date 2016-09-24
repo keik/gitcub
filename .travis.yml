@@ -4,6 +4,12 @@ node_js:
   - '5'
   - '6'
 sudo: false
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - libstdc++-4.9-dev
 script:
   make test
 cache:
