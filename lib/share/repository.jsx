@@ -20,11 +20,14 @@ export default class Repository extends React.Component {
     ))
     return (
       <div>
-        <h1>{this.props.name}</h1>
+        <h1>{this.props.repo}</h1>
         <h2>entries</h2>
         <ul>{entries}</ul>
         <h2>commits</h2>
         <ul>{commits}</ul>
+        <h2>content</h2>
+        <pre><code>{this.props.content}</code></pre>
+
       </div>
     )
   }
@@ -35,13 +38,15 @@ export default class Repository extends React.Component {
 }
 
 Repository.propTypes = {
-  name: React.PropTypes.string,
+  repo: React.PropTypes.string,
   entries: React.PropTypes.array,
-  commits: React.PropTypes.array
+  commits: React.PropTypes.array,
+  content: React.PropTypes.string
 }
 
 Repository.defaultProps = {
-  name: '',
+  repo: '',
   entries: [],
-  commits: []
+  commits: [],
+  content: ''
 }
