@@ -8,7 +8,7 @@ export default class Repository extends React.Component {
   render () {
     const entries = this.props.entries.map((entry, idx) => (
       <li key={idx}>
-        {entry}
+        <a onClick={this.handleClickEntry}>{entry}</a>
       </li>
     ))
     const commits = this.props.commits.map((commit, idx) => (
@@ -27,6 +27,10 @@ export default class Repository extends React.Component {
         <ul>{commits}</ul>
       </div>
     )
+  }
+
+  handleClickEntry () {
+    console.log(1)
   }
 }
 

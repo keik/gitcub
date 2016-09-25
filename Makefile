@@ -16,7 +16,7 @@ watch: node_modules
 	$(npm)/babel lib --ignore lib/client --out-dir build
 	DEBUG="gh:*" $(npm)/parallelshell \
 		'$(npm)/babel lib --ignore lib/client --out-dir build --watch --skip-initial-build' \
-		'$(npm)/webpack --config webpack.client.config.js --devtool sourcemap' \
+		'$(npm)/webpack --config webpack.client.config.js --devtool sourcemap --watch' \
 		'$(npm)/nodemon build/server --watch build --ignore build/assets'
 
 build: node_modules clean test
