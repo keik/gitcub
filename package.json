@@ -23,7 +23,6 @@
     "express": "^4.14.0",
     "express-list-routes": "^0.1.4",
     "mkdirp": "^0.5.1",
-    "moment": "^2.15.1",
     "morgan": "^1.7.0",
     "nodegit": "^0.16.0",
     "react": "^15.3.2",

@@ -24,9 +24,9 @@ test.before('setup', () => {
 test.cb('GET /api/v1/repositories/:repoName/commits should return 200 and commits information', t => {
   axios.get(`http://localhost:${config.PORT}/api/v1/repositories/repo1/commits`)
     .then(res => {
-      t.deepEqual(res.data, [{id: 'e801527fecc2efb3a2e710a21a226ca0abf9db63', date: '2016-09-25 01:15', message: 'Add d/file3\n'},
-                             {id: '3c27dc60c76be4a1f5b765cb141d0d22d871a2b6', date: '2016-09-24 02:48', message: 'Add file2\n'},
-                             {id: 'd29e783434a7fadfa5bbf7b361dfc20a83ad8722', date: '2016-09-24 02:48', message: 'Add file1\n'}])
+      t.deepEqual(res.data, [{id: 'e801527fecc2efb3a2e710a21a226ca0abf9db63', date: '2016-09-25T04:15:47.000Z', message: 'Add d/file3\n'},
+                             {id: '3c27dc60c76be4a1f5b765cb141d0d22d871a2b6', date: '2016-09-24T05:48:36.000Z', message: 'Add file2\n'},
+                             {id: 'd29e783434a7fadfa5bbf7b361dfc20a83ad8722', date: '2016-09-24T05:48:16.000Z', message: 'Add file1\n'}])
     })
     .catch(err => {
       t.fail(err.toString())
