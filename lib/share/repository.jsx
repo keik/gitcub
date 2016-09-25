@@ -8,7 +8,7 @@ export default class Repository extends React.Component {
   render () {
     const entries = this.props.entries.map((entry, idx) => (
       <li key={idx}>
-        <a onClick={this.handleClickEntry}>{entry}</a>
+        <a href={`/dummy_user/${this.props.repo}/tree/${this.props.branch}/${entry}`} onClick={this.handleClickEntry}>{entry}</a>
       </li>
     ))
     const commits = this.props.commits.map((commit, idx) => (
@@ -39,6 +39,7 @@ export default class Repository extends React.Component {
 
 Repository.propTypes = {
   repo: React.PropTypes.string,
+  branch: React.PropTypes.string,
   entries: React.PropTypes.array,
   commits: React.PropTypes.array,
   content: React.PropTypes.string
@@ -46,6 +47,7 @@ Repository.propTypes = {
 
 Repository.defaultProps = {
   repo: '',
+  branch: 'master',
   entries: [],
   commits: [],
   content: ''
