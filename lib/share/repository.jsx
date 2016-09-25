@@ -6,6 +6,11 @@ export default class Repository extends React.Component {
   }
 
   render () {
+    const entries = this.props.entries.map((entry, idx) => (
+      <li key={idx}>
+        {entry}
+      </li>
+    ))
     const commits = this.props.commits.map((commit, idx) => (
       <li key={idx}>
         id: {commit.id}<br/>
@@ -16,6 +21,8 @@ export default class Repository extends React.Component {
     return (
       <div>
         <h1>{this.props.name}</h1>
+        <h2>entries</h2>
+        <ul>{entries}</ul>
         <h2>commits</h2>
         <ul>{commits}</ul>
       </div>
@@ -25,10 +32,12 @@ export default class Repository extends React.Component {
 
 Repository.propTypes = {
   name: React.PropTypes.string,
+  entries: React.PropTypes.array,
   commits: React.PropTypes.array
 }
 
 Repository.defaultProps = {
   name: '',
+  entries: [],
   commits: []
 }
