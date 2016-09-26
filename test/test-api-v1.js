@@ -21,8 +21,8 @@ test.before('setup', () => {
   server = app.listen(config.PORT)
 })
 
-test.cb('GET /api/v1/repositories/:repoName/commits should return 200 and commits information', t => {
-  axios.get(`http://localhost:${config.PORT}/api/v1/repositories/repo1/commits`)
+test.cb('GET /api/v1/users/:user/repositories/:repo/commits should return 200 and commits information', t => {
+  axios.get(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories/repo1/commits`)
     .then(res => {
       t.deepEqual(res.data, [{id: 'e801527fecc2efb3a2e710a21a226ca0abf9db63', date: '2016-09-25T04:15:47.000Z', message: 'Add d/file3\n'},
                              {id: '3c27dc60c76be4a1f5b765cb141d0d22d871a2b6', date: '2016-09-24T05:48:36.000Z', message: 'Add file2\n'},
@@ -33,8 +33,8 @@ test.cb('GET /api/v1/repositories/:repoName/commits should return 200 and commit
     }).finally(t.end)
 })
 
-test.cb('POST /api/v1/repositories should return 201 when specified name repository does not exist', t => {
-  axios.post(`http://localhost:${config.PORT}/api/v1/repositories`, {name: 'repo2'})
+test.cb('POST /api/v1/:user/repositories/:repo should return 201 when specified name repository does not exist', t => {
+  axios.post(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories`, {name: 'repo2'})
     .then(res => {
       t.ok(res.status === 201)
       t.ok(fs.existsSync(path.join(config.REPO_ROOT, 'repo2')) === true)
@@ -48,8 +48,8 @@ test.cb('POST /api/v1/repositories should return 201 when specified name reposit
     })
 })
 
-test.cb('POST /api/v1/repositories should return 409 when specified name repository already exists', t => {
-  axios.post(`http://localhost:${config.PORT}/api/v1/repositories`, {name: 'repo1'})
+test.cb('POST /api/v1/users/:user/repositories/:repo should return 409 when specified name repository already exists', t => {
+  axios.post(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories`, {name: 'repo1'})
     .then(res => {
       t.fail(res.toString())
     })
