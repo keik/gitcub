@@ -1,8 +1,9 @@
 import React from 'react'
 
+import Header from '../header'
 import RepositoryHeader from './repository-header'
 import RepositoryNavigations from './repository-navigations'
-import RepositoryContents from './repository-contents'
+import RepositoryContents from './repository-contents/index'
 
 export default class RepositoryApp extends React.Component {
   constructor (props) {
@@ -19,6 +20,7 @@ export default class RepositoryApp extends React.Component {
     const props = Object.assign({}, this.props, this.state)
     return (
       <div>
+        <Header />
         <RepositoryHeader {...props} />
         <RepositoryNavigations {...props} onUpdate={this.onUpdate.bind(this)} />
         <RepositoryContents ref="repositoryContents" {...props} onUpdate={this.onUpdate.bind(this)} />

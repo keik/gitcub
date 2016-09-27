@@ -3,13 +3,18 @@ import React from 'react'
 export default class RepositoryNavigations extends React.Component {
   constructor () {
     super()
+    this.style = {
+      container: {
+        border: '1px solid #cccccc'
+      }
+    }
   }
 
   render () {
     const basePath = `${this.props.user}/${this.props.repo}`
 
     return (
-      <div>
+      <div style={this.style.container}>
         <nav>
           <ul onClick={this.handleClickNavigation.bind(this)}>
             <li><a href="">Code</a></li>

@@ -3,11 +3,16 @@ import React from 'react'
 export default class RepositoryHeader extends React.Component {
   constructor () {
     super()
+    this.style = {
+      container: {
+        border: '1px solid #cccccc'
+      }
+    }
   }
 
   render () {
     return (
-      <div>
+      <div style={this.style.container}>
         <h1><a href={`/${this.props.user}`}>{this.props.user}</a> / <a href={`/${this.props.user}/${this.props.repo}`}>{this.props.repo}</a></h1>
         <nav>
           <ul>
