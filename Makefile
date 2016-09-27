@@ -13,11 +13,11 @@ start: build
 
 watch: node_modules
 	@echo $(TAG)$@$(END)
-	$(npm)/babel lib --ignore lib/client --out-dir build
+	$(npm)/babel lib --ignore lib/client --out-dir build --source-maps inline
 	DEBUG="gh:*" $(npm)/parallelshell \
 		'$(npm)/babel lib --ignore lib/client --out-dir build --watch --skip-initial-build --source-maps inline' \
 		'$(npm)/webpack --config webpack.client.config.js --devtool sourcemap --watch' \
-		'$(npm)/nodemon build/server --watch build --ignore build/assets'
+		'$(npm)/nodemon --exec "node --require source-map-support/register build/server" --watch build --ignore build/assets'
 
 build: node_modules clean test
 	@echo $(TAG)$@$(END)
