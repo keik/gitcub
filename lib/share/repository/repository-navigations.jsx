@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default class RepositoryNavigations extends React.Component {
-  constructor (props) {
+  constructor () {
     super()
   }
 

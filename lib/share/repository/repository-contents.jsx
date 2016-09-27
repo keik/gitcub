@@ -1,21 +1,21 @@
+import axios from 'axios'
 import React from 'react'
 
 import Entries from './entries'
 import Issues from './issues'
 
 export default class RepositoryContents extends React.Component {
-  constructor (props) {
+  constructor () {
     super()
-    this.state = {showingContent: props.initialShowingContent}
   }
 
   render () {
     const props = this.props
 
     let content
-    switch (this.state.showingContent) {
+    switch (this.props.showingContent) {
     case '':
-      content = <Entries {...props}/>
+      content = <Entries {...props} />
         break
     case 'issues':
       content = <Issues />
@@ -36,7 +36,7 @@ export default class RepositoryContents extends React.Component {
             <li><a href="">{this.props.contributorsCount} contributors</a></li>
           </ul>
         </nav>
-        <select>
+        <select onChange={this.handleOnChangeBranch.bind(this)} value={this.props.branch}>
           {branchOptions}
         </select>
         <div ref="content">
@@ -45,16 +45,25 @@ export default class RepositoryContents extends React.Component {
       </div>
     )
   }
+
+  handleOnChangeBranch (e) {
+    const branch = e.target.value
+    axios.get(`http://localhost:3000/api/v1/users/dummy_user/repositories/repo1/entries?branch=${branch}`)
+      .then(res => {
+        const entries = res.data
+        this.props.onUpdate({branch, entries})
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  }
 }
 
 RepositoryContents.propTypes = {
   branches: React.PropTypes.arrayOf(React.PropTypes.string),
+  initialBranch: React.PropTypes.string.isRequired,
   initialShowingContent: React.PropTypes.string.isRequired,
   commitsCount: React.PropTypes.number.isRequired,
   releasesCount: React.PropTypes.number.isRequired,
   contributorsCount: React.PropTypes.number.isRequired
-}
-
-RepositoryContents.defaultProps = {
-  branches: []
 }

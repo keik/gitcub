@@ -36,7 +36,7 @@ test: node_modules
 	$(npm)/standard '{lib/**/*.js,test/**/*.js}'
 	$(npm)/nyc --require babel-register --all \
 		--include 'lib/**' \
-		--exclude 'lib/{server/index.js,client/app.js}' \
+		--exclude 'lib/{server/index.js,client/*.js}' \
 		$(npm)/ava 'test/test-*.js'
 
 clean:

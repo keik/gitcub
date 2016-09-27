@@ -7,15 +7,21 @@ import RepositoryContents from './repository-contents'
 export default class RepositoryApp extends React.Component {
   constructor (props) {
     super()
+    this.state = {
+      branch: props.initialBranch,
+      commits: props.initialCommits,
+      entries: props.initialEntries,
+      showingContent: props.initialShowingContent
+    }
   }
 
   render () {
-    const props = this.props
+    const props = Object.assign({}, this.props, this.state)
     return (
       <div>
         <RepositoryHeader {...props} />
-        <RepositoryNavigations {...props} onUpdate={this.onUpdate.bind(this)}/>
-        <RepositoryContents ref="repositoryContents" {...props} />
+        <RepositoryNavigations {...props} onUpdate={this.onUpdate.bind(this)} />
+        <RepositoryContents ref="repositoryContents" {...props} onUpdate={this.onUpdate.bind(this)} />
       </div>
     )
   }
@@ -26,14 +32,17 @@ export default class RepositoryApp extends React.Component {
   }
 }
 
+RepositoryApp.propTypes = {
+  repo: React.PropTypes.string.isRequired,
+  user: React.PropTypes.string.isRequired,
+  branches: React.PropTypes.arrayOf(React.PropTypes.string)
+}
+
 // DEV
 RepositoryApp.defaultProps = {
-  repo: 'dummy_repo',
-  user: 'dummy_user',
   watchedCount: -1,
   staredCount: -1,
   forkedCount: -1,
-  branches: ['dummy_branch_1', 'dummy_branch_2'],
   initialShowingContent: '',
   commitsCount: -1,
   releasesCount: -1,
