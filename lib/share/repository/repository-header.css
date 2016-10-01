@@ -1,0 +1,19 @@
+.container {
+}
+
+.container h1 {
+  display: inline-block;
+}
+
+.container nav {
+  float: right;
+}
+
+.pageheadActions {
+  list-style: none;
+  padding: 0;
+}
+
+.pageheadActions li {
+  display: inline-block;
+}

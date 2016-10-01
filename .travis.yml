@@ -11,7 +11,7 @@ addons:
     packages:
       - libstdc++-4.9-dev
 script:
-  make test
+  make
 cache:
   directories:
     - node_modules

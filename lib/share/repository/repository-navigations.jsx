@@ -1,21 +1,18 @@
 import React from 'react'
 
+import styles from './repository-navigations.css'
+
 export default class RepositoryNavigations extends React.Component {
   constructor () {
     super()
-    this.style = {
-      container: {
-        border: '1px solid #cccccc'
-      }
-    }
   }
 
   render () {
     const basePath = `${this.props.user}/${this.props.repo}`
 
     return (
-      <div style={this.style.container}>
-        <nav>
+      <div className={styles.container}>
+        <nav className={styles.reponav}>
           <ul onClick={this.handleClickNavigation.bind(this)}>
             <li><a href="">Code</a></li>
             <li><a href="issues">Issues {this.props.issuesCount}</a></li>

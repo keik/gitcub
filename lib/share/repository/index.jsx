@@ -5,21 +5,17 @@ import RepositoryHeader from './repository-header'
 import RepositoryNavigations from './repository-navigations'
 import RepositoryContents from './repository-contents/index'
 
+import styles from './index.css'
+
 export default class RepositoryApp extends React.Component {
   constructor (props) {
     super()
-    this.state = {
-      branch: props.initialBranch,
-      commits: props.initialCommits,
-      entries: props.initialEntries,
-      showingContent: props.initialShowingContent
-    }
   }
 
   render () {
     const props = Object.assign({}, this.props, this.state)
     return (
-      <div>
+      <div className={styles.container}>
         <Header />
         <RepositoryHeader {...props} />
         <RepositoryNavigations {...props} onUpdate={this.onUpdate.bind(this)} />

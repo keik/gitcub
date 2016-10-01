@@ -1,47 +1,51 @@
 TAG="\n\n\033[0;32m\#\#\# "
 END=" \#\#\# \033[0m\n"
 
-npm=$(shell npm bin)
+NPM=$(shell npm bin)
 
-.PHONY: all start watch build test clean
+BROWSERIFY_OPTS=\
+  -e lib/client/main.js -e lib/client/repository.js \
+  -p [ factor-bundle -o bundle/main.js -o bundle/repository.js ] \
+  -p [ css-modulesify -o bundle/style.css -d ./lib/share ] \
+  -t babelify \
+  --extension jsx -v -o /dev/null
 
-all: build
+.PHONY: build start watch bundle test clean
+
+build: clean lint test bundle
+	@echo $(TAG)$@$(END)
 
 start: build
 	@echo $(TAG)$@$(END)
-	node build/server
+	node -r babel-register -r ./css-modules-register lib/server
 
 watch: node_modules
 	@echo $(TAG)$@$(END)
-	$(npm)/babel lib --ignore lib/client --out-dir build --source-maps inline
-	DEBUG="gh:*" $(npm)/parallelshell \
-		'$(npm)/babel lib --ignore lib/client --out-dir build --watch --skip-initial-build --source-maps inline' \
-		'$(npm)/webpack --config webpack.client.config.js --devtool sourcemap --watch' \
-		'$(npm)/nodemon --exec "node --require source-map-support/register build/server" --watch build --ignore build/assets'
+	DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
+		'$(NPM)/watchify $(BROWSERIFY_OPTS)' \
+		'$(NPM)/nodemon \
+			--exec "node -r babel-register -r ./css-modules-register lib/server" \
+			-e .js,.jsx --w lib/server -w lib/share'
 
-build: node_modules clean test
+bundle: node_modules
 	@echo $(TAG)$@$(END)
-	$(MAKE) build-client build-server
-
-build-client: node_modules
-	BUILD_ENV=production $(npm)/webpack --config webpack.client.config.js
-
-build-server: node_modules
-	$(npm)/babel lib --ignore lib/client --out-dir build
-
-lint: node_modules
+	mkdir -p $@
+	BUILD_ENV=production $(NPM)/browserify $(BROWSERIFY_OPTS)
 
 test: node_modules
 	@echo $(TAG)$@$(END)
-	$(npm)/standard '{lib/**/*.js,test/**/*.js}'
-	$(npm)/nyc --require babel-register --all \
+	$(NPM)/nyc -i babel-register -i ./css-modules-register --all \
 		--include 'lib/**' \
 		--exclude 'lib/{server/index.js,client/*.js}' \
-		$(npm)/ava 'test/test-*.js'
+		$(NPM)/ava 'test/test-*.js'
+
+lint: node_modules
+	@echo $(TAG)$@$(END)
+	$(NPM)/standard '{lib/**/*.js,test/**/*.js}'
 
 clean:
 	@echo $(TAG)$@$(END)
-	rm -rf build
+	rm -rf bundle
 
 node_modules: package.json
 	@echo $(TAG)$@$(END)
