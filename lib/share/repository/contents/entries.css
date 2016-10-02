@@ -32,12 +32,27 @@
 }
 
 .commitTease {
-  border: 1px solid #ccc;
-  border-bottom: 0;
+  padding: 10px;
+  color: #68777d;
+  background-color: #f2f9fc;
+  border: 1px solid #c9e6f2;
   border-radius: 3px 3px 0 0;
 }
 
-.entries {
-  border: 1px solid #ccc;
+.entriesContainer {
+  border: 1px solid #ddd;
+  border-top: 0;
   border-radius: 0 0 3px 3px;
+}
+
+.entries {
+  width: 100%;
+  border-collapse: collapse;
+}
+.entries td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+}
+.commitMessage {
+  color: #888;
 }

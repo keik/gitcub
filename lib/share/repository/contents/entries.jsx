@@ -4,15 +4,25 @@ import btnStyles from '../../styles/btn.css'
 import styles from './entries.css'
 
 export default class Entries extends React.Component {
-  constructor () {
+  constructor (props) {
     super()
+    console.log(props);
+    this.state = {
+      entries: props.initialEntries
+    }
   }
 
   render () {
-    const entries = this.props.entries.map((entry, idx) => (
-      <li key={idx}>
-        <a href={`/dummy_user/${this.props.repo}/tree/${this.props.branch}/${entry}`} onClick={this.handleClickEntry.bind(this)}>{entry}</a>
-      </li>
+    const branches = this.props.branches.map((branch, idx) => (
+      <option key={idx}>{branch}</option>
+    ))
+    const entries = this.state.entries.map((entry, idx) => (
+      <tr key={idx}>
+        <td>ICON</td>
+        <td><a href={`/dummy_user/${this.props.repo}/tree/${this.props.branch}/${entry}`} onClick={this.handleClickEntry.bind(this)}>{entry}</a></td>
+        <td><a className={styles.commitMessage} href="#">COMMIT_MESSAGE</a></td>
+        <td>UPDATE_AT</td>
+      </tr>
     ))
     return (
       <div className={styles.container}>
@@ -33,7 +43,7 @@ export default class Entries extends React.Component {
           </div>
           <div className={styles.fileNavigation}>
             <select>
-              {this.props.branches}
+              {branches}
             </select>
             <a className={btnStyles.sm} href={`${this.props.user}/${this.props.repo}/pull/new/${this.props.branch}`}>New pull request</a>
 
@@ -51,9 +61,10 @@ export default class Entries extends React.Component {
           <div className={styles.commitTease}>
             commit tease
           </div>
-          <div className={styles.entries}>
-            entries
-            <ul>{entries}</ul>
+          <div className={styles.entriesContainer}>
+            <table className={styles.entries}>
+              {entries}
+            </table>
           </div>
         </div>
       </div>

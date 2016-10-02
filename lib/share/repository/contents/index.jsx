@@ -13,11 +13,12 @@ import Graphs from './graphs'
 import Settings from './settings'
 
 export default class RepositoryContents extends React.Component {
-  constructor () {
+  constructor (props) {
     super()
     this.state = {
       showingContent: ''
     }
+    console.log(props);
   }
 
   render () {
