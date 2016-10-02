@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class Wiki extends React.Component {
+export default class Graphs extends React.Component {
   constructor () {
     super()
   }
@@ -8,7 +8,7 @@ export default class Wiki extends React.Component {
   render () {
     return (
       <div>
-        <h2>Wiki</h2>
+        <h2>graphs</h2>
       </div>
     )
   }

@@ -5,6 +5,12 @@ import FileContent from './file-content'
 import Commits from './commits'
 import Branches from './branches'
 import Issues from './issues'
+import PullRequests from './pull-requests'
+import Projects from './projects'
+import Wiki from './wiki'
+import Pulse from './pulse'
+import Graphs from './graphs'
+import Settings from './settings'
 
 export default class RepositoryContents extends React.Component {
   constructor () {
@@ -33,8 +39,23 @@ export default class RepositoryContents extends React.Component {
     case 'issues':
       content = (<Issues {...props} />)
       break
-    case 'pull-requests':
+    case 'pulls':
       content = (<PullRequests {...props} />)
+      break
+    case 'projects':
+      content = (<Projects {...props} />)
+      break
+    case 'wiki':
+      content = (<Wiki {...props} />)
+      break
+    case 'pulse':
+      content = (<Pulse {...props} />)
+      break
+    case 'graphs':
+      content = (<Graphs {...props} />)
+      break
+    case 'settings':
+      content = (<Settings {...props} />)
       break
     }
     return (

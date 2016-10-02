@@ -21,7 +21,7 @@ export default class RepositoryNavigations extends React.Component {
               <li><a href="projects">Projects {this.props.projectsCount}</a></li>
               <li><a href="wiki">Wiki</a></li>
               <li><a href="pulse">Pulse</a></li>
-              <li><a href="graph">Graphs</a></li>
+              <li><a href="graphs">Graphs</a></li>
               <li><a href="settings">Settings</a></li>
             </ul>
           </nav>
