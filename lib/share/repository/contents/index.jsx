@@ -18,7 +18,6 @@ export default class RepositoryContents extends React.Component {
     this.state = {
       showingContent: ''
     }
-    console.log(props);
   }
 
   render () {

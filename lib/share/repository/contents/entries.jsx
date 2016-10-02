@@ -6,7 +6,6 @@ import styles from './entries.css'
 export default class Entries extends React.Component {
   constructor (props) {
     super()
-    console.log(props);
     this.state = {
       entries: props.initialEntries
     }
@@ -63,7 +62,9 @@ export default class Entries extends React.Component {
           </div>
           <div className={styles.entriesContainer}>
             <table className={styles.entries}>
-              {entries}
+              <tbody>
+                {entries}
+              </tbody>
             </table>
           </div>
         </div>
