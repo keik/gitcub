@@ -1,11 +1,10 @@
 import React from 'react'
 
-import globalStyles from './global.css'
+import globalStyles from './styles/global.css'
 
 export default class App extends React.Component {
   constructor () {
     super()
-    console.log('1')
   }
 
   render () {

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import btnStyles from '../../styles/btn.css'
 import styles from './entries.css'
 
 export default class Entries extends React.Component {
@@ -30,13 +31,22 @@ export default class Entries extends React.Component {
               </ul>
             </nav>
           </div>
-          <div>
+          <div className={styles.fileNavigation}>
             <select>
               {this.props.branches}
             </select>
-          </div>
-          <div>
-            repository meta
+            <a className={btnStyles.sm} href={`${this.props.user}/${this.props.repo}/pull/new/${this.props.branch}`}>New pull request</a>
+
+            <div className={styles.dlBtns}>
+              <button className={btnStyles.primarySm}>Clone or download</button>
+            </div>
+            <div className={styles.fileBtns}>
+              <form className={styles.inline}>
+                <input className={btnStyles.sm} type="submit" value="Create new file" />
+              </form>
+              <a className={btnStyles.sm} href={`${this.props.user}/${this.props.repo}/upload/${this.props.branch}`}>Upload files</a>
+              <a className={btnStyles.sm} href={`${this.props.user}/${this.props.repo}/find/${this.props.branch}`}>Find file</a>
+            </div>
           </div>
           <div className={styles.commitTease}>
             commit tease

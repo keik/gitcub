@@ -2,7 +2,7 @@
 }
 
 .reponav {
-  composes: nav from '../common.css';
+  composes: nav from '../styles/nav.css';
   color: red;
 }
 

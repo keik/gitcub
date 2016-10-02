@@ -8,6 +8,29 @@
   border-radius: 3px;
 }
 
+.dlBtns {
+  float: right;
+}
+
+.fileNavigation {
+  margin-top: 15px;
+}
+
+.fileNavigation:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.fileBtns {
+  composes: group from '../../styles/btn.css';
+  float: right;
+}
+
+.inline {
+  display: inline-block;
+}
+
 .commitTease {
   border: 1px solid #ccc;
   border-bottom: 0;
