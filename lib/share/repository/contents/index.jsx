@@ -5,7 +5,6 @@ import FileContent from './file-content'
 import Commits from './commits'
 import Branches from './branches'
 import Issues from './issues'
-import styles from './index.css'
 
 export default class RepositoryContents extends React.Component {
   constructor () {
@@ -39,7 +38,7 @@ export default class RepositoryContents extends React.Component {
       break
     }
     return (
-      <div className={styles.container}>
+      <div>
         {content}
       </div>
     )

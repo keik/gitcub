@@ -1,0 +1,18 @@
+.container {
+}
+
+.reponav {
+  composes: nav from '../common.css';
+  color: red;
+}
+
+.reponav ul {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.reponav a {
+  display: block;
+  padding: 7px 15px 8px;
+  color: #666;
+}

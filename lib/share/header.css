@@ -1,0 +1,30 @@
+.container {
+  padding: 10px 0;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.headerLogo {
+  float: left;
+}
+
+.headerForm {
+  float: left;
+}
+
+.headerNavLeft {
+  float: left;
+  composes: nav from './common.css';
+  font-weight: bold;
+}
+
+.headerNavRight {
+  composes: nav from './common.css';
+  float: right;
+}

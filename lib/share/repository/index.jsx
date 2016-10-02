@@ -1,10 +1,9 @@
 import React from 'react'
 
 import Header from '../header'
-import RepositoryHeader from './repository-header'
-import RepositoryNavigations from './repository-navigations'
-import RepositoryContents from './repository-contents/index'
-
+import RepositoryHeader from './header'
+import RepositoryNavigations from './navigations'
+import RepositoryContents from './contents/index'
 import styles from './index.css'
 
 export default class RepositoryApp extends React.Component {
@@ -17,8 +16,10 @@ export default class RepositoryApp extends React.Component {
     return (
       <div className={styles.container}>
         <Header />
-        <RepositoryHeader {...props} />
-        <RepositoryNavigations {...props} onUpdate={this.onUpdate.bind(this)} />
+        <div className={styles.pageHead}>
+          <RepositoryHeader {...props} />
+          <RepositoryNavigations {...props} onUpdate={this.onUpdate.bind(this)} />
+        </div>
         <RepositoryContents ref="repositoryContents" {...props} onUpdate={this.onUpdate.bind(this)} />
       </div>
     )

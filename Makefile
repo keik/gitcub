@@ -8,7 +8,7 @@ BROWSERIFY_OPTS=\
   -p [ factor-bundle -o bundle/main.js -o bundle/repository.js ] \
   -p [ css-modulesify -o bundle/style.css -d ./lib/share ] \
   -t babelify \
-  --extension jsx -v -o /dev/null
+  --extension jsx -v -o bundle/common.js
 
 .PHONY: build start watch bundle test clean
 
@@ -22,7 +22,7 @@ start: build
 watch: node_modules
 	@echo $(TAG)$@$(END)
 	DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
-		'$(NPM)/watchify $(BROWSERIFY_OPTS)' \
+		'$(NPM)/watchify $(BROWSERIFY_OPTS) -d' \
 		'$(NPM)/nodemon \
 			--exec "node -r babel-register -r ./css-modules-register lib/server" \
 			-e .js,.jsx --w lib/server -w lib/share'

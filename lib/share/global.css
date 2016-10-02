@@ -1,0 +1,20 @@
+:global(
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+})
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #4078c0;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  outline-width: 0;
+}

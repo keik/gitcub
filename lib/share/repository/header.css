@@ -1,8 +1,10 @@
 .container {
+  padding-top: 20px;
 }
 
 .container h1 {
   display: inline-block;
+  font-size: 18px;
 }
 
 .container nav {
