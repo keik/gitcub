@@ -2,12 +2,15 @@
   padding: 10px 0;
   background-color: #f5f5f5;
   border-bottom: 1px solid #e5e5e5;
+  font-size: 13px;
 }
-
 .container:after {
   content: '';
   display: table;
   clear: both;
+}
+.container a {
+  color: #333;
 }
 
 .headerLogo {
@@ -16,15 +19,35 @@
 
 .headerForm {
   float: left;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.headerForm label {
+  border-right: 1px solid #ddd;
+  padding: 4px 8px;
+  color: #767676;
+  font-size: 12px;
+}
+.headerForm input {
+  border: none;
+  min-height: 26px;
+}
+
+.commonHeaderNav {
+  composes: nav from './common.css';
+  line-height: 20px;
+  padding: 4px 8px;
 }
 
 .headerNavLeft {
+  composes: commonHeaderNav;
   float: left;
-  composes: nav from './common.css';
   font-weight: bold;
 }
 
 .headerNavRight {
-  composes: nav from './common.css';
+  composes: commonHeaderNav;
   float: right;
 }

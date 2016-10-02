@@ -15,8 +15,8 @@ export default class Header extends React.Component {
             <a href="#">logo</a>
           </div>
           <form className={styles.headerForm}>
-            <label>This repository</label>
-            <input type="text" placeholder="Search" />
+            <label htmlFor="input-search-query">This repository</label>
+            <input id="input-search-query" type="text" placeholder="Search" />
           </form>
           <nav className={styles.headerNavLeft}>
             <ul>

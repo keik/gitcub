@@ -4,6 +4,7 @@
 
 .container h1 {
   display: inline-block;
+  color: #666;
   font-size: 18px;
 }
 
