@@ -21,6 +21,7 @@ start: build
 
 watch: node_modules
 	@echo $(TAG)$@$(END)
+	mkdir -p bundle
 	DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
 		'$(NPM)/watchify $(BROWSERIFY_OPTS) -d' \
 		'$(NPM)/nodemon \
@@ -41,7 +42,7 @@ test: node_modules
 
 lint: node_modules
 	@echo $(TAG)$@$(END)
-	$(NPM)/standard '{lib/**/*.js,test/**/*.js}'
+	$(NPM)/eslint '{lib/**/*.js,test/**/*.js}'
 
 clean:
 	@echo $(TAG)$@$(END)
