@@ -17,8 +17,7 @@ export default class Entries extends React.Component {
     ))
     const entries = this.state.entries.map((entry, idx) => (
       <tr key={idx}>
-        <td>ICON</td>
-        <td><a href={`/dummy_user/${this.props.repo}/tree/${this.props.branch}/${entry}`} onClick={this.handleClickEntry.bind(this)}>{entry}</a></td>
+        <td><i className="fa fa-file-text-o" /> <a href={`/dummy_user/${this.props.repo}/tree/${this.props.branch}/${entry}`} onClick={this.handleClickEntry.bind(this)}>{entry}</a></td>
         <td><a className={styles.commitMessage} href="#">COMMIT_MESSAGE</a></td>
         <td>UPDATE_AT</td>
       </tr>
