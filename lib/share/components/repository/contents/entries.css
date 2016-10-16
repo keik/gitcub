@@ -23,7 +23,7 @@
 }
 
 .fileBtns {
-  composes: group from '../../styles/btn.css';
+  composes: group from '../../../styles/btn.css';
   float: right;
 }
 

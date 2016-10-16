@@ -1,6 +1,6 @@
 import React from 'react'
 
-import btnStyles from '../../styles/btn.css'
+import btnStyles from '../../../styles/btn.css'
 import styles from './entries.css'
 
 export default class Entries extends React.Component {
