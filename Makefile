@@ -22,11 +22,12 @@ start: build
 watch: node_modules
 	@echo $(TAG)$@$(END)
 	mkdir -p bundle
-	DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
+	BABEL_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
 		'$(NPM)/watchify $(BROWSERIFY_OPTS) -d' \
 		'$(NPM)/nodemon \
 			--exec "node -r babel-register -r ./css-modules-register lib/server" \
-			-e .js,.jsx --w lib/server -w lib/share'
+			-e .js,.jsx -w lib/server -w lib/share/components' \
+		'$(NPM)/start-storybook -p 6006'
 
 bundle: node_modules
 	@echo $(TAG)$@$(END)

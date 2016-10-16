@@ -717,13 +717,6 @@ babel-plugin-check-es2015-constants@^6.3.13:
   dependencies:
     babel-runtime "^6.0.0"
 
-babel-plugin-css-modules-transform@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-css-modules-transform/-/babel-plugin-css-modules-transform-1.1.0.tgz#d52760d9c2c984f9455c34a4a10ef6c6ec92cd69"
-  dependencies:
-    css-modules-require-hook "^4.0.3"
-    mkdirp "^0.5.1"
-
 babel-plugin-detective@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-detective/-/babel-plugin-detective-2.0.0.tgz#6e642e83c22a335279754ebe2d754d2635f49f13"
@@ -1144,7 +1137,7 @@ babel-preset-latest@6.14.0:
     babel-preset-es2016 "^6.11.3"
     babel-preset-es2017 "^6.14.0"
 
-babel-preset-react-app@^0.2.1:
+babel-preset-react-app, babel-preset-react-app@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/babel-preset-react-app/-/babel-preset-react-app-0.2.1.tgz#bf94623382adc2c4c7e098a66229c6671a79f842"
   dependencies:
@@ -1158,18 +1151,6 @@ babel-preset-react-app@^0.2.1:
     babel-preset-latest "6.14.0"
     babel-preset-react "6.11.1"
     babel-runtime "6.11.6"
-
-babel-preset-react@^6.11.1:
-  version "6.16.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-react/-/babel-preset-react-6.16.0.tgz#aa117d60de0928607e343c4828906e4661824316"
-  dependencies:
-    babel-plugin-syntax-flow "^6.3.13"
-    babel-plugin-syntax-jsx "^6.3.13"
-    babel-plugin-transform-flow-strip-types "^6.3.13"
-    babel-plugin-transform-react-display-name "^6.3.13"
-    babel-plugin-transform-react-jsx "^6.3.13"
-    babel-plugin-transform-react-jsx-self "^6.11.0"
-    babel-plugin-transform-react-jsx-source "^6.3.13"
 
 babel-preset-react@6.11.1:
   version "6.11.1"

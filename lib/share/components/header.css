@@ -35,19 +35,19 @@
   min-height: 26px;
 }
 
-.commonHeaderNav {
+:local .commonHeaderNav {
   composes: nav from '../styles/nav.css';
   line-height: 20px;
   padding: 4px 8px;
 }
 
-.headerNavLeft {
+:local .headerNavLeft {
   composes: commonHeaderNav;
   float: left;
   font-weight: bold;
 }
 
-.headerNavRight {
+:local .headerNavRight {
   composes: commonHeaderNav;
   float: right;
 }
