@@ -1,7 +1,6 @@
 {
-  "extends": "airbnb",
+  "extends": "react-app",
   "rules": {
-    "semi": [2, "never"],
-    "no-unused-vars": [2, {"vars": "all", "args": "none"}]
+    "semi": ["warn", "never"]
   }
 }

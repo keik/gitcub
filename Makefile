@@ -50,4 +50,4 @@ clean:
 
 node_modules: package.json
 	@echo $(TAG)$@$(END)
-	npm install
+	yarn || npm install
