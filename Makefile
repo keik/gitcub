@@ -32,13 +32,13 @@ watch: node_modules
 bundle: node_modules
 	@echo $(TAG)$@$(END)
 	mkdir -p $@
-	BUILD_ENV=production $(NPM)/browserify $(BROWSERIFY_OPTS)
+	BABEL_ENV="production" $(NPM)/browserify $(BROWSERIFY_OPTS)
 
 test: node_modules
 	@echo $(TAG)$@$(END)
-	$(NPM)/nyc -i babel-register -i ./css-modules-register --all \
+	BABEL_ENV="test" $(NPM)/nyc -i babel-register -i ./css-modules-register --all \
 		--include 'lib/**' \
-		--exclude 'lib/{server/index.js,client/*.js}' \
+		--exclude 'lib/{server/index.js,client/*.js,share/stories}' \
 		$(NPM)/ava 'test/test-*.js'
 
 lint: node_modules
