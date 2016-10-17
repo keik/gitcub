@@ -16,6 +16,12 @@
   user-select: none;
 }
 
+:local ._btn i {
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
 :local .sm {
   composes: _btn;
   padding: 3px 10px;

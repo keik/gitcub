@@ -20,3 +20,17 @@
 :local .pageheadActions li {
   display: inline-block;
 }
+
+:local .subscriptionMenu {
+  background-color: #fff;
+}
+
+:local .subscriptionMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+:local .subscriptionMenu ul li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
