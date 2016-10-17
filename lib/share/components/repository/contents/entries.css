@@ -1,37 +1,37 @@
-.container {
+:local .container {
 }
 
-.stats {
+:local .stats {
   display: flex;
   justify-content: space-around;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
 
-.dlBtns {
+:local .dlBtns {
   float: right;
 }
 
-.fileNavigation {
+:local .fileNavigation {
   margin-top: 15px;
 }
 
-.fileNavigation:after {
+:local .fileNavigation:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.fileBtns {
+:local .fileBtns {
   composes: group from '../../../styles/btn.css';
   float: right;
 }
 
-.inline {
+:local .inline {
   display: inline-block;
 }
 
-.commitTease {
+:local .commitTease {
   padding: 10px;
   color: #68777d;
   background-color: #f2f9fc;
@@ -39,20 +39,20 @@
   border-radius: 3px 3px 0 0;
 }
 
-.entriesContainer {
+:local .entriesContainer {
   border: 1px solid #ddd;
   border-top: 0;
   border-radius: 0 0 3px 3px;
 }
 
-.entries {
+:local .entries {
   width: 100%;
   border-collapse: collapse;
 }
-.entries td {
+:local .entries td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
 }
-.commitMessage {
+:local .commitMessage {
   color: #888;
 }

@@ -1,17 +1,17 @@
-.container {
+:local .container {
 }
 
-.reponav {
+:local .reponav {
   composes: nav from '../../styles/nav.css';
   color: red;
 }
 
-.reponav ul {
+:local .reponav ul {
   width: 100%;
   justify-content: space-around;
 }
 
-.reponav a {
+:local .reponav a {
   display: block;
   padding: 7px 15px 8px;
   color: #666;

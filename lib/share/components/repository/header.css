@@ -1,22 +1,22 @@
-.container {
+:local .container {
   padding-top: 20px;
 }
 
-.container h1 {
+:local .container h1 {
   display: inline-block;
   color: #666;
   font-size: 18px;
 }
 
-.container nav {
+:local .container nav {
   float: right;
 }
 
-.pageheadActions {
+:local .pageheadActions {
   list-style: none;
   padding: 0;
 }
 
-.pageheadActions li {
+:local .pageheadActions li {
   display: inline-block;
 }
