@@ -76,7 +76,7 @@ test.cb('GET /api/v1/users/:user/repositories/:repo/commits should return 200 an
 test.cb('GET /api/v1/users/:user/repositories/:repo/entries should return 200 and name of entries', (t) => {
   axios.get(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories/repo1/entries`)
     .then((res) => {
-      t.deepEqual(res.data.sort(), ['codes/file.js', 'codes/file.md', 'codes/file.rb', 'd/file3', 'file1', 'file2', 'file3'].sort())
+      t.deepEqual(res.data.map(d => d.path).sort(), ['codes/file.js', 'codes/file.md', 'codes/file.rb', 'd/file3', 'file1', 'file2', 'file3'].sort())
     }).catch((err) => {
       t.fail(err.toString())
     }).finally(t.end)
@@ -85,7 +85,7 @@ test.cb('GET /api/v1/users/:user/repositories/:repo/entries should return 200 an
 test.cb('GET /api/v1/users/:user/repositories/:repo/entries?branch=<branch_name> should return 200 and name of entries in specified branch', (t) => {
   axios.get(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories/repo1/entries?branch=feature`)
     .then((res) => {
-      t.deepEqual(res.data.sort(), ['d/file3', 'file1', 'file2', 'file3'].sort())
+      t.deepEqual(res.data.map(d => d.path).sort(), ['d/file3', 'file1', 'file2', 'file3'].sort())
     }).catch((err) => {
       t.fail(err.toString())
     }).finally(t.end)
