@@ -22,21 +22,21 @@
   opacity: 0.6;
 }
 
-:local .sm {
+:local .smBtn {
   composes: _btn;
   padding: 3px 10px;
   font-size: 12px;
   line-height: 20px;
 }
 
-:local .primary {
+:local .primaryBtn {
   composes: _btn;
   color: #fff;
   background-image: linear-gradient(#8add6d, #60b044);
 }
 
-:local .primarySm {
-  composes: sm;
+:local .primarySmBtn {
+  composes: smBtn;
   color: #fff;
   background-image: linear-gradient(#8add6d, #60b044);
 }

@@ -13,7 +13,8 @@
 }
 
 :local .fileNavigation {
-  margin-top: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 :local .fileNavigation:after {
@@ -82,4 +83,9 @@
 
 :local .branchMenuModalHeader {
   background-color: #f5f5f5;
+}
+
+:local .branchMenuButton {
+  composes: smBtn from '../../../styles/btn.css';
+  margin-right: 8px;
 }
