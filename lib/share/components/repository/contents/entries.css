@@ -1,11 +1,13 @@
 :local .container {
 }
 
-:local .stats {
+:local .numbersSummary {
   display: flex;
   justify-content: space-around;
   border: 1px solid #ccc;
   border-radius: 3px;
+  list-style: none;
+  padding: 12px;
 }
 
 :local .dlBtns {
