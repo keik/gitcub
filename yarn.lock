@@ -6216,6 +6216,10 @@ through2@^2.0.0, through2@^2.0.1:
     readable-stream "~2.0.0"
     xtend "~4.0.0"
 
+time-elements@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/time-elements/-/time-elements-0.6.1.tgz#587358d176b9a928865c293d439a19636f1d6631"
+
 time-require@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/time-require/-/time-require-0.1.2.tgz#f9e12cb370fc2605e11404582ba54ef5ca2b2d98"
