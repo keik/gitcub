@@ -13,7 +13,7 @@ const config = {
 test.cb('RepositoryService.getBranches return promise with result of array of branches name', (t) => {
   RepositoryService.getBranches(config, 'dummy', 'repo1')
    .then((branches) => {
-     t.deepEqual(branches, ['feature', 'master'])
+     t.deepEqual(branches.sort(), ['feature', 'master'].sort())
      t.end()
    })
 })

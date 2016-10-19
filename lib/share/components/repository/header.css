@@ -1,5 +1,4 @@
 :local .container {
-  padding-top: 20px;
 }
 
 :local .container h1 {
@@ -19,6 +18,14 @@
 
 :local .pageheadActions li {
   display: inline-block;
+}
+
+:local .pageheadActions i:first-child {
+  margin-right: 4px;
+}
+
+:local .pageheadActions :global .fa-caret-down {
+  margin-left: 4px;
 }
 
 :local .subscriptionMenu {

@@ -1,6 +1,11 @@
 :local .container {
 }
 
+:local .metaContent {
+  font-size: 16px;
+  color: #666;
+}
+
 :local .numbersSummary {
   display: flex;
   justify-content: space-around;
@@ -8,6 +13,12 @@
   border-radius: 3px;
   list-style: none;
   padding: 12px;
+}
+:local .numbersSummary a {
+  color: #767676;
+}
+:local .numbersSummary :global .fa {
+  margin-right: 4px;
 }
 
 :local .dlBtns {
@@ -90,4 +101,9 @@
 :local .branchMenuButton {
   composes: smBtn from '../../../styles/btn.css';
   margin-right: 8px;
+}
+
+:local .emphasized {
+  font-weight: 600;
+  color: #333;
 }

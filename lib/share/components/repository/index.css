@@ -2,6 +2,8 @@
 }
 
 :local .pageHead {
+  padding-top: 24px;
+  margin-bottom: 24px;
   background-color: #fafafa;
   border-bottom: 1px solid #eee;
 }
