@@ -1,6 +1,9 @@
 import test from 'ava'
+import promiseFinally from 'promise.prototype.finally'
 
 import * as RepositoryService from '../lib/server/service/repository'
+
+promiseFinally.shim()
 
 const config = {
   PORT: 3001,
@@ -8,7 +11,6 @@ const config = {
 }
 
 test.cb('RepositoryService.getBranches return promise with result of array of branches name', (t) => {
-  t.is(true, true)
   RepositoryService.getBranches(config, 'dummy', 'repo1')
    .then((branches) => {
      t.deepEqual(branches, ['feature', 'master'])
@@ -17,7 +19,6 @@ test.cb('RepositoryService.getBranches return promise with result of array of br
 })
 
 test.cb('RepositoryService.getTags return promise with result of array of tags name', (t) => {
-  t.is(true, true)
   RepositoryService.getTags(config, 'dummy', 'repo1')
    .then((tags) => {
      t.deepEqual(tags, ['v1.0.0'])
@@ -26,17 +27,40 @@ test.cb('RepositoryService.getTags return promise with result of array of tags n
 })
 
 test.cb('RepositoryService.getCommits return promise with result of array of commits', (t) => {
-  t.is(true, true)
   RepositoryService.getCommits(config, 'dummy', 'repo1', 'master')
    .then((commits) => {
-     t.deepEqual(commits.map(c => c.message),  ['Add codes\n',
-                                                'Merge branch \'feature\'\n',
-                                                'Add `!` to file2\n',
-                                                'Add file3\n',
-                                                'Add d/file3\n',
-                                                'Add file2\n',
-                                                'Add file1\n'])
+     t.deepEqual(commits.map(c => c.message), ['Add codes\n',
+                                               'Merge branch \'feature\'\n',
+                                               'Add `!` to file2\n',
+                                               'Add file3\n',
+                                               'Add d/file3\n',
+                                               'Add file2\n',
+                                               'Add file1\n'])
      t.deepEqual(Object.keys(commits[0]).sort(), ['id', 'date', 'body', 'message'].sort())
      t.end()
    })
+})
+
+test.cb('RepositoryService.getEntries return promise with result of file contnet', (t) => {
+  RepositoryService.getEntries(config, 'dummy', 'repo1', 'master', 'file')
+   .then((entries) => {
+     t.deepEqual(entries.map(e => e.path).sort(), ['file1',
+                                                   'file2',
+                                                   'file3',
+                                                   'codes/file.js',
+                                                   'codes/file.md',
+                                                   'codes/file.rb',
+                                                   'd/file3'].sort())
+     t.end()
+   })
+})
+
+test.cb('RepositoryService.getContent return promise with result of file contnet', (t) => {
+  RepositoryService.getContent(config, 'dummy', 'repo1', 'master', 'file1')
+                   .then((content) => {
+                     t.deepEqual(content, 'hello\n')
+                   })
+                   .catch(err => {
+                     t.fail(err.toString())
+                   }).finally(t.end)
 })
