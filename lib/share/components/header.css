@@ -13,6 +13,10 @@
   color: #333;
 }
 
+:local .innerContainer {
+  composes: container from '../styles/common.css';
+}
+
 :local .headerLogo {
   float: left;
 }

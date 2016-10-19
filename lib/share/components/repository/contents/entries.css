@@ -1,4 +1,6 @@
 :local .container {
+  composes: container from '../../../styles/common.css';
+  margin-bottom: 12px;
 }
 
 :local .metaContent {
@@ -13,6 +15,7 @@
   border-radius: 3px;
   list-style: none;
   padding: 12px;
+  margin: 12px 0 0 0;
 }
 :local .numbersSummary a {
   color: #767676;
@@ -27,7 +30,6 @@
 
 :local .fileNavigation {
   margin-top: 12px;
-  margin-bottom: 12px;
 }
 
 :local .fileNavigation:after {
@@ -47,6 +49,7 @@
 
 :local .commitTease {
   padding: 10px;
+  margin: 12px 0 0 0;
   color: #68777d;
   background-color: #f2f9fc;
   border: 1px solid #c9e6f2;

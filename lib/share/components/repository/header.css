@@ -1,4 +1,5 @@
 :local .container {
+  composes: container from '../../styles/common.css';
 }
 
 :local .container h1 {

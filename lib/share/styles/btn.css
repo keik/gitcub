@@ -41,9 +41,6 @@
   background-image: linear-gradient(#8add6d, #60b044);
 }
 
-:local .group {
-  margin-bottom: 10px;
-}
 :local .group ._btn {
   border-right-width: 0;
   border-radius: 0;

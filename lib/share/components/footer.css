@@ -1,0 +1,32 @@
+:local .container {
+  composes: container from '../styles/common.css';
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-top: 36px;
+  border-top: 1px solid #eee;
+  color: #767676;
+  font-size: 12px;
+  text-align: center;
+}
+
+:local ._links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+:local ._links li {
+  display: inline-block;
+}
+:local ._links li + li {
+  margin-left: 10px;
+}
+
+:local .leftLinks {
+  composes: _links;
+  float: left;
+}
+
+:local .rightLinks {
+  composes: _links;
+  float: right;
+}

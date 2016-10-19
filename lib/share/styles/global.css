@@ -17,9 +17,3 @@ a:hover, a:active {
   text-decoration: underline;
   outline-width: 0;
 }
-
-:global .container {
-  width: 980px;
-  margin-right: auto;
-  margin-left: auto;
-}
