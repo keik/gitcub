@@ -22,7 +22,7 @@ test.before('setup', () => {
 })
 
 test.cb('POST /api/v1/:user/repositories/:repo should return 201 when specified name repository does not exist', (t) => {
-  axios.post(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories`, { name: 'repo2' })
+  axios.post(`http://localhost:${config.PORT}/api/v1/users/user1/repositories`, { name: 'repo2' })
     .then((res) => {
       t.ok(res.status === 201)
       t.ok(fs.existsSync(path.join(config.REPO_ROOT, 'repo2')) === true)
@@ -37,7 +37,7 @@ test.cb('POST /api/v1/:user/repositories/:repo should return 201 when specified 
 })
 
 test.cb('POST /api/v1/users/:user/repositories/:repo should return 409 when specified name repository already exists', (t) => {
-  axios.post(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories`, { name: 'repo1' })
+  axios.post(`http://localhost:${config.PORT}/api/v1/users/user1/repositories`, { name: 'repo1' })
     .then((res) => {
       t.fail(res.toString())
     })
@@ -47,7 +47,7 @@ test.cb('POST /api/v1/users/:user/repositories/:repo should return 409 when spec
 })
 
 test.cb('GET /api/v1/users/:user/repositories/:repo/branches should return 200 and name of branches', (t) => {
-  axios.get(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories/repo1/branches`)
+  axios.get(`http://localhost:${config.PORT}/api/v1/users/user1/repositories/repo1/branches`)
     .then((res) => {
       t.deepEqual(res.data.sort(), ['master', 'feature'].sort())
     }).catch((err) => {
@@ -56,7 +56,7 @@ test.cb('GET /api/v1/users/:user/repositories/:repo/branches should return 200 a
 })
 
 test.cb('GET /api/v1/users/:user/repositories/:repo/commits should return 200 and commits information', (t) => {
-  axios.get(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories/repo1/commits`)
+  axios.get(`http://localhost:${config.PORT}/api/v1/users/user1/repositories/repo1/commits`)
     .then((res) => {
       t.deepEqual(res.data, [
         { id: 'f1582566910f7a5d41b47f0c93ed560e1e1fd8d0', date: '2016-09-27T02:42:37.000Z', message: 'Add codes\n' },
@@ -74,7 +74,7 @@ test.cb('GET /api/v1/users/:user/repositories/:repo/commits should return 200 an
 })
 
 test.cb('GET /api/v1/users/:user/repositories/:repo/entries should return 200 and name of entries', (t) => {
-  axios.get(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories/repo1/entries`)
+  axios.get(`http://localhost:${config.PORT}/api/v1/users/user1/repositories/repo1/entries`)
     .then((res) => {
       t.deepEqual(res.data.map(d => d.path).sort(), ['codes/file.js', 'codes/file.md', 'codes/file.rb', 'd/file3', 'file1', 'file2', 'file3'].sort())
     }).catch((err) => {
@@ -83,7 +83,7 @@ test.cb('GET /api/v1/users/:user/repositories/:repo/entries should return 200 an
 })
 
 test.cb('GET /api/v1/users/:user/repositories/:repo/entries?branch=<branch_name> should return 200 and name of entries in specified branch', (t) => {
-  axios.get(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories/repo1/entries?branch=feature`)
+  axios.get(`http://localhost:${config.PORT}/api/v1/users/user1/repositories/repo1/entries?branch=feature`)
     .then((res) => {
       t.deepEqual(res.data.map(d => d.path).sort(), ['d/file3', 'file1', 'file2', 'file3'].sort())
     }).catch((err) => {
@@ -92,7 +92,7 @@ test.cb('GET /api/v1/users/:user/repositories/:repo/entries?branch=<branch_name>
 })
 
 test.cb('GET /api/v1/users/:user/repositories/:repo/tags should return 200 and name of tags', (t) => {
-  axios.get(`http://localhost:${config.PORT}/api/v1/users/dummy_user/repositories/repo1/tags`)
+  axios.get(`http://localhost:${config.PORT}/api/v1/users/user1/repositories/repo1/tags`)
     .then((res) => {
       t.deepEqual(res.data, ['v1.0.0'])
     }).catch((err) => {

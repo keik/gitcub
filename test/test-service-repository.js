@@ -11,7 +11,7 @@ const config = {
 }
 
 test.cb('RepositoryService.getBranches return promise with result of array of branches name', (t) => {
-  RepositoryService.getBranches(config, 'dummy', 'repo1')
+  RepositoryService.getBranches(config, 'user1', 'repo1')
    .then((branches) => {
      t.deepEqual(branches.sort(), ['feature', 'master'].sort())
      t.end()
@@ -19,7 +19,7 @@ test.cb('RepositoryService.getBranches return promise with result of array of br
 })
 
 test.cb('RepositoryService.getTags return promise with result of array of tags name', (t) => {
-  RepositoryService.getTags(config, 'dummy', 'repo1')
+  RepositoryService.getTags(config, 'user1', 'repo1')
    .then((tags) => {
      t.deepEqual(tags, ['v1.0.0'])
      t.end()
@@ -27,7 +27,7 @@ test.cb('RepositoryService.getTags return promise with result of array of tags n
 })
 
 test.cb('RepositoryService.getCommits return promise with result of array of commits', (t) => {
-  RepositoryService.getCommits(config, 'dummy', 'repo1', 'master')
+  RepositoryService.getCommits(config, 'user1', 'repo1', 'master')
    .then((commits) => {
      t.deepEqual(commits.map(c => c.message), ['Add codes\n',
                                                'Merge branch \'feature\'\n',
@@ -42,7 +42,7 @@ test.cb('RepositoryService.getCommits return promise with result of array of com
 })
 
 test.cb('RepositoryService.getEntries return promise with result of file contnet', (t) => {
-  RepositoryService.getEntries(config, 'dummy', 'repo1', 'master', 'file')
+  RepositoryService.getEntries(config, 'user1', 'repo1', 'master', 'file')
    .then((entries) => {
      t.deepEqual(entries.map(e => e.path).sort(), ['file1',
                                                    'file2',
@@ -56,7 +56,7 @@ test.cb('RepositoryService.getEntries return promise with result of file contnet
 })
 
 test.cb('RepositoryService.getContent return promise with result of file contnet', (t) => {
-  RepositoryService.getContent(config, 'dummy', 'repo1', 'master', 'file1')
+  RepositoryService.getContent(config, 'user1', 'repo1', 'master', 'file1')
                    .then((content) => {
                      t.deepEqual(content, 'hello\n')
                    })
