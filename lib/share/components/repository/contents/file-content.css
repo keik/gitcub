@@ -1,0 +1,57 @@
+:local .container {
+  composes: container from '../../../styles/common.css';
+  margin-bottom: 12px;
+}
+
+:local .commitTease {
+  padding: 10px;
+  margin: 12px 0 0 0;
+  color: #68777d;
+  background-color: #f2f9fc;
+  border: 1px solid #c9e6f2;
+  border-radius: 3px 3px 0 0;
+}
+
+:local .file {
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+:local .fileHeader {
+  padding: 5px 10px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #d8d8d8;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  line-height: 32px;
+}
+:local .fileHeader:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+:local .fileActions {
+  float: right;
+}
+:local .fileActions > * {
+  display: inline-block;
+  margin-left: 6px;
+}
+:local .fileActions button {
+  border: none;
+  background: none;
+}
+:local .fileActions button:hover {
+  color: #4078c0;
+}
+
+:local blobWrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
