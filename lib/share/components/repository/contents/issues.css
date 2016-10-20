@@ -1,0 +1,105 @@
+
+:local .container {
+  composes: container from '../../../styles/common.css';
+}
+
+:local .container a {
+  color: #222;
+  text-decoration: none;
+}
+:local .container a:hover {
+  color: #4078c0;
+}
+
+:local .subnav > * {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+:local .filter {
+  display: inline-block;
+}
+:local .filter:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+:local .filter button {
+  padding: 6px 10px;
+  border-radius: 3px 0 0 3px;
+}
+:local .filter form {
+  margin-left: -1px;
+  position: relative;
+  display: inline-block;
+}
+:local .filter form i {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+:local .filter input {
+  width: 320px;
+  padding: 6px 10px 6px 32px;
+  color: #767676;
+  border: 1px solid #d5d5d5;
+  border-radius: 0 3px 3px 0;
+  line-height: 20px;
+}
+
+:local .issuesHeader {
+  position: relative;
+  padding: 12px 12px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px 3px 0 0;
+}
+
+:local .issuesHeader > * {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+:local .issues {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+:local .issue {
+  padding: 12px 12px;
+  border-top: 1px solid #eee;
+}
+:local .issue:first-child {
+  border-top: none;
+}
+:local .issue:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+:local .issue .icon {
+  float: left;
+  color: #6cc644;
+}
+
+:local .issue .main {
+  float: left;
+  margin-left: 12px;
+}
+:local .issue .main .title {
+  color: #333;
+  font-size: 16px;
+}
+:local .issue .main .sub {
+  font-size: 12px;
+}
+
+:local .issue .comments {
+  float: right;
+}
