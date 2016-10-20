@@ -27,8 +27,10 @@ watch: node_modules
 		'$(NPM)/nodemon \
 			--exec "node -r babel-register -r ./css-modules-register lib/server" \
 			-e .js,.jsx -w lib/server -w lib/share/components' \
-		'$(NPM)/start-storybook -p 6006' \
 		'$(NPM)/ava -r babel-register -r ./css-modules-register test/test-*.js --watch --source lib'
+
+storybook: node_modules
+	$(NPM)/start-storybook -p 6006
 
 bundle: node_modules
 	@echo $(TAG)$@$(END)

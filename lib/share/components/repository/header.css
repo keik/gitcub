@@ -19,6 +19,7 @@
 
 :local .pageheadActions li {
   display: inline-block;
+  margin-left: 12px;
 }
 
 :local .pageheadActions i:first-child {

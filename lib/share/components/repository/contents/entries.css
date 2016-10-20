@@ -24,22 +24,19 @@
   margin-right: 4px;
 }
 
-:local .dlBtns {
-  float: right;
-}
-
 :local .fileNavigation {
   margin-top: 12px;
 }
-
+:local .fileNavigation > * {
+  margin-right: 12px;
+}
 :local .fileNavigation:after {
   content: '';
   display: table;
   clear: both;
 }
 
-:local .fileBtns {
-  composes: group from '../../../styles/btn.css';
+:local .floatRight {
   float: right;
 }
 
@@ -99,11 +96,6 @@
 
 :local .branchMenuModalHeader {
   background-color: #f5f5f5;
-}
-
-:local .branchMenuButton {
-  composes: smBtn from '../../../styles/btn.css';
-  margin-right: 8px;
 }
 
 :local .emphasized {
