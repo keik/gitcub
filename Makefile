@@ -4,8 +4,8 @@ END=" \#\#\# \033[0m\n"
 NPM=$(shell npm bin)
 
 BROWSERIFY_OPTS=\
-  -e lib/client/main.js -e lib/client/repository.js \
-  -p [ factor-bundle -o bundle/main.js -o bundle/repository.js ] \
+  -e lib/client/main.js \
+  -p [ factor-bundle -o bundle/main.js ] \
   -p [ css-modulesify -o bundle/style.css -d ./lib/share ] \
   -t babelify \
   --extension jsx -v -o bundle/common.js
