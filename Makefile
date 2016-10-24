@@ -10,7 +10,7 @@ BROWSERIFY_OPTS=\
   -o bundle/bundle.js \
   -v
 
-.PHONY: build start watch bundle test clean
+.PHONY: build start watch stroybook bundle test lint clean
 
 build: clean lint test bundle
 	@echo $(TAG)$@$(END)
