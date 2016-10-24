@@ -24,8 +24,8 @@ watch: node_modules
 	mkdir -p bundle
 	BABEL_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
 		'$(NPM)/watchify $(BROWSERIFY_OPTS) -d' \
-		'$(NPM)/nodemon lib/server -w lib/server -w lib/share'
-#		'$(NPM)/ava test/test-*.js --watch --source lib'
+		'$(NPM)/nodemon lib/server -w lib/server -w lib/share' \
+		'$(NPM)/ava -r babel-register -r ./css-modules-register test/test-*.js --watch --source lib'
 
 storybook: node_modules
 	$(NPM)/start-storybook -p 6006
