@@ -5,10 +5,10 @@ NPM=$(shell npm bin)
 
 BROWSERIFY_OPTS=\
   -e lib/client/main.js \
-  -p [ factor-bundle -o bundle/main.js ] \
   -p [ css-modulesify -o bundle/style.css -d ./lib/share ] \
   -t babelify \
-  --extension jsx -v -o bundle/common.js
+  -o bundle/bundle.js \
+  -v
 
 .PHONY: build start watch bundle test clean
 
@@ -17,17 +17,15 @@ build: clean lint test bundle
 
 start: build
 	@echo $(TAG)$@$(END)
-	node -r babel-register -r ./css-modules-register lib/server
+	node lib/server
 
 watch: node_modules
 	@echo $(TAG)$@$(END)
 	mkdir -p bundle
 	BABEL_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
 		'$(NPM)/watchify $(BROWSERIFY_OPTS) -d' \
-		'$(NPM)/nodemon \
-			--exec "node -r babel-register -r ./css-modules-register lib/server" \
-			-e .js,.jsx -w lib/server -w lib/share/components' \
-		'$(NPM)/ava -r babel-register -r ./css-modules-register test/test-*.js --watch --source lib'
+		'$(NPM)/nodemon lib/server -w lib/server -w lib/share'
+#		'$(NPM)/ava test/test-*.js --watch --source lib'
 
 storybook: node_modules
 	$(NPM)/start-storybook -p 6006
