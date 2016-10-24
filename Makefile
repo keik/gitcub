@@ -7,7 +7,6 @@ BROWSERIFY_OPTS=\
   -e lib/client/main.js \
   -p [ css-modulesify -o bundle/style.css -d ./lib/share ] \
   -t babelify \
-  -o bundle/bundle.js \
   -v
 
 .PHONY: build start watch stroybook bundle test lint clean
@@ -17,13 +16,13 @@ build: clean lint test bundle
 
 start: build
 	@echo $(TAG)$@$(END)
-	node lib/server
+	NODE_ENV="production" node lib/server
 
 watch: node_modules
 	@echo $(TAG)$@$(END)
 	mkdir -p bundle
-	BABEL_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
-		'$(NPM)/watchify $(BROWSERIFY_OPTS) -d' \
+	NODE_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
+		'$(NPM)/watchify $(BROWSERIFY_OPTS) -o bundle/bundle.js -d' \
 		'$(NPM)/nodemon lib/server -w lib/server -w lib/share' \
 		'$(NPM)/ava -r babel-register -r ./css-modules-register test/test-*.js --watch --source lib'
 
@@ -33,11 +32,11 @@ storybook: node_modules
 bundle: node_modules
 	@echo $(TAG)$@$(END)
 	mkdir -p $@
-	BABEL_ENV="production" $(NPM)/browserify $(BROWSERIFY_OPTS)
+	NODE_ENV="production" $(NPM)/browserify $(BROWSERIFY_OPTS) | $(NPM)/uglifyjs -mc warnings=false > bundle/bundle.js
 
 test: node_modules
 	@echo $(TAG)$@$(END)
-	BABEL_ENV="test" $(NPM)/nyc -i babel-register -i ./css-modules-register --all \
+	NODE_ENV="test" $(NPM)/nyc -i babel-register -i ./css-modules-register --all \
 		--include 'lib/**' \
 		--exclude 'lib/{server/index.js,client/*.js,share/stories}' \
 		$(NPM)/ava 'test/test-*.js'
