@@ -24,8 +24,8 @@ test.before('setup', () => {
 test.cb('POST /api/v1/:user/repositories/:repo should return 201 when specified name repository does not exist', (t) => {
   axios.post(`http://localhost:${config.PORT}/api/v1/users/user1/repositories`, { name: 'repo2' })
     .then((res) => {
-      t.ok(res.status === 201)
-      t.ok(fs.existsSync(path.join(config.REPO_ROOT, 'repo2')) === true)
+      t.is(res.status, 201)
+      t.is(fs.existsSync(path.join(config.REPO_ROOT, 'repo2')), true)
     })
     .catch((err) => {
       t.fail(err.toString())
@@ -42,7 +42,7 @@ test.cb('POST /api/v1/users/:user/repositories/:repo should return 409 when spec
       t.fail(res.toString())
     })
     .catch((err) => {
-      t.ok(err.response.status === 409)
+      t.is(err.response.status, 409)
     }).finally(t.end)
 })
 
