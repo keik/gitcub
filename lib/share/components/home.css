@@ -1,0 +1,53 @@
+:local .container {
+  composes: container from '../styles/common.css';
+  margin-top: 18px;
+}
+:local .container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+:local .news {
+  float: left;
+  width: 66%;
+  padding-right: 18px;
+}
+
+:local .side {
+  float: left;
+  width: 33%;
+}
+
+:local .activities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+:local .activities li {
+  padding: 12px;
+  border-top: 1px solid #f1f1f1;
+}
+:local .activities li:first-child {
+  border-top: none;
+}
+
+:local .panel {
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+:local .panel > * {
+  padding: 5px 10px;
+}
+:local .panelHeader {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #d8d8d8;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  line-height: 32px;
+}
+:local .panelBody {
+}
