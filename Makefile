@@ -14,7 +14,7 @@ BROWSERIFY_OPTS=\
 build: clean lint test bundle
 	@echo $(TAG)$@$(END)
 
-start: build
+start:
 	@echo $(TAG)$@$(END)
 	NODE_ENV="production" node lib/server
 
