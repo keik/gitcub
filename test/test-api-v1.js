@@ -5,7 +5,7 @@ import app from '../lib/server/app'
 
 import test_blobs from './test-api-v1/blobs'
 import test_commits from './test-api-v1/commits'
-import test_references from './test-api-v1/references'
+import test_branches from './test-api-v1/branches'
 import test_repositories from './test-api-v1/repositories'
 import test_tags from './test-api-v1/tags'
 import test_trees from './test-api-v1/trees'
@@ -27,7 +27,7 @@ test.before('setup', () => {
 const tests = [
   test_blobs,
   test_commits,
-  test_references,
+  test_branches,
   test_repositories,
   test_tags,
   test_trees,

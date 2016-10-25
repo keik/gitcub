@@ -1,30 +1,39 @@
 import test from 'ava'
 import axios from 'axios'
 
+import { API_BLOBS } from '../../lib/server/routers/api/v1'
+
 export default function(config) {
-  test.cb('GET /api/v1/users/:user/repositories/:repo/branches/:branch/entries/:entry should return 200 and file info', (t) => {
-    axios.get(`http://localhost:${config.PORT}/api/v1/users/user1/repositories/repo1/branches/master/entries/file1`)
+  test.cb(`GET ${API_BLOBS} should return 200 and file info`, (t) => {
+    axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/git/blobs/b97038f29f6d581aa86d6417f9ed464c1cdfeba2`)
       .then((res) => {
-        t.deepEqual(res.data, {
-          bytes: 12,
-          content: 'hello\n',
-          lines: 1,
-        })
+        t.deepEqual(res.data,
+                    { bytes: 36, content: 'puts \'Hello Ruby\'\n', lines: 1 }
+        )
       }).catch((err) => {
         t.fail(err.toString())
       }).finally(t.end)
   })
 
-  test.cb('GET /api/v1/users/:user/repositories/:repo/branches/:branch/entries/:entry should return 200 and file info', (t) => {
-    axios.get(`http://localhost:${config.PORT}/api/v1/users/user1/repositories/repo1/branches/master/entries/file1`)
+  test.cb(`GET ${API_BLOBS} should return 200 and file info`, (t) => {
+    axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/git/blobs/master/file1`)
       .then((res) => {
-        t.deepEqual(res.data, {
-          bytes: 12,
-          content: 'hello\n',
-          lines: 1,
-        })
+        t.deepEqual(res.data,
+                    { bytes: 12, content: 'hello\n', lines: 1 }
+        )
       }).catch((err) => {
-        t.fail(err.toString())
+        t.fail(err)
+      }).finally(t.end)
+  })
+
+  test.cb(`GET ${API_BLOBS} should return 200 and file info`, (t) => {
+    axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/git/blobs/f1582566910f7a5d41b47f0c93ed560e1e1fd8d0/file1`)
+      .then((res) => {
+        t.deepEqual(res.data,
+                    { bytes: 12, content: 'hello\n', lines: 1 }
+        )
+      }).catch((err) => {
+        t.fail(err)
       }).finally(t.end)
   })
 }

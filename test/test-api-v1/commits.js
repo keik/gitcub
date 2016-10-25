@@ -1,9 +1,11 @@
 import test from 'ava'
 import axios from 'axios'
 
+import { API_COMMITS } from '../../lib/server/routers/api/v1'
+
 export default function(config) {
-  test.cb('GET /api/v1/users/:user/repositories/:repo/commits should return 200 and commits information', (t) => {
-    axios.get(`http://localhost:${config.PORT}/api/v1/users/user1/repositories/repo1/commits`)
+  test.cb(`GET ${API_COMMITS} should return 200 and commits information`, (t) => {
+    axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/commits`)
       .then((res) => {
         t.deepEqual(res.data,
                     [ { id: '0100c14d9341db683c43e47c6944ecb1616005bd',
