@@ -28,6 +28,7 @@
     "express-list-routes": "^0.1.4",
     "font-awesome": "^4.6.3",
     "history": "^4.3.0",
+    "lodash": "^4.16.4",
     "lodash.merge": "^4.6.0",
     "mkdirp": "^0.5.1",
     "morgan": "^1.7.0",
