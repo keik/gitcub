@@ -3,9 +3,11 @@ import promiseFinally from 'promise.prototype.finally'
 
 import app from '../lib/server/app'
 
-// Git
+// TODO redesign
 import test_branches from './test-api-v1/branches'
 import test_tags from './test-api-v1/tags'
+
+// Git
 import test_git_blobs from './test-api-v1/git-blobs'
 import test_git_commits from './test-api-v1/git-commits'
 import test_git_repositories from './test-api-v1/git-repositories'
@@ -33,7 +35,7 @@ const tests = [
   test_branches,
   test_tags,
   test_git_blobs,
-//  test_git_commits,
+  test_git_commits,
   test_git_repositories,
   test_git_trees,
   test_repos_commits,
