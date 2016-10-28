@@ -1,10 +1,10 @@
  import test from 'ava'
 import axios from 'axios'
 
-import { API_CONTENTS } from '../../lib/server/routers/api/v1'
+import { API_REPOS_CONTENTS } from '../../lib/server/routers/api/v1'
 
 export default function(config) {
-  test.cb(`GET ${API_CONTENTS} with no params should return files in root directory`, (t) => {
+  test.cb(`GET ${API_REPOS_CONTENTS} with no params should return files in root directory`, (t) => {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/contents`)
       .then((res) => {
         t.deepEqual(res.data,
@@ -44,7 +44,7 @@ export default function(config) {
       }).finally(t.end)
   })
 
-  test.cb(`GET ${API_CONTENTS} with ROOT_PATH should return files in root directory`, (t) => {
+  test.cb(`GET ${API_REPOS_CONTENTS} with ROOT_PATH should return files in root directory`, (t) => {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/contents/`)
       .then((res) => {
         t.deepEqual(res.data,
@@ -84,7 +84,7 @@ export default function(config) {
       }).finally(t.end)
   })
 
-  test.cb(`GET ${API_CONTENTS} with DIR_PATH should return files in specified directory`, (t) => {
+  test.cb(`GET ${API_REPOS_CONTENTS} with DIR_PATH should return files in specified directory`, (t) => {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/contents/d`)
       .then((res) => {
         t.deepEqual(res.data,
@@ -107,7 +107,7 @@ export default function(config) {
       }).finally(t.end)
   })
 
-  test.cb(`GET ${API_CONTENTS} with FILE_PATH directory should return file content`, (t) => {
+  test.cb(`GET ${API_REPOS_CONTENTS} with FILE_PATH directory should return file content`, (t) => {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/contents/file1`)
       .then((res) => {
         t.deepEqual(res.data,
@@ -125,7 +125,7 @@ export default function(config) {
       }).finally(t.end)
   })
 
-  test.cb(`GET ${API_CONTENTS} with DIR_PATH/FILE_PATH should return file contents`, (t) => {
+  test.cb(`GET ${API_REPOS_CONTENTS} with DIR_PATH/FILE_PATH should return file contents`, (t) => {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/contents/d/file3`)
       .then((res) => {
         t.deepEqual(res.data,
@@ -143,7 +143,7 @@ export default function(config) {
       }).finally(t.end)
   })
 
-  test.cb(`GET ${API_CONTENTS} with DIR_PATH?ref=REF should return files in specified directory`, (t) => {
+  test.cb(`GET ${API_REPOS_CONTENTS} with DIR_PATH?ref=REF should return files in specified directory`, (t) => {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/contents/d?ref=feature`)
       .then((res) => {
         t.deepEqual(res.data,
@@ -160,7 +160,7 @@ export default function(config) {
       }).finally(t.end)
   })
 
-  test.cb(`GET ${API_CONTENTS} with DIR_PATH?ref=SHA should return files in specified directory`, (t) => {
+  test.cb(`GET ${API_REPOS_CONTENTS} with DIR_PATH?ref=SHA should return files in specified directory`, (t) => {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/contents/d?ref=0100c14d9341db683c43e47c6944ecb1616005bd`)
       .then((res) => {
         t.deepEqual(res.data,
@@ -183,7 +183,7 @@ export default function(config) {
       }).finally(t.end)
   })
 
-  test.cb(`GET ${API_CONTENTS} with FILE_PATH?ref=REF should return file contents`, (t) => {
+  test.cb(`GET ${API_REPOS_CONTENTS} with FILE_PATH?ref=REF should return file contents`, (t) => {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/contents/file2?ref=feature`)
       .then((res) => {
         t.deepEqual(res.data,
@@ -201,7 +201,7 @@ export default function(config) {
       }).finally(t.end)
   })
 
-  test.cb(`GET ${API_CONTENTS} with FILE_PATH?ref=SHA should return file contents`, (t) => {
+  test.cb(`GET ${API_REPOS_CONTENTS} with FILE_PATH?ref=SHA should return file contents`, (t) => {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/contents/file2?ref=297862f2168af863ae0e2735caabe8b7461f188f`)
       .then((res) => {
         t.deepEqual(res.data,
