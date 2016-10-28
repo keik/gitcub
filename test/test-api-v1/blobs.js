@@ -17,7 +17,10 @@ export default function(config) {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/git/blobs/b97038f29f6d581aa86d6417f9ed464c1cdfeba2`)
       .then((res) => {
         t.deepEqual(res.data,
-          { bytes: 36, content: 'puts \'Hello Ruby\'\n', lines: 1 }
+          { bytes: 18,
+            content: 'puts \'Hello Ruby\'\n',
+            lines: 1,
+            sha: 'b97038f29f6d581aa86d6417f9ed464c1cdfeba2' }
         )
       }).catch((err) => {
         console.error(err)
@@ -29,7 +32,10 @@ export default function(config) {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/git/blobs/master/file1`)
       .then((res) => {
         t.deepEqual(res.data,
-          { bytes: 12, content: 'hello\n', lines: 1 }
+          { bytes: 6,
+            content: 'hello\n',
+            lines: 1,
+            sha: 'ce013625030ba8dba906f756967f9e9ca394464a' }
         )
       }).catch((err) => {
         console.error(err)
@@ -41,7 +47,10 @@ export default function(config) {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/git/blobs/master/d/dd/nested`)
       .then((res) => {
         t.deepEqual(res.data,
-          { bytes: 16, content: 'in deep\n', lines: 1 }
+          { bytes: 8,
+            content: 'in deep\n',
+            lines: 1,
+            sha: '319b14e6a0dfee9ed07d56a90d40ff852ec63672' }
         )
       }).catch((err) => {
         console.error(err)
@@ -53,7 +62,10 @@ export default function(config) {
     axios.get(`http://localhost:${config.PORT}/api/v1/repos/user1/repo1/git/blobs/f1582566910f7a5d41b47f0c93ed560e1e1fd8d0/file1`)
       .then((res) => {
         t.deepEqual(res.data,
-          { bytes: 12, content: 'hello\n', lines: 1 }
+          { bytes: 6,
+            content: 'hello\n',
+            lines: 1,
+            sha: 'ce013625030ba8dba906f756967f9e9ca394464a' }
         )
       }).catch((err) => {
         console.error(err)
