@@ -1,0 +1,14 @@
+:local .container {
+}
+
+:local .branchMenuModal {
+  position: absolute;
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  border-radius: 3px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  background-color: #fff;
+}
+
+:local .branchMenuModalHeader {
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,15 @@
+:local .container {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  list-style: none;
+  padding: 12px;
+  margin: 12px 0 0 0;
+}
+:local .container a {
+  color: #767676;
+}
+:local .container :global .fa {
+  margin-right: 4px;
+}
