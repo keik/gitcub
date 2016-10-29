@@ -1,5 +1,5 @@
 :local .container {
-  composes: container from '../../../styles/common.css';
+  composes: container from '../../styles/common.css';
   margin-bottom: 12px;
 }
 
