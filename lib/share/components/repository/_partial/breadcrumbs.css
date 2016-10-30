@@ -1,2 +1,10 @@
 :local .container {
 }
+
+:local .repoRoot {
+  font-weight: bold;
+}
+
+:local .separator:before, :local .separator:after {
+  content: ' ';
+}
