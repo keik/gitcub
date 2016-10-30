@@ -20,6 +20,10 @@
   clear: both;
 }
 
+:local .treeSelector {
+  float: left;
+}
+
 :local .floatRight {
   float: right;
 }
@@ -35,42 +39,4 @@
   background-color: #f2f9fc;
   border: 1px solid #c9e6f2;
   border-radius: 3px 3px 0 0;
-}
-
-:local .entriesContainer {
-  border: 1px solid #ddd;
-  border-top: 0;
-  border-radius: 0 0 3px 3px;
-}
-
-:local .entries {
-  width: 100%;
-  border-collapse: collapse;
-}
-:local .entries td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
-}
-:local .entries td.icon {
-  width: 18px;
-  padding-left: 12px;
-}
-:local .entries td.name {
-}
-:local .entries td.commitMessage {
-  padding-left: 12px;
-}
-:local .entries td.commitMessage a {
-  color: #888;
-}
-:local .entries td.updateAt {
-  width: 120px;
-  padding-right: 12px;
-  text-align: right;
-}
-
-:local .emphasized {
-  font-weight: 600;
-  color: #333;
 }
