@@ -10,8 +10,6 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - libstdc++-4.9-dev
-script:
-  make
 cache:
   directories:
     - node_modules
