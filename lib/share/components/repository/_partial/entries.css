@@ -3,43 +3,20 @@
   margin-bottom: 12px;
 }
 
-:local .commitTease {
-  padding: 10px;
-  margin: 12px 0 0 0;
-  color: #68777d;
-  background-color: #f2f9fc;
-  border: 1px solid #c9e6f2;
-  border-radius: 3px 3px 0 0;
-}
-
-:local .entriesContainer {
-  border: 1px solid #ddd;
-  border-top: 0;
-  border-radius: 0 0 3px 3px;
-}
-
-:local .entries {
-  width: 100%;
-  border-collapse: collapse;
-}
-:local .entries td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
-}
-:local .entries td.icon {
+:local td.icon {
   width: 18px;
   padding-left: 12px;
 }
-:local .entries td.name {
-}
-:local .entries td.commitMessage {
+
+:local td.commitMessage {
   padding-left: 12px;
 }
-:local .entries td.commitMessage a {
+
+:local td.commitMessage a {
   color: #888;
 }
-:local .entries td.updateAt {
+
+:local td.updateAt {
   width: 120px;
   padding-right: 12px;
   text-align: right;
