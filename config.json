@@ -1,4 +1,5 @@
 {
+  "HOST": "localhost",
   "PORT": 3000,
   "REPO_ROOT": "./test/fixture/repos"
 }
