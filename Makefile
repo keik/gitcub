@@ -5,7 +5,7 @@ NPM=$(shell npm bin)
 
 BROWSERIFY_OPTS=\
   -e lib/client/main.js \
-  -p [ css-modulesify -o bundle/style.css -d ./lib/share ] \
+  -p [ css-modulesify -o bundle/style.css -d ./lib/share --global ] \
   -t babelify \
   -v
 

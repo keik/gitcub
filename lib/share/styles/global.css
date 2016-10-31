@@ -18,3 +18,11 @@ a:hover, a:active {
   text-decoration: underline;
   outline-width: 0;
 }
+
+code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+  color: #333;
+  word-wrap: normal;
+  white-space: pre;
+}
