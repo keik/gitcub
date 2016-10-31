@@ -1,7 +1,7 @@
  import test from 'ava'
 import axios from 'axios'
 
-import { API_REPOS_CONTENTS } from '../../lib/server/routers/api/v1'
+import { API_REPOS_CONTENTS } from '../../lib/share/constants/api'
 
 export default function(config) {
   test.cb(`GET ${API_REPOS_CONTENTS} with no params should return files in root directory`, (t) => {

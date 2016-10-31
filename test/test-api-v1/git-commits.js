@@ -1,7 +1,7 @@
 import test from 'ava'
 import axios from 'axios'
 
-import { API_GIT_COMMITS } from '../../lib/server/routers/api/v1'
+import { API_GIT_COMMITS } from '../../lib/share/constants/api'
 
 export default function(config) {
   test.cb(`GET ${API_GIT_COMMITS} with SHA should return a specified commit`, (t) => {

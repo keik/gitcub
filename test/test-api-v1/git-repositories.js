@@ -4,7 +4,7 @@ import fs from 'fs'
 import path from 'path'
 import rimraf from 'rimraf'
 
-import { API_GIT_REPOS } from '../../lib/server/routers/api/v1'
+import { API_GIT_REPOS } from '../../lib/share/constants/api'
 
 export default function(config) {
   test.cb(`POST ${API_GIT_REPOS} should return 201 when specified name repository does not exist`, (t) => {

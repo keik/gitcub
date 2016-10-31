@@ -60,3 +60,11 @@
 :local .panel tr:first-child td {
   border: none;
 }
+
+:local .panel > pre {
+  margin: 0;
+}
+
+:local .panel > pre code {
+  background-color: #fff;
+}

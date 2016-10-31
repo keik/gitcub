@@ -1,7 +1,7 @@
 import test from 'ava'
 import axios from 'axios'
 
-import { API_TAGS } from '../../lib/server/routers/api/v1'
+import { API_TAGS } from '../../lib/share/constants/api'
 
 export default function(config) {
   test.cb(`GET ${API_TAGS} should return 200 and name of tags`, (t) => {

@@ -32,3 +32,16 @@
 :local .sha > * {
   margin-left: 12px;
 }
+/* TODO partialize */
+:local .lines {
+  float: left;
+  min-width: 48px;
+  padding: 0.5em;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+  text-align: right;
+  border-right: 1px solid #eee;
+}
