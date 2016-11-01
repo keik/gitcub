@@ -1,5 +1,8 @@
 {
   "presets": [
     "react-app"
+  ],
+  "plugins": [
+    "transform-inline-environment-variables"
   ]
 }

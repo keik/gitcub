@@ -38,8 +38,8 @@ test: node_modules
 	@echo $(TAG)$@$(END)
 	NODE_ENV="test" $(NPM)/nyc -i babel-register -i ./css-modules-register --all \
 		--include 'lib/**' \
-		--exclude 'lib/{server/index.js,client/*.js,share/stories}' \
-		$(NPM)/ava 'test/test-*.js'
+		--exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' \
+		$(NPM)/ava 'lib/**/*.test.js'
 
 lint: node_modules
 	@echo $(TAG)$@$(END)
