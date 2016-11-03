@@ -44,6 +44,7 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
     "redux": "^3.6.0",
+    "redux-devtools": "^3.3.1",
     "redux-logger": "^2.7.0",
     "time-elements": "^0.6.1"
   },
@@ -64,6 +65,9 @@
     "nyc": "^8.3.1",
     "parallelshell": "^2.0.0",
     "promise.prototype.finally": "^2.0.0",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.1.1",
     "rimraf": "^2.5.4",
     "source-map-support": "^0.4.2",
     "uglify-js": "^2.7.4",
