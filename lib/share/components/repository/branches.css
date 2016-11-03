@@ -1,0 +1,17 @@
+:local .container {
+  composes: container from '../../styles/common.css';
+  margin-bottom: 12px;
+}
+
+:local .branches {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+:local .branches li {
+  padding: 12px;
+  border-top: 1px solid #ddd;
+}
+:local .branches li:last-child {
+  border-top: none;
+}
