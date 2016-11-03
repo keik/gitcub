@@ -32,22 +32,15 @@
   border-top: none;
 }
 
-:local .panel {
-  position: relative;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+:local .repositories {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-:local .panel > * {
-  padding: 5px 10px;
+:local .repositories li {
+  padding: 12px;
+  border-top: 1px solid #ddd;
 }
-:local .panelHeader {
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #d8d8d8;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  line-height: 32px;
-}
-:local .panelBody {
+:local .repositories li:first-child {
+  border-top: none;
 }

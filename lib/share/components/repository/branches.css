@@ -12,6 +12,6 @@
   padding: 12px;
   border-top: 1px solid #ddd;
 }
-:local .branches li:last-child {
+:local .branches li:first-child {
   border-top: none;
 }
