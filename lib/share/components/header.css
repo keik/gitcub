@@ -12,6 +12,26 @@
 :local .container a {
   color: #333;
 }
+:local .container a:hover {
+  text-decoration: none;
+  color: #4078c0;
+}
+
+:local .container .logo {
+  padding: 0 8px;
+  margin-right: 12px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #ccc;
+  font-size: 22px;
+  font-family: 'Rajdhani', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+}
+:local .container .logo:hover {
+  border-color: #4078c0;
+}
 
 :local .innerContainer {
   composes: container from '../styles/common.css';
@@ -65,4 +85,8 @@
 :local .headerNavRight {
   composes: commonHeaderNav;
   float: right;
+}
+
+:local .headerNavRight ul li:last-child {
+  margin-right: 0;
 }
