@@ -40,9 +40,20 @@
 }
 
 :local .commonHeaderNav {
-  composes: nav from '../styles/nav.css';
-  line-height: 20px;
+  display: flex;
   padding: 4px 8px;
+  list-style: none;
+  line-height: 20px;
+}
+
+:local .commonHeaderNav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+:local .commonHeaderNav ul li {
+  margin-right: 12px;
 }
 
 :local .headerNavLeft {
