@@ -32,6 +32,7 @@
     "express": "^4.14.0",
     "express-list-routes": "^0.1.4",
     "font-awesome": "^4.6.3",
+    "git-http-backend": "^1.0.2",
     "glob": "^7.1.1",
     "highlight.js": "^9.7.0",
     "history": "^4.3.0",
@@ -46,7 +47,8 @@
     "redux": "^3.6.0",
     "redux-devtools": "^3.3.1",
     "redux-logger": "^2.7.0",
-    "time-elements": "^0.6.1"
+    "time-elements": "^0.6.1",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",

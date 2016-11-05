@@ -3081,6 +3081,17 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
+git-http-backend:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/git-http-backend/-/git-http-backend-1.0.2.tgz#dc01e4284209353064453a70f92f89de0834eb10"
+  dependencies:
+    git-side-band-message "~0.0.3"
+    inherits "~2.0.1"
+
+git-side-band-message@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/git-side-band-message/-/git-side-band-message-0.0.3.tgz#b8a5348c2dcbf1949fd295c506014e26c3f26a46"
+
 glob, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.0.6:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
@@ -6929,4 +6940,8 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+zlib:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/zlib/-/zlib-1.0.5.tgz#6e7c972fc371c645a6afb03ab14769def114fcc0"
 
