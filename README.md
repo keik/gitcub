@@ -6,14 +6,14 @@
 Performant GitHub clone application powered by React + Express as universal JavaScript.
 
 
-## Status
+## Development status
 
 Under development.
 
 Implemented features:
 
 - [x] Git repository viewer
-- [ ] Push / Pull via HTTP(s)
+- [x] Push / Pull via HTTP(s)
 - [ ] Authentication
 - [ ] Issues
 - [ ] Pull requests
