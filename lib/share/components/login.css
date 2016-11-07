@@ -1,0 +1,11 @@
+:local .container {
+  display: flex;
+  justify-content: center;
+}
+
+:local .container > form {
+  width: 400px;
+}
+:local .container h1 {
+  color: blue;
+}
