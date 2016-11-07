@@ -49,7 +49,7 @@ function __process(files, to) {
   }
 
   function __bundle(cache) {
-    const build = Object.keys(cache).map(k => cache[k]).join('\n\n\n')
+    const build = Object.keys(cache).map(k => `/* ${k} */\n\n${cache[k]}`).join('\n')
     const p = new stream.PassThrough()
     p.end(new Buffer(build))
     p.pipe(to ?

@@ -22,7 +22,8 @@ watch: node_modules
 	mkdir -p bundle
 	NODE_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
 		'$(NPM)/watchify $(BROWSERIFY_OPTS) -o bundle/bundle.js -d' \
-		'$(NPM)/nodemon lib/server -w lib/server -w lib/share'
+		'$(NPM)/nodemon lib/server -w lib/server -w lib/share' \
+		'node bundle-css-modules.js "lib/share/**/*.css" -o bundle/style.css -w -v'
 
 storybook: node_modules
 	$(NPM)/start-storybook -p 6006
@@ -31,6 +32,7 @@ bundle: node_modules
 	@echo $(TAG)$@$(END)
 	mkdir -p $@
 	NODE_ENV="production" $(NPM)/browserify $(BROWSERIFY_OPTS) | $(NPM)/uglifyjs -mc warnings=false > bundle/bundle.js
+	node bundle-css-modules.js 'lib/share/**/*.css' -o bundle/style.css -v
 
 test: node_modules
 	@echo $(TAG)$@$(END)
