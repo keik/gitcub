@@ -5,7 +5,6 @@ NPM=$(shell npm bin)
 
 BROWSERIFY_OPTS=\
   -e lib/client/main.js \
-  -p [ css-modulesify -o bundle/style.css -d ./lib/share --global ] \
   -t babelify \
   -v
 
@@ -24,7 +23,6 @@ watch: node_modules
 	NODE_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
 		'$(NPM)/watchify $(BROWSERIFY_OPTS) -o bundle/bundle.js -d' \
 		'$(NPM)/nodemon lib/server -w lib/server -w lib/share'
-# 		'$(NPM)/ava -r babel-register -r ./css-modules-register test/test-*.js --watch --source lib'
 
 storybook: node_modules
 	$(NPM)/start-storybook -p 6006

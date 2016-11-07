@@ -3,6 +3,7 @@
     "react-app"
   ],
   "plugins": [
-    "transform-inline-environment-variables"
+    "transform-inline-environment-variables",
+    "css-modules-transform"
   ]
 }
