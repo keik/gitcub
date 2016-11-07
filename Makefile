@@ -36,7 +36,7 @@ bundle: node_modules
 
 test: node_modules
 	@echo $(TAG)$@$(END)
-	NODE_ENV="test" $(NPM)/nyc -i babel-register -i ./css-modules-register --all \
+	NODE_ENV="test" $(NPM)/nyc -i babel-register --all \
 		--include 'lib/**' \
 		--exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' \
 		$(NPM)/ava 'lib/**/*.test.js'
