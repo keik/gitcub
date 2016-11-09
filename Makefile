@@ -39,7 +39,7 @@ test:
 	NODE_ENV="test" $(NPM)/nyc -i babel-register --all \
 		--include 'lib/**' \
 		--exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' \
-		$(NPM)/ava 'lib/**/*.test.js'
+		$(NPM)/ava 'lib/**/*.test.js' -s -v
 
 lint:
 	@echo $(TAG)$@$(END)
