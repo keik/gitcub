@@ -8,7 +8,7 @@ BROWSERIFY_OPTS=\
   -t babelify \
   -v
 
-.PHONY: build start watch stroybook bundle test lint clean
+.PHONY: build start watch storybook bundle coverage test lint clean
 
 build: clean lint test bundle
 	@echo $(TAG)$@$(END)
@@ -17,7 +17,7 @@ start:
 	@echo $(TAG)$@$(END)
 	NODE_ENV="production" node lib/server
 
-watch: node_modules
+watch:
 	@echo $(TAG)$@$(END)
 	mkdir -p bundle
 	NODE_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
@@ -25,34 +25,30 @@ watch: node_modules
 		'$(NPM)/nodemon lib/server -w lib/server -w lib/share' \
 		'node bundle-css-modules.js "lib/share/**/*.css" -o bundle/style.css -w -v'
 
-storybook: node_modules
+storybook:
 	$(NPM)/start-storybook -p 6006
 
-bundle: node_modules
+bundle:
 	@echo $(TAG)$@$(END)
 	mkdir -p $@
 	NODE_ENV="production" $(NPM)/browserify $(BROWSERIFY_OPTS) | $(NPM)/uglifyjs -mc warnings=false > bundle/bundle.js
 	node bundle-css-modules.js 'lib/share/**/*.css' -o bundle/style.css -v
 
-coverage: node_modules
+coverage:
 	@echo $(TAG)$@$(END)
 	NODE_ENV="test" $(NPM)/nyc -i babel-register --all \
 		--include 'lib/**' \
 		--exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' \
 		$(NPM)/ava 'lib/**/*.test.js'
 
-test: node_modules
+test:
 	@echo $(TAG)$@$(END)
 	NODE_ENV="test" $(NPM)/ava 'lib/**/*.test.js'
 
-lint: node_modules
+lint:
 	@echo $(TAG)$@$(END)
 	$(NPM)/eslint '{lib/**/*.js,test/**/*.js}'
 
 clean:
 	@echo $(TAG)$@$(END)
 	rm -rf bundle
-
-node_modules: package.json
-	@echo $(TAG)$@$(END)
-	npm install
