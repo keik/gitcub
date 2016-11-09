@@ -34,16 +34,12 @@ bundle:
 	NODE_ENV="production" $(NPM)/browserify $(BROWSERIFY_OPTS) | $(NPM)/uglifyjs -mc warnings=false > bundle/bundle.js
 	node bundle-css-modules.js 'lib/share/**/*.css' -o bundle/style.css -v
 
-coverage:
+test:
 	@echo $(TAG)$@$(END)
 	NODE_ENV="test" $(NPM)/nyc -i babel-register --all \
 		--include 'lib/**' \
 		--exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' \
 		$(NPM)/ava 'lib/**/*.test.js'
-
-test:
-	@echo $(TAG)$@$(END)
-	NODE_ENV="test" $(NPM)/ava 'lib/**/*.test.js'
 
 lint:
 	@echo $(TAG)$@$(END)
