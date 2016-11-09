@@ -6,12 +6,16 @@
   "scripts": {
     "start": "make start",
     "postinstall": "make",
-    "test": "make test",
+    "test": "make coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "KATO Kei",
+    "email": "k4t0.kei@gmail.com",
+    "url": "keik.info"
+  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/keik/gh.git"
