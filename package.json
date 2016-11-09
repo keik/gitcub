@@ -15,6 +15,10 @@
     "email": "k4t0.kei@gmail.com",
     "url": "keik.info"
   },
+  "engines": {
+    "node" : ">=6",
+    "npm": ">=3"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
