@@ -12,13 +12,13 @@ const argv = require('minimist')(process.argv.slice(2), {
   alias: {h: 'help', o: 'outpfile', v: 'verbose', w: 'watch'}
 })
 
-const { h, o, v, w, _: froms} = argv
+const froms = argv._
 
-if (h)
+if (argv.h)
   process.exit(__help())
 
-if (w)
-  chokidar.watch(froms).on('change', (file) => __process(file, o))
+if (argv.w)
+  chokidar.watch(froms).on('change', (file) => __process(file, argv.o))
 
 const runner = postcss([
   require('postcss-modules')({
@@ -31,7 +31,7 @@ Promise
   .all(froms.map(p =>
     new Promise((resolve) => glob(p, (e, files) => resolve(files)))
   ))
-  .then(files => __process(flatten(files), o))
+  .then(files => __process(flatten(files), argv.o))
   .catch(err => {
     console.error(err)
   })
@@ -55,7 +55,7 @@ function __process(files, to) {
     p.pipe(to ?
       fs.createWriteStream(to)
         .on('close', function() {
-          if (v) console.log(`${this.bytesWritten} bytes written to ${to} (${((Number(new Date()) - s) / 1000).toFixed(2)} seconds)`)
+          if (argv.v) console.log(`${this.bytesWritten} bytes written to ${to} (${((Number(new Date()) - s) / 1000).toFixed(2)} seconds)`)
         }) :
       process.stdout)
   }
