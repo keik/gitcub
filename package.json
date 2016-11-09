@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
-    "ava": "^0.16.0",
+    "ava": "git+https://github.com/avajs/ava.git#master",
     "babel-eslint": "6.1.2",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
