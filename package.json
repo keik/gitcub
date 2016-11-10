@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "make start",
-    "postinstall": "make",
-    "test": "make test",
+    "test": "make test-instrument",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -16,7 +15,7 @@
     "url": "keik.info"
   },
   "engines": {
-    "node" : ">=6",
+    "node": ">=6",
     "npm": ">=3"
   },
   "license": "MIT",
@@ -57,7 +56,6 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
-    "ava": "git+https://github.com/avajs/ava.git#master",
     "babel-eslint": "6.1.2",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
@@ -83,6 +81,9 @@
     "redux-devtools-log-monitor": "^1.1.1",
     "rimraf": "^2.5.4",
     "source-map-support": "^0.4.2",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.6.2",
+    "tape-watch": "^2.2.3",
     "uglify-js": "^2.7.4",
     "watchify": "^3.7.0"
   },
