@@ -45,6 +45,10 @@ test:
 	@echo $(TAG)$@$(END)
 	NODE_ENV="test" $(NPM)/tape -r babel-register 'lib/**/*.test.js' 2>/dev/null | $(NPM)/tap-diff
 
+test-watch:
+	@echo $(TAG)$@$(END)
+	NODE_ENV="test" $(NPM)/tape-watch -r babel-register 'lib/**/*.test.js' -v 2>/dev/null | $(NPM)/tap-diff
+
 lint:
 	@echo $(TAG)$@$(END)
 	$(NPM)/eslint '{lib/**/*.js,test/**/*.js}'
