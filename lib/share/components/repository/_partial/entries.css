@@ -3,20 +3,20 @@
   margin-bottom: 12px;
 }
 
-:local td.icon {
+:local table tr td.icon {
   width: 18px;
   padding-left: 12px;
 }
 
-:local td.commitMessage {
+:local table tr td.commitMessage {
   padding-left: 12px;
 }
 
-:local td.commitMessage a {
+:local table tr td.commitMessage a {
   color: #888;
 }
 
-:local td.updateAt {
+:local table tr td.updateAt {
   width: 120px;
   padding-right: 12px;
   text-align: right;
