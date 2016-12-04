@@ -30,3 +30,20 @@
   composes: _links;
   float: right;
 }
+
+:local .logo {
+  padding: 0 4px;
+  vertical-align: middle;
+  color: #ccc;
+  line-height: 1;
+  font-size: 18px;
+  font-family: 'Rajdhani', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+}
+:local .logo:hover {
+  color: #4078c0;
+  border-color: #4078c0;
+  text-decoration: none;
+}
