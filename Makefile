@@ -47,7 +47,7 @@ test:
 
 test-watch:
 	@echo $(TAG)$@$(END)
-	NODE_ENV="test" $(NPM)/tape-watch -r babel-register 'lib/**/*.test.js' -v 2>/dev/null | $(NPM)/tap-diff
+	NODE_ENV="test" $(NPM)/tape-watch -r babel-register 'lib/**/*.test.js' -v | $(NPM)/tap-diff
 
 lint:
 	@echo $(TAG)$@$(END)
