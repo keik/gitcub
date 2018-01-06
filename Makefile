@@ -3,11 +3,6 @@ END=" \#\#\# \033[0m\n"
 
 NPM=$(shell npm bin)
 
-BROWSERIFY_OPTS=\
-  -e lib/client/main.js \
-  -t babelify \
-  -v
-
 .PHONY: build start watch storybook bundle coverage test lint clean
 
 build: clean lint test bundle
@@ -21,7 +16,7 @@ watch:
 	@echo $(TAG)$@$(END)
 	mkdir -p bundle
 	NODE_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
-		'$(NPM)/watchify $(BROWSERIFY_OPTS) -o bundle/bundle.js -d' \
+		'$(NPM)/webpack -w' \
 		'$(NPM)/nodemon lib/server -w lib/server -w lib/share' \
 		'node bundle-css-modules.js "lib/share/**/*.css" -o bundle/style.css -w -v'
 
@@ -31,7 +26,7 @@ storybook:
 bundle:
 	@echo $(TAG)$@$(END)
 	mkdir -p $@
-	NODE_ENV="production" $(NPM)/browserify $(BROWSERIFY_OPTS) | $(NPM)/uglifyjs -mc warnings=false > bundle/bundle.js
+	NODE_ENV="production" $(NPM)/webpack
 	node bundle-css-modules.js 'lib/share/**/*.css' -o bundle/style.css -v
 
 test-instrument:
