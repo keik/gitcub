@@ -3,51 +3,27 @@ END=" \#\#\# \033[0m\n"
 
 NPM=$(shell npm bin)
 
-.PHONY: build start watch storybook bundle coverage test lint clean
+.PHONY: start build install-yarn clean
 
-build: clean lint test bundle
+start: build
 	@echo $(TAG)$@$(END)
+	npm run start
 
-start:
+build: node_modules
 	@echo $(TAG)$@$(END)
-	NODE_ENV="production" node lib/server
+	npm run clean
+	npm run lint
+	npm run test
+	npm run build
 
-watch:
+node_modules: install-yarn
 	@echo $(TAG)$@$(END)
-	mkdir -p bundle
-	NODE_ENV="development" DEBUG="keik:*,gh:*" $(NPM)/parallelshell \
-		'$(NPM)/webpack -w' \
-		'$(NPM)/nodemon lib/server -w lib/server -w lib/share' \
-		'node bundle-css-modules.js "lib/share/**/*.css" -o bundle/style.css -w -v'
+	.yarn/bin/yarn
 
-storybook:
-	$(NPM)/start-storybook -p 6006
-
-bundle:
+install-yarn:
 	@echo $(TAG)$@$(END)
-	mkdir -p $@
-	NODE_ENV="production" $(NPM)/webpack
-	node bundle-css-modules.js 'lib/share/**/*.css' -o bundle/style.css -v
-
-test-instrument:
-	@echo $(TAG)$@$(END)
-	NODE_ENV="test" $(NPM)/nyc -i babel-register --all \
-		--include 'lib/**' \
-		--exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' \
-		$(MAKE) test
-
-test:
-	@echo $(TAG)$@$(END)
-	NODE_ENV="test" $(NPM)/tape -r babel-register 'lib/**/*.test.js' 2>/dev/null | $(NPM)/tap-diff
-
-test-watch:
-	@echo $(TAG)$@$(END)
-	NODE_ENV="test" $(NPM)/tape-watch -r babel-register 'lib/**/*.test.js' -v | $(NPM)/tap-diff
-
-lint:
-	@echo $(TAG)$@$(END)
-	$(NPM)/eslint '{lib/**/*.js,test/**/*.js}'
+	npm run install-yarn
 
 clean:
 	@echo $(TAG)$@$(END)
-	rm -rf bundle
+	npm run clean
