@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm rebuild nodegit",
     "install-yarn": "npm i yarn@${npm_package_engines_yarn} -g --prefix ${npm_package_config_yarnPath}",
     "clean": "rm -rf bundle",
     "build": "NODE_ENV=production run-s build:*",
