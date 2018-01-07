@@ -17,5 +17,8 @@ module.exports = {
       jsx: true
     },
     sourceType: 'module'
+  },
+  rules: {
+    'no-console': 1
   }
 }
