@@ -81,6 +81,7 @@
     "enzyme": "^2.5.1",
     "eslint": "^4.15.0",
     "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.41.0",
     "eslint-plugin-prettier": "^2.4.0",
     "eslint-plugin-react": "^7.5.1",
     "factor-bundle": "^2.5.0",
