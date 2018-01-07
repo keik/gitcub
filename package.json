@@ -33,7 +33,6 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-css-modules-transform": "^1.1.0",
     "babel-plugin-transform-inline-environment-variables": "^6.8.0",
-    "babel-preset-react-app": "^0.2.1",
     "babel-register": "^6.14.0",
     "body-parser": "^1.15.2",
     "debug": "^2.2.0",
@@ -62,6 +61,10 @@
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
     "babel-eslint": "^8.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "chokidar": "^1.6.1",
     "enzyme": "^2.5.1",
     "eslint": "^4.14.0",
