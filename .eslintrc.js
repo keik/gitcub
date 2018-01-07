@@ -9,7 +9,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:flowtype/recommended'
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -18,7 +19,9 @@ module.exports = {
     },
     sourceType: 'module'
   },
+  plugins: ['flowtype'],
   rules: {
-    'no-console': 1
+    'no-console': 1,
+    'flowtype/require-valid-file-annotation': [1, 'always']
   }
 }
