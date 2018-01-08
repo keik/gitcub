@@ -11,4 +11,7 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - libstdc++-4.9-dev
+install: true
+script:
+  - make build
 after_success: npm i coveralls && $(npm bin)/nyc report --reporter=text-lcov | $(npm bin)/coveralls
