@@ -22,6 +22,7 @@ module.exports = {
   plugins: ['flowtype'],
   rules: {
     'no-console': 1,
+    'react/prefer-stateless-function': 2,
     'flowtype/require-valid-file-annotation': [1, 'always']
   }
 }
