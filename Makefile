@@ -13,6 +13,7 @@ build: node_modules
 	@echo $(TAG)$@$(END)
 	npm run clean
 	npm run lint
+	npm run typecheck
 	npm run test
 	npm run build
 
