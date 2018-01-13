@@ -67,7 +67,7 @@
     "react-router": "3",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.0",
-    "time-elements": "^0.6.1"
+    "time-elements": "^1.0.0"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",

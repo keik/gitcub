@@ -6898,9 +6898,9 @@ through@2, through@^2.3.6, through@~2.3, through@~2.3.1, through@~2.3.4, through
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
 
-time-elements@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/time-elements/-/time-elements-0.6.1.tgz#587358d176b9a928865c293d439a19636f1d6631"
+time-elements@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/time-elements/-/time-elements-1.0.0.tgz#ca8f1977302fc0a2ef4442caeaea42fe5165b50a"
 
 time-stamp@^2.0.0:
   version "2.0.0"
