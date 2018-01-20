@@ -19,7 +19,7 @@
     "lint:js": "eslint '{lib/**/*.js,test/**/*.js}'",
     "typecheck": "flow",
     "typecheck:install": "flow-typed install",
-    "test": "NODE_ENV=test nyc -i babel-register --all --include 'lib/**' --exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' tape -r babel-register -r ./lib/__tests__/init.js 'lib/**/*.test.js' 2>/dev/null | tap-diff",
+    "test": "NODE_ENV=test nyc --all --include 'lib/**' --exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' tape -r babel-register -r ./lib/__tests__/init.js 'lib/**/*.test.js' 2>/dev/null | tap-diff",
     "test:auto": "NODE_ENV=test tape-watch -r babel-register 'lib/**/*.test.js' -v | tap-diff",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
