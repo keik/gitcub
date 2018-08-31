@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "npm rebuild nodegit",
-    "install-yarn": "npm i yarn@${npm_package_engines_yarn} -g --prefix ${npm_package_config_yarnPath}",
     "clean": "rm -rf bundle",
     "build": "NODE_ENV=production run-s build:*",
     "build:js": "webpack --progress",
@@ -30,8 +29,8 @@
     "url": "keik.info"
   },
   "engines": {
-    "node": "^8.7.0",
-    "yarn": "^1.3.0"
+    "node": "^8.11.2",
+    "npm": "^6.4.1"
   },
   "license": "MIT",
   "repository": {
@@ -73,7 +72,7 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^9.0.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -82,17 +81,17 @@
     "chokidar": "^2.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.16.0",
-    "eslint-config-prettier": "^2.9.0",
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
     "eslint-plugin-flowtype": "^2.41.0",
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.5.1",
-    "flow-bin": "^0.63.1",
+    "flow-bin": "^0.79.1",
     "flow-typed": "^2.2.3",
     "minimist": "^1.2.0",
     "nodemon": "^1.14.11",
     "npm-run-all": "^4.1.2",
-    "nyc": "^11.4.1",
+    "nyc": "^13.0.1",
     "postcss": "^6.0.16",
     "postcss-modules": "^1.1.0",
     "prettier": "^1.10.2",
@@ -104,8 +103,5 @@
     "tape": "^4.6.2",
     "tape-watch2": "^0.1.2",
     "webpack": "^3.10.0"
-  },
-  "config": {
-    "yarnPath": ".yarn"
   }
 }

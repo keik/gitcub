@@ -1,3 +1,5 @@
+const package = require('./package.json')
+
 module.exports = {
   parser: 'babel-eslint',
   env: {
@@ -20,9 +22,15 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['flowtype'],
+  settings: {
+    react: {
+      version: package.dependencies.react
+    }
+  },
   rules: {
-    'no-console': 1,
-    'react/prefer-stateless-function': 2,
-    'flowtype/require-valid-file-annotation': [1, 'always']
+    'no-console': 'warn',
+    'react/prefer-stateless-function': 'error',
+    'flowtype/require-valid-file-annotation': ['warn', 'always'],
+    'react/no-deprecated': 'warn'
   }
 }

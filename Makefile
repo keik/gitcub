@@ -3,7 +3,7 @@ END=" \#\#\# \033[0m\n"
 
 NPM=$(shell npm bin)
 
-.PHONY: start build install-yarn clean
+.PHONY: start build clean
 
 start: build
 	@echo $(TAG)$@$(END)
@@ -17,14 +17,12 @@ build: node_modules
 	npm run test
 	npm run build
 
-node_modules: install-yarn
+node_modules: FORCE
 	@echo $(TAG)$@$(END)
-	.yarn/bin/yarn
-
-install-yarn:
-	@echo $(TAG)$@$(END)
-	npm run install-yarn
+	npm i
 
 clean:
 	@echo $(TAG)$@$(END)
 	npm run clean
+
+FORCE:
