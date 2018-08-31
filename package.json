@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "npm rebuild nodegit",
-    "clean": "rm -rf bundle",
+    "clean": "rm -rf dist",
     "build": "NODE_ENV=production run-s build:*",
-    "build:js": "webpack --progress",
-    "build:css": "node bundle-css-modules.js 'lib/share/**/*.css' -o bundle/style.css -v",
+    "build:js": "webpack --mode development --progress",
+    "build:css": "node bundle-css-modules.js 'lib/share/**/*.css' -o dist/style.css -v",
     "watch": "NODE_ENV=development run-p watch:*",
-    "watch:js": "webpack --progress -w",
-    "watch:css": "node bundle-css-modules.js 'lib/share/**/*.css' -o bundle/style.css -w -v",
+    "watch:js": "webpack --mode development --progress -w",
+    "watch:css": "node bundle-css-modules.js 'lib/share/**/*.css' -o dist/style.css -w -v",
     "watch:server": "nodemon lib/server -w lib/server -w lib/share",
     "start": "NODE_ENV=production node lib/server",
     "lint": "run-s lint:*",
@@ -102,6 +102,7 @@
     "tap-diff": "^0.1.1",
     "tape": "^4.6.2",
     "tape-watch2": "^0.1.2",
-    "webpack": "^3.10.0"
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
   }
 }
