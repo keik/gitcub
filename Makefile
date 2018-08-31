@@ -17,10 +17,12 @@ build: node_modules
 	npm run test
 	npm run build
 
-node_modules:
+node_modules: FORCE
 	@echo $(TAG)$@$(END)
 	npm i
 
 clean:
 	@echo $(TAG)$@$(END)
 	npm run clean
+
+FORCE:
