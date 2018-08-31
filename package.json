@@ -20,8 +20,8 @@
     "typecheck:install": "flow-typed install",
     "test": "NODE_ENV=test nyc --all --include 'lib/**' --exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' tape -r babel-register -r ./lib/__tests__/init.js 'lib/**/*.test.js' 2>/dev/null | tap-diff",
     "test:auto": "NODE_ENV=test tape-watch -r babel-register 'lib/**/*.test.js' -v | tap-diff",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "echo disabled until v4 # start-storybook -p 6006",
+    "build-storybook": "echo disabled until v4 # build-storybook"
   },
   "author": {
     "name": "KATO Kei",
@@ -71,7 +71,6 @@
     "winston": "^3.0.0-rc1"
   },
   "devDependencies": {
-    "@kadira/storybook": "^2.21.0",
     "babel-eslint": "^9.0.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
