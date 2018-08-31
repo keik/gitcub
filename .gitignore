@@ -3,5 +3,4 @@ npm-debug.log
 
 bundle
 
-.yarn
 .nyc_output
