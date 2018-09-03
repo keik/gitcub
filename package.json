@@ -43,6 +43,7 @@
   "homepage": "https://github.com/keik/gh#readme",
   "dependencies": {
     "@babel/core": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
     "@babel/register": "^7.0.0",
     "axios": "^0.18.0",
     "babel-plugin-css-modules-transform": "^1.4.0",
