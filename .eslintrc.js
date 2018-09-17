@@ -11,8 +11,12 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:flowtype/recommended',
+
+    // suppress conflicted rules
     'plugin:prettier/recommended',
-    'plugin:flowtype/recommended'
+    'prettier/flowtype',
+    'prettier/react'
   ],
   parserOptions: {
     ecmaFeatures: {
