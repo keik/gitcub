@@ -16,6 +16,7 @@ module.exports = {
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-object-rest-spread',
     'transform-inline-environment-variables',
-    'css-modules-transform'
+    'css-modules-transform',
+    'styled-components'
   ]
 }
