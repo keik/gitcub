@@ -1,13 +1,3 @@
-:local .container {
-  composes: container from '../../styles/common.css';
-}
-
-:local .container h1 {
-  display: inline-block;
-  color: #666;
-  font-size: 18px;
-}
-
 :local .container nav {
   float: right;
 }
