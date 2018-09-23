@@ -1,16 +1,3 @@
-
-:local .container {
-  composes: container from '../../styles/common.css';
-}
-
-:local .container a {
-  color: #222;
-  text-decoration: none;
-}
-:local .container a:hover {
-  color: #4078c0;
-}
-
 :local .subnav > * {
   display: inline-block;
   margin-right: 12px;
