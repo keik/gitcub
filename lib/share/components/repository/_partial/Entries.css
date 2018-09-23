@@ -1,8 +1,3 @@
-:local .container {
-  composes: container from '../../../styles/common.css';
-  margin-bottom: 12px;
-}
-
 :local table tr td.icon {
   width: 18px;
   padding-left: 12px;
@@ -23,7 +18,7 @@
 }
 
 :local .sha {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   font-size: 90%;
   color: #445055;
 }
