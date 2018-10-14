@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> snapshot 1`] = `
+<div
+  className="Header-without-session__Container-sc-1ortxq7-0 ghLqSv"
+>
+  <div>
+    <a
+      className="Logo-k763vu-0 eMaEfw"
+      href="/"
+    >
+      GH
+    </a>
+  </div>
+  <form
+    className="Header-without-session__HeaderForm-sc-1ortxq7-1 hGFALm"
+  >
+    <label
+      htmlFor="input-search-query"
+    >
+      This repository
+    </label>
+    <input
+      id="input-search-query"
+      placeholder="Search"
+      type="text"
+    />
+  </form>
+  <div
+    className="ButtonsContainer-s9x8v3-0 hTAHWK"
+  >
+    <a
+      className="Button-sc-1ldg16x-0 gIWfju"
+      href="/login"
+    >
+      Sign in
+    </a>
+    <a
+      className="Button-sc-1ldg16x-0 hZgZyG"
+      href="/join"
+    >
+      Sign up
+    </a>
+  </div>
+</div>
+`;
