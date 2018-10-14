@@ -9,8 +9,8 @@ module.exports = {
         }
       }
     ],
-    '@babel/preset-react',
-    '@babel/preset-flow'
+    '@babel/preset-flow',
+    '@babel/preset-react'
   ],
   plugins: [
     '@babel/plugin-proposal-class-properties',
