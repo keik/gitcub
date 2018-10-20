@@ -16,7 +16,7 @@ exports[`<Branches /> snapshot 1`] = `
       className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
     >
       <ul
-        className="Branches__branches___39ZZS"
+        className="List-onbt43-0 bcIKJI"
       >
         <li>
           <a
@@ -51,7 +51,7 @@ exports[`<Branches /> snapshot 1`] = `
       className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
     >
       <ul
-        className="Branches__branches___39ZZS"
+        className="List-onbt43-0 bcIKJI"
       >
         <li>
           <a
