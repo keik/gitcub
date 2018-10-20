@@ -28,7 +28,7 @@ exports[`<Commit /> snapshot 1`] = `
             }
           }
         >
-          $MESSAGE,
+          $MESSAGE
         </h1>
         <a
           className="Button-sc-1ldg16x-0 dKuqMW"
