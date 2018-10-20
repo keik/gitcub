@@ -3,3 +3,39 @@
   background-color: #fafafa;
   border-bottom: 1px solid #eee;
 }
+
+:local .container nav {
+  float: right;
+}
+
+:local .pageheadActions {
+  list-style: none;
+  padding: 0;
+}
+
+:local .pageheadActions li {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+:local .pageheadActions i:first-child {
+  margin-right: 4px;
+}
+
+:local .pageheadActions :global .fa-caret-down {
+  margin-left: 4px;
+}
+
+:local .subscriptionMenu {
+  background-color: #fff;
+}
+
+:local .subscriptionMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+:local .subscriptionMenu ul li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
