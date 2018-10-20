@@ -2,10 +2,10 @@
 
 exports[`<Home /> snapshot 1`] = `
 <div
-  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+  className="Home-sc-13uekel-0 gHsByH InnerContainer-sc-1toru5t-0 eVVvlf"
 >
   <div
-    className="Home__metaContent___o0Si6"
+    className="metaContent"
   >
     <span>
       No description or website provided.
@@ -81,10 +81,10 @@ exports[`<Home /> snapshot 1`] = `
     </ul>
   </nav>
   <div
-    className="Home__fileNavigation___3pB2n"
+    className="fileNavigation"
   >
     <div
-      className="Home__treeSelector___2o3Yb"
+      className="treeSelector"
     >
       <div
         className="TreeSelector__container___34_zj"
@@ -279,7 +279,7 @@ exports[`<Home /> snapshot 1`] = `
       New pull request
     </a>
     <div
-      className="Home__floatRight___3DCmK"
+      className="floatRight"
       style={
         Object {
           "marginRight": 0,
@@ -299,7 +299,7 @@ exports[`<Home /> snapshot 1`] = `
       </span>
     </div>
     <div
-      className="Home__floatRight___3DCmK"
+      className="floatRight"
     >
       <div
         className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
