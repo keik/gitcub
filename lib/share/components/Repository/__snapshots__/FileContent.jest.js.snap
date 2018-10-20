@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FileContent /> snapshot 1`] = `
+<div
+  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+    >
+      commit tease
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      id="contributors"
+    >
+      <button>
+        2
+         contributors
+      </button>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <img
+          alt="$CONTRIBUTOR_1"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+      </a>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <img
+          alt="$CONTRIBUTOR_2"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div>
+          1
+           line | 
+          10
+           bytes
+        </div>
+        <div
+          className="FileContent__fileActions___3RgCE"
+        >
+          <div
+            className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+          >
+            <a
+              className="Button-sc-1ldg16x-0 gIWfju"
+              onClick={[Function]}
+              small="true"
+              style={Object {}}
+            >
+              Raw
+            </a>
+            <a
+              className="Button-sc-1ldg16x-0 gIWfju"
+              onClick={[Function]}
+              small="true"
+              style={Object {}}
+            >
+              Blame
+            </a>
+            <a
+              className="Button-sc-1ldg16x-0 gIWfju"
+              onClick={[Function]}
+              small="true"
+              style={Object {}}
+            >
+              History
+            </a>
+          </div>
+          <form>
+            <button>
+              <i
+                className="fa fa-pencil"
+              />
+            </button>
+          </form>
+          <form>
+            <button>
+              <i
+                className="fa fa-trash"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+    >
+      <pre
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <ul
+          className="FileContent__lines___osk74"
+        >
+          <li>
+            1
+          </li>
+        </ul>
+        <code
+          className="hljs"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "$CONTENT",
+            }
+          }
+          id="content"
+          style={
+            Object {
+              "backgroundColor": "white",
+            }
+          }
+        />
+      </pre>
+    </div>
+  </div>
+</div>
+`;
