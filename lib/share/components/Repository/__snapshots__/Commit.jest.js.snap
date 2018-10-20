@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Commit /> snapshot 1`] = `
+<div
+  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+    >
+      <a
+        className="Button-sc-1ldg16x-0 dKuqMW"
+        href="/$OWNER/$REPO/tree/$SHA"
+        style={
+          Object {
+            "float": "right",
+          }
+        }
+      >
+        Browse files
+      </a>
+      <div
+        className="Commit__commitTitle___1uX8h"
+      >
+        $MESSAGE,
+      </div>
+      <div
+        className="Commit__commitBranches___2H3Bf"
+      >
+        <i
+          className="fa fa-code-fork"
+        />
+         master
+      </div>
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div>
+          <img
+            alt="$NAME"
+            style={
+              Object {
+                "background": "#ccc",
+                "height": 20,
+                "verticalAlign": "middle",
+                "width": 20,
+              }
+            }
+          />
+           
+          $NAME
+           commited on
+           
+          <time-ago
+            datetime="$DATE"
+          />
+        </div>
+        <div
+          className="Commit__sha___PySJC"
+        >
+          <span>
+            0
+             parent
+          </span>
+          <span>
+            commit 
+            $SHA
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <i
+        className="fa fa-file-text-o"
+      />
+       Showing N changed file with N addition and N deletion.
+    </div>
+    <div>
+      <div
+        className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+      >
+        <button
+          className="Button-sc-1ldg16x-0 gIWfju"
+        >
+          Unified
+        </button>
+        <button
+          className="Button-sc-1ldg16x-0 gIWfju"
+        >
+          Split
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    id="patches"
+  >
+    <div
+      className="Panel-sc-1hnzj4y-0 ccxQvz"
+    >
+      <div
+        className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+      >
+        $FILENAME
+      </div>
+      <div
+        className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+        style={
+          Object {
+            "padding": 0,
+          }
+        }
+      >
+        <pre
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <ul
+            className="Commit__lines___1WkE_"
+          >
+            <li>
+              ...
+            </li>
+            <li>
+              1
+            </li>
+            <li>
+              2
+            </li>
+            <li>
+              3
+            </li>
+            <li>
+              4
+            </li>
+            <li>
+              5
+            </li>
+            <li>
+              6
+            </li>
+            <li>
+              7
+            </li>
+            <li>
+              8
+            </li>
+            <li>
+              9
+            </li>
+            <li>
+              10
+            </li>
+            <li>
+              11
+            </li>
+          </ul>
+          <code
+            className="hljs"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "$PATCH",
+              }
+            }
+            style={
+              Object {
+                "backgroundColor": "white",
+              }
+            }
+          />
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+`;
