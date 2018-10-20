@@ -10,24 +10,47 @@ exports[`<Commit /> snapshot 1`] = `
     <div
       className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
     >
-      <a
-        className="Button-sc-1ldg16x-0 dKuqMW"
-        href="/$OWNER/$REPO/tree/$SHA"
+      <div
         style={
           Object {
-            "float": "right",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        Browse files
-      </a>
-      <div
-        className="Commit__commitTitle___1uX8h"
-      >
-        $MESSAGE,
+        <h1
+          style={
+            Object {
+              "color": "#213f4d",
+              "fontSize": "18px",
+              "fontWeight": "bold",
+              "margin": "0",
+            }
+          }
+        >
+          $MESSAGE,
+        </h1>
+        <a
+          className="Button-sc-1ldg16x-0 dKuqMW"
+          href="/$OWNER/$REPO/tree/$SHA"
+          style={
+            Object {
+              "float": "right",
+            }
+          }
+        >
+          Browse files
+        </a>
       </div>
       <div
-        className="Commit__commitBranches___2H3Bf"
+        style={
+          Object {
+            "color": "#818c90",
+            "fontSize": "12px",
+            "margin": "0",
+            "minHeight": "18px",
+          }
+        }
       >
         <i
           className="fa fa-code-fork"
@@ -67,9 +90,22 @@ exports[`<Commit /> snapshot 1`] = `
           />
         </div>
         <div
-          className="Commit__sha___PySJC"
+          style={
+            Object {
+              "color": "#767676",
+              "fontFamily": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+              "fontSize": "12px",
+              "lineHeight": "24px",
+            }
+          }
         >
-          <span>
+          <span
+            style={
+              Object {
+                "marginRight": "12px",
+              }
+            }
+          >
             0
              parent
           </span>
@@ -125,6 +161,7 @@ exports[`<Commit /> snapshot 1`] = `
         }
       >
         <pre
+          className="Code-nifwyh-0 fANLkT"
           style={
             Object {
               "margin": 0,
@@ -132,7 +169,7 @@ exports[`<Commit /> snapshot 1`] = `
           }
         >
           <ul
-            className="Commit__lines___1WkE_"
+            className="Code__Lines-nifwyh-1 cHpdyK"
           >
             <li>
               ...
@@ -172,7 +209,7 @@ exports[`<Commit /> snapshot 1`] = `
             </li>
           </ul>
           <code
-            className="hljs"
+            className="hljs Code__Body-nifwyh-2 hEwVhx"
             dangerouslySetInnerHTML={
               Object {
                 "__html": "$PATCH",
