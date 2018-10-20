@@ -75,7 +75,11 @@ exports[`<FileContent /> snapshot 1`] = `
            bytes
         </div>
         <div
-          className="FileContent__fileActions___3RgCE"
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
         >
           <div
             className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
@@ -105,20 +109,22 @@ exports[`<FileContent /> snapshot 1`] = `
               History
             </a>
           </div>
-          <form>
-            <button>
-              <i
-                className="fa fa-pencil"
-              />
-            </button>
-          </form>
-          <form>
-            <button>
-              <i
-                className="fa fa-trash"
-              />
-            </button>
-          </form>
+          <button
+            style={
+              Object {
+                "margin": "0 6px",
+              }
+            }
+          >
+            <i
+              className="fa fa-pencil"
+            />
+          </button>
+          <button>
+            <i
+              className="fa fa-trash"
+            />
+          </button>
         </div>
       </div>
     </div>
@@ -126,32 +132,23 @@ exports[`<FileContent /> snapshot 1`] = `
       className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
     >
       <pre
-        style={
-          Object {
-            "margin": 0,
-          }
-        }
+        className="Code-nifwyh-0 fANLkT"
       >
         <ul
-          className="FileContent__lines___osk74"
+          className="Code__Lines-nifwyh-1 cHpdyK"
         >
           <li>
             1
           </li>
         </ul>
         <code
-          className="hljs"
+          className="hljs Code__Body-nifwyh-2 kloHoE"
           dangerouslySetInnerHTML={
             Object {
               "__html": "$CONTENT",
             }
           }
           id="content"
-          style={
-            Object {
-              "backgroundColor": "white",
-            }
-          }
         />
       </pre>
     </div>

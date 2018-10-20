@@ -209,15 +209,10 @@ exports[`<Commit /> snapshot 1`] = `
             </li>
           </ul>
           <code
-            className="hljs Code__Body-nifwyh-2 hEwVhx"
+            className="hljs Code__Body-nifwyh-2 kloHoE"
             dangerouslySetInnerHTML={
               Object {
                 "__html": "$PATCH",
-              }
-            }
-            style={
-              Object {
-                "backgroundColor": "white",
               }
             }
           />
