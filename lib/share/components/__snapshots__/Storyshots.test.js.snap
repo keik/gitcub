@@ -1,0 +1,1260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots FileContent with default 1`] = `
+<div
+  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+    >
+      commit tease
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      id="contributors"
+    >
+      <button>
+        2
+         contributors
+      </button>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <img
+          alt="$CONTRIBUTOR_1"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+      </a>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <img
+          alt="$CONTRIBUTOR_2"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div>
+          1
+           line | 
+          10
+           bytes
+        </div>
+        <div
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+          >
+            <a
+              className="Button-sc-1ldg16x-0 gIWfju"
+              onClick={[Function]}
+              small="true"
+              style={Object {}}
+            >
+              Raw
+            </a>
+            <a
+              className="Button-sc-1ldg16x-0 gIWfju"
+              onClick={[Function]}
+              small="true"
+              style={Object {}}
+            >
+              Blame
+            </a>
+            <a
+              className="Button-sc-1ldg16x-0 gIWfju"
+              onClick={[Function]}
+              small="true"
+              style={Object {}}
+            >
+              History
+            </a>
+          </div>
+          <button
+            style={
+              Object {
+                "margin": "0 6px",
+              }
+            }
+          >
+            <i
+              className="fa fa-pencil"
+            />
+          </button>
+          <button>
+            <i
+              className="fa fa-trash"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+    >
+      <pre
+        className="Code-nifwyh-0 fANLkT"
+      >
+        <ul
+          className="Code__Lines-nifwyh-1 cHpdyK"
+        >
+          <li>
+            1
+          </li>
+        </ul>
+        <code
+          className="hljs Code__Body-nifwyh-2 kloHoE"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "$CONTENT",
+            }
+          }
+          id="content"
+        />
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Footer with default 1`] = `
+<div
+  className="Footer__Container-yz7m8k-0 itNppg"
+>
+  <ul
+    className="Footer__NavLinks-yz7m8k-1 hrZQRx"
+  >
+    <li>
+      © 2016 keik
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        Help
+      </a>
+    </li>
+  </ul>
+  <a
+    className="Logo-k763vu-0 eMaEfw"
+    href="#"
+  >
+    GH
+  </a>
+  <ul
+    className="Footer__NavLinks-yz7m8k-1 hrZQRx"
+  >
+    <li>
+      <a
+        href="#"
+      >
+        API
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        About
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Header with default 1`] = `
+<div
+  className="Header-without-session__Container-sc-1ortxq7-0 ghLqSv"
+>
+  <div>
+    <a
+      className="Logo-k763vu-0 eMaEfw"
+      href="/"
+    >
+      GH
+    </a>
+  </div>
+  <form
+    className="Header-without-session__HeaderForm-sc-1ortxq7-1 hGFALm"
+  >
+    <label
+      htmlFor="input-search-query"
+    >
+      This repository
+    </label>
+    <input
+      id="input-search-query"
+      placeholder="Search"
+      type="text"
+    />
+  </form>
+  <div
+    className="ButtonsContainer-s9x8v3-0 hTAHWK"
+  >
+    <a
+      className="Button-sc-1ldg16x-0 gIWfju"
+      href="/login"
+    >
+      Sign in
+    </a>
+    <a
+      className="Button-sc-1ldg16x-0 hZgZyG"
+      href="/join"
+    >
+      Sign up
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Home with default 1`] = `
+<div
+  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "marginTop": "24px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "flexGrow": 1,
+        }
+      }
+    >
+      <ul
+        className="List-onbt43-0 bcIKJI"
+      >
+        <li>
+          ACTIVITY_1
+        </li>
+        <li>
+          ACTIVITY_2
+        </li>
+        <li>
+          ACTIVITY_3
+        </li>
+      </ul>
+    </div>
+    <div
+      style={
+        Object {
+          "marginLeft": "24px",
+          "width": "320px",
+        }
+      }
+    >
+      <div
+        className="Panel-sc-1hnzj4y-0 ccxQvz"
+      >
+        <div
+          className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+        >
+          Public Repositories
+        </div>
+        <div
+          className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+        >
+          <ul
+            className="List-onbt43-0 bcIKJI"
+          >
+            <li>
+              <i
+                className="fa fa-folder-open-o"
+              />
+               
+              <a
+                href="/FULL_NAME1"
+              >
+                FULL_NAME1
+              </a>
+            </li>
+            <li>
+              <i
+                className="fa fa-folder-open-o"
+              />
+               
+              <a
+                href="/FULL_NAME2"
+              >
+                FULL_NAME2
+              </a>
+            </li>
+            <li>
+              <i
+                className="fa fa-folder-open-o"
+              />
+               
+              <a
+                href="/FULL_NAME3"
+              >
+                FULL_NAME3
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Repository/Branches with default 1`] = `
+<div
+  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+    >
+      Default branch
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+    >
+      <ul
+        className="List-onbt43-0 bcIKJI"
+      >
+        <li>
+          <a
+            href="/$OWNER/$REPO/tree/"
+          >
+            
+          </a>
+            Updated
+           
+          <time-ago
+            datetime=""
+          />
+           by 
+          <a
+            href="/"
+          >
+            
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+    >
+      Active branches
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+    >
+      <ul
+        className="List-onbt43-0 bcIKJI"
+      >
+        <li>
+          <a
+            href="/$OWNER/$REPO/tree/$BRANCH"
+          >
+            $BRANCH
+          </a>
+            Updated 
+          <time-ago
+            datetime="$DATE"
+          />
+           
+          by 
+          <a
+            href="/$AUTHOR"
+          >
+            $AUTHOR
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Repository/Commit with default 1`] = `
+<div
+  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <h1
+          style={
+            Object {
+              "color": "#213f4d",
+              "fontSize": "18px",
+              "fontWeight": "bold",
+              "margin": "0",
+            }
+          }
+        >
+          $MESSAGE
+        </h1>
+        <a
+          className="Button-sc-1ldg16x-0 dKuqMW"
+          href="/$OWNER/$REPO/tree/$SHA"
+          style={
+            Object {
+              "float": "right",
+            }
+          }
+        >
+          Browse files
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "color": "#818c90",
+            "fontSize": "12px",
+            "margin": "0",
+            "minHeight": "18px",
+          }
+        }
+      >
+        <i
+          className="fa fa-code-fork"
+        />
+         master
+      </div>
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div>
+          <img
+            alt="$NAME"
+            style={
+              Object {
+                "background": "#ccc",
+                "height": 20,
+                "verticalAlign": "middle",
+                "width": 20,
+              }
+            }
+          />
+           
+          $NAME
+           commited on
+           
+          <time-ago
+            datetime="$DATE"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "color": "#767676",
+              "fontFamily": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+              "fontSize": "12px",
+              "lineHeight": "24px",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "marginRight": "12px",
+              }
+            }
+          >
+            0
+             parent
+          </span>
+          <span>
+            commit 
+            $SHA
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <i
+        className="fa fa-file-text-o"
+      />
+       Showing N changed file with N addition and N deletion.
+    </div>
+    <div>
+      <div
+        className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+      >
+        <button
+          className="Button-sc-1ldg16x-0 gIWfju"
+        >
+          Unified
+        </button>
+        <button
+          className="Button-sc-1ldg16x-0 gIWfju"
+        >
+          Split
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    id="patches"
+  >
+    <div
+      className="Panel-sc-1hnzj4y-0 ccxQvz"
+    >
+      <div
+        className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+      >
+        $FILENAME
+      </div>
+      <div
+        className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+        style={
+          Object {
+            "padding": 0,
+          }
+        }
+      >
+        <pre
+          className="Code-nifwyh-0 fANLkT"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <ul
+            className="Code__Lines-nifwyh-1 cHpdyK"
+          >
+            <li>
+              ...
+            </li>
+            <li>
+              1
+            </li>
+            <li>
+              2
+            </li>
+            <li>
+              3
+            </li>
+            <li>
+              4
+            </li>
+            <li>
+              5
+            </li>
+            <li>
+              6
+            </li>
+            <li>
+              7
+            </li>
+            <li>
+              8
+            </li>
+            <li>
+              9
+            </li>
+            <li>
+              10
+            </li>
+            <li>
+              11
+            </li>
+          </ul>
+          <code
+            className="hljs Code__Body-nifwyh-2 kloHoE"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "$PATCH",
+              }
+            }
+          />
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Repository/Commits with default 1`] = `
+<div
+  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <ul
+    className="Commits__CommitItems-sc-13zuyrn-0 ibvhoh"
+  >
+    <li
+      className="Commits__CommitItem-sc-13zuyrn-1 knrZNw"
+    >
+      <div
+        className="Commits__CommitInfo-sc-13zuyrn-2 frkLaC"
+      >
+        <div>
+          <div
+            className="title"
+          >
+            $MESSAGE_1
+          </div>
+          <div
+            className="meta"
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <img
+                alt=""
+                src=""
+              />
+            </a>
+            $NAME_1
+             commited on
+             
+            <time-ago
+              datetime="$DATE_1"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="Commits__CommitNav-sc-13zuyrn-3 hNNWvi"
+      >
+        <div
+          className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+        >
+          <button
+            className="Button-sc-1ldg16x-0 dKuqMW"
+          >
+            <i
+              className="fa fa-clipboard"
+            />
+          </button>
+          <a
+            className="Button-sc-1ldg16x-0 dKuqMW"
+            onClick={[Function]}
+            small="true"
+            style={Object {}}
+            transparent="true"
+          >
+            $SHA_1
+          </a>
+        </div>
+        <a
+          className="Button-sc-1ldg16x-0 dKuqMW"
+          onClick={[Function]}
+          small="true"
+          style={
+            Object {
+              "marginLeft": "12px",
+            }
+          }
+          transparent="true"
+        >
+          <i
+            className="fa fa-code"
+          />
+        </a>
+      </div>
+    </li>
+    <li
+      className="Commits__CommitItem-sc-13zuyrn-1 knrZNw"
+    >
+      <div
+        className="Commits__CommitInfo-sc-13zuyrn-2 frkLaC"
+      >
+        <div>
+          <div
+            className="title"
+          >
+            $MESSAGE_2
+          </div>
+          <div
+            className="meta"
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <img
+                alt=""
+                src=""
+              />
+            </a>
+            $NAME_2
+             commited on
+             
+            <time-ago
+              datetime="$DATE_2"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="Commits__CommitNav-sc-13zuyrn-3 hNNWvi"
+      >
+        <div
+          className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+        >
+          <button
+            className="Button-sc-1ldg16x-0 dKuqMW"
+          >
+            <i
+              className="fa fa-clipboard"
+            />
+          </button>
+          <a
+            className="Button-sc-1ldg16x-0 dKuqMW"
+            onClick={[Function]}
+            small="true"
+            style={Object {}}
+            transparent="true"
+          >
+            $SHA_2
+          </a>
+        </div>
+        <a
+          className="Button-sc-1ldg16x-0 dKuqMW"
+          onClick={[Function]}
+          small="true"
+          style={
+            Object {
+              "marginLeft": "12px",
+            }
+          }
+          transparent="true"
+        >
+          <i
+            className="fa fa-code"
+          />
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Repository/Home with default 1`] = `
+<div
+  className="Home-sc-13uekel-0 gHsByH InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <div
+    className="metaContent"
+  >
+    <span>
+      No description or website provided.
+    </span>
+    <span>
+      - 
+      <button>
+        Edit
+      </button>
+    </span>
+  </div>
+  <nav>
+    <ul
+      className="NumbersSummary__container___27m_7"
+    >
+      <li>
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-clock-o"
+          />
+          <span>
+            0
+          </span>
+           commits
+        </a>
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-code-fork"
+          />
+          <span>
+            0
+          </span>
+           branches
+        </a>
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-tag"
+          />
+          <span>
+            0
+          </span>
+           releases
+        </a>
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-users"
+          />
+          <span>
+            10
+          </span>
+           
+          contributors
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="fileNavigation"
+  >
+    <div
+      className="treeSelector"
+    >
+      <div
+        className="TreeSelector__container___34_zj"
+      >
+        <button
+          className="Button-sc-1ldg16x-0 gIWfju"
+          onClick={[Function]}
+        >
+          <i>
+            Branch: 
+          </i>
+          <span>
+            $TREE
+             
+          </span>
+          <i
+            className="fa fa-caret-down"
+          />
+        </button>
+        <div
+          className="modal"
+          style={
+            Object {
+              "display": "none",
+              "position": "absolute",
+              "width": 300,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "backgroundClip": "padding-box",
+                "backgroundColor": "#fff",
+                "border": "1px solid rgba(200, 200, 200, 0.4)",
+                "borderRadius": "3px",
+                "boxShadow": "0 3px 12px rgba(0,0,0,0.15)",
+                "position": "absolute",
+                "width": "100%",
+                "zIndex": 100,
+              }
+            }
+          >
+            <div
+              className="TreeSelector__branchMenuModalHeader___CE0tQ"
+            >
+              Switch branches/tags
+              <button
+                className="TreeSelector__closeBtn___1AWij"
+                onClick={[Function]}
+              >
+                <i
+                  className="fa fa-close"
+                />
+              </button>
+            </div>
+            <div
+              style={
+                Object {
+                  "backgroundColor": "#f8f8f8",
+                }
+              }
+            >
+              <div
+                className="TreeSelector__textFilter___2Zgsc"
+              >
+                <input
+                  placeholder="Find a tag..."
+                />
+              </div>
+              <div>
+                <ul
+                  style={
+                    Object {
+                      "borderBottom": "1px solid #ddd",
+                      "listStyle": "none",
+                      "margin": 0,
+                      "padding": "8px 8px 0",
+                    }
+                  }
+                >
+                  <li
+                    style={
+                      Object {
+                        "backgroundColor": "#fff",
+                        "borderLeft": "1px solid #ddd",
+                        "borderRight": "1px solid #ddd",
+                        "borderTop": "1px solid #ddd",
+                        "borderTopLeftRadius": 3,
+                        "borderTopRightRadius": 3,
+                        "float": "left",
+                        "marginBottom": "-1px",
+                      }
+                    }
+                  >
+                    <a
+                      href="#"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "color": "#333",
+                          "display": "block",
+                          "fontSize": "11px",
+                          "fontWeight": "bold",
+                          "padding": "4px 8px 2px",
+                          "textDecoration": "none",
+                        }
+                      }
+                    >
+                      Branches
+                    </a>
+                  </li>
+                  <li
+                    style={
+                      Object {
+                        "float": "left",
+                        "marginBottom": "-1px",
+                      }
+                    }
+                  >
+                    <a
+                      href="#"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "color": "#888",
+                          "display": "block",
+                          "fontSize": "11px",
+                          "fontWeight": "bold",
+                          "padding": "4px 8px 2px",
+                          "textDecoration": "none",
+                        }
+                      }
+                    >
+                      Tags
+                    </a>
+                  </li>
+                  <div
+                    style={
+                      Object {
+                        "clear": "both",
+                        "display": "table",
+                      }
+                    }
+                  />
+                </ul>
+                <div
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <ul
+                    className="TreeSelector__branches___3ArlH"
+                  />
+                </div>
+                <div
+                  style={
+                    Object {
+                      "display": "none",
+                    }
+                  }
+                >
+                  <ul
+                    className="TreeSelector__branches___3ArlH"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            onClick={[Function]}
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "fixed",
+                "right": 0,
+                "top": 0,
+                "zIndex": 1,
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <a
+      className="Button-sc-1ldg16x-0 gIWfju"
+      href="$OWNER/$REPO/pull/new/$TREE"
+    >
+      New pull request
+    </a>
+    <div
+      className="floatRight"
+      style={
+        Object {
+          "marginRight": 0,
+        }
+      }
+    >
+      <span
+        className="Dropdown__StyledDropdown-elo20p-0 dsxKwQ"
+        width={300}
+      >
+        <button
+          className="Button-sc-1ldg16x-0 hZgZyG"
+          onClick={[Function]}
+        >
+          Clone or download
+        </button>
+      </span>
+    </div>
+    <div
+      className="floatRight"
+    >
+      <div
+        className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+      >
+        <input
+          className="Button-sc-1ldg16x-0 gIWfju"
+          type="submit"
+          value="Create new file"
+        />
+        <a
+          className="Button-sc-1ldg16x-0 gIWfju"
+          href="$OWNER/$REPO/upload/$TREE"
+        >
+          Upload files
+        </a>
+        <a
+          className="Button-sc-1ldg16x-0 gIWfju"
+          href="$OWNER/$REPO/find/$TREE"
+        >
+          Find file
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div>
+          <img
+            alt="$NAME_1"
+            style={
+              Object {
+                "background": "#ccc",
+                "height": 20,
+                "verticalAlign": "middle",
+                "width": 20,
+              }
+            }
+          />
+           
+          <a
+            href="/$NAME_1"
+          >
+            $NAME_1
+          </a>
+           
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            $MESSAGE_1
+          </a>
+        </div>
+        <div>
+          Latest commit 
+          <a
+            className="Entries__sha___1yvOg"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            $SHA_1
+          </a>
+           
+          <time-ago
+            datetime="$DATE_1"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+    >
+      <table>
+        <tbody>
+          <tr>
+            <td
+              className="Entries__icon___2BOm7"
+            >
+              <i
+                className="fa fa-file-text-o"
+              />
+            </td>
+            <td>
+              <a
+                onClick={[Function]}
+                style={Object {}}
+              >
+                $PATH_1
+              </a>
+            </td>
+            <td
+              className="Entries__commitMessage___1e7lV"
+            >
+              <a
+                onClick={[Function]}
+                style={Object {}}
+              >
+                $MESSAGE_1
+              </a>
+            </td>
+            <td
+              className="Entries__updateAt___3r1ot"
+            >
+              <time-ago
+                datetime="$DATE_1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="Entries__icon___2BOm7"
+            >
+              <i
+                className="fa fa-file-text-o"
+              />
+            </td>
+            <td>
+              <a
+                onClick={[Function]}
+                style={Object {}}
+              >
+                $PATH_2
+              </a>
+            </td>
+            <td
+              className="Entries__commitMessage___1e7lV"
+            >
+              <a
+                onClick={[Function]}
+                style={Object {}}
+              >
+                $MESSAGE_1
+              </a>
+            </td>
+            <td
+              className="Entries__updateAt___3r1ot"
+            >
+              <time-ago
+                datetime="$DATE_1"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
