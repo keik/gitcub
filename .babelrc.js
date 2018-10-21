@@ -18,5 +18,10 @@ module.exports = {
     'transform-inline-environment-variables',
     'css-modules-transform',
     'styled-components'
-  ]
+  ],
+  env: {
+    test: {
+      plugins: ['require-context-hook']
+    }
+  }
 }
