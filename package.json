@@ -19,7 +19,7 @@
     "typecheck": "flow",
     "typecheck:coverage": "flow-coverage-report -i 'lib/**/*.js' -x 'lib/**/*.test.js'",
     "test": "run-s test:tape test:jest",
-    "test:tape": "NODE_ENV=test nyc --all --include 'lib/**' --exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' tape -r @babel/register -r ./lib/__tests__/init.js 'lib/**/*.legacy-test.js' 2>/dev/null | tap-diff",
+    "test:tape": "NODE_ENV=test nyc --all --include 'lib/**' --exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' tape -r @babel/register -r ./legacy-test-initializer.js 'lib/**/*.legacy-test.js' 2>/dev/null | tap-diff",
     "test:jest": "NODE_ENV=test jest",
     "storybook": "echo disabled until v4 # start-storybook -p 6006",
     "build-storybook": "echo disabled until v4 # build-storybook"
