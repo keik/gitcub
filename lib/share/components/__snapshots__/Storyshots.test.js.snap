@@ -1258,3 +1258,207 @@ exports[`Storyshots Repository/Home with default 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Repository/Issues with default 1`] = `
+<div
+  className="Issues-euql8d-0 iaTZEi InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <div
+    className="subnav"
+  >
+    <div
+      className="filter"
+    >
+      <button
+        className="Button-sc-1ldg16x-0 gIWfju"
+      >
+        Filters
+      </button>
+      <form>
+        <i
+          className="fa fa-search"
+        />
+        <input />
+      </form>
+    </div>
+    <div
+      className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+    >
+      <a
+        className="Button-sc-1ldg16x-0 burRGN"
+        onClick={[Function]}
+        style={Object {}}
+        transparent="true"
+      >
+        Labels
+      </a>
+      <a
+        className="Button-sc-1ldg16x-0 burRGN"
+        onClick={[Function]}
+        style={Object {}}
+        transparent="true"
+      >
+        Milestones
+      </a>
+    </div>
+  </div>
+  <div
+    className="issuesHeader"
+  >
+    <div>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          className="fa fa-exclamation-circle"
+        />
+         
+        2
+         Open
+      </a>
+    </div>
+    <div>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <i
+          className="fa fa-check"
+        />
+         
+        -1
+         Closed
+      </a>
+    </div>
+  </div>
+  <ul
+    className="issues"
+  >
+    <li
+      className="issue"
+    >
+      <div
+        className="icon"
+      >
+        <i
+          className="fa fa-exclamation-circle"
+        />
+      </div>
+      <div
+        className="main"
+      >
+        <div
+          className="title"
+        >
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            $TITLE_1
+          </a>
+        </div>
+        <div
+          className="sub"
+        >
+          <span>
+            #
+            1
+          </span>
+           opened
+           
+          <time-ago
+            datetime="$CREATED_AT_1"
+          />
+           by
+           
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            $CREATED_BY_1
+          </a>
+        </div>
+      </div>
+      <div
+        className="comments"
+      >
+        <div>
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <i
+              className="fa fa-comment-o"
+            />
+             
+            1
+          </a>
+        </div>
+      </div>
+    </li>
+    <li
+      className="issue"
+    >
+      <div
+        className="icon"
+      >
+        <i
+          className="fa fa-exclamation-circle"
+        />
+      </div>
+      <div
+        className="main"
+      >
+        <div
+          className="title"
+        >
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            $TITLE_2
+          </a>
+        </div>
+        <div
+          className="sub"
+        >
+          <span>
+            #
+            2
+          </span>
+           opened
+           
+          <time-ago
+            datetime="$CREATED_AT_2"
+          />
+           by
+           
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            $CREATED_BY_2
+          </a>
+        </div>
+      </div>
+      <div
+        className="comments"
+      >
+        <div>
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <i
+              className="fa fa-comment-o"
+            />
+             
+            2
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
