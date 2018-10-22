@@ -1,161 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FileContent with default 1`] = `
-<div
-  className="InnerContainer-sc-1toru5t-0 eVVvlf"
->
-  <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
-  >
-    <div
-      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
-    >
-      commit tease
-    </div>
-    <div
-      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
-      id="contributors"
-    >
-      <button>
-        2
-         contributors
-      </button>
-      <a
-        onClick={[Function]}
-        style={Object {}}
-      >
-        <img
-          alt="$CONTRIBUTOR_1"
-          style={
-            Object {
-              "background": "#ccc",
-              "height": 20,
-              "verticalAlign": "middle",
-              "width": 20,
-            }
-          }
-        />
-      </a>
-      <a
-        onClick={[Function]}
-        style={Object {}}
-      >
-        <img
-          alt="$CONTRIBUTOR_2"
-          style={
-            Object {
-              "background": "#ccc",
-              "height": 20,
-              "verticalAlign": "middle",
-              "width": 20,
-            }
-          }
-        />
-      </a>
-    </div>
-  </div>
-  <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
-  >
-    <div
-      className="Panel__Header-sc-1hnzj4y-1 chmgYi"
-    >
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <div>
-          1
-           line | 
-          10
-           bytes
-        </div>
-        <div
-          style={
-            Object {
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
-          >
-            <a
-              className="Button-sc-1ldg16x-0 gIWfju"
-              onClick={[Function]}
-              small="true"
-              style={Object {}}
-            >
-              Raw
-            </a>
-            <a
-              className="Button-sc-1ldg16x-0 gIWfju"
-              onClick={[Function]}
-              small="true"
-              style={Object {}}
-            >
-              Blame
-            </a>
-            <a
-              className="Button-sc-1ldg16x-0 gIWfju"
-              onClick={[Function]}
-              small="true"
-              style={Object {}}
-            >
-              History
-            </a>
-          </div>
-          <button
-            style={
-              Object {
-                "margin": "0 6px",
-              }
-            }
-          >
-            <i
-              className="fa fa-pencil"
-            />
-          </button>
-          <button>
-            <i
-              className="fa fa-trash"
-            />
-          </button>
-        </div>
-      </div>
-    </div>
-    <div
-      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
-    >
-      <pre
-        className="Code-nifwyh-0 fANLkT"
-      >
-        <ul
-          className="Code__Lines-nifwyh-1 cHpdyK"
-        >
-          <li>
-            1
-          </li>
-        </ul>
-        <code
-          className="hljs Code__Body-nifwyh-2 kloHoE"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "$CONTENT",
-            }
-          }
-          id="content"
-        />
-      </pre>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Footer with default 1`] = `
 <div
   className="Footer__Container-yz7m8k-0 itNppg"
@@ -796,6 +640,170 @@ exports[`Storyshots Repository/Commits with default 1`] = `
       </div>
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Repository/FileContent with default 1`] = `
+<div
+  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+    >
+      commit tease
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      id="contributors"
+    >
+      <button>
+        2
+         contributors
+      </button>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <img
+          alt="$CONTRIBUTOR_1"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+      </a>
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <img
+          alt="$CONTRIBUTOR_2"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="Panel-sc-1hnzj4y-0 ccxQvz"
+  >
+    <div
+      className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div>
+          1
+           line | 
+          10
+           bytes
+        </div>
+        <div
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+          >
+            <a
+              className="Button-sc-1ldg16x-0 gIWfju"
+              onClick={[Function]}
+              small="true"
+              style={Object {}}
+            >
+              Raw
+            </a>
+            <a
+              className="Button-sc-1ldg16x-0 gIWfju"
+              onClick={[Function]}
+              small="true"
+              style={Object {}}
+            >
+              Blame
+            </a>
+            <a
+              className="Button-sc-1ldg16x-0 gIWfju"
+              onClick={[Function]}
+              small="true"
+              style={Object {}}
+            >
+              History
+            </a>
+          </div>
+          <button
+            style={
+              Object {
+                "margin": "0 6px",
+              }
+            }
+          >
+            <i
+              className="fa fa-pencil"
+            />
+          </button>
+          <button>
+            <i
+              className="fa fa-trash"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+    >
+      <pre
+        className="Code-nifwyh-0 fANLkT"
+      >
+        <ul
+          className="Code__Lines-nifwyh-1 cHpdyK"
+        >
+          <li>
+            1
+          </li>
+        </ul>
+        <code
+          className="hljs Code__Body-nifwyh-2 kloHoE"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "$CONTENT",
+            }
+          }
+          id="content"
+        />
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Repository/Graphs with default 1`] = `
+<div>
+  <h2>
+    graphs
+  </h2>
 </div>
 `;
 
@@ -1463,6 +1471,14 @@ exports[`Storyshots Repository/Issues with default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Repository/Milestones with default 1`] = `
+<div>
+  <h2>
+    milestones
+  </h2>
+</div>
+`;
+
 exports[`Storyshots Repository/Navigations with default 1`] = `
 <div
   className="Navigations-sc-1gpsvnz-0 llkCmf InnerContainer-sc-1toru5t-0 eVVvlf"
@@ -1554,5 +1570,37 @@ exports[`Storyshots Repository/Navigations with default 1`] = `
       </li>
     </ul>
   </nav>
+</div>
+`;
+
+exports[`Storyshots Repository/Projects with default 1`] = `
+<div>
+  <h2>
+    projects
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Repository/Pulse with default 1`] = `
+<div>
+  <h2>
+    pulse
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Repository/Settings with default 1`] = `
+<div>
+  <h2>
+    settings
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Repository/Wiki with default 1`] = `
+<div>
+  <h2>
+    wiki
+  </h2>
 </div>
 `;
