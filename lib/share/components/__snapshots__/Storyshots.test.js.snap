@@ -826,7 +826,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
   </div>
   <nav>
     <ul
-      className="Home-sc-13uekel-0 gHsByH NumbersSummary-sc-1a2fwcw-0 cpGTYV"
+      className="Home-sc-13uekel-0 gHsByH Home__NumbersSummary-sc-13uekel-1 bCIRDE"
     >
       <li>
         <a
