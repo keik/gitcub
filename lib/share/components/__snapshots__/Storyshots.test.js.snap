@@ -1468,100 +1468,6 @@ exports[`Storyshots Repository/Milestones with default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Repository/Navigations with default 1`] = `
-<div
-  className="Navigations-sc-1gpsvnz-0 llkCmf InnerContainer-sc-1toru5t-0 eVVvlf"
->
-  <nav
-    className="reponav"
-  >
-    <ul>
-      <li
-        className=""
-      >
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-code"
-          />
-          Code
-        </a>
-      </li>
-      <li
-        className=""
-      >
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-exclamation-circle"
-          />
-          Issues 
-          1
-        </a>
-      </li>
-      <li
-        className="selected"
-      >
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-code-fork"
-          />
-          Pull requests 
-          2
-        </a>
-      </li>
-      <li
-        className=""
-      >
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-group"
-          />
-          Projects 
-          3
-        </a>
-      </li>
-      <li
-        className=""
-      >
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-line-chart"
-          />
-          Pulse
-        </a>
-      </li>
-      <li
-        className=""
-      >
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-bar-chart"
-          />
-          Graphs
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
-`;
-
 exports[`Storyshots Repository/Projects with default 1`] = `
 <div>
   <h2>
@@ -1940,6 +1846,100 @@ exports[`Storyshots Repository/Wiki with default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Repository1 part of Navigations 1`] = `
+<div
+  className="Repository__Navigations-sc-15bpeap-2 lguSdq InnerContainer-sc-1toru5t-0 eVVvlf"
+>
+  <nav
+    className="reponav"
+  >
+    <ul>
+      <li
+        className=""
+      >
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-code"
+          />
+          Code
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-exclamation-circle"
+          />
+          Issues 
+          1
+        </a>
+      </li>
+      <li
+        className="selected"
+      >
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-code-fork"
+          />
+          Pull requests 
+          2
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-group"
+          />
+          Projects 
+          3
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-line-chart"
+          />
+          Pulse
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <i
+            className="fa fa-bar-chart"
+          />
+          Graphs
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
 exports[`Storyshots Repository1 with default 1`] = `
 <div>
   <div
@@ -2132,7 +2132,7 @@ exports[`Storyshots Repository1 with default 1`] = `
       </div>
     </div>
     <div
-      className="Navigations-sc-1gpsvnz-0 llkCmf InnerContainer-sc-1toru5t-0 eVVvlf"
+      className="Repository__Navigations-sc-15bpeap-2 lguSdq InnerContainer-sc-1toru5t-0 eVVvlf"
     >
       <nav
         className="reponav"
