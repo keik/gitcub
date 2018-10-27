@@ -261,104 +261,6 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Repository/Breadcrumbs with 3rd level path 1`] = `
-<div>
-  <strong>
-    <a
-      onClick={[Function]}
-      style={Object {}}
-    >
-      bar
-    </a>
-  </strong>
-  <span
-    style={
-      Object {
-        "margin": "0 6px",
-      }
-    }
-  >
-    /
-  </span>
-  <a
-    onClick={[Function]}
-    style={Object {}}
-  >
-    a
-  </a>
-  <span
-    style={
-      Object {
-        "margin": "0 6px",
-      }
-    }
-  >
-    /
-  </span>
-  <a
-    onClick={[Function]}
-    style={Object {}}
-  >
-    b
-  </a>
-  <span
-    style={
-      Object {
-        "margin": "0 6px",
-      }
-    }
-  >
-    /
-  </span>
-  <strong>
-    c
-  </strong>
-  <span
-    style={
-      Object {
-        "margin": "0 6px",
-      }
-    }
-  >
-    /
-  </span>
-</div>
-`;
-
-exports[`Storyshots Repository/Breadcrumbs with default 1`] = `
-<div>
-  <strong>
-    <a
-      onClick={[Function]}
-      style={Object {}}
-    >
-      bar
-    </a>
-  </strong>
-  <span
-    style={
-      Object {
-        "margin": "0 6px",
-      }
-    }
-  >
-    /
-  </span>
-  <strong>
-    SPLAT
-  </strong>
-  <span
-    style={
-      Object {
-        "margin": "0 6px",
-      }
-    }
-  >
-    /
-  </span>
-</div>
-`;
-
 exports[`Storyshots Repository/Commit with default 1`] = `
 <div>
   <div
@@ -1940,6 +1842,104 @@ exports[`Storyshots Repository/Tree with default 1`] = `
       </table>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Repository/Tree__Breadcrumbs with 3rd level path 1`] = `
+<div>
+  <strong>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      bar
+    </a>
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <a
+    onClick={[Function]}
+    style={Object {}}
+  >
+    a
+  </a>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <a
+    onClick={[Function]}
+    style={Object {}}
+  >
+    b
+  </a>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <strong>
+    c
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+</div>
+`;
+
+exports[`Storyshots Repository/Tree__Breadcrumbs with default 1`] = `
+<div>
+  <strong>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      bar
+    </a>
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <strong>
+    SPLAT
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
 </div>
 `;
 
