@@ -826,7 +826,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
   </div>
   <nav>
     <ul
-      className="NumbersSummary__container___27m_7"
+      className="Home-sc-13uekel-0 gHsByH NumbersSummary-sc-1a2fwcw-0 cpGTYV"
     >
       <li>
         <a
@@ -881,8 +881,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
           <span>
             10
           </span>
-           
-          contributors
+           contributors
         </a>
       </li>
     </ul>
