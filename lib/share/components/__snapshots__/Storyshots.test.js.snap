@@ -1608,13 +1608,19 @@ exports[`Storyshots Repository/Wiki with default 1`] = `
 exports[`Storyshots Repository1 with default 1`] = `
 <div>
   <div
-    className="Repository__pageHead___2K9j8"
+    style={
+      Object {
+        "backgroundColor": "#fafafa",
+        "borderBottom": "1px solid #eee",
+        "marginBottom": "24px",
+      }
+    }
   >
     <div
       className="InnerContainer-sc-1toru5t-0 eVVvlf"
     >
       <div
-        className="Repository__FlexContainer-sc-15bpeap-0 iudrQm"
+        className="Repository__FlexContainer-sc-15bpeap-0 bybRrl"
       >
         <h1
           style={
@@ -1638,9 +1644,7 @@ exports[`Storyshots Repository1 with default 1`] = `
           </a>
         </h1>
         <nav>
-          <ul
-            className="Repository__pageheadActions___1ClfC"
-          >
+          <ul>
             <li>
               <div
                 className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
@@ -1733,7 +1737,7 @@ exports[`Storyshots Repository1 with default 1`] = `
           }
         >
           <div
-            className="Repository__subscriptionMenu___1aGYF"
+            className="Repository__SubscriptionMenu-sc-15bpeap-1 jOZCnx"
           >
             <div>
               Notifications
