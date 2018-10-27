@@ -262,18 +262,21 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Breadcrumbs with 3rd level path 1`] = `
-<div
-  className="Breadcrumbs__container___2k1XT"
->
-  <a
-    className="Breadcrumbs__repoRoot___1kCU2"
-    onClick={[Function]}
-    style={Object {}}
-  >
-    bar
-  </a>
+<div>
+  <strong>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      bar
+    </a>
+  </strong>
   <span
-    className="Breadcrumbs__separator___4qXH2"
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
   >
     /
   </span>
@@ -284,7 +287,11 @@ exports[`Storyshots Repository/Breadcrumbs with 3rd level path 1`] = `
     a
   </a>
   <span
-    className="Breadcrumbs__separator___4qXH2"
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
   >
     /
   </span>
@@ -295,7 +302,11 @@ exports[`Storyshots Repository/Breadcrumbs with 3rd level path 1`] = `
     b
   </a>
   <span
-    className="Breadcrumbs__separator___4qXH2"
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
   >
     /
   </span>
@@ -303,7 +314,11 @@ exports[`Storyshots Repository/Breadcrumbs with 3rd level path 1`] = `
     c
   </strong>
   <span
-    className="Breadcrumbs__separator___4qXH2"
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
   >
     /
   </span>
@@ -311,18 +326,21 @@ exports[`Storyshots Repository/Breadcrumbs with 3rd level path 1`] = `
 `;
 
 exports[`Storyshots Repository/Breadcrumbs with default 1`] = `
-<div
-  className="Breadcrumbs__container___2k1XT"
->
-  <a
-    className="Breadcrumbs__repoRoot___1kCU2"
-    onClick={[Function]}
-    style={Object {}}
-  >
-    bar
-  </a>
+<div>
+  <strong>
+    <a
+      onClick={[Function]}
+      style={Object {}}
+    >
+      bar
+    </a>
+  </strong>
   <span
-    className="Breadcrumbs__separator___4qXH2"
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
   >
     /
   </span>
@@ -330,7 +348,11 @@ exports[`Storyshots Repository/Breadcrumbs with default 1`] = `
     SPLAT
   </strong>
   <span
-    className="Breadcrumbs__separator___4qXH2"
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
   >
     /
   </span>
@@ -1787,18 +1809,21 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="Breadcrumbs__container___2k1XT"
-    >
-      <a
-        className="Breadcrumbs__repoRoot___1kCU2"
-        onClick={[Function]}
-        style={Object {}}
-      >
-        #REPO
-      </a>
+    <div>
+      <strong>
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          #REPO
+        </a>
+      </strong>
       <span
-        className="Breadcrumbs__separator___4qXH2"
+        style={
+          Object {
+            "margin": "0 6px",
+          }
+        }
       >
         /
       </span>
@@ -1806,7 +1831,11 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         #SPLAT
       </strong>
       <span
-        className="Breadcrumbs__separator___4qXH2"
+        style={
+          Object {
+            "margin": "0 6px",
+          }
+        }
       >
         /
       </span>
