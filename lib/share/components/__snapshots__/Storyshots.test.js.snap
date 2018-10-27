@@ -261,6 +261,82 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Repository/Breadcrumbs with 3rd level path 1`] = `
+<div
+  className="Breadcrumbs__container___2k1XT"
+>
+  <a
+    className="Breadcrumbs__repoRoot___1kCU2"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    bar
+  </a>
+  <span
+    className="Breadcrumbs__separator___4qXH2"
+  >
+    /
+  </span>
+  <a
+    onClick={[Function]}
+    style={Object {}}
+  >
+    a
+  </a>
+  <span
+    className="Breadcrumbs__separator___4qXH2"
+  >
+    /
+  </span>
+  <a
+    onClick={[Function]}
+    style={Object {}}
+  >
+    b
+  </a>
+  <span
+    className="Breadcrumbs__separator___4qXH2"
+  >
+    /
+  </span>
+  <strong>
+    c
+  </strong>
+  <span
+    className="Breadcrumbs__separator___4qXH2"
+  >
+    /
+  </span>
+</div>
+`;
+
+exports[`Storyshots Repository/Breadcrumbs with default 1`] = `
+<div
+  className="Breadcrumbs__container___2k1XT"
+>
+  <a
+    className="Breadcrumbs__repoRoot___1kCU2"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    bar
+  </a>
+  <span
+    className="Breadcrumbs__separator___4qXH2"
+  >
+    /
+  </span>
+  <strong>
+    SPLAT
+  </strong>
+  <span
+    className="Breadcrumbs__separator___4qXH2"
+  >
+    /
+  </span>
+</div>
+`;
+
 exports[`Storyshots Repository/Commit with default 1`] = `
 <div>
   <div
