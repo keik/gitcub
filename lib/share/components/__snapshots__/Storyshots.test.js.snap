@@ -1121,7 +1121,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
     </div>
   </div>
   <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
+    className="Home-sc-13uekel-0 gHsByH Entries-sc-1ywf8wa-0 gjlONl Panel-sc-1hnzj4y-0 ccxQvz"
   >
     <div
       className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
@@ -1163,7 +1163,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
         <div>
           Latest commit 
           <a
-            className="Entries__sha___1yvOg"
+            className="sha"
             onClick={[Function]}
             style={Object {}}
           >
@@ -1183,13 +1183,15 @@ exports[`Storyshots Repository/Home with default 1`] = `
         <tbody>
           <tr>
             <td
-              className="Entries__icon___2BOm7"
+              className="icon"
             >
               <i
                 className="fa fa-file-text-o"
               />
             </td>
-            <td>
+            <td
+              className="name"
+            >
               <a
                 onClick={[Function]}
                 style={Object {}}
@@ -1198,7 +1200,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__commitMessage___1e7lV"
+              className="commitMessage"
             >
               <a
                 onClick={[Function]}
@@ -1208,7 +1210,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__updateAt___3r1ot"
+              className="updateAt"
             >
               <time-ago
                 datetime="$DATE_1"
@@ -1217,13 +1219,15 @@ exports[`Storyshots Repository/Home with default 1`] = `
           </tr>
           <tr>
             <td
-              className="Entries__icon___2BOm7"
+              className="icon"
             >
               <i
                 className="fa fa-file-text-o"
               />
             </td>
-            <td>
+            <td
+              className="name"
+            >
               <a
                 onClick={[Function]}
                 style={Object {}}
@@ -1232,7 +1236,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__commitMessage___1e7lV"
+              className="commitMessage"
             >
               <a
                 onClick={[Function]}
@@ -1242,7 +1246,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__updateAt___3r1ot"
+              className="updateAt"
             >
               <time-ago
                 datetime="$DATE_1"
@@ -1744,7 +1748,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
     </div>
   </div>
   <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
+    className="Entries-sc-1ywf8wa-0 gjlONl Panel-sc-1hnzj4y-0 ccxQvz"
   >
     <div
       className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
@@ -1786,7 +1790,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         <div>
           Latest commit 
           <a
-            className="Entries__sha___1yvOg"
+            className="sha"
             onClick={[Function]}
             style={Object {}}
           >
@@ -1806,13 +1810,15 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         <tbody>
           <tr>
             <td
-              className="Entries__icon___2BOm7"
+              className="icon"
             >
               <i
                 className="fa fa-file-text-o"
               />
             </td>
-            <td>
+            <td
+              className="name"
+            >
               <a
                 onClick={[Function]}
                 style={Object {}}
@@ -1821,7 +1827,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__commitMessage___1e7lV"
+              className="commitMessage"
             >
               <a
                 onClick={[Function]}
@@ -1831,7 +1837,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__updateAt___3r1ot"
+              className="updateAt"
             >
               <time-ago
                 datetime="#DATE_1"
@@ -1948,6 +1954,110 @@ exports[`Storyshots Repository/Wiki with default 1`] = `
   <h2>
     wiki
   </h2>
+</div>
+`;
+
+exports[`Storyshots Repository/shared/Entries with default 1`] = `
+<div
+  className="Entries-sc-1ywf8wa-0 gjlONl Panel-sc-1hnzj4y-0 ccxQvz"
+>
+  <div
+    className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+  >
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <div>
+        <img
+          alt="#NAME_1"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+         
+        <a
+          href="/#NAME_1"
+        >
+          #NAME_1
+        </a>
+         
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          #MESSAGE_1
+        </a>
+      </div>
+      <div>
+        Latest commit 
+        <a
+          className="sha"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          #SHA_1
+        </a>
+         
+        <time-ago
+          datetime="#DATE_1"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+  >
+    <table>
+      <tbody>
+        <tr>
+          <td
+            className="icon"
+          >
+            <i
+              className="fa fa-file-text-o"
+            />
+          </td>
+          <td
+            className="name"
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              #PATH_1
+            </a>
+          </td>
+          <td
+            className="commitMessage"
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              #MESSAGE_1
+            </a>
+          </td>
+          <td
+            className="updateAt"
+          >
+            <time-ago
+              datetime="#DATE_1"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 `;
 
