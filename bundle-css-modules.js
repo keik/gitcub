@@ -20,12 +20,7 @@ if (argv.h)
 if (argv.w)
   chokidar.watch(froms).on('change', (file) => __process(file, argv.o))
 
-const runner = postcss([
-  require('postcss-modules')({
-    generateScopedName: '[name]__[local]___[hash:base64:5]',
-    getJSON: function() {},
-  }),
-])
+const runner = postcss([])
 
 Promise
   .all(froms.map(p =>
