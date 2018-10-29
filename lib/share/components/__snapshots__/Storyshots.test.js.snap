@@ -882,9 +882,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
     <div
       className="treeSelector"
     >
-      <div
-        className="TreeSelector__container___34_zj"
-      >
+      <div>
         <button
           className="Button-sc-1ldg16x-0 gIWfju"
           onClick={[Function]}
@@ -925,12 +923,20 @@ exports[`Storyshots Repository/Home with default 1`] = `
             }
           >
             <div
-              className="TreeSelector__branchMenuModalHeader___CE0tQ"
+              className="TreeSelector__BranchMenuModalHeader-sc-9quwht-0 keLiH"
             >
               Switch branches/tags
               <button
-                className="TreeSelector__closeBtn___1AWij"
                 onClick={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "color": "#ccc",
+                    "cursor": "pointer",
+                    "float": "right",
+                  }
+                }
               >
                 <i
                   className="fa fa-close"
@@ -945,10 +951,23 @@ exports[`Storyshots Repository/Home with default 1`] = `
               }
             >
               <div
-                className="TreeSelector__textFilter___2Zgsc"
+                style={
+                  Object {
+                    "padding": "10px 10px 0",
+                  }
+                }
               >
                 <input
                   placeholder="Find a tag..."
+                  style={
+                    Object {
+                      "border": "1px solid #ddd",
+                      "borderRadius": "3px",
+                      "lineHeight": "20px",
+                      "padding": "6px",
+                      "width": "100%",
+                    }
+                  }
                 />
               </div>
               <div>
@@ -1034,8 +1053,8 @@ exports[`Storyshots Repository/Home with default 1`] = `
                     }
                   }
                 >
-                  <ul
-                    className="TreeSelector__branches___3ArlH"
+                  <div
+                    className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
                   />
                 </div>
                 <div
@@ -1045,8 +1064,8 @@ exports[`Storyshots Repository/Home with default 1`] = `
                     }
                   }
                 >
-                  <ul
-                    className="TreeSelector__branches___3ArlH"
+                  <div
+                    className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
                   />
                 </div>
               </div>
@@ -1121,7 +1140,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
     </div>
   </div>
   <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
+    className="Home-sc-13uekel-0 gHsByH Entries-sc-1ywf8wa-0 gjlONl Panel-sc-1hnzj4y-0 ccxQvz"
   >
     <div
       className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
@@ -1163,7 +1182,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
         <div>
           Latest commit 
           <a
-            className="Entries__sha___1yvOg"
+            className="sha"
             onClick={[Function]}
             style={Object {}}
           >
@@ -1183,13 +1202,15 @@ exports[`Storyshots Repository/Home with default 1`] = `
         <tbody>
           <tr>
             <td
-              className="Entries__icon___2BOm7"
+              className="icon"
             >
               <i
                 className="fa fa-file-text-o"
               />
             </td>
-            <td>
+            <td
+              className="name"
+            >
               <a
                 onClick={[Function]}
                 style={Object {}}
@@ -1198,7 +1219,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__commitMessage___1e7lV"
+              className="commitMessage"
             >
               <a
                 onClick={[Function]}
@@ -1208,7 +1229,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__updateAt___3r1ot"
+              className="updateAt"
             >
               <time-ago
                 datetime="$DATE_1"
@@ -1217,13 +1238,15 @@ exports[`Storyshots Repository/Home with default 1`] = `
           </tr>
           <tr>
             <td
-              className="Entries__icon___2BOm7"
+              className="icon"
             >
               <i
                 className="fa fa-file-text-o"
               />
             </td>
-            <td>
+            <td
+              className="name"
+            >
               <a
                 onClick={[Function]}
                 style={Object {}}
@@ -1232,7 +1255,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__commitMessage___1e7lV"
+              className="commitMessage"
             >
               <a
                 onClick={[Function]}
@@ -1242,7 +1265,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__updateAt___3r1ot"
+              className="updateAt"
             >
               <time-ago
                 datetime="$DATE_1"
@@ -1510,9 +1533,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         }
       }
     >
-      <div
-        className="TreeSelector__container___34_zj"
-      >
+      <div>
         <button
           className="Button-sc-1ldg16x-0 gIWfju"
           onClick={[Function]}
@@ -1553,12 +1574,20 @@ exports[`Storyshots Repository/Tree with default 1`] = `
             }
           >
             <div
-              className="TreeSelector__branchMenuModalHeader___CE0tQ"
+              className="TreeSelector__BranchMenuModalHeader-sc-9quwht-0 keLiH"
             >
               Switch branches/tags
               <button
-                className="TreeSelector__closeBtn___1AWij"
                 onClick={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "color": "#ccc",
+                    "cursor": "pointer",
+                    "float": "right",
+                  }
+                }
               >
                 <i
                   className="fa fa-close"
@@ -1573,10 +1602,23 @@ exports[`Storyshots Repository/Tree with default 1`] = `
               }
             >
               <div
-                className="TreeSelector__textFilter___2Zgsc"
+                style={
+                  Object {
+                    "padding": "10px 10px 0",
+                  }
+                }
               >
                 <input
                   placeholder="Find a tag..."
+                  style={
+                    Object {
+                      "border": "1px solid #ddd",
+                      "borderRadius": "3px",
+                      "lineHeight": "20px",
+                      "padding": "6px",
+                      "width": "100%",
+                    }
+                  }
                 />
               </div>
               <div>
@@ -1662,8 +1704,8 @@ exports[`Storyshots Repository/Tree with default 1`] = `
                     }
                   }
                 >
-                  <ul
-                    className="TreeSelector__branches___3ArlH"
+                  <div
+                    className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
                   >
                     <li>
                       <a
@@ -1679,7 +1721,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
                         #BRANCH_2
                       </a>
                     </li>
-                  </ul>
+                  </div>
                 </div>
                 <div
                   style={
@@ -1688,8 +1730,8 @@ exports[`Storyshots Repository/Tree with default 1`] = `
                     }
                   }
                 >
-                  <ul
-                    className="TreeSelector__branches___3ArlH"
+                  <div
+                    className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
                   />
                 </div>
               </div>
@@ -1744,7 +1786,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
     </div>
   </div>
   <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
+    className="Entries-sc-1ywf8wa-0 gjlONl Panel-sc-1hnzj4y-0 ccxQvz"
   >
     <div
       className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
@@ -1786,7 +1828,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         <div>
           Latest commit 
           <a
-            className="Entries__sha___1yvOg"
+            className="sha"
             onClick={[Function]}
             style={Object {}}
           >
@@ -1806,13 +1848,15 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         <tbody>
           <tr>
             <td
-              className="Entries__icon___2BOm7"
+              className="icon"
             >
               <i
                 className="fa fa-file-text-o"
               />
             </td>
-            <td>
+            <td
+              className="name"
+            >
               <a
                 onClick={[Function]}
                 style={Object {}}
@@ -1821,7 +1865,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__commitMessage___1e7lV"
+              className="commitMessage"
             >
               <a
                 onClick={[Function]}
@@ -1831,7 +1875,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
               </a>
             </td>
             <td
-              className="Entries__updateAt___3r1ot"
+              className="updateAt"
             >
               <time-ago
                 datetime="#DATE_1"
@@ -1948,6 +1992,325 @@ exports[`Storyshots Repository/Wiki with default 1`] = `
   <h2>
     wiki
   </h2>
+</div>
+`;
+
+exports[`Storyshots Repository/shared/Entries with default 1`] = `
+<div
+  className="Entries-sc-1ywf8wa-0 gjlONl Panel-sc-1hnzj4y-0 ccxQvz"
+>
+  <div
+    className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+  >
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <div>
+        <img
+          alt="#NAME_1"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+         
+        <a
+          href="/#NAME_1"
+        >
+          #NAME_1
+        </a>
+         
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          #MESSAGE_1
+        </a>
+      </div>
+      <div>
+        Latest commit 
+        <a
+          className="sha"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          #SHA_1
+        </a>
+         
+        <time-ago
+          datetime="#DATE_1"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+  >
+    <table>
+      <tbody>
+        <tr>
+          <td
+            className="icon"
+          >
+            <i
+              className="fa fa-file-text-o"
+            />
+          </td>
+          <td
+            className="name"
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              #PATH_1
+            </a>
+          </td>
+          <td
+            className="commitMessage"
+          >
+            <a
+              onClick={[Function]}
+              style={Object {}}
+            >
+              #MESSAGE_1
+            </a>
+          </td>
+          <td
+            className="updateAt"
+          >
+            <time-ago
+              datetime="#DATE_1"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
+<div>
+  <button
+    className="Button-sc-1ldg16x-0 gIWfju"
+    onClick={[Function]}
+  >
+    <i>
+      Branch: 
+    </i>
+    <span>
+      $TREE
+       
+    </span>
+    <i
+      className="fa fa-caret-down"
+    />
+  </button>
+  <div
+    className="modal"
+    style={
+      Object {
+        "display": "none",
+        "position": "absolute",
+        "width": 300,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundClip": "padding-box",
+          "backgroundColor": "#fff",
+          "border": "1px solid rgba(200, 200, 200, 0.4)",
+          "borderRadius": "3px",
+          "boxShadow": "0 3px 12px rgba(0,0,0,0.15)",
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 100,
+        }
+      }
+    >
+      <div
+        className="TreeSelector__BranchMenuModalHeader-sc-9quwht-0 keLiH"
+      >
+        Switch branches/tags
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "color": "#ccc",
+              "cursor": "pointer",
+              "float": "right",
+            }
+          }
+        >
+          <i
+            className="fa fa-close"
+          />
+        </button>
+      </div>
+      <div
+        style={
+          Object {
+            "backgroundColor": "#f8f8f8",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "padding": "10px 10px 0",
+            }
+          }
+        >
+          <input
+            placeholder="Find a tag..."
+            style={
+              Object {
+                "border": "1px solid #ddd",
+                "borderRadius": "3px",
+                "lineHeight": "20px",
+                "padding": "6px",
+                "width": "100%",
+              }
+            }
+          />
+        </div>
+        <div>
+          <ul
+            style={
+              Object {
+                "borderBottom": "1px solid #ddd",
+                "listStyle": "none",
+                "margin": 0,
+                "padding": "8px 8px 0",
+              }
+            }
+          >
+            <li
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "borderLeft": "1px solid #ddd",
+                  "borderRight": "1px solid #ddd",
+                  "borderTop": "1px solid #ddd",
+                  "borderTopLeftRadius": 3,
+                  "borderTopRightRadius": 3,
+                  "float": "left",
+                  "marginBottom": "-1px",
+                }
+              }
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "#333",
+                    "display": "block",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "padding": "4px 8px 2px",
+                    "textDecoration": "none",
+                  }
+                }
+              >
+                Branches
+              </a>
+            </li>
+            <li
+              style={
+                Object {
+                  "float": "left",
+                  "marginBottom": "-1px",
+                }
+              }
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "#888",
+                    "display": "block",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "padding": "4px 8px 2px",
+                    "textDecoration": "none",
+                  }
+                }
+              >
+                Tags
+              </a>
+            </li>
+            <div
+              style={
+                Object {
+                  "clear": "both",
+                  "display": "table",
+                }
+              }
+            />
+          </ul>
+          <div
+            style={
+              Object {
+                "display": "block",
+              }
+            }
+          >
+            <div
+              className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
+            >
+              <li>
+                <a
+                  href="/$OWNER/$REPO/tree/$BRANCH"
+                >
+                  $BRANCH
+                </a>
+              </li>
+            </div>
+          </div>
+          <div
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+          >
+            <div
+              className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "zIndex": 1,
+        }
+      }
+    />
+  </div>
 </div>
 `;
 
