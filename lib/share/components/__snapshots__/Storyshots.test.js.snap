@@ -227,7 +227,7 @@ exports[`Storyshots New with default 1`] = `
     />
     <div>
       <div
-        className="form__formGroup___ocI0s"
+        className="FormGroup-ufz1sa-0 kAdjnn"
         style={
           Object {
             "display": "inline-block",
@@ -240,7 +240,6 @@ exports[`Storyshots New with default 1`] = `
           Owner
         </label>
         <input
-          className="form__formControl___jtFbE"
           id="owner"
           name="owner"
           type="text"
@@ -250,12 +249,7 @@ exports[`Storyshots New with default 1`] = `
          / 
       </span>
       <div
-        className="form__formGroup___ocI0s"
-        style={
-          Object {
-            "display": "inline-block",
-          }
-        }
+        className="FormGroup-ufz1sa-0 evMSaL"
       >
         <label
           htmlFor="name"
@@ -263,7 +257,6 @@ exports[`Storyshots New with default 1`] = `
           Repository name
         </label>
         <input
-          className="form__formControl___jtFbE"
           id="name"
           name="name"
           type="text"
@@ -271,7 +264,7 @@ exports[`Storyshots New with default 1`] = `
       </div>
     </div>
     <div
-      className="form__formGroup___ocI0s"
+      className="FormGroup-ufz1sa-0 kAdjnn"
     >
       <label
         htmlFor="description"
@@ -279,15 +272,19 @@ exports[`Storyshots New with default 1`] = `
         Description (optional)
       </label>
       <input
-        className="form__formControl___jtFbE form__full___baZ9l"
         id="description"
         name="description"
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
         type="text"
       />
     </div>
     <hr />
     <div
-      className="form__inlineFormGroup___1Tr5J form__formGroup___ocI0s"
+      className="FormGroup-ufz1sa-0 kAdjnn"
     >
       <label>
         <input
@@ -304,7 +301,7 @@ exports[`Storyshots New with default 1`] = `
       </p>
     </div>
     <div
-      className="form__inlineFormGroup___1Tr5J form__formGroup___ocI0s"
+      className="FormGroup-ufz1sa-0 kAdjnn"
     >
       <label>
         <input
