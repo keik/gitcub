@@ -1,64 +1,244 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Footer with default 1`] = `
+exports[`Storyshots App__Footer with default 1`] = `
+.c2 {
+  padding: 0 8px;
+  margin-right: 12px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #ccc;
+  font-size: 22px;
+  font-family: 'Rajdhani',sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:hover {
+  border-color: #4078c0;
+}
+
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 0;
+  margin-top: 36px;
+  border-top: 1px solid #eee;
+  color: #767676;
+  font-size: 12px;
+}
+
+.c1 > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c1 > ul > li {
+  display: inline-block;
+}
+
+.c1 > ul > li + li {
+  margin-left: 10px;
+}
+
 <div
-  className="Footer__Container-yz7m8k-0 itNppg"
+  className="c0"
 >
-  <ul
-    className="Footer__NavLinks-yz7m8k-1 hrZQRx"
+  <div
+    className="c1"
   >
-    <li>
-      © 2016 keik
-    </li>
-    <li>
-      <a
-        href="#"
-      >
-        Help
-      </a>
-    </li>
-  </ul>
-  <a
-    className="Logo-k763vu-0 eMaEfw"
-    href="#"
-  >
-    GH
-  </a>
-  <ul
-    className="Footer__NavLinks-yz7m8k-1 hrZQRx"
-  >
-    <li>
-      <a
-        href="#"
-      >
-        API
-      </a>
-    </li>
-    <li>
-      <a
-        href="#"
-      >
-        About
-      </a>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        © 2016 keik
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Help
+        </a>
+      </li>
+    </ul>
+    <a
+      className="c2"
+      href="#"
+    >
+      GH
+    </a>
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          API
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          About
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Header with default 1`] = `
+.c1 {
+  padding: 0 8px;
+  margin-right: 12px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #ccc;
+  font-size: 22px;
+  font-family: 'Rajdhani',sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  border-color: #4078c0;
+}
+
+.c3 > * + * {
+  margin-left: 12px;
+}
+
+.c4 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c4:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 {
+  display: inline-block;
+  color: #fff;
+  background-image: linear-gradient(#8add6d,#60b044);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #5aad35;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c5:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #24292e;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 13px;
+}
+
+.c0 > *:last-child {
+  margin-left: auto;
+}
+
+.c0:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.c2 {
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.c2 label {
+  border-right: 1px solid #ddd;
+  padding: 4px 8px;
+  color: #767676;
+  font-size: 12px;
+}
+
+.c2 input {
+  border: none;
+  min-height: 26px;
+}
+
 <div
-  className="Header-without-session__Container-sc-1ortxq7-0 ghLqSv"
+  className="c0"
 >
   <div>
     <a
-      className="Logo-k763vu-0 eMaEfw"
+      className="c1"
       href="/"
     >
       GH
     </a>
   </div>
   <form
-    className="Header-without-session__HeaderForm-sc-1ortxq7-1 hGFALm"
+    className="c2"
   >
     <label
       htmlFor="input-search-query"
@@ -72,16 +252,16 @@ exports[`Storyshots Header with default 1`] = `
     />
   </form>
   <div
-    className="ButtonsContainer-s9x8v3-0 hTAHWK"
+    className="c3"
   >
     <a
-      className="Button-sc-1ldg16x-0 gIWfju"
+      className="c4"
       href="/login"
     >
       Sign in
     </a>
     <a
-      className="Button-sc-1ldg16x-0 hZgZyG"
+      className="c5"
       href="/join"
     >
       Sign up
@@ -91,8 +271,61 @@ exports[`Storyshots Header with default 1`] = `
 `;
 
 exports[`Storyshots Home with default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c1 li {
+  padding: 12px 0;
+}
+
+.c1 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c2 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c2 > * {
+  padding: 12px;
+}
+
+.c3 {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c4 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c4 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.c4 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
 <div
-  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+  className="c0"
 >
   <div
     style={
@@ -110,7 +343,7 @@ exports[`Storyshots Home with default 1`] = `
       }
     >
       <ul
-        className="List-onbt43-0 bcIKJI"
+        className="c1"
       >
         <li>
           ACTIVITY_1
@@ -132,18 +365,18 @@ exports[`Storyshots Home with default 1`] = `
       }
     >
       <div
-        className="Panel-sc-1hnzj4y-0 ccxQvz"
+        className="c2"
       >
         <div
-          className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+          className="c3"
         >
           Public Repositories
         </div>
         <div
-          className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+          className="c4"
         >
           <ul
-            className="List-onbt43-0 bcIKJI"
+            className="c1"
           >
             <li>
               <i
@@ -187,8 +420,68 @@ exports[`Storyshots Home with default 1`] = `
 `;
 
 exports[`Storyshots New with default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c4 {
+  display: inline-block;
+  color: #fff;
+  background-image: linear-gradient(#8add6d,#60b044);
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #5aad35;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c4:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.c2 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.c3 {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.c3 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 14px;
+  color: #767676;
+}
+
 <div
-  className="InnerContainer-sc-1toru5t-0 eVVvlf"
+  className="c0"
 >
   <div
     style={
@@ -210,7 +503,7 @@ exports[`Storyshots New with default 1`] = `
       Create a new repository
     </h2>
     <p
-      className="P-sc-12tjztq-0 mCLow"
+      className="c1"
     >
       A repository contains all the files for your project, including the revision history.
     </p>
@@ -227,7 +520,7 @@ exports[`Storyshots New with default 1`] = `
     />
     <div>
       <div
-        className="FormGroup-ufz1sa-0 kAdjnn"
+        className="c2"
         style={
           Object {
             "display": "inline-block",
@@ -249,7 +542,7 @@ exports[`Storyshots New with default 1`] = `
          / 
       </span>
       <div
-        className="FormGroup-ufz1sa-0 evMSaL"
+        className="c3"
       >
         <label
           htmlFor="name"
@@ -264,7 +557,7 @@ exports[`Storyshots New with default 1`] = `
       </div>
     </div>
     <div
-      className="FormGroup-ufz1sa-0 kAdjnn"
+      className="c2"
     >
       <label
         htmlFor="description"
@@ -284,7 +577,7 @@ exports[`Storyshots New with default 1`] = `
     </div>
     <hr />
     <div
-      className="FormGroup-ufz1sa-0 kAdjnn"
+      className="c2"
     >
       <label>
         <input
@@ -295,13 +588,13 @@ exports[`Storyshots New with default 1`] = `
         Public
       </label>
       <p
-        className="P-sc-12tjztq-0 mCLow"
+        className="c1"
       >
         Anyone can see this repository. You choose who can commit.
       </p>
     </div>
     <div
-      className="FormGroup-ufz1sa-0 kAdjnn"
+      className="c2"
     >
       <label>
         <input
@@ -312,14 +605,14 @@ exports[`Storyshots New with default 1`] = `
         Private
       </label>
       <p
-        className="P-sc-12tjztq-0 mCLow"
+        className="c1"
       >
         You choose who can see and commit to this repository.
       </p>
     </div>
     <hr />
     <button
-      className="Button-sc-1ldg16x-0 cuqMUV"
+      className="c4"
     >
       Create repository
     </button>
@@ -328,20 +621,67 @@ exports[`Storyshots New with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Branches with default 1`] = `
+.c3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c3 li {
+  padding: 12px 0;
+}
+
+.c3 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c0 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c0 > * {
+  padding: 12px;
+}
+
+.c1 {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c2 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c2 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.c2 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
 <div>
   <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
+    className="c0"
   >
     <div
-      className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+      className="c1"
     >
       Default branch
     </div>
     <div
-      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      className="c2"
     >
       <ul
-        className="List-onbt43-0 bcIKJI"
+        className="c3"
       >
         <li>
           <a
@@ -365,18 +705,18 @@ exports[`Storyshots Repository/Branches with default 1`] = `
     </div>
   </div>
   <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
+    className="c0"
   >
     <div
-      className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+      className="c1"
     >
       Active branches
     </div>
     <div
-      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      className="c2"
     >
       <ul
-        className="List-onbt43-0 bcIKJI"
+        className="c3"
       >
         <li>
           <a
@@ -403,12 +743,140 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Commit with default 1`] = `
+.c5 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c5:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  display: inline-block;
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c0 > * {
+  padding: 12px;
+}
+
+.c6 {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c1 {
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c3 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c3 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.c3 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c7 {
+  margin: 0;
+}
+
+.c8 {
+  float: left;
+  min-width: 48px;
+  padding: 0.5em;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+  text-align: right;
+  border-right: 1px solid #eee;
+}
+
+.c9 {
+  background-color: white;
+}
+
+.c4 > * {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c4 > *:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c4 > *:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
 <div>
   <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
+    className="c0"
   >
     <div
-      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+      className="c1"
     >
       <div
         style={
@@ -431,7 +899,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
           $MESSAGE
         </h1>
         <a
-          className="Button-sc-1ldg16x-0 dKuqMW"
+          className="c2"
           href="/$OWNER/$REPO/tree/$SHA"
           style={
             Object {
@@ -459,7 +927,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
       </div>
     </div>
     <div
-      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      className="c3"
     >
       <div
         style={
@@ -526,15 +994,15 @@ exports[`Storyshots Repository/Commit with default 1`] = `
     </div>
     <div>
       <div
-        className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+        className="c4"
       >
         <button
-          className="Button-sc-1ldg16x-0 gIWfju"
+          className="c5"
         >
           Unified
         </button>
         <button
-          className="Button-sc-1ldg16x-0 gIWfju"
+          className="c5"
         >
           Split
         </button>
@@ -545,15 +1013,15 @@ exports[`Storyshots Repository/Commit with default 1`] = `
     id="patches"
   >
     <div
-      className="Panel-sc-1hnzj4y-0 ccxQvz"
+      className="c0"
     >
       <div
-        className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+        className="c6"
       >
         $FILENAME
       </div>
       <div
-        className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+        className="c3"
         style={
           Object {
             "padding": 0,
@@ -561,7 +1029,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
         }
       >
         <pre
-          className="Code-nifwyh-0 fANLkT"
+          className="c7"
           style={
             Object {
               "margin": 0,
@@ -569,7 +1037,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
           }
         >
           <ul
-            className="Code__Lines-nifwyh-1 cHpdyK"
+            className="c8"
           >
             <li>
               ...
@@ -609,7 +1077,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
             </li>
           </ul>
           <code
-            className="hljs Code__Body-nifwyh-2 kloHoE"
+            className="hljs c9"
             dangerouslySetInnerHTML={
               Object {
                 "__html": "$PATCH",
@@ -624,14 +1092,107 @@ exports[`Storyshots Repository/Commit with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Commits with default 1`] = `
+.c5 {
+  display: inline-block;
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c5:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4 > * {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c4 > *:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c4 > *:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c0 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 8px;
+  border-top: 1px solid #eee;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 .title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.c2 .meta {
+  font-weight: normal;
+  color: #767676;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 <ul
-  className="Commits__CommitItems-sc-13zuyrn-0 ibvhoh"
+  className="c0"
 >
   <li
-    className="Commits__CommitItem-sc-13zuyrn-1 knrZNw"
+    className="c1"
   >
     <div
-      className="Commits__CommitInfo-sc-13zuyrn-2 frkLaC"
+      className="c2"
     >
       <div>
         <div
@@ -661,20 +1222,20 @@ exports[`Storyshots Repository/Commits with default 1`] = `
       </div>
     </div>
     <div
-      className="Commits__CommitNav-sc-13zuyrn-3 hNNWvi"
+      className="c3"
     >
       <div
-        className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+        className="c4"
       >
         <button
-          className="Button-sc-1ldg16x-0 dKuqMW"
+          className="c5"
         >
           <i
             className="fa fa-clipboard"
           />
         </button>
         <a
-          className="Button-sc-1ldg16x-0 dKuqMW"
+          className="c5"
           onClick={[Function]}
           small="true"
           style={Object {}}
@@ -684,7 +1245,7 @@ exports[`Storyshots Repository/Commits with default 1`] = `
         </a>
       </div>
       <a
-        className="Button-sc-1ldg16x-0 dKuqMW"
+        className="c5"
         onClick={[Function]}
         small="true"
         style={
@@ -701,10 +1262,10 @@ exports[`Storyshots Repository/Commits with default 1`] = `
     </div>
   </li>
   <li
-    className="Commits__CommitItem-sc-13zuyrn-1 knrZNw"
+    className="c1"
   >
     <div
-      className="Commits__CommitInfo-sc-13zuyrn-2 frkLaC"
+      className="c2"
     >
       <div>
         <div
@@ -734,20 +1295,20 @@ exports[`Storyshots Repository/Commits with default 1`] = `
       </div>
     </div>
     <div
-      className="Commits__CommitNav-sc-13zuyrn-3 hNNWvi"
+      className="c3"
     >
       <div
-        className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+        className="c4"
       >
         <button
-          className="Button-sc-1ldg16x-0 dKuqMW"
+          className="c5"
         >
           <i
             className="fa fa-clipboard"
           />
         </button>
         <a
-          className="Button-sc-1ldg16x-0 dKuqMW"
+          className="c5"
           onClick={[Function]}
           small="true"
           style={Object {}}
@@ -757,7 +1318,7 @@ exports[`Storyshots Repository/Commits with default 1`] = `
         </a>
       </div>
       <a
-        className="Button-sc-1ldg16x-0 dKuqMW"
+        className="c5"
         onClick={[Function]}
         small="true"
         style={
@@ -777,17 +1338,118 @@ exports[`Storyshots Repository/Commits with default 1`] = `
 `;
 
 exports[`Storyshots Repository/FileContent with default 1`] = `
+.c5 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c5:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c0 > * {
+  padding: 12px;
+}
+
+.c3 {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c1 {
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c2 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c2 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.c2 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c6 {
+  margin: 0;
+}
+
+.c7 {
+  float: left;
+  min-width: 48px;
+  padding: 0.5em;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+  text-align: right;
+  border-right: 1px solid #eee;
+}
+
+.c8 {
+  background-color: white;
+}
+
+.c4 > * {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c4 > *:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c4 > *:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
 <div>
   <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
+    className="c0"
   >
     <div
-      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+      className="c1"
     >
       commit tease
     </div>
     <div
-      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      className="c2"
       id="contributors"
     >
       <button>
@@ -829,10 +1491,10 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
     </div>
   </div>
   <div
-    className="Panel-sc-1hnzj4y-0 ccxQvz"
+    className="c0"
   >
     <div
-      className="Panel__Header-sc-1hnzj4y-1 chmgYi"
+      className="c3"
     >
       <div
         style={
@@ -856,10 +1518,10 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
           }
         >
           <div
-            className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+            className="c4"
           >
             <a
-              className="Button-sc-1ldg16x-0 gIWfju"
+              className="c5"
               onClick={[Function]}
               small="true"
               style={Object {}}
@@ -867,7 +1529,7 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
               Raw
             </a>
             <a
-              className="Button-sc-1ldg16x-0 gIWfju"
+              className="c5"
               onClick={[Function]}
               small="true"
               style={Object {}}
@@ -875,7 +1537,7 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
               Blame
             </a>
             <a
-              className="Button-sc-1ldg16x-0 gIWfju"
+              className="c5"
               onClick={[Function]}
               small="true"
               style={Object {}}
@@ -903,20 +1565,20 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
       </div>
     </div>
     <div
-      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      className="c2"
     >
       <pre
-        className="Code-nifwyh-0 fANLkT"
+        className="c6"
       >
         <ul
-          className="Code__Lines-nifwyh-1 cHpdyK"
+          className="c7"
         >
           <li>
             1
           </li>
         </ul>
         <code
-          className="hljs Code__Body-nifwyh-2 kloHoE"
+          className="hljs c8"
           dangerouslySetInnerHTML={
             Object {
               "__html": "$CONTENT",
@@ -939,8 +1601,298 @@ exports[`Storyshots Repository/Graphs with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Home with default 1`] = `
+.c5 > div {
+  position: absolute;
+}
+
+.c5 > div:before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  content: '';
+  z-index: 100;
+}
+
+.c5 > div > ul {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 300px;
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid rgba(200,200,200,0.4);
+  border-radius: 3px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  z-index: 101;
+}
+
+.c5 > div > ul > li.Dropdown__divider {
+  margin: 8px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.c5 > div > ul > li > * {
+  display: block;
+  padding: 4px 12px;
+}
+
+.c5 > div > ul > li > a:hover {
+  color: #fff;
+  background-color: #4078c0;
+}
+
+.c2 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  display: inline-block;
+  color: #fff;
+  background-image: linear-gradient(#8add6d,#60b044);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #5aad35;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c6:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c9 > * {
+  padding: 12px;
+}
+
+.c10 {
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c11 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c11 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.c11 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c7 > * {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c7 > *:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c7 > *:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c8 table tr td.icon {
+  width: 18px;
+  padding-left: 12px;
+}
+
+.c8 table tr td.commitMessage {
+  padding-left: 12px;
+}
+
+.c8 table tr td.commitMessage a {
+  color: #888;
+}
+
+.c8 table tr td.updateAt {
+  width: 120px;
+  padding-right: 12px;
+  text-align: right;
+}
+
+.c8 .sha {
+  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  font-size: 90%;
+  color: #445055;
+}
+
+.c3 {
+  padding: 8px 10px;
+  line-height: 16px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.c4 {
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c4 > li > a {
+  display: block;
+  padding: 8px 8px 8px 30px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4 > li > a:hover {
+  color: #fff;
+  background-color: #4078c0;
+}
+
+.c0 .metaContent {
+  font-size: 16px;
+  color: #666;
+}
+
+.c0 .fileNavigation {
+  margin-top: 12px;
+}
+
+.c0 .fileNavigation > * {
+  margin-right: 12px;
+}
+
+.c0 .fileNavigation:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.c0 .treeSelector {
+  float: left;
+}
+
+.c0 .floatRight {
+  float: right;
+}
+
+.c0 .inline {
+  display: inline-block;
+}
+
+.c0 .commitTease {
+  padding: 10px;
+  margin: 12px 0 0 0;
+  color: #68777d;
+  background-color: #f2f9fc;
+  border: 1px solid #c9e6f2;
+  border-radius: 3px 3px 0 0;
+}
+
+.c0 .cloneModal {
+  padding: 12px;
+}
+
+.c0 .cloneModal h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.c0 .cloneModal p {
+  margin: 4px 0;
+  font-size: 12px;
+}
+
+.c0 .cloneUri {
+  font-size: 12px;
+  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  list-style: none;
+  padding: 12px;
+  margin: 12px 0 0 0;
+}
+
+.c1 a {
+  color: #767676;
+}
+
+.c1 .fa {
+  margin-right: 4px;
+}
+
 <div
-  className="Home-sc-13uekel-0 gHsByH"
+  className="c0"
 >
   <div
     className="metaContent"
@@ -957,7 +1909,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
   </div>
   <nav>
     <ul
-      className="Home-sc-13uekel-0 gHsByH Home__NumbersSummary-sc-13uekel-1 bCIRDE"
+      className="c0 c1"
     >
       <li>
         <a
@@ -1025,7 +1977,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
     >
       <div>
         <button
-          className="Button-sc-1ldg16x-0 gIWfju"
+          className="c2"
           onClick={[Function]}
         >
           <i>
@@ -1064,7 +2016,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
             }
           >
             <div
-              className="TreeSelector__BranchMenuModalHeader-sc-9quwht-0 keLiH"
+              className="c3"
             >
               Switch branches/tags
               <button
@@ -1195,7 +2147,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
                   }
                 >
                   <div
-                    className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
+                    className="c4"
                   />
                 </div>
                 <div
@@ -1206,7 +2158,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
                   }
                 >
                   <div
-                    className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
+                    className="c4"
                   />
                 </div>
               </div>
@@ -1229,7 +2181,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
       </div>
     </div>
     <a
-      className="Button-sc-1ldg16x-0 gIWfju"
+      className="c2"
       href="$OWNER/$REPO/pull/new/$TREE"
     >
       New pull request
@@ -1243,11 +2195,11 @@ exports[`Storyshots Repository/Home with default 1`] = `
       }
     >
       <span
-        className="Dropdown__StyledDropdown-elo20p-0 dsxKwQ"
+        className="c5"
         width={300}
       >
         <button
-          className="Button-sc-1ldg16x-0 hZgZyG"
+          className="c6"
           onClick={[Function]}
         >
           Clone or download
@@ -1258,21 +2210,21 @@ exports[`Storyshots Repository/Home with default 1`] = `
       className="floatRight"
     >
       <div
-        className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+        className="c7"
       >
         <input
-          className="Button-sc-1ldg16x-0 gIWfju"
+          className="c2"
           type="submit"
           value="Create new file"
         />
         <a
-          className="Button-sc-1ldg16x-0 gIWfju"
+          className="c2"
           href="$OWNER/$REPO/upload/$TREE"
         >
           Upload files
         </a>
         <a
-          className="Button-sc-1ldg16x-0 gIWfju"
+          className="c2"
           href="$OWNER/$REPO/find/$TREE"
         >
           Find file
@@ -1281,10 +2233,10 @@ exports[`Storyshots Repository/Home with default 1`] = `
     </div>
   </div>
   <div
-    className="Home-sc-13uekel-0 gHsByH Entries-sc-1ywf8wa-0 gjlONl Panel-sc-1hnzj4y-0 ccxQvz"
+    className="c0 c8 c9"
   >
     <div
-      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+      className="c10"
     >
       <div
         style={
@@ -1337,7 +2289,7 @@ exports[`Storyshots Repository/Home with default 1`] = `
       </div>
     </div>
     <div
-      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      className="c11"
     >
       <table>
         <tbody>
@@ -1421,8 +2373,178 @@ exports[`Storyshots Repository/Home with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Issues with default 1`] = `
+.c1 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 {
+  display: inline-block;
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 > * {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c2 > *:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c2 > *:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c0 .subnav > * {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.c0 .filter {
+  display: inline-block;
+}
+
+.c0 .filter:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.c0 .filter button {
+  padding: 6px 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+.c0 .filter form {
+  margin-left: -1px;
+  position: relative;
+  display: inline-block;
+}
+
+.c0 .filter form i {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+
+.c0 .filter input {
+  width: 320px;
+  padding: 6px 10px 6px 32px;
+  color: #767676;
+  border: 1px solid #d5d5d5;
+  border-radius: 0 3px 3px 0;
+  line-height: 20px;
+}
+
+.c0 .issuesHeader {
+  position: relative;
+  padding: 12px 12px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px 3px 0 0;
+}
+
+.c0 .issuesHeader > * {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.c0 .issues {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.c0 .issue {
+  padding: 12px 12px;
+  border-top: 1px solid #eee;
+}
+
+.c0 .issue:first-child {
+  border-top: none;
+}
+
+.c0 .issue:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.c0 .issue .icon {
+  float: left;
+  color: #6cc644;
+}
+
+.c0 .issue .main {
+  float: left;
+  margin-left: 12px;
+}
+
+.c0 .issue .main .title {
+  color: #333;
+  font-size: 16px;
+}
+
+.c0 .issue .main .sub {
+  font-size: 12px;
+}
+
+.c0 .issue .comments {
+  float: right;
+}
+
 <div
-  className="Issues-euql8d-0 iaTZEi"
+  className="c0"
 >
   <div
     className="subnav"
@@ -1431,7 +2553,7 @@ exports[`Storyshots Repository/Issues with default 1`] = `
       className="filter"
     >
       <button
-        className="Button-sc-1ldg16x-0 gIWfju"
+        className="c1"
       >
         Filters
       </button>
@@ -1443,10 +2565,10 @@ exports[`Storyshots Repository/Issues with default 1`] = `
       </form>
     </div>
     <div
-      className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+      className="c2"
     >
       <a
-        className="Button-sc-1ldg16x-0 burRGN"
+        className="c3"
         onClick={[Function]}
         style={Object {}}
         transparent="true"
@@ -1454,7 +2576,7 @@ exports[`Storyshots Repository/Issues with default 1`] = `
         Labels
       </a>
       <a
-        className="Button-sc-1ldg16x-0 burRGN"
+        className="c3"
         onClick={[Function]}
         style={Object {}}
         transparent="true"
@@ -1657,6 +2779,121 @@ exports[`Storyshots Repository/Settings with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Tree with default 1`] = `
+.c0 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c4 > * {
+  padding: 12px;
+}
+
+.c5 {
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c6 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c6 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.c6 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c3 table tr td.icon {
+  width: 18px;
+  padding-left: 12px;
+}
+
+.c3 table tr td.commitMessage {
+  padding-left: 12px;
+}
+
+.c3 table tr td.commitMessage a {
+  color: #888;
+}
+
+.c3 table tr td.updateAt {
+  width: 120px;
+  padding-right: 12px;
+  text-align: right;
+}
+
+.c3 .sha {
+  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  font-size: 90%;
+  color: #445055;
+}
+
+.c1 {
+  padding: 8px 10px;
+  line-height: 16px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.c2 {
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c2 > li > a {
+  display: block;
+  padding: 8px 8px 8px 30px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 > li > a:hover {
+  color: #fff;
+  background-color: #4078c0;
+}
+
 <div>
   <div
     style={
@@ -1676,7 +2913,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
     >
       <div>
         <button
-          className="Button-sc-1ldg16x-0 gIWfju"
+          className="c0"
           onClick={[Function]}
         >
           <i>
@@ -1715,7 +2952,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
             }
           >
             <div
-              className="TreeSelector__BranchMenuModalHeader-sc-9quwht-0 keLiH"
+              className="c1"
             >
               Switch branches/tags
               <button
@@ -1846,7 +3083,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
                   }
                 >
                   <div
-                    className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
+                    className="c2"
                   >
                     <li>
                       <a
@@ -1872,7 +3109,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
                   }
                 >
                   <div
-                    className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
+                    className="c2"
                   />
                 </div>
               </div>
@@ -1927,10 +3164,10 @@ exports[`Storyshots Repository/Tree with default 1`] = `
     </div>
   </div>
   <div
-    className="Entries-sc-1ywf8wa-0 gjlONl Panel-sc-1hnzj4y-0 ccxQvz"
+    className="c3 c4"
   >
     <div
-      className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+      className="c5"
     >
       <div
         style={
@@ -1983,7 +3220,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
       </div>
     </div>
     <div
-      className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+      className="c6"
     >
       <table>
         <tbody>
@@ -2137,11 +3374,69 @@ exports[`Storyshots Repository/Wiki with default 1`] = `
 `;
 
 exports[`Storyshots Repository/shared/Entries with default 1`] = `
+.c1 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c1 > * {
+  padding: 12px;
+}
+
+.c2 {
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c3 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c3 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.c3 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c0 table tr td.icon {
+  width: 18px;
+  padding-left: 12px;
+}
+
+.c0 table tr td.commitMessage {
+  padding-left: 12px;
+}
+
+.c0 table tr td.commitMessage a {
+  color: #888;
+}
+
+.c0 table tr td.updateAt {
+  width: 120px;
+  padding-right: 12px;
+  text-align: right;
+}
+
+.c0 .sha {
+  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  font-size: 90%;
+  color: #445055;
+}
+
 <div
-  className="Entries-sc-1ywf8wa-0 gjlONl Panel-sc-1hnzj4y-0 ccxQvz"
+  className="c0 c1"
 >
   <div
-    className="Panel__Header-sc-1hnzj4y-1 gIbZlT"
+    className="c2"
   >
     <div
       style={
@@ -2194,7 +3489,7 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
     </div>
   </div>
   <div
-    className="Panel__Body-sc-1hnzj4y-2 dwhEKI"
+    className="c3"
   >
     <table>
       <tbody>
@@ -2241,9 +3536,66 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
 `;
 
 exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
+.c0 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 {
+  padding: 8px 10px;
+  line-height: 16px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.c2 {
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c2 > li > a {
+  display: block;
+  padding: 8px 8px 8px 30px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 > li > a:hover {
+  color: #fff;
+  background-color: #4078c0;
+}
+
 <div>
   <button
-    className="Button-sc-1ldg16x-0 gIWfju"
+    className="c0"
     onClick={[Function]}
   >
     <i>
@@ -2282,7 +3634,7 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
       }
     >
       <div
-        className="TreeSelector__BranchMenuModalHeader-sc-9quwht-0 keLiH"
+        className="c1"
       >
         Switch branches/tags
         <button
@@ -2413,7 +3765,7 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
             }
           >
             <div
-              className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
+              className="c2"
             >
               <li>
                 <a
@@ -2432,7 +3784,7 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
             }
           >
             <div
-              className="TreeSelector__BranchesUl-sc-9quwht-1 bTrkbZ"
+              className="c2"
             />
           </div>
         </div>
@@ -2456,8 +3808,43 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
 `;
 
 exports[`Storyshots Repository1 part of Navigations 1`] = `
+.c1 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c0 .reponav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.c0 .reponav a {
+  display: block;
+  padding: 7px 15px 8px;
+  margin-bottom: -1px;
+  color: #666;
+}
+
+.c0 .reponav .selected a {
+  background-color: #fff;
+  border-left: 1px solid #e5e5e5;
+  border-top: 3px solid #d26911;
+  border-right: 1px solid #e5e5e5;
+}
+
+.c0 .reponav .fa {
+  margin-right: 0.5em;
+}
+
 <div
-  className="Repository__Navigations-sc-15bpeap-2 lguSdq InnerContainer-sc-1toru5t-0 eVVvlf"
+  className="c0 c1"
 >
   <nav
     className="reponav"
@@ -2550,6 +3937,152 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
 `;
 
 exports[`Storyshots Repository1 with default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c3 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4 {
+  display: inline-block;
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  position: relative;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c4:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 > * {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c2 > *:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c2 > *:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 > nav {
+  list-style: none;
+  padding: 0;
+}
+
+.c1 > nav li {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.c1 > nav i:first-child {
+  margin-right: 4px;
+}
+
+.c1 > nav .fa-caret-down {
+  margin-left: 4px;
+}
+
+.c5 {
+  background-color: #fff;
+}
+
+.c5 > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.c5 > ul > li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.c6 .reponav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.c6 .reponav a {
+  display: block;
+  padding: 7px 15px 8px;
+  margin-bottom: -1px;
+  color: #666;
+}
+
+.c6 .reponav .selected a {
+  background-color: #fff;
+  border-left: 1px solid #e5e5e5;
+  border-top: 3px solid #d26911;
+  border-right: 1px solid #e5e5e5;
+}
+
+.c6 .reponav .fa {
+  margin-right: 0.5em;
+}
+
 <div>
   <div
     style={
@@ -2561,10 +4094,10 @@ exports[`Storyshots Repository1 with default 1`] = `
     }
   >
     <div
-      className="InnerContainer-sc-1toru5t-0 eVVvlf"
+      className="c0"
     >
       <div
-        className="Repository__FlexContainer-sc-15bpeap-0 bybRrl"
+        className="c1"
       >
         <h1
           style={
@@ -2591,10 +4124,10 @@ exports[`Storyshots Repository1 with default 1`] = `
           <ul>
             <li>
               <div
-                className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+                className="c2"
               >
                 <button
-                  className="Button-sc-1ldg16x-0 gIWfju"
+                  className="c3"
                   onClick={[Function]}
                 >
                   <i
@@ -2606,7 +4139,7 @@ exports[`Storyshots Repository1 with default 1`] = `
                   />
                 </button>
                 <a
-                  className="Button-sc-1ldg16x-0 dKuqMW"
+                  className="c4"
                   href="#"
                 >
                   6
@@ -2615,10 +4148,10 @@ exports[`Storyshots Repository1 with default 1`] = `
             </li>
             <li>
               <div
-                className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+                className="c2"
               >
                 <button
-                  className="Button-sc-1ldg16x-0 gIWfju"
+                  className="c3"
                 >
                   <i
                     className="fa fa-star"
@@ -2626,7 +4159,7 @@ exports[`Storyshots Repository1 with default 1`] = `
                   Star
                 </button>
                 <a
-                  className="Button-sc-1ldg16x-0 dKuqMW"
+                  className="c4"
                   href="#"
                 >
                   4
@@ -2635,10 +4168,10 @@ exports[`Storyshots Repository1 with default 1`] = `
             </li>
             <li>
               <div
-                className="SegmentedButtonsContainer-sc-1alpooo-0 cmuWFA"
+                className="c2"
               >
                 <button
-                  className="Button-sc-1ldg16x-0 gIWfju"
+                  className="c3"
                 >
                   <i
                     className="fa fa-code-fork"
@@ -2646,7 +4179,7 @@ exports[`Storyshots Repository1 with default 1`] = `
                   Fork
                 </button>
                 <a
-                  className="Button-sc-1ldg16x-0 dKuqMW"
+                  className="c4"
                   href="#"
                 >
                   1
@@ -2681,7 +4214,7 @@ exports[`Storyshots Repository1 with default 1`] = `
           }
         >
           <div
-            className="Repository__SubscriptionMenu-sc-15bpeap-1 jOZCnx"
+            className="c5"
           >
             <div>
               Notifications
@@ -2741,7 +4274,7 @@ exports[`Storyshots Repository1 with default 1`] = `
       </div>
     </div>
     <div
-      className="Repository__Navigations-sc-15bpeap-2 lguSdq InnerContainer-sc-1toru5t-0 eVVvlf"
+      className="c6 c0"
     >
       <nav
         className="reponav"
@@ -2859,7 +4392,7 @@ exports[`Storyshots Repository1 with default 1`] = `
     </div>
   </div>
   <div
-    className="InnerContainer-sc-1toru5t-0 eVVvlf"
+    className="c0"
   >
     children
   </div>

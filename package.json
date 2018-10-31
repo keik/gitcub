@@ -100,6 +100,7 @@
     "flow-bin": "^0.83.0",
     "flow-coverage-report": "^0.6.0",
     "jest": "^23.6.0",
+    "jest-styled-components": "^6.2.2",
     "minimist": "^1.2.0",
     "morgan": "^1.9.1",
     "npm-run-all": "^4.1.2",
