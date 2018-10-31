@@ -23,6 +23,9 @@ exports[`Storyshots Footer with default 1`] = `
   width: 980px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -42,61 +45,61 @@ exports[`Storyshots Footer with default 1`] = `
   font-size: 12px;
 }
 
-.c1 {
+.c1 > ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.c1 li {
+.c1 > ul > li {
   display: inline-block;
 }
 
-.c1 li + li {
+.c1 > ul > li + li {
   margin-left: 10px;
 }
 
 <div
   className="c0"
 >
-  <ul
+  <div
     className="c1"
   >
-    <li>
-      © 2016 keik
-    </li>
-    <li>
-      <a
-        href="#"
-      >
-        Help
-      </a>
-    </li>
-  </ul>
-  <a
-    className="c2"
-    href="#"
-  >
-    GH
-  </a>
-  <ul
-    className="c1"
-  >
-    <li>
-      <a
-        href="#"
-      >
-        API
-      </a>
-    </li>
-    <li>
-      <a
-        href="#"
-      >
-        About
-      </a>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        © 2016 keik
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Help
+        </a>
+      </li>
+    </ul>
+    <a
+      className="c2"
+      href="#"
+    >
+      GH
+    </a>
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          API
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          About
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 `;
 
