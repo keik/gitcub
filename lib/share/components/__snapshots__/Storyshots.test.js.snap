@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Footer with default 1`] = `
+exports[`Storyshots App__Footer with default 1`] = `
 .c2 {
   padding: 0 8px;
   margin-right: 12px;
