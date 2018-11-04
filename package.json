@@ -19,7 +19,7 @@
     "typecheck": "flow",
     "typecheck:coverage": "flow-coverage-report -i 'lib/**/*.js' -x 'lib/**/*.test.js'",
     "test": "run-s test:tape test:jest",
-    "test:tape": "NODE_ENV=test nyc --all --include 'lib/**' --exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' tape -r @babel/register -r ./legacy-test-initializer.js 'lib/**/*.legacy-test.js' 2>/dev/null | tap-diff",
+    "test:tape": "NODE_ENV=test nyc --all --include 'lib/**' --exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' tape -r @babel/register -r @babel/polyfill 'lib/**/*.legacy-test.js' 2>/dev/null | tap-diff",
     "test:jest": "NODE_ENV=test jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -86,8 +86,6 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-require-context-hook": "^1.0.0",
     "chokidar": "^2.0.0",
-    "enzyme": "^3.6.0",
-    "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^5.8.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-flowtype": "^3.2.0",
