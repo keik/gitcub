@@ -32,7 +32,7 @@ declare module "react-router-dom" {
     className?: string,
     activeStyle?: Object,
     style?: Object,
-    isActive?: (match: Match, location: Location) => boolean,
+    isActive?: (match: Match<*>, location: Location) => boolean,
     children?: Node,
     exact?: boolean,
     strict?: boolean
@@ -78,8 +78,8 @@ declare module "react-router-dom" {
     entries?: Array<Location>
   };
 
-  declare export type Match = {
-    params: { [key: string]: ?string },
+  declare export type Match<Params> = {
+    params: Params,
     isExact: boolean,
     path: string,
     url: string
@@ -88,14 +88,14 @@ declare module "react-router-dom" {
   declare export type ContextRouter = {|
     history: RouterHistory,
     location: Location,
-    match: Match,
+    match: Match<*>,
     staticContext?: StaticRouterContext
   |};
 
   declare type ContextRouterVoid = {
     history: RouterHistory | void,
     location: Location | void,
-    match: Match | void,
+    match: Match<*> | void,
     staticContext?: StaticRouterContext | void
   };
 
@@ -173,8 +173,8 @@ declare module "react-router-dom" {
   declare export function matchPath(
     pathname: string,
     options?: MatchPathOptions | string,
-    parent?: Match
-  ): null | Match;
+    parent?: Match<*>
+  ): null | Match<*>;
 
   declare export function generatePath(pattern?: string, params?: Object): string;
 }
