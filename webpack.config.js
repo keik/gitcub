@@ -8,5 +8,6 @@ module.exports = {
         loader: 'babel-loader'
       }
     ]
-  }
+  },
+  devtool: 'eval-source-map'
 }
