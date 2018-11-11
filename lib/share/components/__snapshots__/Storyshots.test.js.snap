@@ -1204,8 +1204,8 @@ exports[`Storyshots Repository/Commits with default 1`] = `
           className="meta"
         >
           <a
+            href="/$NAME_1}"
             onClick={[Function]}
-            style={Object {}}
           >
             <img
               alt=""
@@ -1236,9 +1236,9 @@ exports[`Storyshots Repository/Commits with default 1`] = `
         </button>
         <a
           className="c5"
+          href="/$OWNER/$REPO/commit/$SHA_1"
           onClick={[Function]}
           small="true"
-          style={Object {}}
           transparent="true"
         >
           $SHA_1
@@ -1246,6 +1246,7 @@ exports[`Storyshots Repository/Commits with default 1`] = `
       </div>
       <a
         className="c5"
+        href="/$OWNER/$REPO/tree/$SHA_1"
         onClick={[Function]}
         small="true"
         style={
@@ -1277,8 +1278,8 @@ exports[`Storyshots Repository/Commits with default 1`] = `
           className="meta"
         >
           <a
+            href="/$NAME_2}"
             onClick={[Function]}
-            style={Object {}}
           >
             <img
               alt=""
@@ -1309,9 +1310,9 @@ exports[`Storyshots Repository/Commits with default 1`] = `
         </button>
         <a
           className="c5"
+          href="/$OWNER/$REPO/commit/$SHA_2"
           onClick={[Function]}
           small="true"
-          style={Object {}}
           transparent="true"
         >
           $SHA_2
@@ -1319,6 +1320,7 @@ exports[`Storyshots Repository/Commits with default 1`] = `
       </div>
       <a
         className="c5"
+        href="/$OWNER/$REPO/tree/$SHA_2"
         onClick={[Function]}
         small="true"
         style={
@@ -1457,8 +1459,8 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
          contributors
       </button>
       <a
+        href="/$CONTRIBUTOR_1"
         onClick={[Function]}
-        style={Object {}}
       >
         <img
           alt="$CONTRIBUTOR_1"
@@ -1473,8 +1475,8 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
         />
       </a>
       <a
+        href="/$CONTRIBUTOR_2"
         onClick={[Function]}
-        style={Object {}}
       >
         <img
           alt="$CONTRIBUTOR_2"
@@ -1522,25 +1524,25 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
           >
             <a
               className="c5"
+              href="/{params.owner}/$REPO/raw/$BRANCH/$PATH"
               onClick={[Function]}
               small="true"
-              style={Object {}}
             >
               Raw
             </a>
             <a
               className="c5"
+              href="/$OWNER/$REPO/blame/$BRANCH/$PATH"
               onClick={[Function]}
               small="true"
-              style={Object {}}
             >
               Blame
             </a>
             <a
               className="c5"
+              href="/$OWNER/$REPO/commits/$BRANCH/$PATH"
               onClick={[Function]}
               small="true"
-              style={Object {}}
             >
               History
             </a>
@@ -1597,778 +1599,6 @@ exports[`Storyshots Repository/Graphs with default 1`] = `
   <h2>
     graphs
   </h2>
-</div>
-`;
-
-exports[`Storyshots Repository/Home with default 1`] = `
-.c5 > div {
-  position: absolute;
-}
-
-.c5 > div:before {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: transparent;
-  content: '';
-  z-index: 100;
-}
-
-.c5 > div > ul {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 300px;
-  padding: 8px 0;
-  margin: 0;
-  list-style: none;
-  font-weight: bold;
-  background-color: #fff;
-  border: 1px solid rgba(200,200,200,0.4);
-  border-radius: 3px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-  z-index: 101;
-}
-
-.c5 > div > ul > li.Dropdown__divider {
-  margin: 8px 0;
-  border-top: 1px solid #e5e5e5;
-}
-
-.c5 > div > ul > li > * {
-  display: block;
-  padding: 4px 12px;
-}
-
-.c5 > div > ul > li > a:hover {
-  color: #fff;
-  background-color: #4078c0;
-}
-
-.c2 {
-  display: inline-block;
-  color: #333;
-  background-image: linear-gradient(#fcfcfc,#eee);
-  position: relative;
-  display: inline-block;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c2:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6 {
-  display: inline-block;
-  color: #fff;
-  background-image: linear-gradient(#8add6d,#60b044);
-  position: relative;
-  display: inline-block;
-  padding: 3px 10px;
-  border: 1px solid #5aad35;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c6:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c9 {
-  position: relative;
-  border: 1px solid #d8d8d8;
-  border-radius: 3px;
-  margin-bottom: 24px;
-}
-
-.c9 > * {
-  padding: 12px;
-}
-
-.c10 {
-  background-color: #f2f9fc;
-  border-bottom: 1px solid;
-  border-color: #c9e6f2;
-}
-
-.c11 > table {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 20px;
-}
-
-.c11 > table > tbody > tr:first-child td {
-  border: none;
-}
-
-.c11 > table > tbody > tr > td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
-}
-
-.c7 > * {
-  border-right-width: 0;
-  border-radius: 0;
-}
-
-.c7 > *:first-child {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c7 > *:last-child {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
-}
-
-.c8 table tr td.icon {
-  width: 18px;
-  padding-left: 12px;
-}
-
-.c8 table tr td.commitMessage {
-  padding-left: 12px;
-}
-
-.c8 table tr td.commitMessage a {
-  color: #888;
-}
-
-.c8 table tr td.updateAt {
-  width: 120px;
-  padding-right: 12px;
-  text-align: right;
-}
-
-.c8 .sha {
-  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  font-size: 90%;
-  color: #445055;
-}
-
-.c3 {
-  padding: 8px 10px;
-  line-height: 16px;
-  background: #f5f5f5;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 12px;
-  font-weight: 600;
-  color: #333;
-}
-
-.c4 {
-  background-color: #fff;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.c4 > li > a {
-  display: block;
-  padding: 8px 8px 8px 30px;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4 > li > a:hover {
-  color: #fff;
-  background-color: #4078c0;
-}
-
-.c0 .metaContent {
-  font-size: 16px;
-  color: #666;
-}
-
-.c0 .fileNavigation {
-  margin-top: 12px;
-}
-
-.c0 .fileNavigation > * {
-  margin-right: 12px;
-}
-
-.c0 .fileNavigation:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.c0 .treeSelector {
-  float: left;
-}
-
-.c0 .floatRight {
-  float: right;
-}
-
-.c0 .inline {
-  display: inline-block;
-}
-
-.c0 .commitTease {
-  padding: 10px;
-  margin: 12px 0 0 0;
-  color: #68777d;
-  background-color: #f2f9fc;
-  border: 1px solid #c9e6f2;
-  border-radius: 3px 3px 0 0;
-}
-
-.c0 .cloneModal {
-  padding: 12px;
-}
-
-.c0 .cloneModal h2 {
-  margin: 0;
-  font-size: 16px;
-}
-
-.c0 .cloneModal p {
-  margin: 4px 0;
-  font-size: 12px;
-}
-
-.c0 .cloneUri {
-  font-size: 12px;
-  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  list-style: none;
-  padding: 12px;
-  margin: 12px 0 0 0;
-}
-
-.c1 a {
-  color: #767676;
-}
-
-.c1 .fa {
-  margin-right: 4px;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="metaContent"
-  >
-    <span>
-      No description or website provided.
-    </span>
-    <span>
-      - 
-      <button>
-        Edit
-      </button>
-    </span>
-  </div>
-  <nav>
-    <ul
-      className="c0 c1"
-    >
-      <li>
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-clock-o"
-          />
-          <span>
-            0
-          </span>
-           commits
-        </a>
-      </li>
-      <li>
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-code-fork"
-          />
-          <span>
-            0
-          </span>
-           branches
-        </a>
-      </li>
-      <li>
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-tag"
-          />
-          <span>
-            0
-          </span>
-           releases
-        </a>
-      </li>
-      <li>
-        <a
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <i
-            className="fa fa-users"
-          />
-          <span>
-            10
-          </span>
-           contributors
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <div
-    className="fileNavigation"
-  >
-    <div
-      className="treeSelector"
-    >
-      <div>
-        <button
-          className="c2"
-          onClick={[Function]}
-        >
-          <i>
-            Branch: 
-          </i>
-          <span>
-            $TREE
-             
-          </span>
-          <i
-            className="fa fa-caret-down"
-          />
-        </button>
-        <div
-          className="modal"
-          style={
-            Object {
-              "display": "none",
-              "position": "absolute",
-              "width": 300,
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "backgroundClip": "padding-box",
-                "backgroundColor": "#fff",
-                "border": "1px solid rgba(200, 200, 200, 0.4)",
-                "borderRadius": "3px",
-                "boxShadow": "0 3px 12px rgba(0,0,0,0.15)",
-                "position": "absolute",
-                "width": "100%",
-                "zIndex": 100,
-              }
-            }
-          >
-            <div
-              className="c3"
-            >
-              Switch branches/tags
-              <button
-                onClick={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "color": "#ccc",
-                    "cursor": "pointer",
-                    "float": "right",
-                  }
-                }
-              >
-                <i
-                  className="fa fa-close"
-                />
-              </button>
-            </div>
-            <div
-              style={
-                Object {
-                  "backgroundColor": "#f8f8f8",
-                }
-              }
-            >
-              <div
-                style={
-                  Object {
-                    "padding": "10px 10px 0",
-                  }
-                }
-              >
-                <input
-                  placeholder="Find a tag..."
-                  style={
-                    Object {
-                      "border": "1px solid #ddd",
-                      "borderRadius": "3px",
-                      "lineHeight": "20px",
-                      "padding": "6px",
-                      "width": "100%",
-                    }
-                  }
-                />
-              </div>
-              <div>
-                <ul
-                  style={
-                    Object {
-                      "borderBottom": "1px solid #ddd",
-                      "listStyle": "none",
-                      "margin": 0,
-                      "padding": "8px 8px 0",
-                    }
-                  }
-                >
-                  <li
-                    style={
-                      Object {
-                        "backgroundColor": "#fff",
-                        "borderLeft": "1px solid #ddd",
-                        "borderRight": "1px solid #ddd",
-                        "borderTop": "1px solid #ddd",
-                        "borderTopLeftRadius": 3,
-                        "borderTopRightRadius": 3,
-                        "float": "left",
-                        "marginBottom": "-1px",
-                      }
-                    }
-                  >
-                    <a
-                      href="#"
-                      onClick={[Function]}
-                      style={
-                        Object {
-                          "color": "#333",
-                          "display": "block",
-                          "fontSize": "11px",
-                          "fontWeight": "bold",
-                          "padding": "4px 8px 2px",
-                          "textDecoration": "none",
-                        }
-                      }
-                    >
-                      Branches
-                    </a>
-                  </li>
-                  <li
-                    style={
-                      Object {
-                        "float": "left",
-                        "marginBottom": "-1px",
-                      }
-                    }
-                  >
-                    <a
-                      href="#"
-                      onClick={[Function]}
-                      style={
-                        Object {
-                          "color": "#888",
-                          "display": "block",
-                          "fontSize": "11px",
-                          "fontWeight": "bold",
-                          "padding": "4px 8px 2px",
-                          "textDecoration": "none",
-                        }
-                      }
-                    >
-                      Tags
-                    </a>
-                  </li>
-                  <div
-                    style={
-                      Object {
-                        "clear": "both",
-                        "display": "table",
-                      }
-                    }
-                  />
-                </ul>
-                <div
-                  style={
-                    Object {
-                      "display": "block",
-                    }
-                  }
-                >
-                  <div
-                    className="c4"
-                  />
-                </div>
-                <div
-                  style={
-                    Object {
-                      "display": "none",
-                    }
-                  }
-                >
-                  <div
-                    className="c4"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            onClick={[Function]}
-            style={
-              Object {
-                "bottom": 0,
-                "left": 0,
-                "position": "fixed",
-                "right": 0,
-                "top": 0,
-                "zIndex": 1,
-              }
-            }
-          />
-        </div>
-      </div>
-    </div>
-    <a
-      className="c2"
-      href="$OWNER/$REPO/pull/new/$TREE"
-    >
-      New pull request
-    </a>
-    <div
-      className="floatRight"
-      style={
-        Object {
-          "marginRight": 0,
-        }
-      }
-    >
-      <span
-        className="c5"
-        width={300}
-      >
-        <button
-          className="c6"
-          onClick={[Function]}
-        >
-          Clone or download
-        </button>
-      </span>
-    </div>
-    <div
-      className="floatRight"
-    >
-      <div
-        className="c7"
-      >
-        <input
-          className="c2"
-          type="submit"
-          value="Create new file"
-        />
-        <a
-          className="c2"
-          href="$OWNER/$REPO/upload/$TREE"
-        >
-          Upload files
-        </a>
-        <a
-          className="c2"
-          href="$OWNER/$REPO/find/$TREE"
-        >
-          Find file
-        </a>
-      </div>
-    </div>
-  </div>
-  <div
-    className="c0 c8 c9"
-  >
-    <div
-      className="c10"
-    >
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <div>
-          <img
-            alt="$NAME_1"
-            style={
-              Object {
-                "background": "#ccc",
-                "height": 20,
-                "verticalAlign": "middle",
-                "width": 20,
-              }
-            }
-          />
-           
-          <a
-            href="/$NAME_1"
-          >
-            $NAME_1
-          </a>
-           
-          <a
-            onClick={[Function]}
-            style={Object {}}
-          >
-            $MESSAGE_1
-          </a>
-        </div>
-        <div>
-          Latest commit 
-          <a
-            className="sha"
-            onClick={[Function]}
-            style={Object {}}
-          >
-            $SHA_1
-          </a>
-           
-          <time-ago
-            datetime="$DATE_1"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="c11"
-    >
-      <table>
-        <tbody>
-          <tr>
-            <td
-              className="icon"
-            >
-              <i
-                className="fa fa-file-text-o"
-              />
-            </td>
-            <td
-              className="name"
-            >
-              <a
-                onClick={[Function]}
-                style={Object {}}
-              >
-                $PATH_1
-              </a>
-            </td>
-            <td
-              className="commitMessage"
-            >
-              <a
-                onClick={[Function]}
-                style={Object {}}
-              >
-                $MESSAGE_1
-              </a>
-            </td>
-            <td
-              className="updateAt"
-            >
-              <time-ago
-                datetime="$DATE_1"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td
-              className="icon"
-            >
-              <i
-                className="fa fa-file-text-o"
-              />
-            </td>
-            <td
-              className="name"
-            >
-              <a
-                onClick={[Function]}
-                style={Object {}}
-              >
-                $PATH_2
-              </a>
-            </td>
-            <td
-              className="commitMessage"
-            >
-              <a
-                onClick={[Function]}
-                style={Object {}}
-              >
-                $MESSAGE_1
-              </a>
-            </td>
-            <td
-              className="updateAt"
-            >
-              <time-ago
-                datetime="$DATE_1"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
 </div>
 `;
 
@@ -2569,16 +1799,16 @@ exports[`Storyshots Repository/Issues with default 1`] = `
     >
       <a
         className="c3"
+        href="/$OWNER/$REPO/labels"
         onClick={[Function]}
-        style={Object {}}
         transparent="true"
       >
         Labels
       </a>
       <a
         className="c3"
+        href="/$OWNER/$REPO/milestones"
         onClick={[Function]}
-        style={Object {}}
         transparent="true"
       >
         Milestones
@@ -2590,8 +1820,8 @@ exports[`Storyshots Repository/Issues with default 1`] = `
   >
     <div>
       <a
+        href="/$OWNER/$REPO/issues?q=is:open is:issue"
         onClick={[Function]}
-        style={Object {}}
       >
         <i
           className="fa fa-exclamation-circle"
@@ -2603,8 +1833,8 @@ exports[`Storyshots Repository/Issues with default 1`] = `
     </div>
     <div>
       <a
+        href="/$OWNER/$REPO/issues?q=is:closed is:issue"
         onClick={[Function]}
-        style={Object {}}
       >
         <i
           className="fa fa-check"
@@ -2635,8 +1865,8 @@ exports[`Storyshots Repository/Issues with default 1`] = `
           className="title"
         >
           <a
+            href="/$OWNER/$REPO/issues/1"
             onClick={[Function]}
-            style={Object {}}
           >
             $TITLE_1
           </a>
@@ -2656,8 +1886,8 @@ exports[`Storyshots Repository/Issues with default 1`] = `
            by
            
           <a
+            href="/$CREATED_BY_1"
             onClick={[Function]}
-            style={Object {}}
           >
             $CREATED_BY_1
           </a>
@@ -2668,8 +1898,8 @@ exports[`Storyshots Repository/Issues with default 1`] = `
       >
         <div>
           <a
+            href="/$OWNER/$REPO/issues/1"
             onClick={[Function]}
-            style={Object {}}
           >
             <i
               className="fa fa-comment-o"
@@ -2697,8 +1927,8 @@ exports[`Storyshots Repository/Issues with default 1`] = `
           className="title"
         >
           <a
+            href="/$OWNER/$REPO/issues/2"
             onClick={[Function]}
-            style={Object {}}
           >
             $TITLE_2
           </a>
@@ -2718,8 +1948,8 @@ exports[`Storyshots Repository/Issues with default 1`] = `
            by
            
           <a
+            href="/$CREATED_BY_2"
             onClick={[Function]}
-            style={Object {}}
           >
             $CREATED_BY_2
           </a>
@@ -2730,8 +1960,8 @@ exports[`Storyshots Repository/Issues with default 1`] = `
       >
         <div>
           <a
+            href="/$OWNER/$REPO/issues/2"
             onClick={[Function]}
-            style={Object {}}
           >
             <i
               className="fa fa-comment-o"
@@ -3134,8 +2364,8 @@ exports[`Storyshots Repository/Tree with default 1`] = `
     <div>
       <strong>
         <a
+          href="/#OWNER/#REPO/tree/#TREE"
           onClick={[Function]}
-          style={Object {}}
         >
           #REPO
         </a>
@@ -3150,7 +2380,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         /
       </span>
       <strong>
-        #SPLAT
+        #PATH
       </strong>
       <span
         style={
@@ -3197,8 +2427,8 @@ exports[`Storyshots Repository/Tree with default 1`] = `
           </a>
            
           <a
+            href="/#OWNER/#REPO/commit/#SHA_1"
             onClick={[Function]}
-            style={Object {}}
           >
             #MESSAGE_1
           </a>
@@ -3207,8 +2437,8 @@ exports[`Storyshots Repository/Tree with default 1`] = `
           Latest commit 
           <a
             className="sha"
+            href="/#OWNER/#REPO/commit/#SHA_1"
             onClick={[Function]}
-            style={Object {}}
           >
             #SHA_1
           </a>
@@ -3236,8 +2466,8 @@ exports[`Storyshots Repository/Tree with default 1`] = `
               className="name"
             >
               <a
+                href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_1"
                 onClick={[Function]}
-                style={Object {}}
               >
                 #PATH_1
               </a>
@@ -3246,8 +2476,44 @@ exports[`Storyshots Repository/Tree with default 1`] = `
               className="commitMessage"
             >
               <a
+                href="/#OWNER/#REPO/commit/#SHA_1"
                 onClick={[Function]}
-                style={Object {}}
+              >
+                #MESSAGE_1
+              </a>
+            </td>
+            <td
+              className="updateAt"
+            >
+              <time-ago
+                datetime="#DATE_1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="icon"
+            >
+              <i
+                className="fa fa-file-text-o"
+              />
+            </td>
+            <td
+              className="name"
+            >
+              <a
+                href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
+                onClick={[Function]}
+              >
+                #PATH_2
+              </a>
+            </td>
+            <td
+              className="commitMessage"
+            >
+              <a
+                href="/#OWNER/#REPO/commit/#SHA_1"
+                onClick={[Function]}
               >
                 #MESSAGE_1
               </a>
@@ -3271,8 +2537,8 @@ exports[`Storyshots Repository/Tree__Breadcrumbs with 3rd level path 1`] = `
 <div>
   <strong>
     <a
+      href="/foo/bar/tree/TREE"
       onClick={[Function]}
-      style={Object {}}
     >
       bar
     </a>
@@ -3287,8 +2553,8 @@ exports[`Storyshots Repository/Tree__Breadcrumbs with 3rd level path 1`] = `
     /
   </span>
   <a
+    href="/foo/bar/tree/TREE/a"
     onClick={[Function]}
-    style={Object {}}
   >
     a
   </a>
@@ -3302,8 +2568,8 @@ exports[`Storyshots Repository/Tree__Breadcrumbs with 3rd level path 1`] = `
     /
   </span>
   <a
+    href="/foo/bar/tree/TREE/a/b"
     onClick={[Function]}
-    style={Object {}}
   >
     b
   </a>
@@ -3335,8 +2601,8 @@ exports[`Storyshots Repository/Tree__Breadcrumbs with default 1`] = `
 <div>
   <strong>
     <a
+      href="/foo/bar/tree/TREE"
       onClick={[Function]}
-      style={Object {}}
     >
       bar
     </a>
@@ -3351,7 +2617,7 @@ exports[`Storyshots Repository/Tree__Breadcrumbs with default 1`] = `
     /
   </span>
   <strong>
-    SPLAT
+    PATH
   </strong>
   <span
     style={
@@ -3466,8 +2732,8 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
         </a>
          
         <a
+          href="/#OWNER/#REPO/commit/#SHA_1"
           onClick={[Function]}
-          style={Object {}}
         >
           #MESSAGE_1
         </a>
@@ -3476,8 +2742,8 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
         Latest commit 
         <a
           className="sha"
+          href="/#OWNER/#REPO/commit/#SHA_1"
           onClick={[Function]}
-          style={Object {}}
         >
           #SHA_1
         </a>
@@ -3505,18 +2771,18 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
             className="name"
           >
             <a
+              href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
               onClick={[Function]}
-              style={Object {}}
             >
-              #PATH_1
+              #PATH_2
             </a>
           </td>
           <td
             className="commitMessage"
           >
             <a
+              href="/#OWNER/#REPO/commit/#SHA_1"
               onClick={[Function]}
-              style={Object {}}
             >
               #MESSAGE_1
             </a>
@@ -3854,8 +3120,8 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
         className=""
       >
         <a
+          href="/$OWNER/$REPO"
           onClick={[Function]}
-          style={Object {}}
         >
           <i
             className="fa fa-code"
@@ -3867,8 +3133,8 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
         className=""
       >
         <a
+          href="/$OWNER/$REPO/issues"
           onClick={[Function]}
-          style={Object {}}
         >
           <i
             className="fa fa-exclamation-circle"
@@ -3878,11 +3144,11 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
         </a>
       </li>
       <li
-        className="selected"
+        className=""
       >
         <a
+          href="/$OWNER/$REPO/pulls"
           onClick={[Function]}
-          style={Object {}}
         >
           <i
             className="fa fa-code-fork"
@@ -3895,8 +3161,8 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
         className=""
       >
         <a
+          href="/$OWNER/$REPO/projects"
           onClick={[Function]}
-          style={Object {}}
         >
           <i
             className="fa fa-group"
@@ -3909,8 +3175,8 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
         className=""
       >
         <a
+          href="/$OWNER/$REPO/pulse"
           onClick={[Function]}
-          style={Object {}}
         >
           <i
             className="fa fa-line-chart"
@@ -3922,8 +3188,8 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
         className=""
       >
         <a
+          href="/$OWNER/$REPO/graphs"
           onClick={[Function]}
-          style={Object {}}
         >
           <i
             className="fa fa-bar-chart"
@@ -4142,7 +3408,7 @@ exports[`Storyshots Repository1 with default 1`] = `
                   className="c4"
                   href="#"
                 >
-                  6
+                  -1
                 </a>
               </div>
             </li>
@@ -4162,7 +3428,7 @@ exports[`Storyshots Repository1 with default 1`] = `
                   className="c4"
                   href="#"
                 >
-                  4
+                  -1
                 </a>
               </div>
             </li>
@@ -4182,7 +3448,7 @@ exports[`Storyshots Repository1 with default 1`] = `
                   className="c4"
                   href="#"
                 >
-                  1
+                  -1
                 </a>
               </div>
             </li>
@@ -4281,11 +3547,11 @@ exports[`Storyshots Repository1 with default 1`] = `
       >
         <ul>
           <li
-            className="selected"
+            className=""
           >
             <a
+              href="/$OWNER/$REPO"
               onClick={[Function]}
-              style={Object {}}
             >
               <i
                 className="fa fa-code"
@@ -4297,50 +3563,50 @@ exports[`Storyshots Repository1 with default 1`] = `
             className=""
           >
             <a
+              href="/$OWNER/$REPO/issues"
               onClick={[Function]}
-              style={Object {}}
             >
               <i
                 className="fa fa-exclamation-circle"
               />
               Issues 
-              2
+              -1
             </a>
           </li>
           <li
             className=""
           >
             <a
+              href="/$OWNER/$REPO/pulls"
               onClick={[Function]}
-              style={Object {}}
             >
               <i
                 className="fa fa-code-fork"
               />
               Pull requests 
-              5
+              -1
             </a>
           </li>
           <li
             className=""
           >
             <a
+              href="/$OWNER/$REPO/projects"
               onClick={[Function]}
-              style={Object {}}
             >
               <i
                 className="fa fa-group"
               />
               Projects 
-              3
+              -1
             </a>
           </li>
           <li
             className=""
           >
             <a
+              href="/$OWNER/$REPO/wiki"
               onClick={[Function]}
-              style={Object {}}
             >
               <i
                 className="fa fa-book"
@@ -4352,8 +3618,8 @@ exports[`Storyshots Repository1 with default 1`] = `
             className=""
           >
             <a
+              href="/$OWNER/$REPO/pulse"
               onClick={[Function]}
-              style={Object {}}
             >
               <i
                 className="fa fa-line-chart"
@@ -4365,8 +3631,8 @@ exports[`Storyshots Repository1 with default 1`] = `
             className=""
           >
             <a
+              href="/$OWNER/$REPO/graphs"
               onClick={[Function]}
-              style={Object {}}
             >
               <i
                 className="fa fa-bar-chart"
@@ -4378,8 +3644,8 @@ exports[`Storyshots Repository1 with default 1`] = `
             className=""
           >
             <a
+              href="/$OWNER/$REPO/settings"
               onClick={[Function]}
-              style={Object {}}
             >
               <i
                 className="fa fa-gear"
