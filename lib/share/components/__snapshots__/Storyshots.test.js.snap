@@ -271,7 +271,7 @@ exports[`Storyshots Header with default 1`] = `
 `;
 
 exports[`Storyshots Home with default 1`] = `
-.emotion-10 {
+.emotion-7 {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
@@ -291,41 +291,42 @@ exports[`Storyshots Home with default 1`] = `
   border-top: 1px solid #f1f1f1;
 }
 
-.emotion-8 {
+.emotion-6 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.emotion-8 > * {
-  padding: 12px;
-}
-
 .emotion-2 {
+  padding: 12px;
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
-.emotion-6 > table {
+.emotion-5 {
+  padding: 12px;
+}
+
+.emotion-5 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.emotion-6 > table > tbody > tr:first-child td {
+.emotion-5 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.emotion-6 > table > tbody > tr > td {
+.emotion-5 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
 }
 
 <div
-  className="emotion-10 emotion-11"
+  className="emotion-7 emotion-8"
 >
   <div
     style={
@@ -365,15 +366,15 @@ exports[`Storyshots Home with default 1`] = `
       }
     >
       <div
-        className="emotion-8 emotion-9"
+        className="emotion-6"
       >
         <div
-          className="emotion-2 emotion-3"
+          className="emotion-2"
         >
           Public Repositories
         </div>
         <div
-          className="emotion-6 emotion-7"
+          className="emotion-5"
         >
           <ul
             className="emotion-0 emotion-1"
@@ -621,48 +622,49 @@ exports[`Storyshots New with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Branches with default 1`] = `
-.emotion-2 {
+.emotion-1 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.emotion-2 li {
+.emotion-1 li {
   padding: 12px 0;
 }
 
-.emotion-2 li + li {
+.emotion-1 li + li {
   border-top: 1px solid #f1f1f1;
 }
 
-.emotion-6 {
+.emotion-4 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.emotion-6 > * {
-  padding: 12px;
-}
-
 .emotion-0 {
+  padding: 12px;
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
-.emotion-4 > table {
+.emotion-3 {
+  padding: 12px;
+}
+
+.emotion-3 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.emotion-4 > table > tbody > tr:first-child td {
+.emotion-3 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.emotion-4 > table > tbody > tr > td {
+.emotion-3 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
@@ -670,18 +672,18 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 
 <div>
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-4"
   >
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-0"
     >
       Default branch
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-3"
     >
       <ul
-        className="emotion-2 emotion-3"
+        className="emotion-1 emotion-2"
       >
         <li>
           <a
@@ -705,18 +707,18 @@ exports[`Storyshots Repository/Branches with default 1`] = `
     </div>
   </div>
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-4"
   >
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-0"
     >
       Active branches
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-3"
     >
       <ul
-        className="emotion-2 emotion-3"
+        className="emotion-1 emotion-2"
       >
         <li>
           <a
@@ -743,7 +745,7 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Commit with default 1`] = `
-.emotion-8 {
+.emotion-5 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -764,45 +766,47 @@ exports[`Storyshots Repository/Commit with default 1`] = `
   user-select: none;
 }
 
-.emotion-8:hover {
+.emotion-5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-6 {
+.emotion-4 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.emotion-6 > * {
+.emotion-11 {
   padding: 12px;
-}
-
-.emotion-14 {
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
-.emotion-4 > table {
+.emotion-3 {
+  padding: 12px;
+}
+
+.emotion-3 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.emotion-4 > table > tbody > tr:first-child td {
+.emotion-3 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.emotion-4 > table > tbody > tr > td {
+.emotion-3 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
 }
 
 .emotion-2 {
+  padding: 12px;
   background-color: #f2f9fc;
   border-bottom: 1px solid;
   border-color: #c9e6f2;
@@ -835,26 +839,26 @@ exports[`Storyshots Repository/Commit with default 1`] = `
   text-decoration: none;
 }
 
-.emotion-12 > * {
+.emotion-9 > * {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.emotion-12 > *:first-child {
+.emotion-9 > *:first-child {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.emotion-12 > *:last-child {
+.emotion-9 > *:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
 
-.emotion-20 {
+.emotion-16 {
   margin: 0;
 }
 
-.emotion-16 {
+.emotion-12 {
   float: left;
   min-width: 48px;
   padding: 0.5em;
@@ -867,16 +871,16 @@ exports[`Storyshots Repository/Commit with default 1`] = `
   border-right: 1px solid #eee;
 }
 
-.emotion-18 {
+.emotion-14 {
   background-color: white;
 }
 
 <div>
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-4"
   >
     <div
-      className="emotion-2 emotion-3"
+      className="emotion-2"
     >
       <div
         style={
@@ -927,7 +931,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
       </div>
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-3"
     >
       <div
         style={
@@ -994,15 +998,15 @@ exports[`Storyshots Repository/Commit with default 1`] = `
     </div>
     <div>
       <div
-        className="emotion-12 emotion-13"
+        className="emotion-9 emotion-10"
       >
         <button
-          className="emotion-8 emotion-1"
+          className="emotion-5 emotion-1"
         >
           Unified
         </button>
         <button
-          className="emotion-8 emotion-1"
+          className="emotion-5 emotion-1"
         >
           Split
         </button>
@@ -1013,23 +1017,18 @@ exports[`Storyshots Repository/Commit with default 1`] = `
     id="patches"
   >
     <div
-      className="emotion-6 emotion-7"
+      className="emotion-4"
     >
       <div
-        className="emotion-14 emotion-3"
+        className="emotion-11"
       >
         $FILENAME
       </div>
       <div
-        className="emotion-4 emotion-5"
-        style={
-          Object {
-            "padding": 0,
-          }
-        }
+        className="emotion-3"
       >
         <pre
-          className="emotion-20 emotion-21"
+          className="emotion-16 emotion-17"
           style={
             Object {
               "margin": 0,
@@ -1037,7 +1036,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
           }
         >
           <ul
-            className="emotion-16 emotion-17"
+            className="emotion-12 emotion-13"
           >
             <li>
               ...
@@ -1077,7 +1076,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
             </li>
           </ul>
           <code
-            className="hljs emotion-18 emotion-19"
+            className="hljs emotion-14 emotion-15"
             dangerouslySetInnerHTML={
               Object {
                 "__html": "$PATCH",
@@ -1328,7 +1327,7 @@ exports[`Storyshots Repository/Commits with default 1`] = `
 `;
 
 exports[`Storyshots Repository/FileContent with default 1`] = `
-.emotion-6 {
+.emotion-3 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -1349,70 +1348,72 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
   user-select: none;
 }
 
-.emotion-6:hover {
+.emotion-3:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-2 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.emotion-4 > * {
+.emotion-11 {
   padding: 12px;
-}
-
-.emotion-14 {
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
-.emotion-2 > table {
+.emotion-1 {
+  padding: 12px;
+}
+
+.emotion-1 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.emotion-2 > table > tbody > tr:first-child td {
+.emotion-1 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.emotion-2 > table > tbody > tr > td {
+.emotion-1 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
 }
 
 .emotion-0 {
+  padding: 12px;
   background-color: #f2f9fc;
   border-bottom: 1px solid;
   border-color: #c9e6f2;
 }
 
-.emotion-12 > * {
+.emotion-9 > * {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.emotion-12 > *:first-child {
+.emotion-9 > *:first-child {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.emotion-12 > *:last-child {
+.emotion-9 > *:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
 
-.emotion-20 {
+.emotion-16 {
   margin: 0;
 }
 
-.emotion-16 {
+.emotion-12 {
   float: left;
   min-width: 48px;
   padding: 0.5em;
@@ -1425,22 +1426,21 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
   border-right: 1px solid #eee;
 }
 
-.emotion-18 {
+.emotion-14 {
   background-color: white;
 }
 
 <div>
   <div
-    className="emotion-4 emotion-5"
+    className="emotion-2"
   >
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-0"
     >
       commit tease
     </div>
     <div
-      className="emotion-2 emotion-3"
-      id="contributors"
+      className="emotion-1"
     >
       <button>
         2
@@ -1481,10 +1481,10 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
     </div>
   </div>
   <div
-    className="emotion-4 emotion-5"
+    className="emotion-2"
   >
     <div
-      className="emotion-14 emotion-1"
+      className="emotion-11"
     >
       <div
         style={
@@ -1508,22 +1508,22 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
           }
         >
           <div
-            className="emotion-12 emotion-13"
+            className="emotion-9 emotion-10"
           >
             <button
-              className="emotion-6 emotion-7"
+              className="emotion-3 emotion-4"
               to="/{params.owner}/$REPO/raw/$BRANCH/$PATH"
             >
               Raw
             </button>
             <button
-              className="emotion-6 emotion-7"
+              className="emotion-3 emotion-4"
               to="/$OWNER/$REPO/blame/$BRANCH/$PATH"
             >
               Blame
             </button>
             <button
-              className="emotion-6 emotion-7"
+              className="emotion-3 emotion-4"
               to="/$OWNER/$REPO/commits/$BRANCH/$PATH"
             >
               History
@@ -1549,20 +1549,20 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
       </div>
     </div>
     <div
-      className="emotion-2 emotion-3"
+      className="emotion-1"
     >
       <pre
-        className="emotion-20 emotion-21"
+        className="emotion-16 emotion-17"
       >
         <ul
-          className="emotion-16 emotion-17"
+          className="emotion-12 emotion-13"
         >
           <li>
             1
           </li>
         </ul>
         <code
-          className="hljs emotion-18 emotion-19"
+          className="hljs emotion-14 emotion-15"
           dangerouslySetInnerHTML={
             Object {
               "__html": "$CONTENT",
@@ -2013,23 +2013,15 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   text-decoration: none;
 }
 
-.emotion-10 > table {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 20px;
-}
-
-.emotion-10 > table > tbody > tr:first-child td {
-  border: none;
-}
-
-.emotion-10 > table > tbody > tr > td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
+.emotion-10 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
 }
 
 .emotion-8 {
+  padding: 12px;
   background-color: #f2f9fc;
   border-bottom: 1px solid;
   border-color: #c9e6f2;
@@ -2066,40 +2058,49 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   background-color: #4078c0;
 }
 
-.emotion-13 {
-  position: relative;
-  border: 1px solid #d8d8d8;
-  border-radius: 3px;
-  margin-bottom: 24px;
-}
-
-.emotion-13 > * {
-  padding: 12px;
-}
-
-.emotion-13 table tr td.icon {
+.emotion-11 table tr td.icon {
   width: 18px;
   padding-left: 12px;
 }
 
-.emotion-13 table tr td.commitMessage {
+.emotion-11 table tr td.commitMessage {
   padding-left: 12px;
 }
 
-.emotion-13 table tr td.commitMessage a {
+.emotion-11 table tr td.commitMessage a {
   color: #888;
 }
 
-.emotion-13 table tr td.updateAt {
+.emotion-11 table tr td.updateAt {
   width: 120px;
   padding-right: 12px;
   text-align: right;
 }
 
-.emotion-13 .sha {
+.emotion-11 .sha {
   font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
   font-size: 90%;
   color: #445055;
+}
+
+.emotion-9 {
+  padding: 0;
+}
+
+.emotion-9 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.emotion-9 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.emotion-9 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
 }
 
 <div>
@@ -2372,140 +2373,144 @@ exports[`Storyshots Repository/Tree with default 1`] = `
     </div>
   </div>
   <div
-    className="emotion-12 emotion-13 emotion-14"
+    className="emotion-11 emotion-12"
   >
     <div
-      className="emotion-8 emotion-9"
+      className="emotion-10"
     >
       <div
-        style={
-          Object {
-            "display": "flex",
-            "justifyContent": "space-between",
-          }
-        }
+        className="emotion-8"
       >
-        <div>
-          <img
-            alt="#NAME_1"
-            style={
-              Object {
-                "background": "#ccc",
-                "height": 20,
-                "verticalAlign": "middle",
-                "width": 20,
-              }
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "space-between",
             }
-          />
-           
-          <a
-            href="/#NAME_1"
-          >
-            #NAME_1
-          </a>
-           
-          <a
-            href="/#OWNER/#REPO/commit/#SHA_1"
-            onClick={[Function]}
-          >
-            #MESSAGE_1
-          </a>
-        </div>
-        <div>
-          Latest commit 
-          <a
-            className="sha"
-            href="/#OWNER/#REPO/commit/#SHA_1"
-            onClick={[Function]}
-          >
-            #SHA_1
-          </a>
-           
-          <time-ago
-            datetime="#DATE_1"
-          />
+          }
+        >
+          <div>
+            <img
+              alt="#NAME_1"
+              style={
+                Object {
+                  "background": "#ccc",
+                  "height": 20,
+                  "verticalAlign": "middle",
+                  "width": 20,
+                }
+              }
+            />
+             
+            <a
+              href="/#NAME_1"
+            >
+              #NAME_1
+            </a>
+             
+            <a
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #MESSAGE_1
+            </a>
+          </div>
+          <div>
+            Latest commit 
+            <a
+              className="sha"
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #SHA_1
+            </a>
+             
+            <time-ago
+              datetime="#DATE_1"
+            />
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="emotion-10 emotion-11"
-    >
-      <table>
-        <tbody>
-          <tr>
-            <td
-              className="icon"
-            >
-              <i
-                className="fa fa-file-text-o"
-              />
-            </td>
-            <td
-              className="name"
-            >
-              <a
-                href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_1"
-                onClick={[Function]}
+      <div
+        className="emotion-9"
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td
+                className="icon"
               >
-                #PATH_1
-              </a>
-            </td>
-            <td
-              className="commitMessage"
-            >
-              <a
-                href="/#OWNER/#REPO/commit/#SHA_1"
-                onClick={[Function]}
+                <i
+                  className="fa fa-file-text-o"
+                />
+              </td>
+              <td
+                className="name"
               >
-                #MESSAGE_1
-              </a>
-            </td>
-            <td
-              className="updateAt"
-            >
-              <time-ago
-                datetime="#DATE_1"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td
-              className="icon"
-            >
-              <i
-                className="fa fa-file-text-o"
-              />
-            </td>
-            <td
-              className="name"
-            >
-              <a
-                href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
-                onClick={[Function]}
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_1"
+                  onClick={[Function]}
+                >
+                  #PATH_1
+                </a>
+              </td>
+              <td
+                className="commitMessage"
               >
-                #PATH_2
-              </a>
-            </td>
-            <td
-              className="commitMessage"
-            >
-              <a
-                href="/#OWNER/#REPO/commit/#SHA_1"
-                onClick={[Function]}
+                <a
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="updateAt"
               >
-                #MESSAGE_1
-              </a>
-            </td>
-            <td
-              className="updateAt"
-            >
-              <time-ago
-                datetime="#DATE_1"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                <time-ago
+                  datetime="#DATE_1"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td
+                className="icon"
+              >
+                <i
+                  className="fa fa-file-text-o"
+                />
+              </td>
+              <td
+                className="name"
+              >
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
+                  onClick={[Function]}
+                >
+                  #PATH_2
+                </a>
+              </td>
+              <td
+                className="commitMessage"
+              >
+                <a
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="updateAt"
+              >
+                <time-ago
+                  datetime="#DATE_1"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
@@ -2618,163 +2623,168 @@ exports[`Storyshots Repository/Wiki with default 1`] = `
 `;
 
 exports[`Storyshots Repository/shared/Entries with default 1`] = `
-.emotion-2 > table {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 20px;
-}
-
-.emotion-2 > table > tbody > tr:first-child td {
-  border: none;
-}
-
-.emotion-2 > table > tbody > tr > td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
-}
-
-.emotion-0 {
-  background-color: #f2f9fc;
-  border-bottom: 1px solid;
-  border-color: #c9e6f2;
-}
-
-.emotion-5 {
+.emotion-2 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.emotion-5 > * {
+.emotion-0 {
   padding: 12px;
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
 }
 
-.emotion-5 table tr td.icon {
+.emotion-3 table tr td.icon {
   width: 18px;
   padding-left: 12px;
 }
 
-.emotion-5 table tr td.commitMessage {
+.emotion-3 table tr td.commitMessage {
   padding-left: 12px;
 }
 
-.emotion-5 table tr td.commitMessage a {
+.emotion-3 table tr td.commitMessage a {
   color: #888;
 }
 
-.emotion-5 table tr td.updateAt {
+.emotion-3 table tr td.updateAt {
   width: 120px;
   padding-right: 12px;
   text-align: right;
 }
 
-.emotion-5 .sha {
+.emotion-3 .sha {
   font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
   font-size: 90%;
   color: #445055;
 }
 
+.emotion-1 {
+  padding: 0;
+}
+
+.emotion-1 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.emotion-1 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.emotion-1 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
 <div
-  className="emotion-4 emotion-5 emotion-6"
+  className="emotion-3 emotion-4"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2"
   >
     <div
-      style={
-        Object {
-          "display": "flex",
-          "justifyContent": "space-between",
-        }
-      }
+      className="emotion-0"
     >
-      <div>
-        <img
-          alt="#NAME_1"
-          style={
-            Object {
-              "background": "#ccc",
-              "height": 20,
-              "verticalAlign": "middle",
-              "width": 20,
-            }
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
           }
-        />
-         
-        <a
-          href="/#NAME_1"
-        >
-          #NAME_1
-        </a>
-         
-        <a
-          href="/#OWNER/#REPO/commit/#SHA_1"
-          onClick={[Function]}
-        >
-          #MESSAGE_1
-        </a>
-      </div>
-      <div>
-        Latest commit 
-        <a
-          className="sha"
-          href="/#OWNER/#REPO/commit/#SHA_1"
-          onClick={[Function]}
-        >
-          #SHA_1
-        </a>
-         
-        <time-ago
-          datetime="#DATE_1"
-        />
+        }
+      >
+        <div>
+          <img
+            alt="#NAME_1"
+            style={
+              Object {
+                "background": "#ccc",
+                "height": 20,
+                "verticalAlign": "middle",
+                "width": 20,
+              }
+            }
+          />
+           
+          <a
+            href="/#NAME_1"
+          >
+            #NAME_1
+          </a>
+           
+          <a
+            href="/#OWNER/#REPO/commit/#SHA_1"
+            onClick={[Function]}
+          >
+            #MESSAGE_1
+          </a>
+        </div>
+        <div>
+          Latest commit 
+          <a
+            className="sha"
+            href="/#OWNER/#REPO/commit/#SHA_1"
+            onClick={[Function]}
+          >
+            #SHA_1
+          </a>
+           
+          <time-ago
+            datetime="#DATE_1"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    className="emotion-2 emotion-3"
-  >
-    <table>
-      <tbody>
-        <tr>
-          <td
-            className="icon"
-          >
-            <i
-              className="fa fa-file-text-o"
-            />
-          </td>
-          <td
-            className="name"
-          >
-            <a
-              href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
-              onClick={[Function]}
+    <div
+      className="emotion-1"
+    >
+      <table>
+        <tbody>
+          <tr>
+            <td
+              className="icon"
             >
-              #PATH_2
-            </a>
-          </td>
-          <td
-            className="commitMessage"
-          >
-            <a
-              href="/#OWNER/#REPO/commit/#SHA_1"
-              onClick={[Function]}
+              <i
+                className="fa fa-file-text-o"
+              />
+            </td>
+            <td
+              className="name"
             >
-              #MESSAGE_1
-            </a>
-          </td>
-          <td
-            className="updateAt"
-          >
-            <time-ago
-              datetime="#DATE_1"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+              <a
+                href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
+                onClick={[Function]}
+              >
+                #PATH_2
+              </a>
+            </td>
+            <td
+              className="commitMessage"
+            >
+              <a
+                href="/#OWNER/#REPO/commit/#SHA_1"
+                onClick={[Function]}
+              >
+                #MESSAGE_1
+              </a>
+            </td>
+            <td
+              className="updateAt"
+            >
+              <time-ago
+                datetime="#DATE_1"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 `;
