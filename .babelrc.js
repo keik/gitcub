@@ -13,10 +13,10 @@ module.exports = {
     '@babel/preset-react'
   ],
   plugins: [
+    'emotion',
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-object-rest-spread',
-    'transform-inline-environment-variables',
-    'styled-components'
+    'transform-inline-environment-variables'
   ],
   env: {
     test: {
