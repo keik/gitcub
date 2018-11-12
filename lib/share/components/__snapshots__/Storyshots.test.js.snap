@@ -1,31 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots App__Footer with default 1`] = `
-.c2 {
-  padding: 0 8px;
-  margin-right: 12px;
-  line-height: 28px;
-  vertical-align: middle;
-  color: #ccc;
-  font-size: 22px;
-  font-family: 'Rajdhani',sans-serif;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c2:hover {
-  border-color: #4078c0;
-}
-
-.c0 {
-  width: 980px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.c1 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -45,25 +21,49 @@ exports[`Storyshots App__Footer with default 1`] = `
   font-size: 12px;
 }
 
-.c1 > ul {
+.emotion-2 > ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.c1 > ul > li {
+.emotion-2 > ul > li {
   display: inline-block;
 }
 
-.c1 > ul > li + li {
+.emotion-2 > ul > li + li {
   margin-left: 10px;
 }
 
+.emotion-4 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.emotion-0 {
+  padding: 0 8px;
+  margin-right: 12px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #ccc;
+  font-size: 22px;
+  font-family: 'Rajdhani',sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0:hover {
+  border-color: #4078c0;
+}
+
 <div
-  className="c0"
+  className="emotion-4 emotion-5"
 >
   <div
-    className="c1"
+    className="emotion-2 emotion-3"
   >
     <ul>
       <li>
@@ -78,7 +78,7 @@ exports[`Storyshots App__Footer with default 1`] = `
       </li>
     </ul>
     <a
-      className="c2"
+      className="emotion-0 emotion-1"
       href="#"
     >
       GH
@@ -104,7 +104,7 @@ exports[`Storyshots App__Footer with default 1`] = `
 `;
 
 exports[`Storyshots Header with default 1`] = `
-.c1 {
+.emotion-0 {
   padding: 0 8px;
   margin-right: 12px;
   line-height: 28px;
@@ -118,15 +118,63 @@ exports[`Storyshots Header with default 1`] = `
   text-decoration: none;
 }
 
-.c1:hover {
+.emotion-0:hover {
   border-color: #4078c0;
 }
 
-.c3 > * + * {
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #24292e;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 13px;
+}
+
+.emotion-10 > *:last-child {
+  margin-left: auto;
+}
+
+.emotion-10:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.emotion-2 {
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.emotion-2 label {
+  border-right: 1px solid #ddd;
+  padding: 4px 8px;
+  color: #767676;
+  font-size: 12px;
+}
+
+.emotion-2 input {
+  border: none;
+  min-height: 26px;
+}
+
+.emotion-8 > * + * {
   margin-left: 12px;
 }
 
-.c4 {
+.emotion-4 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -147,12 +195,12 @@ exports[`Storyshots Header with default 1`] = `
   user-select: none;
 }
 
-.c4:hover {
+.emotion-4:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c5 {
+.emotion-6 {
   display: inline-block;
   color: #fff;
   background-image: linear-gradient(#8add6d,#60b044);
@@ -173,72 +221,24 @@ exports[`Storyshots Header with default 1`] = `
   user-select: none;
 }
 
-.c5:hover {
+.emotion-6:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 12px;
-  background-color: #24292e;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 13px;
-}
-
-.c0 > *:last-child {
-  margin-left: auto;
-}
-
-.c0:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.c2 {
-  float: left;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-}
-
-.c2 label {
-  border-right: 1px solid #ddd;
-  padding: 4px 8px;
-  color: #767676;
-  font-size: 12px;
-}
-
-.c2 input {
-  border: none;
-  min-height: 26px;
-}
-
 <div
-  className="c0"
+  className="emotion-10 emotion-11"
 >
   <div>
     <a
-      className="c1"
+      className="emotion-0 emotion-1"
       href="/"
     >
       GH
     </a>
   </div>
   <form
-    className="c2"
+    className="emotion-2 emotion-3"
   >
     <label
       htmlFor="input-search-query"
@@ -252,80 +252,80 @@ exports[`Storyshots Header with default 1`] = `
     />
   </form>
   <div
-    className="c3"
+    className="emotion-8 emotion-9"
   >
-    <a
-      className="c4"
+    <button
+      className="emotion-4 emotion-5"
       href="/login"
     >
       Sign in
-    </a>
-    <a
-      className="c5"
+    </button>
+    <button
+      className="emotion-6 emotion-5"
       href="/join"
     >
       Sign up
-    </a>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Home with default 1`] = `
-.c0 {
+.emotion-10 {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.c1 {
+.emotion-0 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c1 li {
+.emotion-0 li {
   padding: 12px 0;
 }
 
-.c1 li + li {
+.emotion-0 li + li {
   border-top: 1px solid #f1f1f1;
 }
 
-.c2 {
+.emotion-8 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.c2 > * {
+.emotion-8 > * {
   padding: 12px;
 }
 
-.c3 {
+.emotion-2 {
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
-.c4 > table {
+.emotion-6 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.c4 > table > tbody > tr:first-child td {
+.emotion-6 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.c4 > table > tbody > tr > td {
+.emotion-6 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
 }
 
 <div
-  className="c0"
+  className="emotion-10 emotion-11"
 >
   <div
     style={
@@ -343,7 +343,7 @@ exports[`Storyshots Home with default 1`] = `
       }
     >
       <ul
-        className="c1"
+        className="emotion-0 emotion-1"
       >
         <li>
           ACTIVITY_1
@@ -365,18 +365,18 @@ exports[`Storyshots Home with default 1`] = `
       }
     >
       <div
-        className="c2"
+        className="emotion-8 emotion-9"
       >
         <div
-          className="c3"
+          className="emotion-2 emotion-3"
         >
           Public Repositories
         </div>
         <div
-          className="c4"
+          className="emotion-6 emotion-7"
         >
           <ul
-            className="c1"
+            className="emotion-0 emotion-1"
           >
             <li>
               <i
@@ -420,13 +420,41 @@ exports[`Storyshots Home with default 1`] = `
 `;
 
 exports[`Storyshots New with default 1`] = `
-.c0 {
+.emotion-18 {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.c4 {
+.emotion-0 {
+  margin: 0;
+  font-size: 14px;
+  color: #767676;
+}
+
+.emotion-2 {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.emotion-2 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.emotion-4 {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.emotion-4 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.emotion-16 {
   display: inline-block;
   color: #fff;
   background-image: linear-gradient(#8add6d,#60b044);
@@ -447,41 +475,13 @@ exports[`Storyshots New with default 1`] = `
   user-select: none;
 }
 
-.c4:hover {
+.emotion-16:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 {
-  margin-bottom: 8px;
-  display: block;
-}
-
-.c2 > label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.c3 {
-  margin-bottom: 8px;
-  display: inline-block;
-}
-
-.c3 > label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.c1 {
-  margin: 0;
-  font-size: 14px;
-  color: #767676;
-}
-
 <div
-  className="c0"
+  className="emotion-18 emotion-19"
 >
   <div
     style={
@@ -503,7 +503,7 @@ exports[`Storyshots New with default 1`] = `
       Create a new repository
     </h2>
     <p
-      className="c1"
+      className="emotion-0 emotion-1"
     >
       A repository contains all the files for your project, including the revision history.
     </p>
@@ -520,7 +520,7 @@ exports[`Storyshots New with default 1`] = `
     />
     <div>
       <div
-        className="c2"
+        className="emotion-2 emotion-3"
         style={
           Object {
             "display": "inline-block",
@@ -542,7 +542,7 @@ exports[`Storyshots New with default 1`] = `
          / 
       </span>
       <div
-        className="c3"
+        className="emotion-4 emotion-3"
       >
         <label
           htmlFor="name"
@@ -557,7 +557,7 @@ exports[`Storyshots New with default 1`] = `
       </div>
     </div>
     <div
-      className="c2"
+      className="emotion-2 emotion-3"
     >
       <label
         htmlFor="description"
@@ -577,7 +577,7 @@ exports[`Storyshots New with default 1`] = `
     </div>
     <hr />
     <div
-      className="c2"
+      className="emotion-2 emotion-3"
     >
       <label>
         <input
@@ -588,13 +588,13 @@ exports[`Storyshots New with default 1`] = `
         Public
       </label>
       <p
-        className="c1"
+        className="emotion-0 emotion-1"
       >
         Anyone can see this repository. You choose who can commit.
       </p>
     </div>
     <div
-      className="c2"
+      className="emotion-2 emotion-3"
     >
       <label>
         <input
@@ -605,14 +605,14 @@ exports[`Storyshots New with default 1`] = `
         Private
       </label>
       <p
-        className="c1"
+        className="emotion-0 emotion-1"
       >
         You choose who can see and commit to this repository.
       </p>
     </div>
     <hr />
     <button
-      className="c4"
+      className="emotion-16 emotion-17"
     >
       Create repository
     </button>
@@ -621,48 +621,48 @@ exports[`Storyshots New with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Branches with default 1`] = `
-.c3 {
+.emotion-2 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c3 li {
+.emotion-2 li {
   padding: 12px 0;
 }
 
-.c3 li + li {
+.emotion-2 li + li {
   border-top: 1px solid #f1f1f1;
 }
 
-.c0 {
+.emotion-6 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.c0 > * {
+.emotion-6 > * {
   padding: 12px;
 }
 
-.c1 {
+.emotion-0 {
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
-.c2 > table {
+.emotion-4 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.c2 > table > tbody > tr:first-child td {
+.emotion-4 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.c2 > table > tbody > tr > td {
+.emotion-4 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
@@ -670,18 +670,18 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 
 <div>
   <div
-    className="c0"
+    className="emotion-6 emotion-7"
   >
     <div
-      className="c1"
+      className="emotion-0 emotion-1"
     >
       Default branch
     </div>
     <div
-      className="c2"
+      className="emotion-4 emotion-5"
     >
       <ul
-        className="c3"
+        className="emotion-2 emotion-3"
       >
         <li>
           <a
@@ -705,18 +705,18 @@ exports[`Storyshots Repository/Branches with default 1`] = `
     </div>
   </div>
   <div
-    className="c0"
+    className="emotion-6 emotion-7"
   >
     <div
-      className="c1"
+      className="emotion-0 emotion-1"
     >
       Active branches
     </div>
     <div
-      className="c2"
+      className="emotion-4 emotion-5"
     >
       <ul
-        className="c3"
+        className="emotion-2 emotion-3"
       >
         <li>
           <a
@@ -743,7 +743,7 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Commit with default 1`] = `
-.c5 {
+.emotion-8 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -764,12 +764,51 @@ exports[`Storyshots Repository/Commit with default 1`] = `
   user-select: none;
 }
 
-.c5:hover {
+.emotion-8:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 {
+.emotion-6 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.emotion-6 > * {
+  padding: 12px;
+}
+
+.emotion-14 {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.emotion-4 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.emotion-4 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.emotion-4 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.emotion-2 {
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.emotion-0 {
   display: inline-block;
   color: #333;
   background-color: transparent;
@@ -791,55 +830,31 @@ exports[`Storyshots Repository/Commit with default 1`] = `
   user-select: none;
 }
 
-.c2:hover {
+.emotion-0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 {
-  position: relative;
-  border: 1px solid #d8d8d8;
-  border-radius: 3px;
-  margin-bottom: 24px;
+.emotion-12 > * {
+  border-right-width: 0;
+  border-radius: 0;
 }
 
-.c0 > * {
-  padding: 12px;
+.emotion-12 > *:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.c6 {
-  background-color: #f7f7f7;
-  border-bottom: 1px solid;
-  border-color: #d8d8d8;
+.emotion-12 > *:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
 }
 
-.c1 {
-  background-color: #f2f9fc;
-  border-bottom: 1px solid;
-  border-color: #c9e6f2;
-}
-
-.c3 > table {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 20px;
-}
-
-.c3 > table > tbody > tr:first-child td {
-  border: none;
-}
-
-.c3 > table > tbody > tr > td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
-}
-
-.c7 {
+.emotion-20 {
   margin: 0;
 }
 
-.c8 {
+.emotion-16 {
   float: left;
   min-width: 48px;
   padding: 0.5em;
@@ -852,31 +867,16 @@ exports[`Storyshots Repository/Commit with default 1`] = `
   border-right: 1px solid #eee;
 }
 
-.c9 {
+.emotion-18 {
   background-color: white;
-}
-
-.c4 > * {
-  border-right-width: 0;
-  border-radius: 0;
-}
-
-.c4 > *:first-child {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c4 > *:last-child {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
 }
 
 <div>
   <div
-    className="c0"
+    className="emotion-6 emotion-7"
   >
     <div
-      className="c1"
+      className="emotion-2 emotion-3"
     >
       <div
         style={
@@ -898,8 +898,8 @@ exports[`Storyshots Repository/Commit with default 1`] = `
         >
           $MESSAGE
         </h1>
-        <a
-          className="c2"
+        <button
+          className="emotion-0 emotion-1"
           href="/$OWNER/$REPO/tree/$SHA"
           style={
             Object {
@@ -908,7 +908,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
           }
         >
           Browse files
-        </a>
+        </button>
       </div>
       <div
         style={
@@ -927,7 +927,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
       </div>
     </div>
     <div
-      className="c3"
+      className="emotion-4 emotion-5"
     >
       <div
         style={
@@ -994,15 +994,15 @@ exports[`Storyshots Repository/Commit with default 1`] = `
     </div>
     <div>
       <div
-        className="c4"
+        className="emotion-12 emotion-13"
       >
         <button
-          className="c5"
+          className="emotion-8 emotion-1"
         >
           Unified
         </button>
         <button
-          className="c5"
+          className="emotion-8 emotion-1"
         >
           Split
         </button>
@@ -1013,15 +1013,15 @@ exports[`Storyshots Repository/Commit with default 1`] = `
     id="patches"
   >
     <div
-      className="c0"
+      className="emotion-6 emotion-7"
     >
       <div
-        className="c6"
+        className="emotion-14 emotion-3"
       >
         $FILENAME
       </div>
       <div
-        className="c3"
+        className="emotion-4 emotion-5"
         style={
           Object {
             "padding": 0,
@@ -1029,7 +1029,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
         }
       >
         <pre
-          className="c7"
+          className="emotion-20 emotion-21"
           style={
             Object {
               "margin": 0,
@@ -1037,7 +1037,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
           }
         >
           <ul
-            className="c8"
+            className="emotion-16 emotion-17"
           >
             <li>
               ...
@@ -1077,7 +1077,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
             </li>
           </ul>
           <code
-            className="hljs c9"
+            className="hljs emotion-18 emotion-19"
             dangerouslySetInnerHTML={
               Object {
                 "__html": "$PATCH",
@@ -1092,7 +1092,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Commits with default 1`] = `
-.c5 {
+.emotion-2 {
   display: inline-block;
   color: #333;
   background-color: transparent;
@@ -1114,27 +1114,27 @@ exports[`Storyshots Repository/Commits with default 1`] = `
   user-select: none;
 }
 
-.c5:hover {
+.emotion-2:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c4 > * {
+.emotion-6 > * {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.c4 > *:first-child {
+.emotion-6 > *:first-child {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.c4 > *:last-child {
+.emotion-6 > *:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
 
-.c0 {
+.emotion-28 {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1143,7 +1143,7 @@ exports[`Storyshots Repository/Commits with default 1`] = `
   border-left: 1px solid #eee;
 }
 
-.c1 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1160,25 +1160,25 @@ exports[`Storyshots Repository/Commits with default 1`] = `
   border-top: 1px solid #eee;
 }
 
-.c2 {
+.emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c2 .title {
+.emotion-0 .title {
   font-size: 15px;
   font-weight: bold;
   color: #333;
 }
 
-.c2 .meta {
+.emotion-0 .meta {
   font-weight: normal;
   color: #767676;
 }
 
-.c3 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1186,13 +1186,13 @@ exports[`Storyshots Repository/Commits with default 1`] = `
 }
 
 <ul
-  className="c0"
+  className="emotion-28 emotion-29"
 >
   <li
-    className="c1"
+    className="emotion-12 emotion-13"
   >
     <div
-      className="c2"
+      className="emotion-0 emotion-1"
     >
       <div>
         <div
@@ -1222,51 +1222,45 @@ exports[`Storyshots Repository/Commits with default 1`] = `
       </div>
     </div>
     <div
-      className="c3"
+      className="emotion-10 emotion-11"
     >
       <div
-        className="c4"
+        className="emotion-6 emotion-7"
       >
         <button
-          className="c5"
+          className="emotion-2 emotion-3"
         >
           <i
             className="fa fa-clipboard"
           />
         </button>
-        <a
-          className="c5"
-          href="/$OWNER/$REPO/commit/$SHA_1"
-          onClick={[Function]}
-          small="true"
-          transparent="true"
+        <button
+          className="emotion-2 emotion-3"
+          to="/$OWNER/$REPO/commit/$SHA_1"
         >
           $SHA_1
-        </a>
+        </button>
       </div>
-      <a
-        className="c5"
-        href="/$OWNER/$REPO/tree/$SHA_1"
-        onClick={[Function]}
-        small="true"
+      <button
+        className="emotion-2 emotion-3"
         style={
           Object {
             "marginLeft": "12px",
           }
         }
-        transparent="true"
+        to="/$OWNER/$REPO/tree/$SHA_1"
       >
         <i
           className="fa fa-code"
         />
-      </a>
+      </button>
     </div>
   </li>
   <li
-    className="c1"
+    className="emotion-12 emotion-13"
   >
     <div
-      className="c2"
+      className="emotion-0 emotion-1"
     >
       <div>
         <div
@@ -1296,51 +1290,45 @@ exports[`Storyshots Repository/Commits with default 1`] = `
       </div>
     </div>
     <div
-      className="c3"
+      className="emotion-10 emotion-11"
     >
       <div
-        className="c4"
+        className="emotion-6 emotion-7"
       >
         <button
-          className="c5"
+          className="emotion-2 emotion-3"
         >
           <i
             className="fa fa-clipboard"
           />
         </button>
-        <a
-          className="c5"
-          href="/$OWNER/$REPO/commit/$SHA_2"
-          onClick={[Function]}
-          small="true"
-          transparent="true"
+        <button
+          className="emotion-2 emotion-3"
+          to="/$OWNER/$REPO/commit/$SHA_2"
         >
           $SHA_2
-        </a>
+        </button>
       </div>
-      <a
-        className="c5"
-        href="/$OWNER/$REPO/tree/$SHA_2"
-        onClick={[Function]}
-        small="true"
+      <button
+        className="emotion-2 emotion-3"
         style={
           Object {
             "marginLeft": "12px",
           }
         }
-        transparent="true"
+        to="/$OWNER/$REPO/tree/$SHA_2"
       >
         <i
           className="fa fa-code"
         />
-      </a>
+      </button>
     </div>
   </li>
 </ul>
 `;
 
 exports[`Storyshots Repository/FileContent with default 1`] = `
-.c5 {
+.emotion-6 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -1361,55 +1349,70 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
   user-select: none;
 }
 
-.c5:hover {
+.emotion-6:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 {
+.emotion-4 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.c0 > * {
+.emotion-4 > * {
   padding: 12px;
 }
 
-.c3 {
+.emotion-14 {
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
-.c1 {
-  background-color: #f2f9fc;
-  border-bottom: 1px solid;
-  border-color: #c9e6f2;
-}
-
-.c2 > table {
+.emotion-2 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.c2 > table > tbody > tr:first-child td {
+.emotion-2 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.c2 > table > tbody > tr > td {
+.emotion-2 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
 }
 
-.c6 {
+.emotion-0 {
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.emotion-12 > * {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.emotion-12 > *:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.emotion-12 > *:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.emotion-20 {
   margin: 0;
 }
 
-.c7 {
+.emotion-16 {
   float: left;
   min-width: 48px;
   padding: 0.5em;
@@ -1422,36 +1425,21 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
   border-right: 1px solid #eee;
 }
 
-.c8 {
+.emotion-18 {
   background-color: white;
-}
-
-.c4 > * {
-  border-right-width: 0;
-  border-radius: 0;
-}
-
-.c4 > *:first-child {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c4 > *:last-child {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
 }
 
 <div>
   <div
-    className="c0"
+    className="emotion-4 emotion-5"
   >
     <div
-      className="c1"
+      className="emotion-0 emotion-1"
     >
       commit tease
     </div>
     <div
-      className="c2"
+      className="emotion-2 emotion-3"
       id="contributors"
     >
       <button>
@@ -1493,10 +1481,10 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
     </div>
   </div>
   <div
-    className="c0"
+    className="emotion-4 emotion-5"
   >
     <div
-      className="c3"
+      className="emotion-14 emotion-1"
     >
       <div
         style={
@@ -1520,32 +1508,26 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
           }
         >
           <div
-            className="c4"
+            className="emotion-12 emotion-13"
           >
-            <a
-              className="c5"
-              href="/{params.owner}/$REPO/raw/$BRANCH/$PATH"
-              onClick={[Function]}
-              small="true"
+            <button
+              className="emotion-6 emotion-7"
+              to="/{params.owner}/$REPO/raw/$BRANCH/$PATH"
             >
               Raw
-            </a>
-            <a
-              className="c5"
-              href="/$OWNER/$REPO/blame/$BRANCH/$PATH"
-              onClick={[Function]}
-              small="true"
+            </button>
+            <button
+              className="emotion-6 emotion-7"
+              to="/$OWNER/$REPO/blame/$BRANCH/$PATH"
             >
               Blame
-            </a>
-            <a
-              className="c5"
-              href="/$OWNER/$REPO/commits/$BRANCH/$PATH"
-              onClick={[Function]}
-              small="true"
+            </button>
+            <button
+              className="emotion-6 emotion-7"
+              to="/$OWNER/$REPO/commits/$BRANCH/$PATH"
             >
               History
-            </a>
+            </button>
           </div>
           <button
             style={
@@ -1567,20 +1549,20 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
       </div>
     </div>
     <div
-      className="c2"
+      className="emotion-2 emotion-3"
     >
       <pre
-        className="c6"
+        className="emotion-20 emotion-21"
       >
         <ul
-          className="c7"
+          className="emotion-16 emotion-17"
         >
           <li>
             1
           </li>
         </ul>
         <code
-          className="hljs c8"
+          className="hljs emotion-18 emotion-19"
           dangerouslySetInnerHTML={
             Object {
               "__html": "$CONTENT",
@@ -1603,7 +1585,7 @@ exports[`Storyshots Repository/Graphs with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Issues with default 1`] = `
-.c1 {
+.emotion-0 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -1624,12 +1606,129 @@ exports[`Storyshots Repository/Issues with default 1`] = `
   user-select: none;
 }
 
-.c1:hover {
+.emotion-0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c3 {
+.emotion-6 > * {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.emotion-6 > *:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.emotion-6 > *:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.emotion-8 .subnav > * {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.emotion-8 .filter {
+  display: inline-block;
+}
+
+.emotion-8 .filter:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.emotion-8 .filter button {
+  padding: 6px 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+.emotion-8 .filter form {
+  margin-left: -1px;
+  position: relative;
+  display: inline-block;
+}
+
+.emotion-8 .filter form i {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+
+.emotion-8 .filter input {
+  width: 320px;
+  padding: 6px 10px 6px 32px;
+  color: #767676;
+  border: 1px solid #d5d5d5;
+  border-radius: 0 3px 3px 0;
+  line-height: 20px;
+}
+
+.emotion-8 .issuesHeader {
+  position: relative;
+  padding: 12px 12px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px 3px 0 0;
+}
+
+.emotion-8 .issuesHeader > * {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.emotion-8 .issues {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.emotion-8 .issue {
+  padding: 12px 12px;
+  border-top: 1px solid #eee;
+}
+
+.emotion-8 .issue:first-child {
+  border-top: none;
+}
+
+.emotion-8 .issue:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.emotion-8 .issue .icon {
+  float: left;
+  color: #6cc644;
+}
+
+.emotion-8 .issue .main {
+  float: left;
+  margin-left: 12px;
+}
+
+.emotion-8 .issue .main .title {
+  color: #333;
+  font-size: 16px;
+}
+
+.emotion-8 .issue .main .sub {
+  font-size: 12px;
+}
+
+.emotion-8 .issue .comments {
+  float: right;
+}
+
+.emotion-2 {
   display: inline-block;
   color: #333;
   background-color: transparent;
@@ -1651,130 +1750,13 @@ exports[`Storyshots Repository/Issues with default 1`] = `
   user-select: none;
 }
 
-.c3:hover {
+.emotion-2:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 > * {
-  border-right-width: 0;
-  border-radius: 0;
-}
-
-.c2 > *:first-child {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c2 > *:last-child {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
-}
-
-.c0 .subnav > * {
-  display: inline-block;
-  margin-right: 12px;
-}
-
-.c0 .filter {
-  display: inline-block;
-}
-
-.c0 .filter:after {
-  content: ' ';
-  display: table;
-  clear: both;
-}
-
-.c0 .filter button {
-  padding: 6px 10px;
-  border-radius: 3px 0 0 3px;
-}
-
-.c0 .filter form {
-  margin-left: -1px;
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .filter form i {
-  position: absolute;
-  top: 10px;
-  left: 6px;
-}
-
-.c0 .filter input {
-  width: 320px;
-  padding: 6px 10px 6px 32px;
-  color: #767676;
-  border: 1px solid #d5d5d5;
-  border-radius: 0 3px 3px 0;
-  line-height: 20px;
-}
-
-.c0 .issuesHeader {
-  position: relative;
-  padding: 12px 12px;
-  margin-top: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px 3px 0 0;
-}
-
-.c0 .issuesHeader > * {
-  display: inline-block;
-  margin-right: 12px;
-}
-
-.c0 .issues {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-
-.c0 .issue {
-  padding: 12px 12px;
-  border-top: 1px solid #eee;
-}
-
-.c0 .issue:first-child {
-  border-top: none;
-}
-
-.c0 .issue:after {
-  content: ' ';
-  display: table;
-  clear: both;
-}
-
-.c0 .issue .icon {
-  float: left;
-  color: #6cc644;
-}
-
-.c0 .issue .main {
-  float: left;
-  margin-left: 12px;
-}
-
-.c0 .issue .main .title {
-  color: #333;
-  font-size: 16px;
-}
-
-.c0 .issue .main .sub {
-  font-size: 12px;
-}
-
-.c0 .issue .comments {
-  float: right;
-}
-
 <div
-  className="c0"
+  className="emotion-8 emotion-9"
 >
   <div
     className="subnav"
@@ -1783,7 +1765,7 @@ exports[`Storyshots Repository/Issues with default 1`] = `
       className="filter"
     >
       <button
-        className="c1"
+        className="emotion-0 emotion-1"
       >
         Filters
       </button>
@@ -1795,24 +1777,20 @@ exports[`Storyshots Repository/Issues with default 1`] = `
       </form>
     </div>
     <div
-      className="c2"
+      className="emotion-6 emotion-7"
     >
-      <a
-        className="c3"
-        href="/$OWNER/$REPO/labels"
-        onClick={[Function]}
-        transparent="true"
+      <button
+        className="emotion-2 emotion-1"
+        to="/$OWNER/$REPO/labels"
       >
         Labels
-      </a>
-      <a
-        className="c3"
-        href="/$OWNER/$REPO/milestones"
-        onClick={[Function]}
-        transparent="true"
+      </button>
+      <button
+        className="emotion-2 emotion-1"
+        to="/$OWNER/$REPO/milestones"
       >
         Milestones
-      </a>
+      </button>
     </div>
   </div>
   <div
@@ -2009,7 +1987,7 @@ exports[`Storyshots Repository/Settings with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Tree with default 1`] = `
-.c0 {
+.emotion-0 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -2030,70 +2008,34 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   user-select: none;
 }
 
-.c0:hover {
+.emotion-0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c4 {
-  position: relative;
-  border: 1px solid #d8d8d8;
-  border-radius: 3px;
-  margin-bottom: 24px;
-}
-
-.c4 > * {
-  padding: 12px;
-}
-
-.c5 {
-  background-color: #f2f9fc;
-  border-bottom: 1px solid;
-  border-color: #c9e6f2;
-}
-
-.c6 > table {
+.emotion-10 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.c6 > table > tbody > tr:first-child td {
+.emotion-10 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.c6 > table > tbody > tr > td {
+.emotion-10 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
 }
 
-.c3 table tr td.icon {
-  width: 18px;
-  padding-left: 12px;
+.emotion-8 {
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
 }
 
-.c3 table tr td.commitMessage {
-  padding-left: 12px;
-}
-
-.c3 table tr td.commitMessage a {
-  color: #888;
-}
-
-.c3 table tr td.updateAt {
-  width: 120px;
-  padding-right: 12px;
-  text-align: right;
-}
-
-.c3 .sha {
-  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
-  font-size: 90%;
-  color: #445055;
-}
-
-.c1 {
+.emotion-2 {
   padding: 8px 10px;
   line-height: 16px;
   background: #f5f5f5;
@@ -2103,14 +2045,14 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   color: #333;
 }
 
-.c2 {
+.emotion-4 {
   background-color: #fff;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.c2 > li > a {
+.emotion-4 > li > a {
   display: block;
   padding: 8px 8px 8px 30px;
   border-bottom: 1px solid #eee;
@@ -2119,9 +2061,45 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   text-decoration: none;
 }
 
-.c2 > li > a:hover {
+.emotion-4 > li > a:hover {
   color: #fff;
   background-color: #4078c0;
+}
+
+.emotion-13 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.emotion-13 > * {
+  padding: 12px;
+}
+
+.emotion-13 table tr td.icon {
+  width: 18px;
+  padding-left: 12px;
+}
+
+.emotion-13 table tr td.commitMessage {
+  padding-left: 12px;
+}
+
+.emotion-13 table tr td.commitMessage a {
+  color: #888;
+}
+
+.emotion-13 table tr td.updateAt {
+  width: 120px;
+  padding-right: 12px;
+  text-align: right;
+}
+
+.emotion-13 .sha {
+  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  font-size: 90%;
+  color: #445055;
 }
 
 <div>
@@ -2143,7 +2121,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
     >
       <div>
         <button
-          className="c0"
+          className="emotion-0 emotion-1"
           onClick={[Function]}
         >
           <i>
@@ -2182,7 +2160,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
             }
           >
             <div
-              className="c1"
+              className="emotion-2 emotion-3"
             >
               Switch branches/tags
               <button
@@ -2313,7 +2291,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
                   }
                 >
                   <div
-                    className="c2"
+                    className="emotion-4 emotion-5"
                   >
                     <li>
                       <a
@@ -2339,7 +2317,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
                   }
                 >
                   <div
-                    className="c2"
+                    className="emotion-4 emotion-5"
                   />
                 </div>
               </div>
@@ -2394,10 +2372,10 @@ exports[`Storyshots Repository/Tree with default 1`] = `
     </div>
   </div>
   <div
-    className="c3 c4"
+    className="emotion-12 emotion-13 emotion-14"
   >
     <div
-      className="c5"
+      className="emotion-8 emotion-9"
     >
       <div
         style={
@@ -2450,7 +2428,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
       </div>
     </div>
     <div
-      className="c6"
+      className="emotion-10 emotion-11"
     >
       <table>
         <tbody>
@@ -2640,69 +2618,69 @@ exports[`Storyshots Repository/Wiki with default 1`] = `
 `;
 
 exports[`Storyshots Repository/shared/Entries with default 1`] = `
-.c1 {
+.emotion-2 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.emotion-2 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.emotion-2 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.emotion-0 {
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.emotion-5 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.c1 > * {
+.emotion-5 > * {
   padding: 12px;
 }
 
-.c2 {
-  background-color: #f2f9fc;
-  border-bottom: 1px solid;
-  border-color: #c9e6f2;
-}
-
-.c3 > table {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 20px;
-}
-
-.c3 > table > tbody > tr:first-child td {
-  border: none;
-}
-
-.c3 > table > tbody > tr > td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
-}
-
-.c0 table tr td.icon {
+.emotion-5 table tr td.icon {
   width: 18px;
   padding-left: 12px;
 }
 
-.c0 table tr td.commitMessage {
+.emotion-5 table tr td.commitMessage {
   padding-left: 12px;
 }
 
-.c0 table tr td.commitMessage a {
+.emotion-5 table tr td.commitMessage a {
   color: #888;
 }
 
-.c0 table tr td.updateAt {
+.emotion-5 table tr td.updateAt {
   width: 120px;
   padding-right: 12px;
   text-align: right;
 }
 
-.c0 .sha {
+.emotion-5 .sha {
   font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
   font-size: 90%;
   color: #445055;
 }
 
 <div
-  className="c0 c1"
+  className="emotion-4 emotion-5 emotion-6"
 >
   <div
-    className="c2"
+    className="emotion-0 emotion-1"
   >
     <div
       style={
@@ -2755,7 +2733,7 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
     </div>
   </div>
   <div
-    className="c3"
+    className="emotion-2 emotion-3"
   >
     <table>
       <tbody>
@@ -2802,7 +2780,7 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
 `;
 
 exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
-.c0 {
+.emotion-0 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -2823,12 +2801,12 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
   user-select: none;
 }
 
-.c0:hover {
+.emotion-0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 {
+.emotion-2 {
   padding: 8px 10px;
   line-height: 16px;
   background: #f5f5f5;
@@ -2838,14 +2816,14 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
   color: #333;
 }
 
-.c2 {
+.emotion-4 {
   background-color: #fff;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.c2 > li > a {
+.emotion-4 > li > a {
   display: block;
   padding: 8px 8px 8px 30px;
   border-bottom: 1px solid #eee;
@@ -2854,14 +2832,14 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
   text-decoration: none;
 }
 
-.c2 > li > a:hover {
+.emotion-4 > li > a:hover {
   color: #fff;
   background-color: #4078c0;
 }
 
 <div>
   <button
-    className="c0"
+    className="emotion-0 emotion-1"
     onClick={[Function]}
   >
     <i>
@@ -2900,7 +2878,7 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
       }
     >
       <div
-        className="c1"
+        className="emotion-2 emotion-3"
       >
         Switch branches/tags
         <button
@@ -3031,7 +3009,7 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
             }
           >
             <div
-              className="c2"
+              className="emotion-4 emotion-5"
             >
               <li>
                 <a
@@ -3050,7 +3028,7 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
             }
           >
             <div
-              className="c2"
+              className="emotion-4 emotion-5"
             />
           </div>
         </div>
@@ -3074,13 +3052,13 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
 `;
 
 exports[`Storyshots Repository1 part of Navigations 1`] = `
-.c1 {
+.emotion-1 {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.c0 .reponav ul {
+.emotion-1 .reponav ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3091,26 +3069,26 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
   width: 100%;
 }
 
-.c0 .reponav a {
+.emotion-1 .reponav a {
   display: block;
   padding: 7px 15px 8px;
   margin-bottom: -1px;
   color: #666;
 }
 
-.c0 .reponav .selected a {
+.emotion-1 .reponav .selected a {
   background-color: #fff;
   border-left: 1px solid #e5e5e5;
   border-top: 3px solid #d26911;
   border-right: 1px solid #e5e5e5;
 }
 
-.c0 .reponav .fa {
+.emotion-1 .reponav .fa {
   margin-right: 0.5em;
 }
 
 <div
-  className="c0 c1"
+  className="emotion-0 emotion-1 emotion-2"
 >
   <nav
     className="reponav"
@@ -3203,13 +3181,13 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
 `;
 
 exports[`Storyshots Repository1 with default 1`] = `
-.c0 {
+.emotion-22 {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.c3 {
+.emotion-0 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -3230,12 +3208,12 @@ exports[`Storyshots Repository1 with default 1`] = `
   user-select: none;
 }
 
-.c3:hover {
+.emotion-0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c4 {
+.emotion-2 {
   display: inline-block;
   color: #333;
   background-color: transparent;
@@ -3257,27 +3235,27 @@ exports[`Storyshots Repository1 with default 1`] = `
   user-select: none;
 }
 
-.c4:hover {
+.emotion-2:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 > * {
+.emotion-4 > * {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.c2 > *:first-child {
+.emotion-4 > *:first-child {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.c2 > *:last-child {
+.emotion-4 > *:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
 
-.c1 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3288,39 +3266,45 @@ exports[`Storyshots Repository1 with default 1`] = `
   justify-content: space-between;
 }
 
-.c1 > nav {
+.emotion-18 > nav {
   list-style: none;
   padding: 0;
 }
 
-.c1 > nav li {
+.emotion-18 > nav li {
   display: inline-block;
   margin-left: 12px;
 }
 
-.c1 > nav i:first-child {
+.emotion-18 > nav i:first-child {
   margin-right: 4px;
 }
 
-.c1 > nav .fa-caret-down {
+.emotion-18 > nav .fa-caret-down {
   margin-left: 4px;
 }
 
-.c5 {
+.emotion-20 {
   background-color: #fff;
 }
 
-.c5 > ul {
+.emotion-20 > ul {
   list-style: none;
   padding: 0;
 }
 
-.c5 > ul > li {
+.emotion-20 > ul > li {
   padding: 8px;
   border-bottom: 1px solid #eee;
 }
 
-.c6 .reponav ul {
+.emotion-25 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.emotion-25 .reponav ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3331,21 +3315,21 @@ exports[`Storyshots Repository1 with default 1`] = `
   width: 100%;
 }
 
-.c6 .reponav a {
+.emotion-25 .reponav a {
   display: block;
   padding: 7px 15px 8px;
   margin-bottom: -1px;
   color: #666;
 }
 
-.c6 .reponav .selected a {
+.emotion-25 .reponav .selected a {
   background-color: #fff;
   border-left: 1px solid #e5e5e5;
   border-top: 3px solid #d26911;
   border-right: 1px solid #e5e5e5;
 }
 
-.c6 .reponav .fa {
+.emotion-25 .reponav .fa {
   margin-right: 0.5em;
 }
 
@@ -3360,10 +3344,10 @@ exports[`Storyshots Repository1 with default 1`] = `
     }
   >
     <div
-      className="c0"
+      className="emotion-22 emotion-23"
     >
       <div
-        className="c1"
+        className="emotion-18 emotion-19"
       >
         <h1
           style={
@@ -3390,10 +3374,10 @@ exports[`Storyshots Repository1 with default 1`] = `
           <ul>
             <li>
               <div
-                className="c2"
+                className="emotion-4 emotion-5"
               >
                 <button
-                  className="c3"
+                  className="emotion-0 emotion-1"
                   onClick={[Function]}
                 >
                   <i
@@ -3404,52 +3388,52 @@ exports[`Storyshots Repository1 with default 1`] = `
                     className="fa fa-caret-down"
                   />
                 </button>
-                <a
-                  className="c4"
+                <button
+                  className="emotion-2 emotion-1"
                   href="#"
                 >
                   -1
-                </a>
+                </button>
               </div>
             </li>
             <li>
               <div
-                className="c2"
+                className="emotion-4 emotion-5"
               >
                 <button
-                  className="c3"
+                  className="emotion-0 emotion-1"
                 >
                   <i
                     className="fa fa-star"
                   />
                   Star
                 </button>
-                <a
-                  className="c4"
+                <button
+                  className="emotion-2 emotion-1"
                   href="#"
                 >
                   -1
-                </a>
+                </button>
               </div>
             </li>
             <li>
               <div
-                className="c2"
+                className="emotion-4 emotion-5"
               >
                 <button
-                  className="c3"
+                  className="emotion-0 emotion-1"
                 >
                   <i
                     className="fa fa-code-fork"
                   />
                   Fork
                 </button>
-                <a
-                  className="c4"
+                <button
+                  className="emotion-2 emotion-1"
                   href="#"
                 >
                   -1
-                </a>
+                </button>
               </div>
             </li>
           </ul>
@@ -3480,7 +3464,7 @@ exports[`Storyshots Repository1 with default 1`] = `
           }
         >
           <div
-            className="c5"
+            className="emotion-20 emotion-21"
           >
             <div>
               Notifications
@@ -3540,7 +3524,7 @@ exports[`Storyshots Repository1 with default 1`] = `
       </div>
     </div>
     <div
-      className="c6 c0"
+      className="emotion-24 emotion-25 emotion-23"
     >
       <nav
         className="reponav"
@@ -3658,7 +3642,7 @@ exports[`Storyshots Repository1 with default 1`] = `
     </div>
   </div>
   <div
-    className="c0"
+    className="emotion-22 emotion-23"
   >
     children
   </div>
