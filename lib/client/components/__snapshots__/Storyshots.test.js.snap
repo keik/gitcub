@@ -122,11 +122,15 @@ exports[`Storyshots Header with default 1`] = `
   border-color: #4078c0;
 }
 
-.emotion-10 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -137,11 +141,11 @@ exports[`Storyshots Header with default 1`] = `
   font-size: 13px;
 }
 
-.emotion-10 > *:last-child {
+.emotion-9 > *:last-child {
   margin-left: auto;
 }
 
-.emotion-10:after {
+.emotion-9:after {
   content: '';
   display: table;
   clear: both;
@@ -170,16 +174,15 @@ exports[`Storyshots Header with default 1`] = `
   min-height: 26px;
 }
 
-.emotion-8 > * + * {
+.emotion-7 > * + * {
   margin-left: 12px;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -195,17 +198,16 @@ exports[`Storyshots Header with default 1`] = `
   user-select: none;
 }
 
-.emotion-4:hover {
+.emotion-3:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   color: #fff;
   background-image: linear-gradient(#8add6d,#60b044);
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #5aad35;
   border-radius: 3px;
@@ -221,13 +223,13 @@ exports[`Storyshots Header with default 1`] = `
   user-select: none;
 }
 
-.emotion-6:hover {
+.emotion-5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 <div
-  className="emotion-10 emotion-11"
+  className="emotion-9"
 >
   <div>
     <a
@@ -238,40 +240,37 @@ exports[`Storyshots Header with default 1`] = `
     </a>
   </div>
   <form
-    className="emotion-2 emotion-3"
+    className="emotion-2"
   >
     <label
       htmlFor="input-search-query"
     >
-      This repository
+      <input
+        placeholder="Search or jump to..."
+      />
     </label>
-    <input
-      id="input-search-query"
-      placeholder="Search"
-      type="text"
-    />
   </form>
   <div
-    className="emotion-8 emotion-9"
+    className="emotion-7 emotion-8"
   >
-    <button
-      className="emotion-4 emotion-5"
+    <a
+      className="emotion-3 emotion-4"
       href="/login"
     >
       Sign in
-    </button>
-    <button
-      className="emotion-6 emotion-5"
+    </a>
+    <a
+      className="emotion-5 emotion-4"
       href="/join"
     >
       Sign up
-    </button>
+    </a>
   </div>
 </div>
 `;
 
 exports[`Storyshots Home with default 1`] = `
-.emotion-7 {
+.emotion-5 {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
@@ -291,42 +290,56 @@ exports[`Storyshots Home with default 1`] = `
   border-top: 1px solid #f1f1f1;
 }
 
-.emotion-6 {
+.emotion-4 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.emotion-2 {
+.emotion-1 {
   padding: 12px;
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
-.emotion-5 {
-  padding: 12px;
+.emotion-3 {
+  padding: 0;
 }
 
-.emotion-5 > table {
+.emotion-3 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.emotion-5 > table > tbody > tr:first-child td {
+.emotion-3 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.emotion-5 > table > tbody > tr > td {
+.emotion-3 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
 }
 
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.emotion-2 li {
+  padding: 12px 12px;
+}
+
+.emotion-2 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
 <div
-  className="emotion-7 emotion-8"
+  className="emotion-5 emotion-6"
 >
   <div
     style={
@@ -344,7 +357,7 @@ exports[`Storyshots Home with default 1`] = `
       }
     >
       <ul
-        className="emotion-0 emotion-1"
+        className="emotion-0"
       >
         <li>
           ACTIVITY_1
@@ -366,18 +379,18 @@ exports[`Storyshots Home with default 1`] = `
       }
     >
       <div
-        className="emotion-6"
+        className="emotion-4"
       >
         <div
-          className="emotion-2"
+          className="emotion-1"
         >
           Public Repositories
         </div>
         <div
-          className="emotion-5"
+          className="emotion-3"
         >
           <ul
-            className="emotion-0 emotion-1"
+            className="emotion-2"
           >
             <li>
               <i
@@ -460,7 +473,6 @@ exports[`Storyshots New with default 1`] = `
   color: #fff;
   background-image: linear-gradient(#8add6d,#60b044);
   position: relative;
-  display: inline-block;
   padding: 6px 12px;
   border: 1px solid #5aad35;
   border-radius: 3px;
@@ -636,7 +648,7 @@ exports[`Storyshots Repository/Branches with default 1`] = `
   border-top: 1px solid #f1f1f1;
 }
 
-.emotion-4 {
+.emotion-3 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
@@ -650,21 +662,21 @@ exports[`Storyshots Repository/Branches with default 1`] = `
   border-color: #d8d8d8;
 }
 
-.emotion-3 {
+.emotion-2 {
   padding: 12px;
 }
 
-.emotion-3 > table {
+.emotion-2 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.emotion-3 > table > tbody > tr:first-child td {
+.emotion-2 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.emotion-3 > table > tbody > tr > td {
+.emotion-2 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
@@ -672,7 +684,7 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 
 <div>
   <div
-    className="emotion-4"
+    className="emotion-3"
   >
     <div
       className="emotion-0"
@@ -680,10 +692,10 @@ exports[`Storyshots Repository/Branches with default 1`] = `
       Default branch
     </div>
     <div
-      className="emotion-3"
+      className="emotion-2"
     >
       <ul
-        className="emotion-1 emotion-2"
+        className="emotion-1"
       >
         <li>
           <a
@@ -707,7 +719,7 @@ exports[`Storyshots Repository/Branches with default 1`] = `
     </div>
   </div>
   <div
-    className="emotion-4"
+    className="emotion-3"
   >
     <div
       className="emotion-0"
@@ -715,10 +727,10 @@ exports[`Storyshots Repository/Branches with default 1`] = `
       Active branches
     </div>
     <div
-      className="emotion-3"
+      className="emotion-2"
     >
       <ul
-        className="emotion-1 emotion-2"
+        className="emotion-1"
       >
         <li>
           <a
@@ -750,7 +762,6 @@ exports[`Storyshots Repository/Commit with default 1`] = `
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -818,7 +829,6 @@ exports[`Storyshots Repository/Commit with default 1`] = `
   background-color: transparent;
   background-image: none;
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -902,7 +912,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
         >
           $MESSAGE
         </h1>
-        <button
+        <a
           className="emotion-0 emotion-1"
           href="/$OWNER/$REPO/tree/$SHA"
           style={
@@ -912,7 +922,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
           }
         >
           Browse files
-        </button>
+        </a>
       </div>
       <div
         style={
@@ -1097,7 +1107,6 @@ exports[`Storyshots Repository/Commits with default 1`] = `
   background-color: transparent;
   background-image: none;
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -1233,26 +1242,34 @@ exports[`Storyshots Repository/Commits with default 1`] = `
             className="fa fa-clipboard"
           />
         </button>
-        <button
+        <a
+          as={[Function]}
           className="emotion-2 emotion-3"
-          to="/$OWNER/$REPO/commit/$SHA_1"
+          href="/$OWNER/$REPO/commit/$SHA_1"
+          onClick={[Function]}
+          small="true"
+          transparent="true"
         >
           $SHA_1
-        </button>
+        </a>
       </div>
-      <button
+      <a
+        as={[Function]}
         className="emotion-2 emotion-3"
+        href="/$OWNER/$REPO/tree/$SHA_1"
+        onClick={[Function]}
+        small="true"
         style={
           Object {
             "marginLeft": "12px",
           }
         }
-        to="/$OWNER/$REPO/tree/$SHA_1"
+        transparent="true"
       >
         <i
           className="fa fa-code"
         />
-      </button>
+      </a>
     </div>
   </li>
   <li
@@ -1301,26 +1318,34 @@ exports[`Storyshots Repository/Commits with default 1`] = `
             className="fa fa-clipboard"
           />
         </button>
-        <button
+        <a
+          as={[Function]}
           className="emotion-2 emotion-3"
-          to="/$OWNER/$REPO/commit/$SHA_2"
+          href="/$OWNER/$REPO/commit/$SHA_2"
+          onClick={[Function]}
+          small="true"
+          transparent="true"
         >
           $SHA_2
-        </button>
+        </a>
       </div>
-      <button
+      <a
+        as={[Function]}
         className="emotion-2 emotion-3"
+        href="/$OWNER/$REPO/tree/$SHA_2"
+        onClick={[Function]}
+        small="true"
         style={
           Object {
             "marginLeft": "12px",
           }
         }
-        to="/$OWNER/$REPO/tree/$SHA_2"
+        transparent="true"
       >
         <i
           className="fa fa-code"
         />
-      </button>
+      </a>
     </div>
   </li>
 </ul>
@@ -1332,7 +1357,6 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -1510,24 +1534,33 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
           <div
             className="emotion-9 emotion-10"
           >
-            <button
+            <a
+              as={[Function]}
               className="emotion-3 emotion-4"
-              to="/{params.owner}/$REPO/raw/$BRANCH/$PATH"
+              href="/{params.owner}/$REPO/raw/$BRANCH/$PATH"
+              onClick={[Function]}
+              small="true"
             >
               Raw
-            </button>
-            <button
+            </a>
+            <a
+              as={[Function]}
               className="emotion-3 emotion-4"
-              to="/$OWNER/$REPO/blame/$BRANCH/$PATH"
+              href="/$OWNER/$REPO/blame/$BRANCH/$PATH"
+              onClick={[Function]}
+              small="true"
             >
               Blame
-            </button>
-            <button
+            </a>
+            <a
+              as={[Function]}
               className="emotion-3 emotion-4"
-              to="/$OWNER/$REPO/commits/$BRANCH/$PATH"
+              href="/$OWNER/$REPO/commits/$BRANCH/$PATH"
+              onClick={[Function]}
+              small="true"
             >
               History
-            </button>
+            </a>
           </div>
           <button
             style={
@@ -1590,7 +1623,6 @@ exports[`Storyshots Repository/Issues with default 1`] = `
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -1734,7 +1766,6 @@ exports[`Storyshots Repository/Issues with default 1`] = `
   background-color: transparent;
   background-image: none;
   position: relative;
-  display: inline-block;
   padding: 6px 12px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -1779,18 +1810,24 @@ exports[`Storyshots Repository/Issues with default 1`] = `
     <div
       className="emotion-6 emotion-7"
     >
-      <button
+      <a
+        as={[Function]}
         className="emotion-2 emotion-1"
-        to="/$OWNER/$REPO/labels"
+        href="/$OWNER/$REPO/labels"
+        onClick={[Function]}
+        transparent="true"
       >
         Labels
-      </button>
-      <button
+      </a>
+      <a
+        as={[Function]}
         className="emotion-2 emotion-1"
-        to="/$OWNER/$REPO/milestones"
+        href="/$OWNER/$REPO/milestones"
+        onClick={[Function]}
+        transparent="true"
       >
         Milestones
-      </button>
+      </a>
     </div>
   </div>
   <div
@@ -1992,7 +2029,6 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -2018,6 +2054,26 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
+}
+
+.emotion-9 {
+  padding: 0;
+}
+
+.emotion-9 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.emotion-9 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.emotion-9 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
 }
 
 .emotion-8 {
@@ -2081,26 +2137,6 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
   font-size: 90%;
   color: #445055;
-}
-
-.emotion-9 {
-  padding: 0;
-}
-
-.emotion-9 > table {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 20px;
-}
-
-.emotion-9 > table > tbody > tr:first-child td {
-  border: none;
-}
-
-.emotion-9 > table > tbody > tr > td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
 }
 
 <div>
@@ -2630,6 +2666,26 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
   margin-bottom: 24px;
 }
 
+.emotion-1 {
+  padding: 0;
+}
+
+.emotion-1 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.emotion-1 > table > tbody > tr:first-child td {
+  border: none;
+}
+
+.emotion-1 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
 .emotion-0 {
   padding: 12px;
   background-color: #f2f9fc;
@@ -2660,26 +2716,6 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
   font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
   font-size: 90%;
   color: #445055;
-}
-
-.emotion-1 {
-  padding: 0;
-}
-
-.emotion-1 > table {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 20px;
-}
-
-.emotion-1 > table > tbody > tr:first-child td {
-  border: none;
-}
-
-.emotion-1 > table > tbody > tr > td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
 }
 
 <div
@@ -2795,7 +2831,6 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -3202,7 +3237,6 @@ exports[`Storyshots Repository1 with default 1`] = `
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -3229,7 +3263,6 @@ exports[`Storyshots Repository1 with default 1`] = `
   background-color: transparent;
   background-image: none;
   position: relative;
-  display: inline-block;
   padding: 3px 10px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
@@ -3398,12 +3431,12 @@ exports[`Storyshots Repository1 with default 1`] = `
                     className="fa fa-caret-down"
                   />
                 </button>
-                <button
+                <a
                   className="emotion-2 emotion-1"
                   href="#"
                 >
                   -1
-                </button>
+                </a>
               </div>
             </li>
             <li>
@@ -3418,12 +3451,12 @@ exports[`Storyshots Repository1 with default 1`] = `
                   />
                   Star
                 </button>
-                <button
+                <a
                   className="emotion-2 emotion-1"
                   href="#"
                 >
                   -1
-                </button>
+                </a>
               </div>
             </li>
             <li>
@@ -3438,12 +3471,12 @@ exports[`Storyshots Repository1 with default 1`] = `
                   />
                   Fork
                 </button>
-                <button
+                <a
                   className="emotion-2 emotion-1"
                   href="#"
                 >
                   -1
-                </button>
+                </a>
               </div>
             </li>
           </ul>
