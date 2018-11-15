@@ -3103,7 +3103,7 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
   margin-left: auto;
 }
 
-.emotion-1 .reponav ul {
+.emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3114,35 +3114,36 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
   width: 100%;
 }
 
-.emotion-1 .reponav a {
+.emotion-0 a {
   display: block;
   padding: 7px 15px 8px;
   margin-bottom: -1px;
   color: #666;
 }
 
-.emotion-1 .reponav .selected a {
+.emotion-0 .selected {
   background-color: #fff;
   border-left: 1px solid #e5e5e5;
   border-top: 3px solid #d26911;
   border-right: 1px solid #e5e5e5;
 }
 
-.emotion-1 .reponav .fa {
+.emotion-0 .fa {
   margin-right: 0.5em;
 }
 
 <div
-  className="emotion-0 emotion-1 emotion-2"
+  className="emotion-1 emotion-2"
 >
   <nav
     className="reponav"
   >
-    <ul>
-      <li
-        className=""
-      >
+    <ul
+      className="emotion-0"
+    >
+      <li>
         <a
+          className=""
           href="/$OWNER/$REPO"
           onClick={[Function]}
         >
@@ -3152,52 +3153,57 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
           Code
         </a>
       </li>
-      <li
-        className=""
-      >
+      <li>
         <a
+          className=""
           href="/$OWNER/$REPO/issues"
           onClick={[Function]}
         >
           <i
             className="fa fa-exclamation-circle"
           />
-          Issues 
-          1
+          Issues 1
         </a>
       </li>
-      <li
-        className=""
-      >
+      <li>
         <a
+          className=""
           href="/$OWNER/$REPO/pulls"
           onClick={[Function]}
         >
           <i
             className="fa fa-code-fork"
           />
-          Pull requests 
-          2
+          Pull requests 2
         </a>
       </li>
-      <li
-        className=""
-      >
+      <li>
         <a
+          className=""
           href="/$OWNER/$REPO/projects"
           onClick={[Function]}
         >
           <i
             className="fa fa-group"
           />
-          Projects 
-          3
+          Projects 3
         </a>
       </li>
-      <li
-        className=""
-      >
+      <li>
         <a
+          className=""
+          href="/$OWNER/$REPO/wiki"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-book"
+          />
+          Wiki
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
           href="/$OWNER/$REPO/pulse"
           onClick={[Function]}
         >
@@ -3207,10 +3213,9 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
           Pulse
         </a>
       </li>
-      <li
-        className=""
-      >
+      <li>
         <a
+          className=""
           href="/$OWNER/$REPO/graphs"
           onClick={[Function]}
         >
@@ -3226,13 +3231,13 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
 `;
 
 exports[`Storyshots Repository1 with default 1`] = `
-.emotion-22 {
+.emotion-25 {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.emotion-0 {
+.emotion-3 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -3252,12 +3257,12 @@ exports[`Storyshots Repository1 with default 1`] = `
   user-select: none;
 }
 
-.emotion-0:hover {
+.emotion-3:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: inline-block;
   color: #333;
   background-color: transparent;
@@ -3278,27 +3283,33 @@ exports[`Storyshots Repository1 with default 1`] = `
   user-select: none;
 }
 
-.emotion-2:hover {
+.emotion-5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 > * {
+.emotion-7 > * {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.emotion-4 > *:first-child {
+.emotion-7 > *:first-child {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.emotion-4 > *:last-child {
+.emotion-7 > *:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
 
-.emotion-18 {
+.emotion-30 {
+  margin-bottom: 24px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3309,45 +3320,49 @@ exports[`Storyshots Repository1 with default 1`] = `
   justify-content: space-between;
 }
 
-.emotion-18 > nav {
+.emotion-1 {
+  display: inline-block;
+  color: #666;
+  font-size: 18px;
+}
+
+.emotion-0 {
+  margin: 0 4px;
+}
+
+.emotion-21 {
   list-style: none;
   padding: 0;
 }
 
-.emotion-18 > nav li {
+.emotion-21 > li {
   display: inline-block;
   margin-left: 12px;
 }
 
-.emotion-18 > nav i:first-child {
+.emotion-21 > li i:first-child {
   margin-right: 4px;
 }
 
-.emotion-18 > nav .fa-caret-down {
+.emotion-2 {
   margin-left: 4px;
 }
 
-.emotion-20 {
+.emotion-24 {
   background-color: #fff;
 }
 
-.emotion-20 > ul {
+.emotion-23 {
   list-style: none;
   padding: 0;
 }
 
-.emotion-20 > ul > li {
+.emotion-23 > li {
   padding: 8px;
   border-bottom: 1px solid #eee;
 }
 
-.emotion-25 {
-  width: 980px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.emotion-25 .reponav ul {
+.emotion-27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3358,55 +3373,47 @@ exports[`Storyshots Repository1 with default 1`] = `
   width: 100%;
 }
 
-.emotion-25 .reponav a {
+.emotion-27 a {
   display: block;
   padding: 7px 15px 8px;
   margin-bottom: -1px;
   color: #666;
 }
 
-.emotion-25 .reponav .selected a {
+.emotion-27 .selected {
   background-color: #fff;
   border-left: 1px solid #e5e5e5;
   border-top: 3px solid #d26911;
   border-right: 1px solid #e5e5e5;
 }
 
-.emotion-25 .reponav .fa {
+.emotion-27 .fa {
   margin-right: 0.5em;
 }
 
 <div>
   <div
-    style={
-      Object {
-        "backgroundColor": "#fafafa",
-        "borderBottom": "1px solid #eee",
-        "marginBottom": "24px",
-      }
-    }
+    className="emotion-30"
   >
     <div
-      className="emotion-22 emotion-23"
+      className="emotion-25 emotion-26"
     >
       <div
-        className="emotion-18 emotion-19"
+        className="emotion-22"
       >
         <h1
-          style={
-            Object {
-              "color": "#666",
-              "display": "inline-block",
-              "fontSize": "18px",
-            }
-          }
+          className="emotion-1"
         >
           <a
             href="/$OWNER"
           >
             $OWNER
           </a>
-           / 
+          <span
+            className="emotion-0"
+          >
+            /
+          </span>
           <a
             href="/$OWNER/$REPO"
           >
@@ -3414,13 +3421,15 @@ exports[`Storyshots Repository1 with default 1`] = `
           </a>
         </h1>
         <nav>
-          <ul>
+          <ul
+            className="emotion-21"
+          >
             <li>
               <div
-                className="emotion-4 emotion-5"
+                className="emotion-7 emotion-8"
               >
                 <button
-                  className="emotion-0 emotion-1"
+                  className="emotion-3 emotion-4"
                   onClick={[Function]}
                 >
                   <i
@@ -3428,11 +3437,11 @@ exports[`Storyshots Repository1 with default 1`] = `
                   />
                   Watch
                   <i
-                    className="fa fa-caret-down"
+                    className="emotion-2 fa fa-caret-down"
                   />
                 </button>
                 <a
-                  className="emotion-2 emotion-1"
+                  className="emotion-5 emotion-4"
                   href="#"
                 >
                   -1
@@ -3441,10 +3450,10 @@ exports[`Storyshots Repository1 with default 1`] = `
             </li>
             <li>
               <div
-                className="emotion-4 emotion-5"
+                className="emotion-7 emotion-8"
               >
                 <button
-                  className="emotion-0 emotion-1"
+                  className="emotion-3 emotion-4"
                 >
                   <i
                     className="fa fa-star"
@@ -3452,7 +3461,7 @@ exports[`Storyshots Repository1 with default 1`] = `
                   Star
                 </button>
                 <a
-                  className="emotion-2 emotion-1"
+                  className="emotion-5 emotion-4"
                   href="#"
                 >
                   -1
@@ -3461,10 +3470,10 @@ exports[`Storyshots Repository1 with default 1`] = `
             </li>
             <li>
               <div
-                className="emotion-4 emotion-5"
+                className="emotion-7 emotion-8"
               >
                 <button
-                  className="emotion-0 emotion-1"
+                  className="emotion-3 emotion-4"
                 >
                   <i
                     className="fa fa-code-fork"
@@ -3472,7 +3481,7 @@ exports[`Storyshots Repository1 with default 1`] = `
                   Fork
                 </button>
                 <a
-                  className="emotion-2 emotion-1"
+                  className="emotion-5 emotion-4"
                   href="#"
                 >
                   -1
@@ -3507,7 +3516,7 @@ exports[`Storyshots Repository1 with default 1`] = `
           }
         >
           <div
-            className="emotion-20 emotion-21"
+            className="emotion-24"
           >
             <div>
               Notifications
@@ -3517,7 +3526,9 @@ exports[`Storyshots Repository1 with default 1`] = `
                 x
               </a>
             </div>
-            <ul>
+            <ul
+              className="emotion-23"
+            >
               <li>
                 <a>
                   <span>
@@ -3567,16 +3578,17 @@ exports[`Storyshots Repository1 with default 1`] = `
       </div>
     </div>
     <div
-      className="emotion-24 emotion-25 emotion-23"
+      className="emotion-25 emotion-26"
     >
       <nav
         className="reponav"
       >
-        <ul>
-          <li
-            className=""
-          >
+        <ul
+          className="emotion-27"
+        >
+          <li>
             <a
+              className=""
               href="/$OWNER/$REPO"
               onClick={[Function]}
             >
@@ -3586,52 +3598,45 @@ exports[`Storyshots Repository1 with default 1`] = `
               Code
             </a>
           </li>
-          <li
-            className=""
-          >
+          <li>
             <a
+              className=""
               href="/$OWNER/$REPO/issues"
               onClick={[Function]}
             >
               <i
                 className="fa fa-exclamation-circle"
               />
-              Issues 
-              -1
+              Issues -1
             </a>
           </li>
-          <li
-            className=""
-          >
+          <li>
             <a
+              className=""
               href="/$OWNER/$REPO/pulls"
               onClick={[Function]}
             >
               <i
                 className="fa fa-code-fork"
               />
-              Pull requests 
-              -1
+              Pull requests -1
             </a>
           </li>
-          <li
-            className=""
-          >
+          <li>
             <a
+              className=""
               href="/$OWNER/$REPO/projects"
               onClick={[Function]}
             >
               <i
                 className="fa fa-group"
               />
-              Projects 
-              -1
+              Projects -1
             </a>
           </li>
-          <li
-            className=""
-          >
+          <li>
             <a
+              className=""
               href="/$OWNER/$REPO/wiki"
               onClick={[Function]}
             >
@@ -3641,10 +3646,9 @@ exports[`Storyshots Repository1 with default 1`] = `
               Wiki
             </a>
           </li>
-          <li
-            className=""
-          >
+          <li>
             <a
+              className=""
               href="/$OWNER/$REPO/pulse"
               onClick={[Function]}
             >
@@ -3654,10 +3658,9 @@ exports[`Storyshots Repository1 with default 1`] = `
               Pulse
             </a>
           </li>
-          <li
-            className=""
-          >
+          <li>
             <a
+              className=""
               href="/$OWNER/$REPO/graphs"
               onClick={[Function]}
             >
@@ -3667,10 +3670,9 @@ exports[`Storyshots Repository1 with default 1`] = `
               Graphs
             </a>
           </li>
-          <li
-            className=""
-          >
+          <li>
             <a
+              className=""
               href="/$OWNER/$REPO/settings"
               onClick={[Function]}
             >
@@ -3685,7 +3687,7 @@ exports[`Storyshots Repository1 with default 1`] = `
     </div>
   </div>
   <div
-    className="emotion-22 emotion-23"
+    className="emotion-25 emotion-26"
   >
     children
   </div>
