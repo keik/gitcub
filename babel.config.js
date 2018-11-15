@@ -24,7 +24,7 @@ module.exports = {
       plugins: [['emotion', { sourceMap: true }]]
     },
     test: {
-      plugins: ['require-context-hook']
+      plugins: [['emotion', { sourceMap: true }], 'require-context-hook']
     }
   }
 }
