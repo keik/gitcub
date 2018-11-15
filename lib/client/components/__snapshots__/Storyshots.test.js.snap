@@ -3133,9 +3133,7 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
 <div
   className="emotion-1 emotion-2"
 >
-  <nav
-    className="reponav"
-  >
+  <nav>
     <ul
       className="emotion-0"
     >
@@ -3578,9 +3576,7 @@ exports[`Storyshots Repository1 with default 1`] = `
     <div
       className="emotion-25 emotion-26"
     >
-      <nav
-        className="reponav"
-      >
+      <nav>
         <ul
           className="emotion-27"
         >
