@@ -13,12 +13,16 @@ module.exports = {
     '@babel/preset-react'
   ],
   plugins: [
-    'emotion',
     '@babel/plugin-proposal-class-properties',
-    '@babel/plugin-proposal-object-rest-spread',
-    'transform-inline-environment-variables'
+    '@babel/plugin-proposal-object-rest-spread'
   ],
   env: {
+    production: {
+      plugins: [['emotion', { sourceMap: false }]]
+    },
+    development: {
+      plugins: [['emotion', { sourceMap: true }]]
+    },
     test: {
       plugins: ['require-context-hook']
     }
