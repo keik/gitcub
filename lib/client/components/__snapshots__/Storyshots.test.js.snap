@@ -2113,92 +2113,61 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   text-decoration: none;
 }
 
-.emotion-10 {
+.emotion-4 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.emotion-9 {
+.emotion-3 {
   padding: 0;
   background-color: #fff;
 }
 
-.emotion-9 > table {
+.emotion-3 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.emotion-9 > table > tbody > tr:first-child td {
+.emotion-3 > table > tbody > tr:first-child td {
   border: none;
 }
 
-.emotion-9 > table > tbody > tr > td {
+.emotion-3 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
 }
 
-.emotion-8 {
+.emotion-2 {
   padding: 12px;
   background-color: #f2f9fc;
   border-bottom: 1px solid;
   border-color: #c9e6f2;
 }
 
-.emotion-2 {
-  padding: 8px 10px;
-  line-height: 16px;
-  background: #f5f5f5;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 12px;
-  font-weight: 600;
-  color: #333;
-}
-
-.emotion-4 {
-  background-color: #fff;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.emotion-4 > li > a {
-  display: block;
-  padding: 8px 8px 8px 30px;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-4 > li > a:hover {
-  color: #fff;
-  background-color: #4078c0;
-}
-
-.emotion-11 table tr td.icon {
+.emotion-5 table tr td.icon {
   width: 18px;
   padding-left: 12px;
 }
 
-.emotion-11 table tr td.commitMessage {
+.emotion-5 table tr td.commitMessage {
   padding-left: 12px;
 }
 
-.emotion-11 table tr td.commitMessage a {
+.emotion-5 table tr td.commitMessage a {
   color: #888;
 }
 
-.emotion-11 table tr td.updateAt {
+.emotion-5 table tr td.updateAt {
   width: 120px;
   padding-right: 12px;
   text-align: right;
 }
 
-.emotion-11 .sha {
+.emotion-5 .sha {
   font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
   font-size: 90%;
   color: #445055;
@@ -2221,223 +2190,42 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         }
       }
     >
-      <button
-        className="emotion-0 emotion-1"
-        onClick={[Function]}
-      >
-        <i>
-          Branch: 
-        </i>
-        <span>
-          #TREE
-           
-        </span>
-        <i
-          className="fa fa-caret-down"
-        />
-      </button>
-      <div
-        className="modal"
-        style={
-          Object {
-            "display": "none",
-            "position": "absolute",
-            "width": 300,
-          }
+      <span
+        toggler={
+          <Button
+            onClick={[Function]}
+            small={true}
+          >
+            <i>
+              Branch: 
+            </i>
+            <span>
+              #TREE
+               
+            </span>
+            <i
+              className="fa fa-caret-down"
+            />
+          </Button>
         }
+        width={300}
       >
-        <div
-          style={
-            Object {
-              "backgroundClip": "padding-box",
-              "backgroundColor": "#fff",
-              "border": "1px solid rgba(200, 200, 200, 0.4)",
-              "borderRadius": "3px",
-              "boxShadow": "0 3px 12px rgba(0,0,0,0.15)",
-              "position": "absolute",
-              "width": "100%",
-              "zIndex": 100,
-            }
-          }
-        >
-          <div
-            className="emotion-2 emotion-3"
-          >
-            Switch branches/tags
-            <button
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "none",
-                  "border": 0,
-                  "color": "#ccc",
-                  "cursor": "pointer",
-                  "float": "right",
-                }
-              }
-            >
-              <i
-                className="fa fa-close"
-              />
-            </button>
-          </div>
-          <div
-            style={
-              Object {
-                "backgroundColor": "#f8f8f8",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "padding": "10px 10px 0",
-                }
-              }
-            >
-              <input
-                placeholder="Find a tag..."
-                style={
-                  Object {
-                    "border": "1px solid #ddd",
-                    "borderRadius": "3px",
-                    "lineHeight": "20px",
-                    "padding": "6px",
-                    "width": "100%",
-                  }
-                }
-              />
-            </div>
-            <div>
-              <ul
-                style={
-                  Object {
-                    "borderBottom": "1px solid #ddd",
-                    "listStyle": "none",
-                    "margin": 0,
-                    "padding": "8px 8px 0",
-                  }
-                }
-              >
-                <li
-                  style={
-                    Object {
-                      "backgroundColor": "#fff",
-                      "borderLeft": "1px solid #ddd",
-                      "borderRight": "1px solid #ddd",
-                      "borderTop": "1px solid #ddd",
-                      "borderTopLeftRadius": 3,
-                      "borderTopRightRadius": 3,
-                      "float": "left",
-                      "marginBottom": "-1px",
-                    }
-                  }
-                >
-                  <a
-                    href="#"
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "color": "#333",
-                        "display": "block",
-                        "fontSize": "11px",
-                        "fontWeight": "bold",
-                        "padding": "4px 8px 2px",
-                        "textDecoration": "none",
-                      }
-                    }
-                  >
-                    Branches
-                  </a>
-                </li>
-                <li
-                  style={
-                    Object {
-                      "float": "left",
-                      "marginBottom": "-1px",
-                    }
-                  }
-                >
-                  <a
-                    href="#"
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "color": "#888",
-                        "display": "block",
-                        "fontSize": "11px",
-                        "fontWeight": "bold",
-                        "padding": "4px 8px 2px",
-                        "textDecoration": "none",
-                      }
-                    }
-                  >
-                    Tags
-                  </a>
-                </li>
-                <div
-                  style={
-                    Object {
-                      "clear": "both",
-                      "display": "table",
-                    }
-                  }
-                />
-              </ul>
-              <div
-                style={
-                  Object {
-                    "display": "block",
-                  }
-                }
-              >
-                <div
-                  className="emotion-4 emotion-5"
-                >
-                  <li>
-                    <a
-                      href="/#OWNER/#REPO/tree/#BRANCH_1"
-                    >
-                      #BRANCH_1
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/#OWNER/#REPO/tree/#BRANCH_2"
-                    >
-                      #BRANCH_2
-                    </a>
-                  </li>
-                </div>
-              </div>
-              <div
-                style={
-                  Object {
-                    "display": "none",
-                  }
-                }
-              >
-                <div
-                  className="emotion-4 emotion-5"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
+        <button
+          className="emotion-0 emotion-1"
           onClick={[Function]}
-          style={
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "fixed",
-              "right": 0,
-              "top": 0,
-              "zIndex": 1,
-            }
-          }
-        />
-      </div>
+        >
+          <i>
+            Branch: 
+          </i>
+          <span>
+            #TREE
+             
+          </span>
+          <i
+            className="fa fa-caret-down"
+          />
+        </button>
+      </span>
     </div>
     <div>
       <strong>
@@ -2472,13 +2260,13 @@ exports[`Storyshots Repository/Tree with default 1`] = `
     </div>
   </div>
   <div
-    className="emotion-11 emotion-12"
+    className="emotion-5 emotion-6"
   >
     <div
-      className="emotion-10"
+      className="emotion-4"
     >
       <div
-        className="emotion-8"
+        className="emotion-2"
       >
         <div
           style={
@@ -2531,7 +2319,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         </div>
       </div>
       <div
-        className="emotion-9"
+        className="emotion-3"
       >
         <table>
           <tbody>
@@ -2890,8 +2678,7 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
 `;
 
 exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
-Array [
-  .emotion-0 {
+.emotion-0 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -2916,7 +2703,27 @@ Array [
   text-decoration: none;
 }
 
-<button
+<span
+  toggler={
+    <Button
+      onClick={[Function]}
+      small={true}
+    >
+      <i>
+        Branch: 
+      </i>
+      <span>
+        $TREE
+         
+      </span>
+      <i
+        className="fa fa-caret-down"
+      />
+    </Button>
+  }
+  width={300}
+>
+  <button
     className="emotion-0 emotion-1"
     onClick={[Function]}
   >
@@ -2930,234 +2737,8 @@ Array [
     <i
       className="fa fa-caret-down"
     />
-  </button>,
-  .emotion-0 {
-  padding: 8px 10px;
-  line-height: 16px;
-  background: #f5f5f5;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 12px;
-  font-weight: 600;
-  color: #333;
-}
-
-.emotion-2 {
-  background-color: #fff;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.emotion-2 > li > a {
-  display: block;
-  padding: 8px 8px 8px 30px;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-2 > li > a:hover {
-  color: #fff;
-  background-color: #4078c0;
-}
-
-<div
-    className="modal"
-    style={
-      Object {
-        "display": "none",
-        "position": "absolute",
-        "width": 300,
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "backgroundClip": "padding-box",
-          "backgroundColor": "#fff",
-          "border": "1px solid rgba(200, 200, 200, 0.4)",
-          "borderRadius": "3px",
-          "boxShadow": "0 3px 12px rgba(0,0,0,0.15)",
-          "position": "absolute",
-          "width": "100%",
-          "zIndex": 100,
-        }
-      }
-    >
-      <div
-        className="emotion-0 emotion-1"
-      >
-        Switch branches/tags
-        <button
-          onClick={[Function]}
-          style={
-            Object {
-              "background": "none",
-              "border": 0,
-              "color": "#ccc",
-              "cursor": "pointer",
-              "float": "right",
-            }
-          }
-        >
-          <i
-            className="fa fa-close"
-          />
-        </button>
-      </div>
-      <div
-        style={
-          Object {
-            "backgroundColor": "#f8f8f8",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "padding": "10px 10px 0",
-            }
-          }
-        >
-          <input
-            placeholder="Find a tag..."
-            style={
-              Object {
-                "border": "1px solid #ddd",
-                "borderRadius": "3px",
-                "lineHeight": "20px",
-                "padding": "6px",
-                "width": "100%",
-              }
-            }
-          />
-        </div>
-        <div>
-          <ul
-            style={
-              Object {
-                "borderBottom": "1px solid #ddd",
-                "listStyle": "none",
-                "margin": 0,
-                "padding": "8px 8px 0",
-              }
-            }
-          >
-            <li
-              style={
-                Object {
-                  "backgroundColor": "#fff",
-                  "borderLeft": "1px solid #ddd",
-                  "borderRight": "1px solid #ddd",
-                  "borderTop": "1px solid #ddd",
-                  "borderTopLeftRadius": 3,
-                  "borderTopRightRadius": 3,
-                  "float": "left",
-                  "marginBottom": "-1px",
-                }
-              }
-            >
-              <a
-                href="#"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "color": "#333",
-                    "display": "block",
-                    "fontSize": "11px",
-                    "fontWeight": "bold",
-                    "padding": "4px 8px 2px",
-                    "textDecoration": "none",
-                  }
-                }
-              >
-                Branches
-              </a>
-            </li>
-            <li
-              style={
-                Object {
-                  "float": "left",
-                  "marginBottom": "-1px",
-                }
-              }
-            >
-              <a
-                href="#"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "color": "#888",
-                    "display": "block",
-                    "fontSize": "11px",
-                    "fontWeight": "bold",
-                    "padding": "4px 8px 2px",
-                    "textDecoration": "none",
-                  }
-                }
-              >
-                Tags
-              </a>
-            </li>
-            <div
-              style={
-                Object {
-                  "clear": "both",
-                  "display": "table",
-                }
-              }
-            />
-          </ul>
-          <div
-            style={
-              Object {
-                "display": "block",
-              }
-            }
-          >
-            <div
-              className="emotion-2 emotion-3"
-            >
-              <li>
-                <a
-                  href="/$OWNER/$REPO/tree/$BRANCH"
-                >
-                  $BRANCH
-                </a>
-              </li>
-            </div>
-          </div>
-          <div
-            style={
-              Object {
-                "display": "none",
-              }
-            }
-          >
-            <div
-              className="emotion-2 emotion-3"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      onClick={[Function]}
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
-    />
-  </div>,
-]
+  </button>
+</span>
 `;
 
 exports[`Storyshots Repository1 part of Navigations 1`] = `
