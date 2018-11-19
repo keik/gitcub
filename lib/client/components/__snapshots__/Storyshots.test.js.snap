@@ -306,6 +306,7 @@ exports[`Storyshots Home with default 1`] = `
 
 .emotion-3 {
   padding: 0;
+  background-color: #fff;
 }
 
 .emotion-3 > table {
@@ -664,6 +665,7 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 
 .emotion-2 {
   padding: 12px;
+  background-color: #fff;
 }
 
 .emotion-2 > table {
@@ -798,6 +800,7 @@ exports[`Storyshots Repository/Commit with default 1`] = `
 
 .emotion-3 {
   padding: 12px;
+  background-color: #fff;
 }
 
 .emotion-3 > table {
@@ -849,17 +852,32 @@ exports[`Storyshots Repository/Commit with default 1`] = `
   text-decoration: none;
 }
 
-.emotion-9 > * {
+.emotion-9 a,
+.emotion-9 button {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.emotion-9 > *:first-child {
+.emotion-9 >:first-child a,
+.emotion-9 >:first-child button {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.emotion-9 > *:last-child {
+.emotion-9 > a:first-child,
+.emotion-9 > button:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.emotion-9 >:last-child a,
+.emotion-9 >:last-child button {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.emotion-9 > a:last-child,
+.emotion-9 > button:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
@@ -1127,17 +1145,32 @@ exports[`Storyshots Repository/Commits with default 1`] = `
   text-decoration: none;
 }
 
-.emotion-6 > * {
+.emotion-6 a,
+.emotion-6 button {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.emotion-6 > *:first-child {
+.emotion-6 >:first-child a,
+.emotion-6 >:first-child button {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.emotion-6 > *:last-child {
+.emotion-6 > a:first-child,
+.emotion-6 > button:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.emotion-6 >:last-child a,
+.emotion-6 >:last-child button {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.emotion-6 > a:last-child,
+.emotion-6 > button:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
@@ -1393,6 +1426,7 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
 
 .emotion-1 {
   padding: 12px;
+  background-color: #fff;
 }
 
 .emotion-1 > table {
@@ -1418,17 +1452,32 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
   border-color: #c9e6f2;
 }
 
-.emotion-9 > * {
+.emotion-9 a,
+.emotion-9 button {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.emotion-9 > *:first-child {
+.emotion-9 >:first-child a,
+.emotion-9 >:first-child button {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.emotion-9 > *:last-child {
+.emotion-9 > a:first-child,
+.emotion-9 > button:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.emotion-9 >:last-child a,
+.emotion-9 >:last-child button {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.emotion-9 > a:last-child,
+.emotion-9 > button:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
@@ -1643,17 +1692,32 @@ exports[`Storyshots Repository/Issues with default 1`] = `
   text-decoration: none;
 }
 
-.emotion-6 > * {
+.emotion-6 a,
+.emotion-6 button {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.emotion-6 > *:first-child {
+.emotion-6 >:first-child a,
+.emotion-6 >:first-child button {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.emotion-6 > *:last-child {
+.emotion-6 > a:first-child,
+.emotion-6 > button:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.emotion-6 >:last-child a,
+.emotion-6 >:last-child button {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.emotion-6 > a:last-child,
+.emotion-6 > button:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
@@ -2058,6 +2122,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
 
 .emotion-9 {
   padding: 0;
+  background-color: #fff;
 }
 
 .emotion-9 > table {
@@ -2666,6 +2731,7 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
 
 .emotion-1 {
   padding: 0;
+  background-color: #fff;
 }
 
 .emotion-1 > table {
@@ -3227,7 +3293,7 @@ exports[`Storyshots Repository1 part of Navigations 1`] = `
 `;
 
 exports[`Storyshots Repository1 with default 1`] = `
-.emotion-25 {
+.emotion-23 {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
@@ -3284,22 +3350,37 @@ exports[`Storyshots Repository1 with default 1`] = `
   text-decoration: none;
 }
 
-.emotion-7 > * {
+.emotion-7 a,
+.emotion-7 button {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.emotion-7 > *:first-child {
+.emotion-7 >:first-child a,
+.emotion-7 >:first-child button {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.emotion-7 > *:last-child {
+.emotion-7 > a:first-child,
+.emotion-7 > button:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.emotion-7 >:last-child a,
+.emotion-7 >:last-child button {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
 
-.emotion-30 {
+.emotion-7 > a:last-child,
+.emotion-7 > button:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.emotion-28 {
   margin-bottom: 24px;
   background-color: #fafafa;
   border-bottom: 1px solid #eee;
@@ -3344,21 +3425,7 @@ exports[`Storyshots Repository1 with default 1`] = `
   margin-left: 4px;
 }
 
-.emotion-24 {
-  background-color: #fff;
-}
-
-.emotion-23 {
-  list-style: none;
-  padding: 0;
-}
-
-.emotion-23 > li {
-  padding: 8px;
-  border-bottom: 1px solid #eee;
-}
-
-.emotion-27 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3369,30 +3436,30 @@ exports[`Storyshots Repository1 with default 1`] = `
   width: 100%;
 }
 
-.emotion-27 a {
+.emotion-25 a {
   display: block;
   padding: 7px 15px 8px;
   margin-bottom: -1px;
   color: #666;
 }
 
-.emotion-27 .selected {
+.emotion-25 .selected {
   background-color: #fff;
   border-left: 1px solid #e5e5e5;
   border-top: 3px solid #d26911;
   border-right: 1px solid #e5e5e5;
 }
 
-.emotion-27 .fa {
+.emotion-25 .fa {
   margin-right: 0.5em;
 }
 
 <div>
   <div
-    className="emotion-30"
+    className="emotion-28"
   >
     <div
-      className="emotion-25 emotion-26"
+      className="emotion-23 emotion-24"
     >
       <div
         className="emotion-22"
@@ -3424,18 +3491,35 @@ exports[`Storyshots Repository1 with default 1`] = `
               <div
                 className="emotion-7 emotion-8"
               >
-                <button
-                  className="emotion-3 emotion-4"
-                  onClick={[Function]}
+                <span
+                  toggler={
+                    <Button
+                      small={true}
+                    >
+                      <i
+                        className="fa fa-eye"
+                      />
+                      Watch
+                      <i
+                        className="emotion-2 fa fa-caret-down"
+                      />
+                    </Button>
+                  }
+                  width={300}
                 >
-                  <i
-                    className="fa fa-eye"
-                  />
-                  Watch
-                  <i
-                    className="emotion-2 fa fa-caret-down"
-                  />
-                </button>
+                  <button
+                    className="emotion-3 emotion-4"
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="fa fa-eye"
+                    />
+                    Watch
+                    <i
+                      className="emotion-2 fa fa-caret-down"
+                    />
+                  </button>
+                </span>
                 <a
                   className="emotion-5 emotion-4"
                   href="#"
@@ -3487,98 +3571,13 @@ exports[`Storyshots Repository1 with default 1`] = `
           </ul>
         </nav>
       </div>
-      <div
-        className="modal"
-        style={
-          Object {
-            "display": "none",
-            "position": "absolute",
-            "width": undefined,
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "backgroundClip": "padding-box",
-              "backgroundColor": "#fff",
-              "border": "1px solid rgba(200, 200, 200, 0.4)",
-              "borderRadius": "3px",
-              "boxShadow": "0 3px 12px rgba(0,0,0,0.15)",
-              "position": "absolute",
-              "width": "100%",
-              "zIndex": 100,
-            }
-          }
-        >
-          <div
-            className="emotion-24"
-          >
-            <div>
-              Notifications
-              <a
-                href="#"
-              >
-                x
-              </a>
-            </div>
-            <ul
-              className="emotion-23"
-            >
-              <li>
-                <a>
-                  <span>
-                    Not watching
-                  </span>
-                  <span>
-                    Be notified when participating or @mentioned.
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span>
-                    Watching
-                  </span>
-                  <span>
-                    Be notified of all conversations.
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span>
-                    Ignoring
-                  </span>
-                  <span>
-                    Never be notified.
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          onClick={[Function]}
-          style={
-            Object {
-              "bottom": 0,
-              "left": 0,
-              "position": "fixed",
-              "right": 0,
-              "top": 0,
-              "zIndex": 1,
-            }
-          }
-        />
-      </div>
     </div>
     <div
-      className="emotion-25 emotion-26"
+      className="emotion-23 emotion-24"
     >
       <nav>
         <ul
-          className="emotion-27"
+          className="emotion-25"
         >
           <li>
             <a
@@ -3681,7 +3680,7 @@ exports[`Storyshots Repository1 with default 1`] = `
     </div>
   </div>
   <div
-    className="emotion-25 emotion-26"
+    className="emotion-23 emotion-24"
   >
     children
   </div>
