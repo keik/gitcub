@@ -2193,7 +2193,6 @@ exports[`Storyshots Repository/Tree with default 1`] = `
       <span
         toggler={
           <Button
-            onClick={[Function]}
             small={true}
           >
             <i>
@@ -2706,7 +2705,6 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
 <span
   toggler={
     <Button
-      onClick={[Function]}
       small={true}
     >
       <i>
