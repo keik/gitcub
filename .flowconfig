@@ -1,5 +1,9 @@
 [ignore]
 
+[untyped]
+.*/node_modules/@emotion/serialize
+.*/node_modules/@emotion/styled-base
+
 [include]
 
 [libs]
