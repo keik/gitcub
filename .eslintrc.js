@@ -27,7 +27,7 @@ module.exports = {
     },
     sourceType: 'module'
   },
-  plugins: ['flowtype'],
+  plugins: ['emotion', 'flowtype'],
   settings: {
     react: {
       version: package.dependencies.react
@@ -35,8 +35,13 @@ module.exports = {
   },
   rules: {
     'no-console': 'warn',
-    'react/prefer-stateless-function': 'error',
+    'emotion/import-from-emotion': 'error',
+    'emotion/jsx-import': 'error',
+    'emotion/no-vanilla': 'error',
+    'emotion/styled-import': 'error',
+    'emotion/syntax-preference': ['error', 'string'],
     'flowtype/require-valid-file-annotation': ['warn', 'always'],
-    'react/no-deprecated': 'warn'
+    'react/no-deprecated': 'warn',
+    'react/prefer-stateless-function': 'error'
   }
 }
