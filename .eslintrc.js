@@ -39,6 +39,7 @@ module.exports = {
     'emotion/jsx-import': 'error',
     'emotion/no-vanilla': 'error',
     'emotion/styled-import': 'error',
+    'emotion/syntax-preference': ['error', 'string'],
     'flowtype/require-valid-file-annotation': ['warn', 'always'],
     'react/no-deprecated': 'warn',
     'react/prefer-stateless-function': 'error'
