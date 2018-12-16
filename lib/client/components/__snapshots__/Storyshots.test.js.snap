@@ -103,172 +103,6 @@ exports[`Storyshots App__Footer with default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Header with default 1`] = `
-.emotion-0 {
-  padding: 0 8px;
-  margin-right: 12px;
-  line-height: 28px;
-  vertical-align: middle;
-  color: #ccc;
-  font-size: 22px;
-  font-family: 'Rajdhani',sans-serif;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-0:hover {
-  border-color: #4078c0;
-}
-
-.emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 12px;
-  background-color: #24292e;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 13px;
-}
-
-.emotion-9 > *:last-child {
-  margin-left: auto;
-}
-
-.emotion-9:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.emotion-2 {
-  float: left;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-}
-
-.emotion-2 label {
-  border-right: 1px solid #ddd;
-  padding: 4px 8px;
-  color: #767676;
-  font-size: 12px;
-}
-
-.emotion-2 input {
-  border: none;
-  min-height: 26px;
-}
-
-.emotion-7 > * + * {
-  margin-left: 12px;
-}
-
-.emotion-3 {
-  display: inline-block;
-  color: #333;
-  background-image: linear-gradient(#fcfcfc,#eee);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-3:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-5 {
-  display: inline-block;
-  color: #fff;
-  background-image: linear-gradient(#8add6d,#60b044);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #5aad35;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-5:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<div
-  className="emotion-9"
->
-  <div>
-    <a
-      className="emotion-0 emotion-1"
-      href="/"
-    >
-      GH
-    </a>
-  </div>
-  <form
-    className="emotion-2"
-  >
-    <label
-      htmlFor="input-search-query"
-    >
-      <input
-        placeholder="Search or jump to..."
-      />
-    </label>
-  </form>
-  <div
-    className="emotion-7 emotion-8"
-  >
-    <a
-      className="emotion-3 emotion-4"
-      href="/login"
-    >
-      Sign in
-    </a>
-    <a
-      className="emotion-5 emotion-4"
-      href="/join"
-    >
-      Sign up
-    </a>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Home with default 1`] = `
 .emotion-5 {
   width: 980px;
@@ -759,31 +593,6 @@ exports[`Storyshots Repository/Branches with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Commit with default 1`] = `
-.emotion-5 {
-  display: inline-block;
-  color: #333;
-  background-image: linear-gradient(#fcfcfc,#eee);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-5:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-4 {
   position: relative;
   border: 1px solid #d8d8d8;
@@ -885,6 +694,31 @@ exports[`Storyshots Repository/Commit with default 1`] = `
 .emotion-9 > input[type='submit']:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
+}
+
+.emotion-5 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-5:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-16 {
@@ -1388,31 +1222,6 @@ exports[`Storyshots Repository/Commits with default 1`] = `
 `;
 
 exports[`Storyshots Repository/FileContent with default 1`] = `
-.emotion-3 {
-  display: inline-block;
-  color: #333;
-  background-image: linear-gradient(#fcfcfc,#eee);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-3:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-2 {
   position: relative;
   border: 1px solid #d8d8d8;
@@ -1488,6 +1297,31 @@ exports[`Storyshots Repository/FileContent with default 1`] = `
 .emotion-9 > input[type='submit']:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-16 {
@@ -2094,31 +1928,6 @@ exports[`Storyshots Repository/Settings with default 1`] = `
 `;
 
 exports[`Storyshots Repository/Tree with default 1`] = `
-.emotion-0 {
-  display: inline-block;
-  color: #333;
-  background-image: linear-gradient(#fcfcfc,#eee);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-0:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-17 {
   position: relative;
   border: 1px solid #d8d8d8;
@@ -2152,6 +1961,31 @@ exports[`Storyshots Repository/Tree with default 1`] = `
   background-color: #f2f9fc;
   border-bottom: 1px solid;
   border-color: #c9e6f2;
+}
+
+.emotion-0 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-2 {
@@ -2899,31 +2733,6 @@ exports[`Storyshots Repository1 with default 1`] = `
   margin-left: auto;
 }
 
-.emotion-3 {
-  display: inline-block;
-  color: #333;
-  background-image: linear-gradient(#fcfcfc,#eee);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.emotion-3:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-5 {
   display: inline-block;
   color: #333;
@@ -2983,6 +2792,31 @@ exports[`Storyshots Repository1 with default 1`] = `
 .emotion-7 > input[type='submit']:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-28 {
