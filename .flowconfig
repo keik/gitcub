@@ -1,6 +1,7 @@
 [ignore]
 
 [untyped]
+.*/node_modules/@emotion/core
 .*/node_modules/@emotion/serialize
 .*/node_modules/@emotion/styled-base
 
