@@ -2032,41 +2032,21 @@ exports[`Storyshots Repository/Tree with default 1`] = `
         }
       }
     >
-      <span
-        toggler={
-          <Button
-            small={true}
-          >
-            <i>
-              Branch: 
-            </i>
-            <span>
-              #TREE
-               
-            </span>
-            <i
-              className="fa fa-caret-down"
-            />
-          </Button>
-        }
-        width={300}
+      <button
+        className="emotion-0 emotion-1"
+        onClick={[Function]}
       >
-        <button
-          className="emotion-0 emotion-1"
-          onClick={[Function]}
-        >
-          <i>
-            Branch: 
-          </i>
-          <span>
-            #TREE
-             
-          </span>
-          <i
-            className="fa fa-caret-down"
-          />
-        </button>
-      </span>
+        <i>
+          Branch: 
+        </i>
+        <span>
+          #TREE
+           
+        </span>
+        <i
+          className="fa fa-caret-down"
+        />
+      </button>
     </div>
     <div>
       <strong>
@@ -2557,41 +2537,21 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
   text-decoration: none;
 }
 
-<span
-  toggler={
-    <Button
-      small={true}
-    >
-      <i>
-        Branch: 
-      </i>
-      <span>
-        $TREE
-         
-      </span>
-      <i
-        className="fa fa-caret-down"
-      />
-    </Button>
-  }
-  width={300}
+<button
+  className="emotion-0 emotion-1"
+  onClick={[Function]}
 >
-  <button
-    className="emotion-0 emotion-1"
-    onClick={[Function]}
-  >
-    <i>
-      Branch: 
-    </i>
-    <span>
-      $TREE
-       
-    </span>
-    <i
-      className="fa fa-caret-down"
-    />
-  </button>
-</span>
+  <i>
+    Branch: 
+  </i>
+  <span>
+    $TREE
+     
+  </span>
+  <i
+    className="fa fa-caret-down"
+  />
+</button>
 `;
 
 exports[`Storyshots Repository1 part of Navigations 1`] = `
@@ -2930,44 +2890,18 @@ exports[`Storyshots Repository1 with default 1`] = `
               <div
                 className="emotion-7 emotion-8"
               >
-                <span
-                  toggler={
-                    <Button
-                      small={true}
-                    >
-                      <i
-                        className="fa fa-eye"
-                      />
-                      Watch
-                      <ForwardRef(render)
-                        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Header"
-                        __EMOTION_TYPE_PLEASE_DO_NOT_USE__="i"
-                        className="fa fa-caret-down"
-                        css={
-                          Object {
-                            "map": "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlJlcG9zaXRvcnkuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0g4QiIsImZpbGUiOiJSZXBvc2l0b3J5LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcblxuLyoqIEBqc3gganN4ICovXG5pbXBvcnQgeyBqc3gsIGNzcyB9IGZyb20gJ0BlbW90aW9uL2NvcmUnXG5pbXBvcnQgKiBhcyBSZWFjdCBmcm9tICdyZWFjdCdcblxuaW1wb3J0IHsgTGluaywgUm91dGUsIHdpdGhSb3V0ZXIsIHR5cGUgTWF0Y2ggfSBmcm9tICdyZWFjdC1yb3V0ZXItZG9tJ1xuXG5pbXBvcnQgQnV0dG9uIGZyb20gJy4vY29tbW9uL2F0b21zL0J1dHRvbidcbmltcG9ydCBQYW5lbCBmcm9tICcuL2NvbW1vbi9ibG9ja3MvUGFuZWwnXG5pbXBvcnQgRHJvcGRvd24gZnJvbSAnLi9jb21tb24vYmxvY2tzL0Ryb3Bkb3duJ1xuaW1wb3J0IElubmVyQ29udGFpbmVyIGZyb20gJy4vY29tbW9uL2xheW91dHMvSW5uZXJDb250YWluZXInXG5pbXBvcnQgU2VnbWVudGVkQnV0dG9uc0NvbnRhaW5lciBmcm9tICcuL2NvbW1vbi9sYXlvdXRzL1NlZ21lbnRlZEJ1dHRvbnNDb250YWluZXInXG5cbnR5cGUgUHJvcHMgPSB7XG4gIGNoaWxkcmVuOiBSZWFjdC5Ob2RlLFxuICBtYXRjaDogJFNoYXBlPE1hdGNoPHsgb3duZXI6IHN0cmluZywgcmVwbzogc3RyaW5nIH0+PixcbiAgc2Vzc2lvbj86IGFueVxufVxuZXhwb3J0IGNvbnN0IFJlcG9zaXRvcnkgPSAoeyBjaGlsZHJlbiwgbWF0Y2gsIHNlc3Npb24gfTogUHJvcHMpID0+IChcbiAgPGRpdj5cbiAgICA8ZGl2XG4gICAgICBjc3M9e2Nzc2BcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMjRweDtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZhZmFmYTtcbiAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlZWU7XG4gICAgICBgfVxuICAgID5cbiAgICAgIDxIZWFkZXJcbiAgICAgICAgZm9ya2VkQ291bnQ9ey0xfVxuICAgICAgICBtYXRjaD17bWF0Y2h9XG4gICAgICAgIHN0YXJlZENvdW50PXstMX1cbiAgICAgICAgd2F0Y2hlZENvdW50PXstMX1cbiAgICAgIC8+XG4gICAgICA8TmF2aWdhdGlvbnNcbiAgICAgICAgaXNzdWVzQ291bnQ9ey0xfVxuICAgICAgICBtYXRjaD17bWF0Y2h9XG4gICAgICAgIHB1bGxSZXF1ZXN0c0NvdW50PXstMX1cbiAgICAgICAgcHJvamVjdHNDb3VudD17LTF9XG4gICAgICAgIHNlc3Npb249e3Nlc3Npb259XG4gICAgICAvPlxuICAgIDwvZGl2PlxuICAgIDxJbm5lckNvbnRhaW5lcj57Y2hpbGRyZW59PC9Jbm5lckNvbnRhaW5lcj5cbiAgPC9kaXY+XG4pXG5cbmV4cG9ydCBkZWZhdWx0IHdpdGhSb3V0ZXIoUmVwb3NpdG9yeSlcblxuY29uc3QgSGVhZGVyID0gKHtcbiAgZm9ya2VkQ291bnQsXG4gIG1hdGNoOiB7XG4gICAgcGFyYW1zOiB7IG93bmVyLCByZXBvIH1cbiAgfSxcbiAgc3RhcmVkQ291bnQsXG4gIHdhdGNoZWRDb3VudFxufToge1xuICBmb3JrZWRDb3VudDogbnVtYmVyLFxuICBtYXRjaDoge1xuICAgIHBhcmFtczoge1xuICAgICAgb3duZXI6IHN0cmluZyxcbiAgICAgIHJlcG86IHN0cmluZ1xuICAgIH1cbiAgfSxcbiAgc3RhcmVkQ291bnQ6IG51bWJlcixcbiAgd2F0Y2hlZENvdW50OiBudW1iZXJcbn0pID0+IChcbiAgPElubmVyQ29udGFpbmVyPlxuICAgIDxkaXZcbiAgICAgIGNzcz17Y3NzYFxuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgICBgfVxuICAgID5cbiAgICAgIDxoMVxuICAgICAgICBjc3M9e2Nzc2BcbiAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgICAgY29sb3I6ICM2NjY7XG4gICAgICAgICAgZm9udC1zaXplOiAxOHB4O1xuICAgICAgICBgfVxuICAgICAgPlxuICAgICAgICA8YSBocmVmPXtgLyR7b3duZXJ9YH0+e293bmVyfTwvYT5cbiAgICAgICAgPHNwYW5cbiAgICAgICAgICBjc3M9e2Nzc2BcbiAgICAgICAgICAgIG1hcmdpbjogMCA0cHg7XG4gICAgICAgICAgYH1cbiAgICAgICAgPlxuICAgICAgICAgIC9cbiAgICAgICAgPC9zcGFuPlxuICAgICAgICA8YSBocmVmPXtgLyR7b3duZXJ9LyR7cmVwb31gfT57cmVwb308L2E+XG4gICAgICA8L2gxPlxuICAgICAgPG5hdj5cbiAgICAgICAgPHVsXG4gICAgICAgICAgY3NzPXtjc3NgXG4gICAgICAgICAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICAgID4gbGkge1xuICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxMnB4O1xuXG4gICAgICAgICAgICAgIGk6Zmlyc3Qtb2YtdHlwZSB7XG4gICAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiA0cHg7XG4gICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH1cbiAgICAgICAgICBgfVxuICAgICAgICA+XG4gICAgICAgICAgPGxpPlxuICAgICAgICAgICAgPFNlZ21lbnRlZEJ1dHRvbnNDb250YWluZXI+XG4gICAgICAgICAgICAgIDxEcm9wZG93blxuICAgICAgICAgICAgICAgIHRvZ2dsZXI9e1xuICAgICAgICAgICAgICAgICAgPEJ1dHRvbiBzbWFsbD5cbiAgICAgICAgICAgICAgICAgICAgPGkgY2xhc3NOYW1lPVwiZmEgZmEtZXllXCIgLz5cbiAgICAgICAgICAgICAgICAgICAgV2F0Y2hcbiAgICAgICAgICAgICAgICAgICAgPGlcbiAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJmYSBmYS1jYXJldC1kb3duXCJcbiAgICAgICAgICAgICAgICAgICAgICBjc3M9e2Nzc2BcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiA0cHg7XG4gICAgICAgICAgICAgICAgICAgICAgYH1cbiAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgIDwvQnV0dG9uPlxuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICB3aWR0aD17MzAwfVxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgPFN1YnNjcmlwdGlvbk1lbnUgLz5cbiAgICAgICAgICAgICAgPC9Ecm9wZG93bj5cbiAgICAgICAgICAgICAgPEJ1dHRvbiBhcz1cImFcIiBocmVmPVwiI1wiIHNtYWxsIHRyYW5zcGFyZW50PlxuICAgICAgICAgICAgICAgIHt3YXRjaGVkQ291bnR9XG4gICAgICAgICAgICAgIDwvQnV0dG9uPlxuICAgICAgICAgICAgPC9TZWdtZW50ZWRCdXR0b25zQ29udGFpbmVyPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgPGxpPlxuICAgICAgICAgICAgPFNlZ21lbnRlZEJ1dHRvbnNDb250YWluZXI+XG4gICAgICAgICAgICAgIDxCdXR0b24gc21hbGw+XG4gICAgICAgICAgICAgICAgPGkgY2xhc3NOYW1lPVwiZmEgZmEtc3RhclwiIC8+XG4gICAgICAgICAgICAgICAgU3RhclxuICAgICAgICAgICAgICA8L0J1dHRvbj5cbiAgICAgICAgICAgICAgPEJ1dHRvbiBhcz1cImFcIiBocmVmPVwiI1wiIHNtYWxsIHRyYW5zcGFyZW50PlxuICAgICAgICAgICAgICAgIHtzdGFyZWRDb3VudH1cbiAgICAgICAgICAgICAgPC9CdXR0b24+XG4gICAgICAgICAgICA8L1NlZ21lbnRlZEJ1dHRvbnNDb250YWluZXI+XG4gICAgICAgICAgPC9saT5cbiAgICAgICAgICA8bGk+XG4gICAgICAgICAgICA8U2VnbWVudGVkQnV0dG9uc0NvbnRhaW5lcj5cbiAgICAgICAgICAgICAgPEJ1dHRvbiBzbWFsbD5cbiAgICAgICAgICAgICAgICA8aSBjbGFzc05hbWU9XCJmYSBmYS1jb2RlLWZvcmtcIiAvPlxuICAgICAgICAgICAgICAgIEZvcmtcbiAgICAgICAgICAgICAgPC9CdXR0b24+XG4gICAgICAgICAgICAgIDxCdXR0b24gYXM9XCJhXCIgaHJlZj1cIiNcIiBzbWFsbCB0cmFuc3BhcmVudD5cbiAgICAgICAgICAgICAgICB7Zm9ya2VkQ291bnR9XG4gICAgICAgICAgICAgIDwvQnV0dG9uPlxuICAgICAgICAgICAgPC9TZWdtZW50ZWRCdXR0b25zQ29udGFpbmVyPlxuICAgICAgICAgIDwvbGk+XG4gICAgICAgIDwvdWw+XG4gICAgICA8L25hdj5cbiAgICA8L2Rpdj5cbiAgPC9Jbm5lckNvbnRhaW5lcj5cbilcblxuY29uc3QgU3Vic2NyaXB0aW9uTWVudSA9ICgpID0+IChcbiAgPGRpdj5cbiAgICA8UGFuZWwuSGVhZGVyPk5vdGlmaWNhdGlvbnM8L1BhbmVsLkhlYWRlcj5cbiAgICA8UGFuZWwuQm9keSBub1BhZGRpbmc+XG4gICAgICA8dWxcbiAgICAgICAgY3NzPXtjc3NgXG4gICAgICAgICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgID4gbGkge1xuICAgICAgICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgICAgICAgOm5vdCg6bGFzdC1jaGlsZCkge1xuICAgICAgICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2VlZTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgID4gYSB7XG4gICAgICAgICAgICAgIGNvbG9yOiBpbmhlcml0O1xuICAgICAgICAgICAgICA+IGgyIHtcbiAgICAgICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgID4gc3BhbiB7XG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9XG4gICAgICAgICAgfVxuICAgICAgICBgfVxuICAgICAgPlxuICAgICAgICA8bGk+XG4gICAgICAgICAgPGEgaHJlZj1cIiNUT0RPXCI+XG4gICAgICAgICAgICA8aDI+Tm90IHdhdGNoaW5nPC9oMj5cbiAgICAgICAgICAgIDxzcGFuPkJlIG5vdGlmaWVkIHdoZW4gcGFydGljaXBhdGluZyBvciBAbWVudGlvbmVkLjwvc3Bhbj5cbiAgICAgICAgICA8L2E+XG4gICAgICAgIDwvbGk+XG4gICAgICAgIDxsaT5cbiAgICAgICAgICA8YSBocmVmPVwiI1RPRE9cIj5cbiAgICAgICAgICAgIDxoMj5XYXRjaGluZzwvaDI+XG4gICAgICAgICAgICA8c3Bhbj5CZSBub3RpZmllZCBvZiBhbGwgY29udmVyc2F0aW9ucy48L3NwYW4+XG4gICAgICAgICAgPC9hPlxuICAgICAgICA8L2xpPlxuICAgICAgICA8bGk+XG4gICAgICAgICAgPGEgaHJlZj1cIiNUT0RPXCI+XG4gICAgICAgICAgICA8aDI+SWdub3Jpbmc8L2gyPlxuICAgICAgICAgICAgPHNwYW4+TmV2ZXIgYmUgbm90aWZpZWQuPC9zcGFuPlxuICAgICAgICAgIDwvYT5cbiAgICAgICAgPC9saT5cbiAgICAgIDwvdWw+XG4gICAgPC9QYW5lbC5Cb2R5PlxuICA8L2Rpdj5cbilcblxuZXhwb3J0IGNvbnN0IE5hdmlnYXRpb25zID0gKHtcbiAgaXNzdWVzQ291bnQsXG4gIG1hdGNoLFxuICBwdWxsUmVxdWVzdHNDb3VudCxcbiAgcHJvamVjdHNDb3VudCxcbiAgc2Vzc2lvblxufToge1xuICBpc3N1ZXNDb3VudDogbnVtYmVyLFxuICBtYXRjaDogJFNoYXBlPE1hdGNoPHsgb3duZXI6IHN0cmluZywgcmVwbzogc3RyaW5nIH0+PixcbiAgcHJvamVjdHNDb3VudDogbnVtYmVyLFxuICBwdWxsUmVxdWVzdHNDb3VudDogbnVtYmVyLFxuICBzZXNzaW9uPzogKlxufSkgPT4ge1xuICBjb25zdCB7IG93bmVyLCByZXBvIH0gPSBtYXRjaC5wYXJhbXNcbiAgcmV0dXJuIChcbiAgICA8SW5uZXJDb250YWluZXI+XG4gICAgICA8bmF2PlxuICAgICAgICA8dWxcbiAgICAgICAgICBjc3M9e2Nzc2BcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xuXG4gICAgICAgICAgICBhIHtcbiAgICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgICAgIHBhZGRpbmc6IDdweCAxNXB4IDhweDtcbiAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogLTFweDtcbiAgICAgICAgICAgICAgY29sb3I6ICM2NjY7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgICAuc2VsZWN0ZWQge1xuICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICAgICAgICAgICAgICBib3JkZXItbGVmdDogMXB4IHNvbGlkICNlNWU1ZTU7XG4gICAgICAgICAgICAgIGJvcmRlci10b3A6IDNweCBzb2xpZCAjZDI2OTExO1xuICAgICAgICAgICAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAjZTVlNWU1O1xuICAgICAgICAgICAgfVxuICAgICAgICAgICAgLmZhIHtcbiAgICAgICAgICAgICAgbWFyZ2luLXJpZ2h0OiAwLjVlbTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICBgfVxuICAgICAgICA+XG4gICAgICAgICAge1tcbiAgICAgICAgICAgIFsnZmEtY29kZScsICdDb2RlJywgYC8ke293bmVyfS8ke3JlcG99YF0sXG4gICAgICAgICAgICBbXG4gICAgICAgICAgICAgICdmYS1leGNsYW1hdGlvbi1jaXJjbGUnLFxuICAgICAgICAgICAgICBgSXNzdWVzICR7aXNzdWVzQ291bnR9YCxcbiAgICAgICAgICAgICAgYC8ke293bmVyfS8ke3JlcG99L2lzc3Vlc2BcbiAgICAgICAgICAgIF0sXG4gICAgICAgICAgICBbXG4gICAgICAgICAgICAgICdmYS1jb2RlLWZvcmsnLFxuICAgICAgICAgICAgICBgUHVsbCByZXF1ZXN0cyAke3B1bGxSZXF1ZXN0c0NvdW50fWAsXG4gICAgICAgICAgICAgIGAvJHtvd25lcn0vJHtyZXBvfS9wdWxsc2BcbiAgICAgICAgICAgIF0sXG4gICAgICAgICAgICBbXG4gICAgICAgICAgICAgICdmYS1ncm91cCcsXG4gICAgICAgICAgICAgIGBQcm9qZWN0cyAke3Byb2plY3RzQ291bnR9YCxcbiAgICAgICAgICAgICAgYC8ke293bmVyfS8ke3JlcG99L3Byb2plY3RzYFxuICAgICAgICAgICAgXSxcbiAgICAgICAgICAgIFsnZmEtYm9vaycsICdXaWtpJywgYC8ke293bmVyfS8ke3JlcG99L3dpa2lgXSxcbiAgICAgICAgICAgIFsnZmEtbGluZS1jaGFydCcsICdQdWxzZScsIGAvJHtvd25lcn0vJHtyZXBvfS9wdWxzZWBdLFxuICAgICAgICAgICAgWydmYS1iYXItY2hhcnQnLCAnR3JhcGhzJywgYC8ke293bmVyfS8ke3JlcG99L2dyYXBoc2BdLFxuICAgICAgICAgICAgc2Vzc2lvbiAhPSBudWxsXG4gICAgICAgICAgICAgID8gWydmYS1nZWFyJywgJ1NldHRpbmdzJywgYC8ke293bmVyfS8ke3JlcG99L3NldHRpbmdzYF1cbiAgICAgICAgICAgICAgOiBudWxsXG4gICAgICAgICAgXS5tYXAoXG4gICAgICAgICAgICByID0+XG4gICAgICAgICAgICAgIHIgIT0gbnVsbCAmJiAoXG4gICAgICAgICAgICAgICAgPGxpIGtleT17clswXX0+XG4gICAgICAgICAgICAgICAgICA8Um91dGVcbiAgICAgICAgICAgICAgICAgICAgZXhhY3RcbiAgICAgICAgICAgICAgICAgICAgcGF0aD17clsyXX1cbiAgICAgICAgICAgICAgICAgICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lXG4gICAgICAgICAgICAgICAgICAgIGNoaWxkcmVuPXsoeyBtYXRjaCB9KSA9PiAoXG4gICAgICAgICAgICAgICAgICAgICAgPExpbmsgY2xhc3NOYW1lPXttYXRjaCA/ICdzZWxlY3RlZCcgOiAnJ30gdG89e3JbMl19PlxuICAgICAgICAgICAgICAgICAgICAgICAgPGkgY2xhc3NOYW1lPXtgZmEgJHtyWzBdfWB9IC8+XG4gICAgICAgICAgICAgICAgICAgICAgICB7clsxXX1cbiAgICAgICAgICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICAgICAgICAgICl9XG4gICAgICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgICAgIClcbiAgICAgICAgICApfVxuICAgICAgICA8L3VsPlxuICAgICAgPC9uYXY+XG4gICAgPC9Jbm5lckNvbnRhaW5lcj5cbiAgKVxufVxuIl19 */",
-                            "name": "t0vavf-Header",
-                            "styles": "margin-left:4px;label:Header;",
-                          }
-                        }
-                      />
-                    </Button>
-                  }
-                  width={300}
+                <button
+                  className="emotion-3 emotion-4"
+                  onClick={[Function]}
                 >
-                  <button
-                    className="emotion-3 emotion-4"
-                    onClick={[Function]}
-                  >
-                    <i
-                      className="fa fa-eye"
-                    />
-                    Watch
-                    <i
-                      className="fa fa-caret-down emotion-2"
-                    />
-                  </button>
-                </span>
+                  <i
+                    className="fa fa-eye"
+                  />
+                  Watch
+                  <i
+                    className="fa fa-caret-down emotion-2"
+                  />
+                </button>
                 <a
                   className="emotion-5 emotion-4"
                   href="#"
