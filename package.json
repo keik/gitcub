@@ -56,6 +56,7 @@
     "glob": "^7.1.1",
     "highlight.js": "^9.7.0",
     "lodash": "^4.17.11",
+    "mysql2": "^1.6.4",
     "nodegit": "^0.20.3",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
@@ -65,6 +66,7 @@
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
+    "sequelize": "^4.42.0",
     "time-elements": "^1.0.0"
   },
   "devDependencies": {
@@ -99,6 +101,7 @@
     "prettier": "^1.15.3",
     "react-test-renderer": "^16.7.0",
     "rimraf": "^2.6.3",
+    "sequelize-cli": "^5.4.0",
     "tap-diff": "^0.1.1",
     "tape": "^4.9.2",
     "webpack": "^4.28.3",
