@@ -36,17 +36,41 @@ Application configurations are available by `config.json`
 
 ## Development
 
+### Initiaize database
+
+
+Creating
+
+```
+npx sequelize db:create
+```
+
+Seeding
+
+```
+npx sequelize db:seed
+```
+
+Migrating
+
+```
+npx sequelize db:migrate
+```
+
+
+### Coding
+
 Watch changes and build incrementally with
 
 ```
-make watch
+npm run watch
 ```
 
 
 ## Test
 
 ```
-make test
+npm test
 ```
 
 
