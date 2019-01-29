@@ -5,7 +5,7 @@ import axios from 'axios'
 import Express from 'express'
 
 import branchesRouter from './branches'
-import { API_REPOS_BRANCHES } from '../../../../../share/constants/api'
+import { API_REPOS_BRANCHES } from '../../../../../constants/api'
 
 let app
 let PORT

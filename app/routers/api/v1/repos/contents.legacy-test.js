@@ -4,7 +4,7 @@ import test from 'tape'
 import axios from 'axios'
 import Express from 'express'
 
-import { API_REPOS_CONTENTS } from '../../../../../share/constants/api'
+import { API_REPOS_CONTENTS } from '../../../../../constants/api'
 import contentsRouter from './contents'
 
 let app

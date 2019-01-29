@@ -4,7 +4,7 @@ import test from 'tape'
 import axios from 'axios'
 import Express from 'express'
 
-import { API_GIT_TAGS } from '../../../../../share/constants/api'
+import { API_GIT_TAGS } from '../../../../../constants/api'
 import tagsRouter from './tags'
 
 let app

@@ -6,8 +6,8 @@ import { join } from 'path'
 import { parse } from 'url'
 
 import asyncWrapper from '../../../../asyncWrapper'
-import config from '../../../../../../config'
-import { API_REPOS_CONTENTS } from '../../../../../share/constants/api'
+import config from '../../../../../config'
+import { API_REPOS_CONTENTS } from '../../../../../constants/api'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

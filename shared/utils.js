@@ -1,6 +1,6 @@
 // @flow
 
-import config from '../../config'
+import config from '../config'
 
 import type { Tree$Entry$WithLastCommitT } from '../types/gh'
 

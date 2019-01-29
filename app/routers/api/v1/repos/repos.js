@@ -7,8 +7,8 @@ import Git from 'nodegit'
 import { join } from 'path'
 
 import asyncWrapper from '../../../../asyncWrapper'
-import config from '../../../../../../config'
-import { API_REPOS } from '../../../../../share/constants/api'
+import config from '../../../../../config'
+import { API_REPOS } from '../../../../../constants/api'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

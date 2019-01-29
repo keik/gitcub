@@ -6,8 +6,8 @@ import { join } from 'path'
 
 import { convertCommitToGitCommitObject } from '../converter'
 import asyncWrapper from '../../../../asyncWrapper'
-import { API_REPOS_BRANCHES } from '../../../../../share/constants/api'
-import config from '../../../../../../config'
+import { API_REPOS_BRANCHES } from '../../../../../constants/api'
+import config from '../../../../../config'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

@@ -4,7 +4,7 @@ import { Router } from 'express'
 import passport from 'passport'
 import { Strategy } from 'passport-local'
 
-import models from '../../../models'
+import models from '../../models'
 
 export default new Router()
   .post(

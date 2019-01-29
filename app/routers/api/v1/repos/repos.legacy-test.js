@@ -8,9 +8,9 @@ import fs from 'fs'
 import path from 'path'
 import rimraf from 'rimraf'
 
-import { API_REPOS } from '../../../../../share/constants/api'
+import { API_REPOS } from '../../../../../constants/api'
 import reposRouter from './repos'
-import config from '../../../../../../config'
+import config from '../../../../../config'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

@@ -2,8 +2,8 @@
 
 import axios from 'axios'
 
-import { API_REPOS_COMMITS } from '../../../share/constants/api'
-import { genAPIStr } from '../../../share/utils'
+import { API_REPOS_COMMITS } from '../../../constants/api'
+import { genAPIStr } from '../../../shared/utils'
 import type { CommitT, CommitWithDetailsT } from '../../../types/gh'
 
 export const FETCH: 'COMMITS/FETCH' = 'COMMITS/FETCH'

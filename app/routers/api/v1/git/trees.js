@@ -5,10 +5,10 @@ import { merge } from 'lodash'
 import Git from 'nodegit'
 import { join } from 'path'
 
-import { genAPIStr } from '../../../../../share/utils'
-import { API_GIT_TREES } from '../../../../../share/constants/api'
+import { genAPIStr } from '../../../../../shared/utils'
+import { API_GIT_TREES } from '../../../../../constants/api'
 import { convertCommitToGitCommitObject } from '../converter'
-import config from '../../../../../../config'
+import config from '../../../../../config'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

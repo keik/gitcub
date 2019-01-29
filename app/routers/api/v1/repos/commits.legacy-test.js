@@ -4,7 +4,7 @@ import test from 'tape'
 import axios from 'axios'
 import Express from 'express'
 
-import { API_REPOS_COMMITS } from '../../../../../share/constants/api'
+import { API_REPOS_COMMITS } from '../../../../../constants/api'
 import commitsRouter from './commits'
 
 let app

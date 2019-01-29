@@ -8,7 +8,7 @@ import Button from './common/atoms/Button'
 import FormGroup from './common/blocks/FormGroup'
 import P from './common/blocks/P'
 import InnerContainer from './common/layouts/InnerContainer'
-import { API_REPOS } from '../../share/constants/api'
+import { API_REPOS } from '../../constants/api'
 
 const d = debug('keik:gh:components:new')
 

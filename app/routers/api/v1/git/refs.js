@@ -10,9 +10,9 @@ import {
   API_GIT_COMMITS,
   API_GIT_REFS,
   API_GIT_TAGS
-} from '../../../../../share/constants/api'
-import { genAPIStr } from '../../../../../share/utils'
-import config from '../../../../../../config'
+} from '../../../../../constants/api'
+import { genAPIStr } from '../../../../../shared/utils'
+import config from '../../../../../config'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

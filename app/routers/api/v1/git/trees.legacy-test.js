@@ -4,7 +4,7 @@ import test from 'tape'
 import axios from 'axios'
 import Express from 'express'
 
-import { API_GIT_TREES } from '../../../../../share/constants/api'
+import { API_GIT_TREES } from '../../../../../constants/api'
 import treesRouter from './trees'
 
 let app

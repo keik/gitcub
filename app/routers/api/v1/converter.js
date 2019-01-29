@@ -1,11 +1,11 @@
 // @flow
 
-import { genAPIStr } from '../../../../share/utils'
+import { genAPIStr } from '../../../../shared/utils'
 import {
   API_GIT_COMMITS,
   API_GIT_TREES,
   API_REPOS_COMMITS
-} from '../../../../share/constants/api'
+} from '../../../../constants/api'
 
 import type { Commit } from '../../../../types/nodegit'
 

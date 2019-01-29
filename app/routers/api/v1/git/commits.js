@@ -5,8 +5,8 @@ import Git from 'nodegit'
 import { join } from 'path'
 
 import { convertCommitToGitCommitObject } from '../converter'
-import config from '../../../../../../config'
-import { API_GIT_COMMITS } from '../../../../../share/constants/api'
+import config from '../../../../../config'
+import { API_GIT_COMMITS } from '../../../../../constants/api'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

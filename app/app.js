@@ -15,7 +15,7 @@ import zlib from 'zlib'
 import errorHandlingMiddleware from './errorHandlingMiddleware'
 import htmlRenderer from './htmlRenderer'
 import routers from './routers'
-import config from '../../config'
+import config from '../config'
 
 const { REPO_ROOT } = config.env[process.env.NODE_ENV || 'development']
 

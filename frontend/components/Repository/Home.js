@@ -16,7 +16,7 @@ import * as BranchesAction from '../../ducks/repository/branches'
 import * as CommitsAction from '../../ducks/repository/commits'
 import * as TagsAction from '../../ducks/repository/tags'
 import * as TreesAction from '../../ducks/repository/trees'
-import config from '../../../../config'
+import config from '../../../config'
 import type { ReducersStateT } from '../../ducks'
 import type {
   BranchObj,

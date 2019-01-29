@@ -5,7 +5,7 @@ import { jsx, css } from '@emotion/core'
 import { Link } from 'react-router-dom'
 
 import Panel from '../../common/blocks/Panel'
-import { parseEntriesByDirLevel } from '../../../../share/utils'
+import { parseEntriesByDirLevel } from '../../../../shared/utils'
 import type { Tree$Entry$WithLastCommitT } from '../../../../types/gh'
 
 const Entries = ({

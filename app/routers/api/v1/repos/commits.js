@@ -7,9 +7,9 @@ import { join } from 'path'
 
 import { convertCommitToReposCommitObject } from '../converter'
 import asyncWrapper from '../../../../asyncWrapper'
-import { genAPIStr } from '../../../../../share/utils'
-import { API_REPOS_COMMITS } from '../../../../../share/constants/api'
-import config from '../../../../../../config'
+import { genAPIStr } from '../../../../../shared/utils'
+import { API_REPOS_COMMITS } from '../../../../../constants/api'
+import config from '../../../../../config'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 
