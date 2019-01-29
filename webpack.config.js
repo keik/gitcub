@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './lib/client/main.js',
+  entry: './frontend/main.js',
   module: {
     rules: [
       {
