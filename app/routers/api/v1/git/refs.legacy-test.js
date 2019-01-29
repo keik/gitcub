@@ -13,6 +13,7 @@ test.test('setup', t => {
   app = Express()
     .use(refsRouter)
     .listen(0)
+  // $FlowFixMe
   PORT = app.address().port
   t.end()
 })
@@ -247,6 +248,6 @@ test(`GET ${API_GIT_REFS} from no exists repo should return 404`, t => {
 })
 
 test.test('teardown', t => {
-  app.close()
+  if (app) app.close()
   t.end()
 })

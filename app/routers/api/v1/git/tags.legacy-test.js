@@ -13,6 +13,7 @@ test.test('setup', t => {
   app = Express()
     .use(tagsRouter)
     .listen(0)
+  // $FlowFixMe
   PORT = app.address().port
   t.end()
 })
@@ -46,6 +47,6 @@ test(`GET ${API_GIT_TAGS} from no exists repo should return 404`, t => {
 })
 
 test.test('teardown', t => {
-  app.close()
+  if (app) app.close()
   t.end()
 })

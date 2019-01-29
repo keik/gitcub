@@ -13,6 +13,7 @@ test.test('setup', t => {
   app = Express()
     .use(commitsRouter)
     .listen(0)
+  // $FlowFixMe
   PORT = app.address().port
   t.end()
 })
@@ -307,6 +308,6 @@ test(`GET ${API_REPOS_COMMITS} from no exists repo should return 404`, t => {
 })
 
 test.test('teardown', t => {
-  app.close()
+  if (app) app.close()
   t.end()
 })

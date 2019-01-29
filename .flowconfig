@@ -10,8 +10,6 @@
 [libs]
 
 [lints]
-# temporary
-deprecated-call-syntax=off
 
 [options]
 

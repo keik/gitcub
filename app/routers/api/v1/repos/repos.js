@@ -18,6 +18,7 @@ export default new Router()
   .get(API_REPOS.USERS, asyncWrapper(onGetUsers))
 
 function onPost(req: express$Request, res: express$Response) {
+  // $FlowFixMe
   const { name, owner, authenticity_token } = req.body
   if (authenticity_token !== 'TRUE')
     // TODO verify auchenticity token

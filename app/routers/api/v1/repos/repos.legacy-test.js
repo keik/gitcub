@@ -21,6 +21,7 @@ test.test('setup', t => {
     .use(bodyParser.json())
     .use(reposRouter)
     .listen(0)
+  // $FlowFixMe
   PORT = app.address().port
   t.end()
 })
@@ -129,6 +130,6 @@ test(`GET ${
 })
 
 test.test('teardown', t => {
-  app.close()
+  if (app) app.close()
   t.end()
 })
