@@ -27,8 +27,8 @@
     "url": "keik.info"
   },
   "engines": {
-    "node": "^8.11.2",
-    "npm": "^6.4.1"
+    "node": "^10.0.0",
+    "npm": "^6.0.0"
   },
   "license": "MIT",
   "repository": {
@@ -56,7 +56,7 @@
     "highlight.js": "^9.7.0",
     "lodash": "^4.17.11",
     "mysql2": "^1.6.4",
-    "nodegit": "^0.20.3",
+    "nodegit": "^0.24.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "react": "^16.5.1",
