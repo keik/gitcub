@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '8'
+  - '10'
 sudo: false
 cache:
   directories:
@@ -14,4 +14,5 @@ addons:
 install: true
 script:
   - make build
-after_success: npm i coveralls && $(npm bin)/nyc report --reporter=text-lcov | $(npm bin)/coveralls
+# disabled temporary
+# after_success: npm i coveralls && $(npm bin)/nyc report --reporter=text-lcov | $(npm bin)/coveralls
