@@ -10,13 +10,13 @@
     "build:js": "webpack --mode development --progress",
     "watch": "run-p watch:*",
     "watch:js": "NODE_ENV=development webpack --mode development --progress -w",
-    "watch:server": "NODE_ENV=development node inspect lib/server",
-    "start": "NODE_ENV=production node lib/server",
-    "lint": "eslint lib seeders migrations models",
+    "watch:server": "NODE_ENV=development node inspect app",
+    "start": "NODE_ENV=production node app",
+    "lint": "eslint app constants frontend migrations models seeders shared",
     "typecheck": "flow",
-    "typecheck:coverage": "flow-coverage-report -i 'lib/**/*.js' -x 'lib/**/*.test.js'",
+    "typecheck:coverage": "flow-coverage-report -i '{app,constants,frontend,migrations,models,seeders,shared}/**/*.js' -x '*/**/*.test.js'",
     "test": "run-s test:tape test:jest",
-    "test:tape": "NODE_ENV=test nyc --all --include 'lib/**' --exclude 'lib/{server/index.js,client/*.js,share/stories,**/*.test.js}' tape -r @babel/register -r @babel/polyfill 'lib/**/*.legacy-test.js' 2>/dev/null | tap-diff",
+    "test:tape": "NODE_ENV=test tape -r @babel/register -r @babel/polyfill '{app,frontend,shared}/**/*.legacy-test.js' 2>/dev/null | tap-diff",
     "test:jest": "NODE_ENV=test jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -27,8 +27,8 @@
     "url": "keik.info"
   },
   "engines": {
-    "node": "^8.11.2",
-    "npm": "^6.4.1"
+    "node": "^10.0.0",
+    "npm": "^6.0.0"
   },
   "license": "MIT",
   "repository": {
@@ -56,7 +56,7 @@
     "highlight.js": "^9.7.0",
     "lodash": "^4.17.11",
     "mysql2": "^1.6.4",
-    "nodegit": "^0.20.3",
+    "nodegit": "^0.24.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "react": "^16.5.1",
@@ -96,7 +96,6 @@
     "jest-emotion": "^10.0.5",
     "morgan": "^1.9.1",
     "npm-run-all": "^4.1.5",
-    "nyc": "^13.1.0",
     "prettier": "^1.16.1",
     "react-test-renderer": "^16.7.0",
     "rimraf": "^2.6.3",
