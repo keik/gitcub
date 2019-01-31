@@ -4,6 +4,7 @@
 import { jsx, css } from '@emotion/core'
 import * as React from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 import Logo from './common/atoms/Logo'
 import InnerContainer from './common/layouts/InnerContainer'
@@ -27,27 +28,29 @@ export const $App = ({
   </div>
 )
 
-export default connect<_, _, *, _, *, _>(({ session }: ReducersStateT) => ({
-  session
-}))(
-  class App extends React.Component<*, { isLoading: boolean }> {
-    state = { isLoading: false }
+export default withRouter(
+  connect<_, _, *, _, *, _>(({ session }: ReducersStateT) => ({
+    session
+  }))(
+    class App extends React.Component<*, { isLoading: boolean }> {
+      state = { isLoading: false }
 
-    async componentDidMount() {
-      const { dispatch } = this.props
-      this.setState({ isLoading: true })
-      dispatch(await SessionAction.getCurrentUser())
-      this.setState({ isLoading: false })
-    }
+      async componentDidMount() {
+        const { dispatch } = this.props
+        this.setState({ isLoading: true })
+        dispatch(await SessionAction.getCurrentUser())
+        this.setState({ isLoading: false })
+      }
 
-    render() {
-      return this.state.isLoading ? (
-        <div>Loading...</div>
-      ) : (
-        <$App {...this.props} />
-      )
+      render() {
+        return this.state.isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          <$App {...this.props} />
+        )
+      }
     }
-  }
+  )
 )
 
 export const Header = ({ session }: { session: SessionT }) =>
