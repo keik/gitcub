@@ -18,13 +18,13 @@ module.exports = {
   ],
   env: {
     production: {
-      plugins: [['emotion', { sourceMap: false }]]
+      plugins: ['babel-plugin-styled-components']
     },
     development: {
-      plugins: [['emotion', { sourceMap: true }]]
+      plugins: ['babel-plugin-styled-components']
     },
     test: {
-      plugins: [['emotion', { sourceMap: true }], 'require-context-hook']
+      plugins: ['babel-plugin-styled-components', 'require-context-hook']
     }
   }
 }
