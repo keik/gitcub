@@ -17,7 +17,7 @@
     "typecheck:coverage": "flow-coverage-report -i '{app,constants,frontend,migrations,models,seeders,shared}/**/*.js' -x '*/**/*.test.js'",
     "test": "run-s test:tape test:jest",
     "test:tape": "NODE_ENV=test tape -r @babel/register -r @babel/polyfill '{app,frontend,shared}/**/*.legacy-test.js' 2>/dev/null | tap-diff",
-    "test:jest": "NODE_ENV=test jest",
+    "test:jest": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
