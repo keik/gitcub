@@ -1,6 +1,6 @@
 // @flow
 
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 const FormGroup = styled.div`
   margin-bottom: 8px;

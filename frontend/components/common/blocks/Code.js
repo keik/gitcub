@@ -1,6 +1,6 @@
 // @flow
 
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 const Code = styled.pre`
   margin: 0;

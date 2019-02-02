@@ -1,7 +1,7 @@
 // @flow
 
 import * as React from 'react'
-import styled from '@emotion/styled'
+import styled from 'styled-components'
 
 const ButtonsContainer = (styled.div`
   > * + * {
