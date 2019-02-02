@@ -1,7 +1,7 @@
 // @flow
 
 import * as React from 'react'
-import { jsx, css } from '@emotion/core'
+import { css } from 'styled-components'
 import { Link, type Match } from 'react-router-dom'
 
 import Button from '../common/atoms/Button'

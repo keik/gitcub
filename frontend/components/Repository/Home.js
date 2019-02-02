@@ -1,8 +1,7 @@
 // @flow
 
 import * as React from 'react'
-import { jsx, css } from '@emotion/core'
-import * as React from 'react'
+import { css } from 'styled-components'
 import { connect } from 'react-redux'
 import { Link, type Match } from 'react-router-dom'
 import type { Dispatch } from 'redux'

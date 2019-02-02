@@ -1,8 +1,7 @@
 // @flow
 
 import * as React from 'react'
-import { jsx, css } from '@emotion/core'
-import * as React from 'react'
+import { css } from 'styled-components'
 
 export default class Dropdown extends React.Component<
   {

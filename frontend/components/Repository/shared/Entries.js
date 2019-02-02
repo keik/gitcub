@@ -1,7 +1,7 @@
 // @flow
 
 import * as React from 'react'
-import { jsx, css } from '@emotion/core'
+import { css } from 'styled-components'
 import { Link } from 'react-router-dom'
 
 import Panel from '../../common/blocks/Panel'

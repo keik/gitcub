@@ -1,7 +1,7 @@
 // @flow
 
 import * as React from 'react'
-import { jsx, css } from '@emotion/core'
+import { css } from 'styled-components'
 
 import InnerContainer from './common/layouts/InnerContainer'
 import Logo from './common/atoms/Logo'

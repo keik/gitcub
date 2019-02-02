@@ -1,14 +1,14 @@
 // @flow
 
 import * as React from 'react'
-import { jsx, css } from '@emotion/core'
-import React from 'react'
+import { css } from 'styled-components'
 
 import Button from '../../common/atoms/Button'
 import Dropdown from '../../common/blocks/Dropdown'
 import { Tab, TabItems, TabItem, TabPanel } from '../../common/Tab'
 import type { BranchObj, TagObj } from '../../../../types/nodegit'
 
+// eslint-disable-next-line
 export default class TreeSelector extends React.Component<{
   branches: Array<BranchObj>,
   params: {
