@@ -1,7 +1,7 @@
 // @flow
 
 import { highlight, getLanguage } from 'highlight.js'
-import React from 'react'
+import * as React from 'react'
 import { connect } from 'react-redux'
 import { Link, type Match } from 'react-router-dom'
 import type { Dispatch } from 'redux'
