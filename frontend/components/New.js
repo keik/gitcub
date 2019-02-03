@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 import debug from 'debug'
-import React from 'react'
+import * as React from 'react'
 
 import Button from './common/atoms/Button'
 import FormGroup from './common/blocks/FormGroup'

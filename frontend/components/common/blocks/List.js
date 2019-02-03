@@ -1,8 +1,7 @@
 // @flow
 
-/** @jsx jsx */
-import { jsx, css } from '@emotion/core'
 import * as React from 'react'
+import { css } from 'styled-components'
 
 const List = (p: {
   children: React.ChildrenArray<React.Element<'li'>>,
