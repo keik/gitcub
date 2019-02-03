@@ -18,7 +18,7 @@ export const $App = ({
   session
 }: {
   children: React.Node,
-  session?: {} // TODO: wrong type. cannot infer and raise error?
+  session: ?SessionT
 }) => (
   <div>
     <Header session={session} />
@@ -52,7 +52,7 @@ export default withRouter(
   )
 )
 
-export const Header = ({ session }: { session: SessionT }) =>
+export const Header = ({ session }: { session: ?SessionT }) =>
   session == null ? (
     <HeaderWithoutSession />
   ) : (
