@@ -6,7 +6,7 @@ import { css } from 'styled-components'
 import Logo from '../common/atoms/Logo'
 import InnerContainer from '../common/layouts/InnerContainer'
 
-const Footer = () => (
+const AppFooter = () => (
   <InnerContainer>
     <div
       css={css`
@@ -50,4 +50,4 @@ const Footer = () => (
   </InnerContainer>
 )
 
-export default Footer
+export default AppFooter

@@ -52,7 +52,7 @@ type State = Array<CommitT | CommitWithDetailsT>
 
 const initialState = []
 
-export default function comitsReducer(
+export default function commits(
   state: State = initialState,
   action: $UnwrapPromise<$Call<typeof fetch, *>>
 ): State {

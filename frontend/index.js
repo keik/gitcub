@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import 'time-elements'
 
-import createConfigureStore from './stores'
+import createConfigureStore from './store'
 import { AppContainer } from './components/App'
 import GlobalStyles from './GlobalStyles'
 import Login from './components/Login'
@@ -25,7 +25,7 @@ import RepoWiki from './components/Repository/Wiki'
 import RepoPulse from './components/Repository/Pulse'
 import RepoGraphs from './components/Repository/Graphs'
 import RepoSettings from './components/Repository/Settings'
-import User from './components/user'
+import User from './components/User'
 
 const store = createConfigureStore({})
 

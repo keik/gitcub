@@ -28,7 +28,7 @@ type State = TreeT
 
 const initialState = []
 
-export default function treesReducer(
+export default function trees(
   state: State = initialState,
   action: $UnwrapPromise<$Call<typeof fetch, *>>
 ): State {

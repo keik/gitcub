@@ -29,7 +29,7 @@ type State = Array<TagT>
 
 const initialState = []
 
-export default function tagsReducer(
+export default function tags(
   state: State = initialState,
   action: $UnwrapPromise<$Call<typeof fetch, *>>
 ): State {

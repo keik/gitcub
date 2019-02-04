@@ -24,7 +24,7 @@ type State = Array<BranchT>
 
 const initialState = []
 
-export default function branchesReducer(
+export default function branches(
   state: State = initialState,
   action: $UnwrapPromise<$Call<typeof fetch, *>>
 ): State {

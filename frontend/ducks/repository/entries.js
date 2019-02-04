@@ -30,7 +30,7 @@ type State = Array<EntryT>
 
 const initialState = []
 
-export default function entriesReducer(
+export default function entries(
   state: State = initialState,
   action: $UnwrapPromise<$Call<typeof fetch, *>>
 ): State {

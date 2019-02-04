@@ -1,6 +1,6 @@
 // @flow
 
-export default function ssrMiddleware(
+export default function htmlRenderer(
   req: express$Request & { user: * },
   res: express$Response,
   next: express$NextFunction

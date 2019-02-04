@@ -10,7 +10,7 @@ const middlewares = []
 if (process.env.NODE_ENV === 'development') middlewares.push(createLogger())
 
 // $FlowFixMe
-export default function createConfigureStore(preloadState) {
+export default function store(preloadState) {
   return createStore<*, *, *>(
     reducer,
     preloadState,
