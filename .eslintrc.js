@@ -27,7 +27,7 @@ module.exports = {
     },
     sourceType: 'module'
   },
-  plugins: [],
+  plugins: ['filenames'],
   settings: {
     react: {
       version: package.dependencies.react
@@ -35,6 +35,7 @@ module.exports = {
   },
   rules: {
     'no-console': 'warn',
+    'filenames/match-exported': 'error',
     'flowtype/require-valid-file-annotation': ['warn', 'always'],
     'react/no-deprecated': 'warn',
     'react/prefer-stateless-function': 'error'
