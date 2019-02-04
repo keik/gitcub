@@ -12,7 +12,7 @@ import GlobalStyles from './GlobalStyles'
 import Login from './components/Login'
 import { HomeContainer } from './components/Home'
 import New from './components/New'
-import Repository from './components/Repository'
+import { RepositoryContainer } from './components/Repository'
 import RepoHome from './components/Repository/Home'
 import RepoTree from './components/Repository/Tree'
 import RepoFileContent from './components/Repository/FileContent'
@@ -43,7 +43,7 @@ ReactDOM.render(
           <Route
             path="/:owner/:repo"
             component={() => (
-              <Repository>
+              <RepositoryContainer>
                 <Switch>
                   <Route exact path="/:owner/:repo" component={RepoHome} />
                   <Route exact path="/:owner/:repo/blob/:branch/:path*" component={RepoFileContent} />
@@ -60,7 +60,7 @@ ReactDOM.render(
                   <Route exact path="/:owner/:repo/tree/:tree/:path*" component={RepoTree} />
                   <Route exact path="/:owner/:repo/wiki" component={RepoWiki} />
                 </Switch>
-              </Repository>
+              </RepositoryContainer>
             )}
           />
         </Switch>

@@ -3145,138 +3145,6 @@ exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
 </button>
 `;
 
-exports[`Storyshots Repository1 part of Navigations 1`] = `
-.c0 {
-  width: 980px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-.c1 a {
-  display: block;
-  padding: 7px 15px 8px;
-  margin-bottom: -1px;
-  color: #666;
-}
-
-.c1 .selected {
-  background-color: #fff;
-  border-left: 1px solid #e5e5e5;
-  border-top: 3px solid #d26911;
-  border-right: 1px solid #e5e5e5;
-}
-
-.c1 .fa {
-  margin-right: 0.5em;
-}
-
-<div
-  className="c0"
->
-  <nav>
-    <ul
-      className="c1"
-    >
-      <li>
-        <a
-          className=""
-          href="/$OWNER/$REPO"
-          onClick={[Function]}
-        >
-          <i
-            className="fa fa-code"
-          />
-          Code
-        </a>
-      </li>
-      <li>
-        <a
-          className=""
-          href="/$OWNER/$REPO/issues"
-          onClick={[Function]}
-        >
-          <i
-            className="fa fa-exclamation-circle"
-          />
-          Issues 1
-        </a>
-      </li>
-      <li>
-        <a
-          className=""
-          href="/$OWNER/$REPO/pulls"
-          onClick={[Function]}
-        >
-          <i
-            className="fa fa-code-fork"
-          />
-          Pull requests 2
-        </a>
-      </li>
-      <li>
-        <a
-          className=""
-          href="/$OWNER/$REPO/projects"
-          onClick={[Function]}
-        >
-          <i
-            className="fa fa-group"
-          />
-          Projects 3
-        </a>
-      </li>
-      <li>
-        <a
-          className=""
-          href="/$OWNER/$REPO/wiki"
-          onClick={[Function]}
-        >
-          <i
-            className="fa fa-book"
-          />
-          Wiki
-        </a>
-      </li>
-      <li>
-        <a
-          className=""
-          href="/$OWNER/$REPO/pulse"
-          onClick={[Function]}
-        >
-          <i
-            className="fa fa-line-chart"
-          />
-          Pulse
-        </a>
-      </li>
-      <li>
-        <a
-          className=""
-          href="/$OWNER/$REPO/graphs"
-          onClick={[Function]}
-        >
-          <i
-            className="fa fa-bar-chart"
-          />
-          Graphs
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
-`;
-
 exports[`Storyshots Repository1 with default 1`] = `
 .c1 {
   width: 980px;
@@ -3317,12 +3185,6 @@ exports[`Storyshots Repository1 with default 1`] = `
 .c6 > input[type='submit']:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
-}
-
-.c0 {
-  margin-bottom: 24px;
-  background-color: #fafafa;
-  border-bottom: 1px solid #eee;
 }
 
 .c2 {
@@ -3391,6 +3253,12 @@ exports[`Storyshots Repository1 with default 1`] = `
 
 .c10 .fa {
   margin-right: 0.5em;
+}
+
+.c0 {
+  margin-bottom: 24px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #eee;
 }
 
 .c9 {
