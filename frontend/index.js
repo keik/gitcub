@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import 'time-elements'
 
 import createConfigureStore from './stores'
-import App from './components/App'
+import { AppContainer } from './components/App'
 import GlobalStyles from './GlobalStyles'
 import Login from './components/Login'
 import Home from './components/Home'
@@ -33,7 +33,7 @@ const store = createConfigureStore({})
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App>
+      <AppContainer>
         <GlobalStyles />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -64,7 +64,7 @@ ReactDOM.render(
             )}
           />
         </Switch>
-      </App>
+      </AppContainer>
     </BrowserRouter>
   </Provider>,
   global.document.getElementById('app')

@@ -3,6 +3,20 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { Footer } from './App'
+import App from './App'
 
-storiesOf('App__Footer', module).add('with default', () => <Footer />)
+storiesOf('App', module)
+  .add('without session', () => <App session={null}>%CHILDREN%</App>)
+  .add('with session', () => (
+    <App
+      session={{
+        bio: '%BIO%',
+        email: '%EMAIL%',
+        login: '%LOGIN%',
+        name: '%STRING%',
+        password: '%PASSWORD%'
+      }}
+    >
+      %CHILDREN%
+    </App>
+  ))
