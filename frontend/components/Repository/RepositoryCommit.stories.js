@@ -3,10 +3,10 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { Commit } from './Commit'
+import RepositoryCommit from './RepositoryCommit'
 
-storiesOf('Repository/Commit', module).add('with default', () => (
-  <Commit
+storiesOf('Repository/RepositoryCommit', module).add('with default', () => (
+  <RepositoryCommit
     commit={{
       commit: {
         author: {

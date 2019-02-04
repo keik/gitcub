@@ -28,49 +28,8 @@ type Props = {
   },
   parents: Array<ParentObj>
 }
-export default connect<_, _, *, _, *, _>(
-  (
-    { commits }: ReducersStateT,
-    {
-      match: {
-        params: { sha }
-      }
-    }: Props
-  ) => ({
-    commit: commits.find(c => c.sha === sha && c.hasOwnProperty('files'))
-  })
-)(
-  class CommitContainer extends React.Component<Props> {
-    async componentDidMount() {
-      if (this.props.commit == null) {
-        const {
-          dispatch,
-          match: {
-            params: { owner, repo, sha }
-          }
-        } = this.props
-        dispatch(await CommitsAction.fetchOneWithDetails({ owner, repo, sha }))
-      }
-    }
 
-    async componentDidUpdate() {
-      if (this.props.commit == null) {
-        const {
-          dispatch,
-          match: {
-            params: { owner, repo, sha }
-          }
-        } = this.props
-        dispatch(await CommitsAction.fetchOneWithDetails({ owner, repo, sha }))
-      }
-    }
-    render() {
-      return <Commit {...this.props} />
-    }
-  }
-)
-
-export const Commit = (props: *) => {
+export const RepositoryCommit = (props: *) => {
   const {
     commit,
     match: {
@@ -196,3 +155,47 @@ export const Commit = (props: *) => {
     </div>
   )
 }
+
+export default RepositoryCommit
+
+export const RepositoryCommitContainer = connect<_, _, *, _, *, _>(
+  (
+    { commits }: ReducersStateT,
+    {
+      match: {
+        params: { sha }
+      }
+    }: Props
+  ) => ({
+    commit: commits.find(c => c.sha === sha && c.hasOwnProperty('files'))
+  })
+)(
+  class $RepositoryCommitContainer extends React.Component<Props> {
+    async componentDidMount() {
+      if (this.props.commit == null) {
+        const {
+          dispatch,
+          match: {
+            params: { owner, repo, sha }
+          }
+        } = this.props
+        dispatch(await CommitsAction.fetchOneWithDetails({ owner, repo, sha }))
+      }
+    }
+
+    async componentDidUpdate() {
+      if (this.props.commit == null) {
+        const {
+          dispatch,
+          match: {
+            params: { owner, repo, sha }
+          }
+        } = this.props
+        dispatch(await CommitsAction.fetchOneWithDetails({ owner, repo, sha }))
+      }
+    }
+    render() {
+      return <RepositoryCommit {...this.props} />
+    }
+  }
+)

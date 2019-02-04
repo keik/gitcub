@@ -16,7 +16,7 @@ import { RepositoryContainer } from './components/Repository'
 import RepoHome from './components/Repository/Home'
 import RepoTree from './components/Repository/Tree'
 import RepoFileContent from './components/Repository/FileContent'
-import RepoCommit from './components/Repository/Commit'
+import { RepositoryCommitContainer } from './components/Repository/RepositoryCommit'
 import RepoCommits from './components/Repository/Commits'
 import { RepositoryBranchesContainer } from './components/Repository/RepositoryBranches'
 import RepoIssues from './components/Repository/Issues'
@@ -48,7 +48,7 @@ ReactDOM.render(
                   <Route exact path="/:owner/:repo" component={RepoHome} />
                   <Route exact path="/:owner/:repo/blob/:branch/:path*" component={RepoFileContent} />
                   <Route exact path="/:owner/:repo/branches" component={RepositoryBranchesContainer} />
-                  <Route exact path="/:owner/:repo/commit/:sha" component={RepoCommit} />
+                  <Route exact path="/:owner/:repo/commit/:sha" component={RepositoryCommitContainer} />
                   <Route exact path="/:owner/:repo/commits" component={RepoCommits} />
                   <Route exact path="/:owner/:repo/graphs" component={RepoGraphs} />
                   <Route exact path="/:owner/:repo/issues" component={RepoIssues} />
