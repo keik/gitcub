@@ -3,7 +3,7 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { Home } from './Home'
+import Home from './Home'
 
 storiesOf('Home', module).add('with default', () => (
   <Home

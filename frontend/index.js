@@ -10,7 +10,7 @@ import createConfigureStore from './stores'
 import { AppContainer } from './components/App'
 import GlobalStyles from './GlobalStyles'
 import Login from './components/Login'
-import Home from './components/Home'
+import { HomeContainer } from './components/Home'
 import New from './components/New'
 import Repository from './components/Repository'
 import RepoHome from './components/Repository/Home'
@@ -36,7 +36,7 @@ ReactDOM.render(
       <AppContainer>
         <GlobalStyles />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={HomeContainer} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/new" component={New} />
           <Route exact path="/:owner" component={User} />

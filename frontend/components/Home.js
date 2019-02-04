@@ -11,32 +11,7 @@ import InnerContainer from '../components/common/layouts/InnerContainer'
 import List from '../components/common/blocks/List'
 import Panel from '../components/common/blocks/Panel'
 
-export class HomeContainer extends React.Component<{
-  dispatch: Dispatch<*>,
-  repositories: Array<RepositoryT>
-}> {
-  async componentDidMount() {
-    const { dispatch } = this.props
-    dispatch(await RepositoriesAction.fetch())
-  }
-
-  render() {
-    const { repositories } = this.props
-    return <Home repositories={repositories} />
-  }
-}
-
-export default connect<_, _, *, _, *, _>(
-  ({ repositories }: ReducersStateT) => ({
-    repositories: repositories.repositories
-  })
-)(HomeContainer)
-
-export const Home = ({
-  repositories
-}: {
-  repositories: Array<RepositoryT>
-}) => (
+const Home = ({ repositories }: { repositories: Array<RepositoryT> }) => (
   <InnerContainer>
     <div
       style={{
@@ -74,4 +49,27 @@ export const Home = ({
       </div>
     </div>
   </InnerContainer>
+)
+
+export default Home
+
+export const HomeContainer = connect<_, _, *, _, *, _>(
+  ({ repositories }: ReducersStateT) => ({
+    repositories: repositories.repositories
+  })
+)(
+  class $Home extends React.Component<{
+    dispatch: Dispatch<*>,
+    repositories: Array<RepositoryT>
+  }> {
+    async componentDidMount() {
+      const { dispatch } = this.props
+      dispatch(await RepositoriesAction.fetch())
+    }
+
+    render() {
+      const { repositories } = this.props
+      return <Home repositories={repositories} />
+    }
+  }
 )
