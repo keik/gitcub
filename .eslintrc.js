@@ -27,7 +27,7 @@ module.exports = {
     },
     sourceType: 'module'
   },
-  plugins: ['flowtype'],
+  plugins: [],
   settings: {
     react: {
       version: package.dependencies.react
