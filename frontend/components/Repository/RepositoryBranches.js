@@ -16,29 +16,8 @@ type Props = {
   defaultBranchName: string,
   match: $Shape<Match<{ owner: string, repo: string }>>
 }
-export default connect<_, ReducersStateT, *, _, *, _>(({ branches }) => ({
-  branches
-}))(
-  class BranchesContainer extends React.Component<
-    Props & { dispatch: Dispatch<*> }
-  > {
-    async componentDidMount() {
-      const {
-        dispatch,
-        match: {
-          params: { owner, repo }
-        }
-      } = this.props
-      dispatch(await BranchesAction.fetch({ owner, repo }))
-    }
 
-    render() {
-      return <Branches {...this.props} />
-    }
-  }
-)
-
-export const Branches = ({ branches, defaultBranchName, match }: Props) => {
+const RepositoryBranches = ({ branches, defaultBranchName, match }: Props) => {
   const defaultBranch: BranchT = branches.find(
     branch => branch.name === defaultBranchName
   ) || {
@@ -97,3 +76,34 @@ export const Branches = ({ branches, defaultBranchName, match }: Props) => {
     </div>
   )
 }
+
+export default RepositoryBranches
+
+export const RepositoryBranchesContainer = connect<
+  _,
+  ReducersStateT,
+  *,
+  _,
+  *,
+  _
+>(({ branches }) => ({
+  branches
+}))(
+  class $RepositoryBranchesContainer extends React.Component<
+    Props & { dispatch: Dispatch<*> }
+  > {
+    async componentDidMount() {
+      const {
+        dispatch,
+        match: {
+          params: { owner, repo }
+        }
+      } = this.props
+      dispatch(await BranchesAction.fetch({ owner, repo }))
+    }
+
+    render() {
+      return <RepositoryBranches {...this.props} />
+    }
+  }
+)

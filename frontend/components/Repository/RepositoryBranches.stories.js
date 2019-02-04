@@ -3,10 +3,10 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { Branches } from './Branches'
+import RepositoryBranches from './RepositoryBranches'
 
-storiesOf('Repository/Branches', module).add('with default', () => (
-  <Branches
+storiesOf('Repository/RepositoryBranches', module).add('with default', () => (
+  <RepositoryBranches
     branches={[
       {
         commit: {
