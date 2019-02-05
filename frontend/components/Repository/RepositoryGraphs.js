@@ -2,10 +2,10 @@
 
 import * as React from 'react'
 
-export const Graphs = () => (
+const RepositoryGraphs = () => (
   <div>
     <h2>graphs</h2>
   </div>
 )
 
-export default Graphs
+export default RepositoryGraphs
