@@ -24,7 +24,7 @@ import RepositoryProjects from './components/Repository/RepositoryProjects'
 import RepoWiki from './components/Repository/Wiki'
 import RepositoryPulse from './components/Repository/RepositoryPulse'
 import RepositoryGraphs from './components/Repository/RepositoryGraphs'
-import RepoSettings from './components/Repository/Settings'
+import RepositorySettings from './components/Repository/RepositorySettings'
 import User from './components/User'
 
 const store = createConfigureStore({})
@@ -55,7 +55,7 @@ ReactDOM.render(
                   <Route exact path="/:owner/:repo/projects" component={RepositoryProjects} />
                   <Route exact path="/:owner/:repo/pulls" component={RepositoryIssues} />
                   <Route exact path="/:owner/:repo/pulse" component={RepositoryPulse} />
-                  <Route exact path="/:owner/:repo/settings" component={RepoSettings} />
+                  <Route exact path="/:owner/:repo/settings" component={RepositorySettings} />
                   <Route exact path="/:owner/:repo/tree/:tree" component={RepositoryHomeContainer} />
                   <Route exact path="/:owner/:repo/tree/:tree/:path*" component={RepoTree} />
                   <Route exact path="/:owner/:repo/wiki" component={RepoWiki} />

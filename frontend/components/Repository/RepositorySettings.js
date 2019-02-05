@@ -2,10 +2,10 @@
 
 import * as React from 'react'
 
-export const Settings = () => (
+const RepositorySettings = () => (
   <div>
     <h2>settings</h2>
   </div>
 )
 
-export default Settings
+export default RepositorySettings
