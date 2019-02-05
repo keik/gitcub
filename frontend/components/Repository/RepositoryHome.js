@@ -41,41 +41,8 @@ type Props = {
   >,
   tags: $PropertyType<ReducersStateT, 'tags'>
 }
-export default connect<_, _, *, _, *, _>(
-  ({ branches, commits, tags, trees }: ReducersStateT) => ({
-    branches,
-    commits,
-    tags,
-    entries: trees
-  })
-)(
-  class HomeContainer extends React.Component<
-    Props & { dispatch: Dispatch<*> }
-  > {
-    async componentDidMount() {
-      const {
-        dispatch,
-        match: {
-          params: { owner, repo, tree }
-        }
-      } = this.props
 
-      Promise.all([
-        (async () => dispatch(await BranchesAction.fetch({ owner, repo })))(),
-        (async () =>
-          dispatch(await CommitsAction.fetch({ owner, repo, tree })))(),
-        (async () => dispatch(await TagsAction.fetch({ owner, repo })))(),
-        (async () => dispatch(await TreesAction.fetch({ owner, repo, tree })))()
-      ])
-    }
-
-    render() {
-      return <Home {...this.props} />
-    }
-  }
-)
-
-export const Home = (props: Props) => {
+const RepositoryHome = (props: Props) => {
   const {
     match: {
       params: { owner, repo, tree = 'master' }
@@ -183,6 +150,42 @@ export const Home = (props: Props) => {
     </div>
   )
 }
+
+export default RepositoryHome
+
+export const RepositoryHomeContainer = connect<_, _, *, _, *, _>(
+  ({ branches, commits, tags, trees }: ReducersStateT) => ({
+    branches,
+    commits,
+    tags,
+    entries: trees
+  })
+)(
+  class $RepositoryHomeContainer extends React.Component<
+    Props & { dispatch: Dispatch<*> }
+  > {
+    async componentDidMount() {
+      const {
+        dispatch,
+        match: {
+          params: { owner, repo, tree }
+        }
+      } = this.props
+
+      Promise.all([
+        (async () => dispatch(await BranchesAction.fetch({ owner, repo })))(),
+        (async () =>
+          dispatch(await CommitsAction.fetch({ owner, repo, tree })))(),
+        (async () => dispatch(await TagsAction.fetch({ owner, repo })))(),
+        (async () => dispatch(await TreesAction.fetch({ owner, repo, tree })))()
+      ])
+    }
+
+    render() {
+      return <RepositoryHome {...this.props} />
+    }
+  }
+)
 
 const NumbersSummary = ({
   branches,
