@@ -1050,762 +1050,6 @@ exports[`Storyshots New with default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Repository/Branches with default 1`] = `
-.c3 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.c3 li {
-  padding: 12px 0;
-}
-
-.c3 li + li {
-  border-top: 1px solid #f1f1f1;
-}
-
-.c0 {
-  position: relative;
-  border: 1px solid #d8d8d8;
-  border-radius: 3px;
-  margin-bottom: 24px;
-}
-
-.c1 {
-  padding: 12px;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid;
-  border-color: #d8d8d8;
-}
-
-.c2 {
-  padding: 12px;
-  background-color: #fff;
-}
-
-.c2 > table {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 20px;
-}
-
-.c2 > table > tbody > tr:first-of-type td {
-  border: none;
-}
-
-.c2 > table > tbody > tr > td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
-}
-
-<div>
-  <div
-    className="c0"
-  >
-    <div
-      className="c1"
-    >
-      Default branch
-    </div>
-    <div
-      className="c2"
-    >
-      <ul
-        className="c3"
-      >
-        <li>
-          <a
-            href="/$OWNER/$REPO/tree/"
-          >
-            
-          </a>
-            Updated
-           
-          <time-ago
-            datetime=""
-          />
-           by 
-          <a
-            href="/"
-          >
-            
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div
-    className="c0"
-  >
-    <div
-      className="c1"
-    >
-      Active branches
-    </div>
-    <div
-      className="c2"
-    >
-      <ul
-        className="c3"
-      >
-        <li>
-          <a
-            href="/$OWNER/$REPO/tree/$BRANCH"
-          >
-            $BRANCH
-          </a>
-            Updated 
-          <time-ago
-            datetime="$DATE"
-          />
-           
-          by 
-          <a
-            href="/$AUTHOR"
-          >
-            $AUTHOR
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Repository/Commit with default 1`] = `
-.c0 {
-  position: relative;
-  border: 1px solid #d8d8d8;
-  border-radius: 3px;
-  margin-bottom: 24px;
-}
-
-.c6 {
-  padding: 12px;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid;
-  border-color: #d8d8d8;
-}
-
-.c1 {
-  padding: 12px;
-  background-color: #f2f9fc;
-  border-bottom: 1px solid;
-  border-color: #c9e6f2;
-}
-
-.c3 {
-  padding: 12px;
-  background-color: #fff;
-}
-
-.c3 > table {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 20px;
-}
-
-.c3 > table > tbody > tr:first-of-type td {
-  border: none;
-}
-
-.c3 > table > tbody > tr > td {
-  padding: 6px 3px;
-  border-top: 1px solid #eee;
-  color: #888;
-}
-
-.c7 {
-  margin: 0;
-}
-
-.c8 {
-  float: left;
-  min-width: 48px;
-  padding: 0.5em;
-  margin: 0;
-  list-style: none;
-  font-size: 12px;
-  line-height: 18px;
-  color: rgba(0,0,0,0.3);
-  text-align: right;
-  border-right: 1px solid #eee;
-}
-
-.c9 {
-  background-color: white;
-}
-
-.c4 a,
-.c4 button,
-.c4 input[type='submit'] {
-  border-right-width: 0;
-  border-radius: 0;
-}
-
-.c4 >:first-child a,
-.c4 >:first-child button,
-.c4 >:first-child input[type='submit'] {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c4 > a:first-child,
-.c4 > button:first-child,
-.c4 > input[type='submit']:first-child {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c4 >:last-child a,
-.c4 >:last-child button,
-.c4 >:last-child input[type='submit'] {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
-}
-
-.c4 > a:last-child,
-.c4 > button:last-child,
-.c4 > input[type='submit']:last-child {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
-}
-
-.c2 {
-  display: inline-block;
-  color: #333;
-  background-color: transparent;
-  background-image: none;
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c2:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c5 {
-  display: inline-block;
-  color: #333;
-  background-image: linear-gradient(#fcfcfc,#eee);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c5:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<div>
-  <div
-    className="c0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <h1
-          style={
-            Object {
-              "color": "#213f4d",
-              "fontSize": "18px",
-              "fontWeight": "bold",
-              "margin": "0",
-            }
-          }
-        >
-          $MESSAGE
-        </h1>
-        <a
-          className="c2"
-          href="/$OWNER/$REPO/tree/$SHA"
-          style={
-            Object {
-              "float": "right",
-            }
-          }
-        >
-          Browse files
-        </a>
-      </div>
-      <div
-        style={
-          Object {
-            "color": "#818c90",
-            "fontSize": "12px",
-            "margin": "0",
-            "minHeight": "18px",
-          }
-        }
-      >
-        <i
-          className="fa fa-code-fork"
-        />
-         master
-      </div>
-    </div>
-    <div
-      className="c3"
-    >
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "justifyContent": "space-between",
-          }
-        }
-      >
-        <div>
-          <img
-            alt="$NAME"
-            style={
-              Object {
-                "background": "#ccc",
-                "height": 20,
-                "verticalAlign": "middle",
-                "width": 20,
-              }
-            }
-          />
-           
-          $NAME
-           commited on
-           
-          <time-ago
-            datetime="$DATE"
-          />
-        </div>
-        <div
-          style={
-            Object {
-              "color": "#767676",
-              "fontFamily": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
-              "fontSize": "12px",
-              "lineHeight": "24px",
-            }
-          }
-        >
-          <span
-            style={
-              Object {
-                "marginRight": "12px",
-              }
-            }
-          >
-            0
-             parent
-          </span>
-          <span>
-            commit 
-            $SHA
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div>
-      <i
-        className="fa fa-file-text-o"
-      />
-       Showing N changed file with N addition and N deletion.
-    </div>
-    <div>
-      <div
-        className="c4"
-      >
-        <button
-          className="c5"
-        >
-          Unified
-        </button>
-        <button
-          className="c5"
-        >
-          Split
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    id="patches"
-  >
-    <div
-      className="c0"
-    >
-      <div
-        className="c6"
-      >
-        $FILENAME
-      </div>
-      <div
-        className="c3"
-      >
-        <pre
-          className="c7"
-          style={
-            Object {
-              "margin": 0,
-            }
-          }
-        >
-          <ul
-            className="c8"
-          >
-            <li>
-              ...
-            </li>
-            <li>
-              1
-            </li>
-            <li>
-              2
-            </li>
-            <li>
-              3
-            </li>
-            <li>
-              4
-            </li>
-            <li>
-              5
-            </li>
-            <li>
-              6
-            </li>
-            <li>
-              7
-            </li>
-            <li>
-              8
-            </li>
-            <li>
-              9
-            </li>
-            <li>
-              10
-            </li>
-            <li>
-              11
-            </li>
-          </ul>
-          <code
-            className="hljs c9"
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "$PATCH",
-              }
-            }
-          />
-        </pre>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Repository/Commits with default 1`] = `
-.c6 a,
-.c6 button,
-.c6 input[type='submit'] {
-  border-right-width: 0;
-  border-radius: 0;
-}
-
-.c6 >:first-child a,
-.c6 >:first-child button,
-.c6 >:first-child input[type='submit'] {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c6 > a:first-child,
-.c6 > button:first-child,
-.c6 > input[type='submit']:first-child {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c6 >:last-child a,
-.c6 >:last-child button,
-.c6 >:last-child input[type='submit'] {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
-}
-
-.c6 > a:last-child,
-.c6 > button:last-child,
-.c6 > input[type='submit']:last-child {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
-}
-
-.c0 {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 8px;
-  border-top: 1px solid #eee;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 {
-  font-size: 15px;
-  font-weight: bold;
-  color: #333;
-}
-
-.c4 {
-  font-weight: normal;
-  color: #767676;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c7 {
-  display: inline-block;
-  color: #333;
-  background-color: transparent;
-  background-image: none;
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c7:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<ul
-  className="c0"
->
-  <li
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <div>
-        <div
-          className="c3"
-        >
-          $MESSAGE_1
-        </div>
-        <div
-          className="c4"
-        >
-          <a
-            href="/$NAME_1}"
-            onClick={[Function]}
-          >
-            <img
-              alt=""
-              src=""
-            />
-          </a>
-          $NAME_1
-           commited on
-           
-          <time-ago
-            datetime="$DATE_1"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="c5"
-    >
-      <div
-        className="c6"
-      >
-        <button
-          className="c7"
-        >
-          <i
-            className="fa fa-clipboard"
-          />
-        </button>
-        <a
-          className="c7"
-          href="/$OWNER/$REPO/commit/$SHA_1"
-          onClick={[Function]}
-          small="true"
-          transparent="true"
-        >
-          $SHA_1
-        </a>
-      </div>
-      <a
-        className="c7"
-        href="/$OWNER/$REPO/tree/$SHA_1"
-        onClick={[Function]}
-        small="true"
-        style={
-          Object {
-            "marginLeft": "12px",
-          }
-        }
-        transparent="true"
-      >
-        <i
-          className="fa fa-code"
-        />
-      </a>
-    </div>
-  </li>
-  <li
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <div>
-        <div
-          className="c3"
-        >
-          $MESSAGE_2
-        </div>
-        <div
-          className="c4"
-        >
-          <a
-            href="/$NAME_2}"
-            onClick={[Function]}
-          >
-            <img
-              alt=""
-              src=""
-            />
-          </a>
-          $NAME_2
-           commited on
-           
-          <time-ago
-            datetime="$DATE_2"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="c5"
-    >
-      <div
-        className="c6"
-      >
-        <button
-          className="c7"
-        >
-          <i
-            className="fa fa-clipboard"
-          />
-        </button>
-        <a
-          className="c7"
-          href="/$OWNER/$REPO/commit/$SHA_2"
-          onClick={[Function]}
-          small="true"
-          transparent="true"
-        >
-          $SHA_2
-        </a>
-      </div>
-      <a
-        className="c7"
-        href="/$OWNER/$REPO/tree/$SHA_2"
-        onClick={[Function]}
-        small="true"
-        style={
-          Object {
-            "marginLeft": "12px",
-          }
-        }
-        transparent="true"
-      >
-        <i
-          className="fa fa-code"
-        />
-      </a>
-    </div>
-  </li>
-</ul>
-`;
-
 exports[`Storyshots Repository/FileContent with default 1`] = `
 .c0 {
   position: relative;
@@ -2090,418 +1334,6 @@ exports[`Storyshots Repository/Graphs with default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Repository/Issues with default 1`] = `
-.c6 a,
-.c6 button,
-.c6 input[type='submit'] {
-  border-right-width: 0;
-  border-radius: 0;
-}
-
-.c6 >:first-child a,
-.c6 >:first-child button,
-.c6 >:first-child input[type='submit'] {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c6 > a:first-child,
-.c6 > button:first-child,
-.c6 > input[type='submit']:first-child {
-  border-right-width: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.c6 >:last-child a,
-.c6 >:last-child button,
-.c6 >:last-child input[type='submit'] {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
-}
-
-.c6 > a:last-child,
-.c6 > button:last-child,
-.c6 > input[type='submit']:last-child {
-  border-right-width: 1px;
-  border-radius: 0 3px 3px 0;
-}
-
-.c0 > * {
-  display: inline-block;
-  margin-right: 12px;
-}
-
-.c1 {
-  display: inline-block;
-}
-
-.c2 {
-  padding: 6px 10px;
-  border-radius: 3px 0 0 3px;
-}
-
-.c4 {
-  margin-left: -1px;
-  position: relative;
-  display: inline-block;
-}
-
-.c4 > i {
-  position: absolute;
-  top: 10px;
-  left: 6px;
-}
-
-.c5 {
-  width: 320px;
-  padding: 6px 10px 6px 32px;
-  color: #767676;
-  border: 1px solid #d5d5d5;
-  border-radius: 0 3px 3px 0;
-  line-height: 20px;
-}
-
-.c8 {
-  position: relative;
-  padding: 12px 12px;
-  margin-top: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px 3px 0 0;
-}
-
-.c8 > * {
-  display: inline-block;
-  margin-right: 12px;
-}
-
-.c9 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-
-.c10 {
-  padding: 12px 12px;
-  border-top: 1px solid #eee;
-}
-
-.c10:first-of-type {
-  border-top: none;
-}
-
-.c10:after {
-  content: ' ';
-  display: table;
-  clear: both;
-}
-
-.c11 {
-  float: left;
-  color: #6cc644;
-}
-
-.c12 {
-  float: left;
-  margin-left: 12px;
-}
-
-.c13 {
-  color: #333;
-  font-size: 16px;
-}
-
-.c14 {
-  font-size: 12px;
-}
-
-.c15 {
-  float: right;
-}
-
-.c3 {
-  display: inline-block;
-  color: #333;
-  background-image: linear-gradient(#fcfcfc,#eee);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c3:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c7 {
-  display: inline-block;
-  color: #333;
-  background-color: transparent;
-  background-image: none;
-  position: relative;
-  padding: 6px 12px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c7:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<div>
-  <div
-    className="c0"
-  >
-    <div
-      className="c1"
-    >
-      <button
-        className="c2 c3"
-      >
-        Filters
-      </button>
-      <form
-        className="c4"
-      >
-        <i
-          className="fa fa-search"
-        />
-        <input
-          className="c5"
-        />
-      </form>
-    </div>
-    <div
-      className="c6"
-    >
-      <a
-        className="c7"
-        href="/$OWNER/$REPO/labels"
-        onClick={[Function]}
-        transparent="true"
-      >
-        Labels
-      </a>
-      <a
-        className="c7"
-        href="/$OWNER/$REPO/milestones"
-        onClick={[Function]}
-        transparent="true"
-      >
-        Milestones
-      </a>
-    </div>
-  </div>
-  <div
-    className="c8"
-  >
-    <div>
-      <a
-        href="/$OWNER/$REPO/issues?q=is:open is:issue"
-        onClick={[Function]}
-      >
-        <i
-          className="fa fa-exclamation-circle"
-        />
-         
-        2
-         Open
-      </a>
-    </div>
-    <div>
-      <a
-        href="/$OWNER/$REPO/issues?q=is:closed is:issue"
-        onClick={[Function]}
-      >
-        <i
-          className="fa fa-check"
-        />
-         
-        -1
-         Closed
-      </a>
-    </div>
-  </div>
-  <ul
-    className="c9"
-  >
-    <li
-      className="c10"
-    >
-      <div
-        className="c11"
-      >
-        <i
-          className="fa fa-exclamation-circle"
-        />
-      </div>
-      <div
-        className="c12"
-      >
-        <div
-          className="c13"
-        >
-          <a
-            href="/$OWNER/$REPO/issues/1"
-            onClick={[Function]}
-          >
-            $TITLE_1
-          </a>
-        </div>
-        <div
-          className="c14"
-        >
-          <span>
-            #
-            1
-          </span>
-           opened
-           
-          <time-ago
-            datetime="$CREATED_AT_1"
-          />
-           by
-           
-          <a
-            href="/$CREATED_BY_1"
-            onClick={[Function]}
-          >
-            $CREATED_BY_1
-          </a>
-        </div>
-      </div>
-      <div
-        className="c15"
-      >
-        <div>
-          <a
-            href="/$OWNER/$REPO/issues/1"
-            onClick={[Function]}
-          >
-            <i
-              className="fa fa-comment-o"
-            />
-             
-            1
-          </a>
-        </div>
-      </div>
-    </li>
-    <li
-      className="c10"
-    >
-      <div
-        className="c11"
-      >
-        <i
-          className="fa fa-exclamation-circle"
-        />
-      </div>
-      <div
-        className="c12"
-      >
-        <div
-          className="c13"
-        >
-          <a
-            href="/$OWNER/$REPO/issues/2"
-            onClick={[Function]}
-          >
-            $TITLE_2
-          </a>
-        </div>
-        <div
-          className="c14"
-        >
-          <span>
-            #
-            2
-          </span>
-           opened
-           
-          <time-ago
-            datetime="$CREATED_AT_2"
-          />
-           by
-           
-          <a
-            href="/$CREATED_BY_2"
-            onClick={[Function]}
-          >
-            $CREATED_BY_2
-          </a>
-        </div>
-      </div>
-      <div
-        className="c15"
-      >
-        <div>
-          <a
-            href="/$OWNER/$REPO/issues/2"
-            onClick={[Function]}
-          >
-            <i
-              className="fa fa-comment-o"
-            />
-             
-            2
-          </a>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots Repository/Milestones with default 1`] = `
-<div>
-  <h2>
-    milestones
-  </h2>
-</div>
-`;
-
-exports[`Storyshots Repository/Projects with default 1`] = `
-<div>
-  <h2>
-    projects
-  </h2>
-</div>
-`;
-
-exports[`Storyshots Repository/Pulse with default 1`] = `
-<div>
-  <h2>
-    pulse
-  </h2>
-</div>
-`;
-
 exports[`Storyshots Repository/RepositoryBranches with default 1`] = `
 .c3 {
   margin: 0;
@@ -2725,31 +1557,6 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
   border-radius: 0 3px 3px 0;
 }
 
-.c5 {
-  display: inline-block;
-  color: #333;
-  background-image: linear-gradient(#fcfcfc,#eee);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c5:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .c2 {
   display: inline-block;
   color: #333;
@@ -2772,6 +1579,31 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
 }
 
 .c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3258,7 +2090,920 @@ exports[`Storyshots Repository/RepositoryCommits with default 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Repository/Settings with default 1`] = `
+exports[`Storyshots Repository/RepositoryHome with default 1`] = `
+.c9 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c10 {
+  padding: 12px;
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c12 {
+  padding: 0;
+  background-color: #fff;
+}
+
+.c12 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c12 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c12 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c6 a,
+.c6 button,
+.c6 input[type='submit'] {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c6 >:first-child a,
+.c6 >:first-child button,
+.c6 >:first-child input[type='submit'] {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c6 > a:first-child,
+.c6 > button:first-child,
+.c6 > input[type='submit']:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c6 >:last-child a,
+.c6 >:last-child button,
+.c6 >:last-child input[type='submit'] {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c6 > a:last-child,
+.c6 > button:last-child,
+.c6 > input[type='submit']:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c11 {
+  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  font-size: 90%;
+  color: #445055;
+}
+
+.c13 {
+  width: 18px;
+}
+
+.c14 {
+  padding-left: 12px;
+}
+
+.c15 {
+  padding-left: 12px;
+}
+
+.c16 {
+  color: #888;
+}
+
+.c17 {
+  width: 120px;
+  text-align: right;
+}
+
+.c18 {
+  padding-right: 12px;
+}
+
+.c0 {
+  font-size: 16px;
+  color: #666;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 12px 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  margin-left: 8px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c7 {
+  margin-left: 8px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  list-style: none;
+  padding: 12px;
+  margin: 12px 0 0 0;
+}
+
+.c1 a {
+  color: #767676;
+}
+
+.c1 .fa {
+  margin-right: 4px;
+}
+
+.c3 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8 {
+  display: inline-block;
+  color: #fff;
+  background-image: linear-gradient(#8add6d,#60b044);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #5aad35;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c8:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <span>
+      No description or website provided.
+    </span>
+    <span>
+      - 
+      <button>
+        Edit
+      </button>
+    </span>
+  </div>
+  <nav>
+    <ul
+      className="c1"
+    >
+      <li>
+        <a
+          href="/#OWNER/#REPO/commits"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-clock-o"
+          />
+          <span>
+            0
+          </span>
+           commits
+        </a>
+      </li>
+      <li>
+        <a
+          href="/#OWNER/#REPO/branches"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-code-fork"
+          />
+          <span>
+            2
+          </span>
+           branches
+        </a>
+      </li>
+      <li>
+        <a
+          href="/#OWNER/#REPO/releases"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-tag"
+          />
+          <span>
+            0
+          </span>
+           releases
+        </a>
+      </li>
+      <li>
+        <a
+          href="/#OWNER/#REPO/graphs/contributors"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-users"
+          />
+          <span>
+            -1
+          </span>
+           contributors
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="c2"
+  >
+    <div>
+      <button
+        className="c3"
+        onClick={[Function]}
+      >
+        <i>
+          Branch: 
+        </i>
+        <span>
+          #TREE
+           
+        </span>
+        <i
+          className="fa fa-caret-down"
+        />
+      </button>
+      <a
+        className="c4"
+        href="#OWNER/#REPO/pull/new/#TREE"
+      >
+        New pull request
+      </a>
+    </div>
+    <div
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <input
+          className="c3"
+          type="submit"
+          value="Create new file"
+        />
+        <a
+          className="c3"
+          href="#OWNER/#REPO/upload/#TREE"
+        >
+          Upload files
+        </a>
+        <a
+          className="c3"
+          href="#OWNER/#REPO/find/#TREE"
+        >
+          Find file
+        </a>
+      </div>
+      <div
+        className="c7"
+      >
+        <button
+          className="c8"
+          onClick={[Function]}
+        >
+          Clone or download 
+          <i
+            className="fa fa-caret-down"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c9"
+    >
+      <div
+        className="c10"
+      >
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <div>
+            <img
+              alt="#NAME_1"
+              syle={
+                Object {
+                  "background": "#ccc",
+                  "height": 20,
+                  "verticalAlign": "middle",
+                  "width": 20,
+                }
+              }
+            />
+             
+            <a
+              href="/#NAME_1"
+            >
+              #NAME_1
+            </a>
+             
+            <a
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #MESSAGE_1
+            </a>
+          </div>
+          <div>
+            Latest commit 
+            <a
+              className="c11"
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #SHA_1
+            </a>
+             
+            <time-ago
+              datetime="#DATE_1"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="c12"
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td
+                className="c13"
+              >
+                <i
+                  className="fa fa-file-text-o c14"
+                />
+              </td>
+              <td
+                className="name"
+              >
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_1"
+                  onClick={[Function]}
+                >
+                  #PATH_1
+                </a>
+              </td>
+              <td
+                className="c15"
+              >
+                <a
+                  className="c16"
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="c17"
+              >
+                <span
+                  className="c18"
+                >
+                  <time-ago
+                    datetime="#DATE_1"
+                  />
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td
+                className="c13"
+              >
+                <i
+                  className="fa fa-file-text-o c14"
+                />
+              </td>
+              <td
+                className="name"
+              >
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
+                  onClick={[Function]}
+                >
+                  #PATH_2
+                </a>
+              </td>
+              <td
+                className="c15"
+              >
+                <a
+                  className="c16"
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="c17"
+              >
+                <span
+                  className="c18"
+                >
+                  <time-ago
+                    datetime="#DATE_1"
+                  />
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositoryIssues with default 1`] = `
+.c6 a,
+.c6 button,
+.c6 input[type='submit'] {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c6 >:first-child a,
+.c6 >:first-child button,
+.c6 >:first-child input[type='submit'] {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c6 > a:first-child,
+.c6 > button:first-child,
+.c6 > input[type='submit']:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c6 >:last-child a,
+.c6 >:last-child button,
+.c6 >:last-child input[type='submit'] {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c6 > a:last-child,
+.c6 > button:last-child,
+.c6 > input[type='submit']:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c0 > * {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.c1 {
+  display: inline-block;
+}
+
+.c2 {
+  padding: 6px 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+.c4 {
+  margin-left: -1px;
+  position: relative;
+  display: inline-block;
+}
+
+.c4 > i {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+
+.c5 {
+  width: 320px;
+  padding: 6px 10px 6px 32px;
+  color: #767676;
+  border: 1px solid #d5d5d5;
+  border-radius: 0 3px 3px 0;
+  line-height: 20px;
+}
+
+.c8 {
+  position: relative;
+  padding: 12px 12px;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px 3px 0 0;
+}
+
+.c8 > * {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.c9 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.c10 {
+  padding: 12px 12px;
+  border-top: 1px solid #eee;
+}
+
+.c10:first-of-type {
+  border-top: none;
+}
+
+.c10:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.c11 {
+  float: left;
+  color: #6cc644;
+}
+
+.c12 {
+  float: left;
+  margin-left: 12px;
+}
+
+.c13 {
+  color: #333;
+  font-size: 16px;
+}
+
+.c14 {
+  font-size: 12px;
+}
+
+.c15 {
+  float: right;
+}
+
+.c3 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  display: inline-block;
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  position: relative;
+  padding: 6px 12px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        className="c2 c3"
+      >
+        Filters
+      </button>
+      <form
+        className="c4"
+      >
+        <i
+          className="fa fa-search"
+        />
+        <input
+          className="c5"
+        />
+      </form>
+    </div>
+    <div
+      className="c6"
+    >
+      <a
+        className="c7"
+        href="/$OWNER/$REPO/labels"
+        onClick={[Function]}
+        transparent="true"
+      >
+        Labels
+      </a>
+      <a
+        className="c7"
+        href="/$OWNER/$REPO/milestones"
+        onClick={[Function]}
+        transparent="true"
+      >
+        Milestones
+      </a>
+    </div>
+  </div>
+  <div
+    className="c8"
+  >
+    <div>
+      <a
+        href="/$OWNER/$REPO/issues?q=is:open is:issue"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-exclamation-circle"
+        />
+         
+        2
+         Open
+      </a>
+    </div>
+    <div>
+      <a
+        href="/$OWNER/$REPO/issues?q=is:closed is:issue"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-check"
+        />
+         
+        -1
+         Closed
+      </a>
+    </div>
+  </div>
+  <ul
+    className="c9"
+  >
+    <li
+      className="c10"
+    >
+      <div
+        className="c11"
+      >
+        <i
+          className="fa fa-exclamation-circle"
+        />
+      </div>
+      <div
+        className="c12"
+      >
+        <div
+          className="c13"
+        >
+          <a
+            href="/$OWNER/$REPO/issues/1"
+            onClick={[Function]}
+          >
+            $TITLE_1
+          </a>
+        </div>
+        <div
+          className="c14"
+        >
+          <span>
+            #
+            1
+          </span>
+           opened
+           
+          <time-ago
+            datetime="$CREATED_AT_1"
+          />
+           by
+           
+          <a
+            href="/$CREATED_BY_1"
+            onClick={[Function]}
+          >
+            $CREATED_BY_1
+          </a>
+        </div>
+      </div>
+      <div
+        className="c15"
+      >
+        <div>
+          <a
+            href="/$OWNER/$REPO/issues/1"
+            onClick={[Function]}
+          >
+            <i
+              className="fa fa-comment-o"
+            />
+             
+            1
+          </a>
+        </div>
+      </div>
+    </li>
+    <li
+      className="c10"
+    >
+      <div
+        className="c11"
+      >
+        <i
+          className="fa fa-exclamation-circle"
+        />
+      </div>
+      <div
+        className="c12"
+      >
+        <div
+          className="c13"
+        >
+          <a
+            href="/$OWNER/$REPO/issues/2"
+            onClick={[Function]}
+          >
+            $TITLE_2
+          </a>
+        </div>
+        <div
+          className="c14"
+        >
+          <span>
+            #
+            2
+          </span>
+           opened
+           
+          <time-ago
+            datetime="$CREATED_AT_2"
+          />
+           by
+           
+          <a
+            href="/$CREATED_BY_2"
+            onClick={[Function]}
+          >
+            $CREATED_BY_2
+          </a>
+        </div>
+      </div>
+      <div
+        className="c15"
+      >
+        <div>
+          <a
+            href="/$OWNER/$REPO/issues/2"
+            onClick={[Function]}
+          >
+            <i
+              className="fa fa-comment-o"
+            />
+             
+            2
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositoryMilestones with default 1`] = `
+<div>
+  <h2>
+    milestones
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositoryProjects with default 1`] = `
+<div>
+  <h2>
+    projects
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositoryPulse with default 1`] = `
+<div>
+  <h2>
+    pulse
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositorySettings with default 1`] = `
 <div>
   <h2>
     settings
@@ -3266,7 +3011,7 @@ exports[`Storyshots Repository/Settings with default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Repository/Tree with default 1`] = `
+exports[`Storyshots Repository/RepositoryTree with default 1`] = `
 .c1 {
   position: relative;
   border: 1px solid #d8d8d8;
@@ -3575,7 +3320,7 @@ exports[`Storyshots Repository/Tree with default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Repository/Tree__Breadcrumbs with 3rd level path 1`] = `
+exports[`Storyshots Repository/RepositoryTree__Breadcrumbs with 3rd level path 1`] = `
 <div>
   <strong>
     <a
@@ -3639,7 +3384,7 @@ exports[`Storyshots Repository/Tree__Breadcrumbs with 3rd level path 1`] = `
 </div>
 `;
 
-exports[`Storyshots Repository/Tree__Breadcrumbs with default 1`] = `
+exports[`Storyshots Repository/RepositoryTree__Breadcrumbs with default 1`] = `
 <div>
   <strong>
     <a
@@ -3673,7 +3418,7 @@ exports[`Storyshots Repository/Tree__Breadcrumbs with default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Repository/Wiki with default 1`] = `
+exports[`Storyshots Repository/RepositoryWiki with default 1`] = `
 <div>
   <h2>
     wiki
