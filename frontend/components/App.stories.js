@@ -1,11 +1,13 @@
 // @flow
 
-import * as React from 'react'
 import { storiesOf } from '@storybook/react'
+import { base, filename } from 'paths.macro'
+import * as React from 'react'
+import { storyname } from 'storybook-utils'
 
 import App from './App'
 
-storiesOf('App', module)
+storiesOf(storyname(base, filename), module)
   .add('without session', () => <App session={null}>%CHILDREN%</App>)
   .add('with session', () => (
     <App

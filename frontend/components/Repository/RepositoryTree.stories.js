@@ -1,12 +1,14 @@
 // @flow
 
+import { storiesOf } from '@storybook/react'
+import { base, filename } from 'paths.macro'
 import * as React from 'react'
 import { MemoryRouter } from 'react-router-dom'
-import { storiesOf } from '@storybook/react'
+import { storyname } from 'storybook-utils'
 
 import RepositoryTree, { Breadcrumbs } from './RepositoryTree'
 
-storiesOf('Repository/RepositoryTree', module).add('with default', () => (
+storiesOf(storyname(base, filename), module).add('with default', () => (
   <MemoryRouter>
     <RepositoryTree
       branches={[
@@ -82,7 +84,7 @@ storiesOf('Repository/RepositoryTree', module).add('with default', () => (
   </MemoryRouter>
 ))
 
-storiesOf('Repository/RepositoryTree__Breadcrumbs', module)
+storiesOf(storyname(base, filename), module)
   .add('with default', () => (
     <MemoryRouter>
       <Breadcrumbs

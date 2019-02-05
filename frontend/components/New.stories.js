@@ -1,8 +1,10 @@
 // @flow
 
-import * as React from 'react'
 import { storiesOf } from '@storybook/react'
+import { base, filename } from 'paths.macro'
+import * as React from 'react'
+import { storyname } from 'storybook-utils'
 
 import { New } from './New'
 
-storiesOf('New', module).add('with default', () => <New />)
+storiesOf(storyname(base, filename), module).add('with default', () => <New />)

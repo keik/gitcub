@@ -1,11 +1,13 @@
 // @flow
 
-import * as React from 'react'
 import { storiesOf } from '@storybook/react'
+import { base, filename } from 'paths.macro'
+import * as React from 'react'
+import { storyname } from 'storybook-utils'
 
 import TreeSelector from './TreeSelector'
 
-storiesOf('Repository/shared/TreeSelector', module).add('with default', () => (
+storiesOf(storyname(base, filename), module).add('with default', () => (
   <TreeSelector
     branches={[
       {

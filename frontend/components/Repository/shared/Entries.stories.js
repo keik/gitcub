@@ -1,12 +1,14 @@
 // @flow
 
+import { storiesOf } from '@storybook/react'
+import { base, filename } from 'paths.macro'
 import * as React from 'react'
 import { MemoryRouter } from 'react-router-dom'
-import { storiesOf } from '@storybook/react'
+import { storyname } from 'storybook-utils'
 
 import Entries from './Entries'
 
-storiesOf('Repository/shared/Entries', module).add('with default', () => (
+storiesOf(storyname(base, filename), module).add('with default', () => (
   <MemoryRouter>
     <Entries
       entries={[

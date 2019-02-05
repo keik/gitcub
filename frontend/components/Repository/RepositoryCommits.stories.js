@@ -1,12 +1,14 @@
 // @flow
 
 import { storiesOf } from '@storybook/react'
+import { base, filename } from 'paths.macro'
 import * as React from 'react'
 import { MemoryRouter } from 'react-router-dom'
+import { storyname } from 'storybook-utils'
 
 import RepositoryCommits from './RepositoryCommits'
 
-storiesOf('Repository/RepositoryCommits', module).add('with default', () => (
+storiesOf(storyname(base, filename), module).add('with default', () => (
   <MemoryRouter>
     <RepositoryCommits
       commits={[
