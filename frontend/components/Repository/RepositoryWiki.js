@@ -2,10 +2,10 @@
 
 import * as React from 'react'
 
-export const Wiki = () => (
+const RepositoryWiki = () => (
   <div>
     <h2>wiki</h2>
   </div>
 )
 
-export default Wiki
+export default RepositoryWiki

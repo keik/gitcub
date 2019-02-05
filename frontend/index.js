@@ -21,7 +21,7 @@ import { RepositoryCommitsContainer } from './components/Repository/RepositoryCo
 import { RepositoryBranchesContainer } from './components/Repository/RepositoryBranches'
 import RepositoryIssues from './components/Repository/RepositoryIssues'
 import RepositoryProjects from './components/Repository/RepositoryProjects'
-import RepoWiki from './components/Repository/Wiki'
+import RepositoryWiki from './components/Repository/RepositoryWiki'
 import RepositoryPulse from './components/Repository/RepositoryPulse'
 import RepositoryGraphs from './components/Repository/RepositoryGraphs'
 import RepositorySettings from './components/Repository/RepositorySettings'
@@ -58,7 +58,7 @@ ReactDOM.render(
                   <Route exact path="/:owner/:repo/settings" component={RepositorySettings} />
                   <Route exact path="/:owner/:repo/tree/:tree" component={RepositoryHomeContainer} />
                   <Route exact path="/:owner/:repo/tree/:tree/:path*" component={RepoTree} />
-                  <Route exact path="/:owner/:repo/wiki" component={RepoWiki} />
+                  <Route exact path="/:owner/:repo/wiki" component={RepositoryWiki} />
                 </Switch>
               </RepositoryContainer>
             )}
