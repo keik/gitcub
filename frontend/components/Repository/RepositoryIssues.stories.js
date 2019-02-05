@@ -4,11 +4,11 @@ import * as React from 'react'
 import { MemoryRouter } from 'react-router-dom'
 import { storiesOf } from '@storybook/react'
 
-import { Issues } from './Issues'
+import RepositoryIssues from './RepositoryIssues'
 
-storiesOf('Repository/Issues', module).add('with default', () => (
+storiesOf('Repository/RepositoryIssues', module).add('with default', () => (
   <MemoryRouter>
-    <Issues
+    <RepositoryIssues
       issues={[
         {
           id: 1,

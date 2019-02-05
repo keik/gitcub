@@ -19,7 +19,7 @@ import { RepositoryFileContentContainer } from './components/Repository/Reposito
 import { RepositoryCommitContainer } from './components/Repository/RepositoryCommit'
 import { RepositoryCommitsContainer } from './components/Repository/RepositoryCommits'
 import { RepositoryBranchesContainer } from './components/Repository/RepositoryBranches'
-import RepoIssues from './components/Repository/Issues'
+import RepositoryIssues from './components/Repository/RepositoryIssues'
 import RepoProjects from './components/Repository/Projects'
 import RepoWiki from './components/Repository/Wiki'
 import RepoPulse from './components/Repository/Pulse'
@@ -51,9 +51,9 @@ ReactDOM.render(
                   <Route exact path="/:owner/:repo/commit/:sha" component={RepositoryCommitContainer} />
                   <Route exact path="/:owner/:repo/commits" component={RepositoryCommitsContainer} />
                   <Route exact path="/:owner/:repo/graphs" component={RepositoryGraphs} />
-                  <Route exact path="/:owner/:repo/issues" component={RepoIssues} />
+                  <Route exact path="/:owner/:repo/issues" component={RepositoryIssues} />
                   <Route exact path="/:owner/:repo/projects" component={RepoProjects} />
-                  <Route exact path="/:owner/:repo/pulls" component={RepoIssues} />
+                  <Route exact path="/:owner/:repo/pulls" component={RepositoryIssues} />
                   <Route exact path="/:owner/:repo/pulse" component={RepoPulse} />
                   <Route exact path="/:owner/:repo/settings" component={RepoSettings} />
                   <Route exact path="/:owner/:repo/tree/:tree" component={RepositoryHomeContainer} />

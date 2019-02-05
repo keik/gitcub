@@ -9,7 +9,7 @@ import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContain
 
 import type { IssueObj } from '../../../types/nodegit'
 
-export const Issues = ({
+const RepositoryIssues = ({
   issues = [],
   match: { params }
 }: {
@@ -195,4 +195,4 @@ export const Issues = ({
   </div>
 )
 
-export default Issues
+export default RepositoryIssues
