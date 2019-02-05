@@ -1,19 +1,16 @@
 // @flow
 
 import * as React from 'react'
-import { css } from 'styled-components'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 
-import Logo from './common/atoms/Logo'
-import InnerContainer from './common/layouts/InnerContainer'
-import HeaderWithSession from './App__Header--with-session'
-import HeaderWithoutSession from './App__Header--without-session'
+import AppFooter from './App/AppFooter'
+import AppHeader from './App/AppHeader'
 import type { ReducersStateT } from '../ducks'
 import * as SessionAction from '../ducks/session'
 import type { SessionT } from '../ducks/session'
 
-export const $App = ({
+const App = ({
   children,
   session
 }: {
@@ -21,17 +18,19 @@ export const $App = ({
   session: ?SessionT
 }) => (
   <div>
-    <Header session={session} />
+    <AppHeader session={session} />
     {children}
-    <Footer />
+    <AppFooter />
   </div>
 )
 
-export default withRouter(
+export default App
+
+export const AppContainer = withRouter(
   connect<_, _, *, _, *, _>(({ session }: ReducersStateT) => ({
     session
   }))(
-    class App extends React.Component<*, { isLoading: boolean }> {
+    class $App extends React.Component<*, { isLoading: boolean }> {
       state = { isLoading: false }
 
       async componentDidMount() {
@@ -45,60 +44,9 @@ export default withRouter(
         return this.state.isLoading ? (
           <div>Loading...</div>
         ) : (
-          <$App {...this.props} />
+          <App {...this.props} />
         )
       }
     }
   )
-)
-
-export const Header = ({ session }: { session: ?SessionT }) =>
-  session == null ? (
-    <HeaderWithoutSession />
-  ) : (
-    <HeaderWithSession session={session} />
-  )
-
-export const Footer = () => (
-  <InnerContainer>
-    <div
-      css={css`
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 24px 0;
-        margin-top: 36px;
-        border-top: 1px solid #eee;
-        color: #767676;
-        font-size: 12px;
-        > ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          > li {
-            display: inline-block;
-            + li {
-              margin-left: 10px;
-            }
-          }
-        }
-      `}
-    >
-      <ul>
-        <li>&copy; 2016 keik</li>
-        <li>
-          <a href="#">Help</a>
-        </li>
-      </ul>
-      <Logo href="#">GH</Logo>
-      <ul>
-        <li>
-          <a href="#">API</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-      </ul>
-    </div>
-  </InnerContainer>
 )

@@ -6,11 +6,37 @@ import * as React from 'react'
 import { MemoryRouter } from 'react-router-dom'
 import { storyname } from 'storybook-utils'
 
-import Entries from './Entries'
+import RepositoryHome from './RepositoryHome'
 
 storiesOf(storyname(base, filename), module).add('with default', () => (
   <MemoryRouter>
-    <Entries
+    <RepositoryHome
+      branches={[
+        {
+          commit: {
+            author: {
+              date: '#DATE_1',
+              name: '#NAME_1'
+            },
+            sha: '#SHA_1',
+            message: '#MESSAGE_1'
+          },
+          name: '#BRANCH_1'
+        },
+        {
+          commit: {
+            author: {
+              date: '#DATE_2',
+              name: '#NAME_2'
+            },
+            sha: '#SHA_2',
+            message: '#MESSAGE_2'
+          },
+          name: '#BRANCH_2'
+        }
+      ]}
+      commits={[]}
+      contributorsCount={-1}
       entries={[
         {
           content: '#CONTENT_1',
@@ -23,7 +49,7 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
             message: '#MESSAGE_1'
           },
           name: '#NAME_1',
-          path: '#SPLAT/#PATH_1',
+          path: '#PATH/#PATH_1',
           sha: '#SHA_1',
           size: 10,
           type: 'blob',
@@ -47,12 +73,15 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
           url: '#URL_2'
         }
       ]}
-      params={{
-        owner: '#OWNER',
-        repo: '#REPO',
-        tree: '#TREE',
-        path: '#PATH'
+      match={{
+        params: {
+          owner: '#OWNER',
+          repo: '#REPO',
+          tree: '#TREE',
+          path: '#PATH'
+        }
       }}
+      tags={[]}
     />
   </MemoryRouter>
 ))

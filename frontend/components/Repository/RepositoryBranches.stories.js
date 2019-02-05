@@ -5,10 +5,10 @@ import { base, filename } from 'paths.macro'
 import * as React from 'react'
 import { storyname } from 'storybook-utils'
 
-import TreeSelector from './TreeSelector'
+import RepositoryBranches from './RepositoryBranches'
 
 storiesOf(storyname(base, filename), module).add('with default', () => (
-  <TreeSelector
+  <RepositoryBranches
     branches={[
       {
         commit: {
@@ -22,12 +22,12 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
         name: '$BRANCH'
       }
     ]}
-    params={{
-      owner: '$OWNER',
-      repo: '$REPO',
-      tree: '$TREE',
-      path: '$PATH'
+    defaultBranchName="master"
+    match={{
+      params: {
+        owner: '$OWNER',
+        repo: '$REPO'
+      }
     }}
-    tags={[]}
   />
 ))

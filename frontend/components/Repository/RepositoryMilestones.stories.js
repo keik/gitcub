@@ -5,6 +5,8 @@ import { base, filename } from 'paths.macro'
 import * as React from 'react'
 import { storyname } from 'storybook-utils'
 
-import { New } from './New'
+import RepositoryMilestones from './RepositoryMilestones'
 
-storiesOf(storyname(base, filename), module).add('with default', () => <New />)
+storiesOf(storyname(base, filename), module).add('with default', () => (
+  <RepositoryMilestones />
+))

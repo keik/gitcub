@@ -20,7 +20,7 @@ type State = {
   repositories: Array<RepositoryT>
 }
 
-export default function repository(
+export default function repositories(
   state: State = {
     repositories: []
   },
