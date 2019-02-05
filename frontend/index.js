@@ -14,7 +14,7 @@ import { HomeContainer } from './components/Home'
 import New from './components/New'
 import { RepositoryContainer } from './components/Repository'
 import { RepositoryHomeContainer } from './components/Repository/RepositoryHome'
-import RepoTree from './components/Repository/Tree'
+import { RepositoryTreeContainer } from './components/Repository/RepositoryTree'
 import { RepositoryFileContentContainer } from './components/Repository/RepositoryFileContent'
 import { RepositoryCommitContainer } from './components/Repository/RepositoryCommit'
 import { RepositoryCommitsContainer } from './components/Repository/RepositoryCommits'
@@ -57,7 +57,7 @@ ReactDOM.render(
                   <Route exact path="/:owner/:repo/pulse" component={RepositoryPulse} />
                   <Route exact path="/:owner/:repo/settings" component={RepositorySettings} />
                   <Route exact path="/:owner/:repo/tree/:tree" component={RepositoryHomeContainer} />
-                  <Route exact path="/:owner/:repo/tree/:tree/:path*" component={RepoTree} />
+                  <Route exact path="/:owner/:repo/tree/:tree/:path*" component={RepositoryTreeContainer} />
                   <Route exact path="/:owner/:repo/wiki" component={RepositoryWiki} />
                 </Switch>
               </RepositoryContainer>

@@ -4,11 +4,11 @@ import * as React from 'react'
 import { MemoryRouter } from 'react-router-dom'
 import { storiesOf } from '@storybook/react'
 
-import { Tree, Breadcrumbs } from './Tree'
+import RepositoryTree, { Breadcrumbs } from './RepositoryTree'
 
-storiesOf('Repository/Tree', module).add('with default', () => (
+storiesOf('Repository/RepositoryTree', module).add('with default', () => (
   <MemoryRouter>
-    <Tree
+    <RepositoryTree
       branches={[
         {
           commit: {
@@ -82,7 +82,7 @@ storiesOf('Repository/Tree', module).add('with default', () => (
   </MemoryRouter>
 ))
 
-storiesOf('Repository/Tree__Breadcrumbs', module)
+storiesOf('Repository/RepositoryTree__Breadcrumbs', module)
   .add('with default', () => (
     <MemoryRouter>
       <Breadcrumbs

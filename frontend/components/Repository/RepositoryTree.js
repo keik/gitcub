@@ -26,7 +26,24 @@ type Props = {
   >,
   tags: $PropertyType<ReducersStateT, 'tags'>
 }
-export default connect<_, _, *, _, *, _>(
+
+const RepositoryTree = (props: Props) => (
+  <div>
+    <div
+      style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}
+    >
+      <div style={{ marginRight: '12px' }}>
+        <TreeSelector {...props} params={{ ...props.match.params }} />
+      </div>
+      <Breadcrumbs {...props} />
+    </div>
+    <Entries {...props} params={{ ...props.match.params }} />
+  </div>
+)
+
+export default RepositoryTree
+
+export const RepositoryTreeContainer = connect<_, _, *, _, *, _>(
   ({ branches, commits, tags, trees }: ReducersStateT) => ({
     branches,
     commits,
@@ -34,7 +51,7 @@ export default connect<_, _, *, _, *, _>(
     entries: trees
   })
 )(
-  class TreeContainer extends React.Component<
+  class $RepositoryTreeContainer extends React.Component<
     Props & { dispatch: Dispatch<*> }
   > {
     async componentDidMount() {
@@ -52,23 +69,9 @@ export default connect<_, _, *, _, *, _>(
     }
 
     render() {
-      return <Tree {...this.props} />
+      return <RepositoryTree {...this.props} />
     }
   }
-)
-
-export const Tree = (props: Props) => (
-  <div>
-    <div
-      style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}
-    >
-      <div style={{ marginRight: '12px' }}>
-        <TreeSelector {...props} params={{ ...props.match.params }} />
-      </div>
-      <Breadcrumbs {...props} />
-    </div>
-    <Entries {...props} params={{ ...props.match.params }} />
-  </div>
 )
 
 export const Breadcrumbs = ({ match: { params } }: *) => {
