@@ -2,10 +2,10 @@
 
 import * as React from 'react'
 
-export const Projects = () => (
+const RepositoryProjects = () => (
   <div>
     <h2>projects</h2>
   </div>
 )
 
-export default Projects
+export default RepositoryProjects
