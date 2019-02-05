@@ -4,11 +4,11 @@ import * as React from 'react'
 import { MemoryRouter } from 'react-router-dom'
 import { storiesOf } from '@storybook/react'
 
-import { FileContent } from './FileContent'
+import RepositoryFileContent from './RepositoryFileContent'
 
 storiesOf('Repository/FileContent', module).add('with default', () => (
   <MemoryRouter>
-    <FileContent
+    <RepositoryFileContent
       contributors={['$CONTRIBUTOR_1', '$CONTRIBUTOR_2']}
       entry={{
         content: '$CONTENT',

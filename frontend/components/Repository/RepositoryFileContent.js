@@ -27,38 +27,8 @@ type Props = {
     }>
   >
 }
-export default connect<_, _, *, _, *, _>(
-  (
-    { entries }: ReducersStateT,
-    {
-      match: {
-        params: { path }
-      }
-    }: Props
-  ) => ({
-    entry: entries.find(e => (e.path = path))
-  })
-)(
-  class FileContentContainer extends React.Component<
-    Props & { dispatch: Dispatch<*> }
-  > {
-    async componentDidMount() {
-      const {
-        dispatch,
-        match: {
-          params: { branch, owner, repo, path: path = '' }
-        }
-      } = this.props
-      dispatch(await EntriesAction.fetch({ owner, repo, path, branch }))
-    }
 
-    render() {
-      return <FileContent {...this.props} />
-    }
-  }
-)
-
-export const FileContent = ({
+export const RepositoryFileContent = ({
   contributors = [],
   entry,
   match: { params }
@@ -159,3 +129,36 @@ export const FileContent = ({
     </div>
   )
 }
+
+export default RepositoryFileContent
+
+export const RepositoryFileContentContainer = connect<_, _, *, _, *, _>(
+  (
+    { entries }: ReducersStateT,
+    {
+      match: {
+        params: { path }
+      }
+    }: Props
+  ) => ({
+    entry: entries.find(e => (e.path = path))
+  })
+)(
+  class $RepositoryFileContentContainer extends React.Component<
+    Props & { dispatch: Dispatch<*> }
+  > {
+    async componentDidMount() {
+      const {
+        dispatch,
+        match: {
+          params: { branch, owner, repo, path: path = '' }
+        }
+      } = this.props
+      dispatch(await EntriesAction.fetch({ owner, repo, path, branch }))
+    }
+
+    render() {
+      return <RepositoryFileContent {...this.props} />
+    }
+  }
+)
