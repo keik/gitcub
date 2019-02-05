@@ -2,10 +2,10 @@
 
 import * as React from 'react'
 
-export const Milestones = () => (
+const RepositoryMilestones = () => (
   <div>
     <h2>milestones</h2>
   </div>
 )
 
-export default Milestones
+export default RepositoryMilestones
