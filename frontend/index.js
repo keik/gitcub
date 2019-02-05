@@ -22,7 +22,7 @@ import { RepositoryBranchesContainer } from './components/Repository/RepositoryB
 import RepositoryIssues from './components/Repository/RepositoryIssues'
 import RepositoryProjects from './components/Repository/RepositoryProjects'
 import RepoWiki from './components/Repository/Wiki'
-import RepoPulse from './components/Repository/Pulse'
+import RepositoryPulse from './components/Repository/RepositoryPulse'
 import RepositoryGraphs from './components/Repository/RepositoryGraphs'
 import RepoSettings from './components/Repository/Settings'
 import User from './components/User'
@@ -54,7 +54,7 @@ ReactDOM.render(
                   <Route exact path="/:owner/:repo/issues" component={RepositoryIssues} />
                   <Route exact path="/:owner/:repo/projects" component={RepositoryProjects} />
                   <Route exact path="/:owner/:repo/pulls" component={RepositoryIssues} />
-                  <Route exact path="/:owner/:repo/pulse" component={RepoPulse} />
+                  <Route exact path="/:owner/:repo/pulse" component={RepositoryPulse} />
                   <Route exact path="/:owner/:repo/settings" component={RepoSettings} />
                   <Route exact path="/:owner/:repo/tree/:tree" component={RepositoryHomeContainer} />
                   <Route exact path="/:owner/:repo/tree/:tree/:path*" component={RepoTree} />
