@@ -10,7 +10,7 @@
     "build:js": "webpack --mode development --progress",
     "watch": "run-p watch:*",
     "watch:js": "NODE_ENV=development webpack --mode development --progress -w",
-    "watch:server": "NODE_ENV=development node inspect app",
+    "watch:server": "NODE_ENV=development node --inspect app",
     "start": "NODE_ENV=production node app",
     "lint": "eslint app constants frontend migrations models seeders shared",
     "typecheck": "flow",
