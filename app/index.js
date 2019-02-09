@@ -11,13 +11,14 @@ const REPO_ROOT = config.REPO_ROOT
 
 // disable cache when file changed
 if (process.env.NODE_ENV === 'development') {
-  const watcher = chokidar.watch('.')
+  const watcher = chokidar.watch('{app,models,shared}/**')
   watcher.on('ready', () =>
     watcher.on('all', (event, filepath) => {
       console.log(`File ${filepath} changed. Clear module cache...`)
-      Object.keys(require.cache).forEach(id => {
-        if (!id.includes('node_modules')) delete require.cache[id]
-      })
+      ;['app/app.js', filepath].forEach(
+        f =>
+          delete require.cache[require.resolve(f, { paths: [process.cwd()] })]
+      )
     })
   )
 }
