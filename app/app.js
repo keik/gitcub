@@ -2,6 +2,7 @@
 
 import bodyParser from 'body-parser'
 import { spawn } from 'child_process'
+import connectRedis from 'connect-redis'
 import Express from 'express'
 import expressListRoutes from 'express-list-routes'
 import session from 'express-session'
@@ -35,11 +36,16 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // enable session
+const RedisStore = connectRedis(session)
 app.use(
   session({
+    store: new RedisStore({
+      host: 'localhost',
+      port: '6379',
+      prefix: 'gh:sess:'
+    }),
     secret: 'keyboard cat',
-    resave: false,
-    saveUninitialized: false
+    resave: false
   })
 )
 
