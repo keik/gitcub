@@ -1,9 +1,11 @@
 // @flow
 
 const theme = {
-  border: '1px solid #e1e4e8',
-  borderRadius: '3px',
-  spaces: ['4px', '8px', '16px']
+  borders: { gray: '1px solid #e1e4e8' },
+  color: {
+    gray: '#666666'
+  },
+  space: [0, 4, 8, 16, 32]
 }
 
 export default theme

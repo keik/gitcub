@@ -1,5 +1,6 @@
 // @flow
 
+import Box from 'gh-ui/Box'
 import * as React from 'react'
 import { GoLink, GoLocation, GoMail, GoOrganization } from 'react-icons/go'
 
@@ -7,19 +8,9 @@ import InnerContainer from './common/layouts/InnerContainer'
 
 const User = () => (
   <InnerContainer>
-    <div
-      css={({ theme: { spaces } }) => ({
-        display: 'flex',
-        marginTop: spaces[2]
-      })}
-    >
-      <div css={{ width: '25%', marginRight: '16px' }}>
-        <div
-          css={({ theme: { border, borderRadius } }) => ({
-            border,
-            borderRadius
-          })}
-        >
+    <Box css={{ display: 'flex' }} mt="3">
+      <Box mr="3" width="1/4">
+        <Box border="gray" borderRadius="3">
           <img
             alt="avator"
             css={{
@@ -29,43 +20,25 @@ const User = () => (
               backgroundColor: '#ccc'
             }}
           />
-        </div>
-        <div>
+        </Box>
+        <Box>
           <h1>
-            <div
-              css={{
-                fontSize: '26px'
-              }}
-            >
-              %NAME%
-            </div>
-            <div
-              css={{
-                color: '#666666',
-                fontSize: '20px',
-                fontWeight: '300'
-              }}
-            >
+            <Box fontSize="4">%NAME%</Box>
+            <Box color="gray" fontSize="3">
               %ID%
-            </div>
+            </Box>
           </h1>
-          <div>
-            <div
-              css={({ theme: { spaces } }) => ({
-                marginTop: spaces[2]
-              })}
-            >
-              %BIO%
-            </div>
+          <Box>
+            <Box mt="3">%BIO%</Box>
             <ul
-              css={({ theme: { spaces } }) => ({
+              css={({ theme: { space } }) => ({
                 display: 'flex',
                 flexDirection: 'column',
                 listStyle: 'none',
                 padding: 0,
-                margin: `${spaces[2]} 0 0 0`,
+                margin: `${space[3]}px 0 0 0`,
                 '> li': {
-                  marginBottom: spaces[0]
+                  marginBottom: space[1]
                 }
               })}
             >
@@ -87,18 +60,18 @@ const User = () => (
               </li>
             </ul>
             <button>Edit</button>
-          </div>
+          </Box>
           <hr />
-          <div>
+          <Box>
             <h2 css={{ fontSize: '16px' }}>Organizations</h2>
             <ul
-              css={({ theme: { borderRadius, spaces } }) => ({
+              css={({ theme: { borderRadius, space } }) => ({
                 display: 'flex',
                 listStyle: 'none',
                 padding: 0,
                 margin: 0,
                 '> li': {
-                  marginRight: spaces[0],
+                  marginRight: space[0],
                   '> img': {
                     display: 'block',
                     width: '36px',
@@ -119,22 +92,22 @@ const User = () => (
                 <img alt="ORG" />
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-      <div css={{ width: '75%' }}>
-        <nav css={({ theme: { border } }) => ({ borderBottom: border })}>
+          </Box>
+        </Box>
+      </Box>
+      <Box width="3/4">
+        <Box borderBottom="gray">
           <ul
-            css={({ theme: { spaces } }) => ({
+            css={({ theme: { space } }) => ({
               display: 'flex',
               listStyle: 'none',
               padding: 0,
               margin: 0,
               '> li': {
-                marginRight: spaces[2],
+                marginRight: space[2],
                 '> a': {
                   display: 'block',
-                  padding: `${spaces[2]} ${spaces[1]}`
+                  padding: `${space[2]}px ${space[1]}px`
                 }
               }
             })}
@@ -155,52 +128,41 @@ const User = () => (
               <a href="#">Following</a>
             </li>
           </ul>
-        </nav>
-        <div>
+        </Box>
+        <Box>
           <h2>Pinned repositories</h2>
-          <ul
-            css={({ theme: { border, borderRadius } }) => ({
+          <Box
+            as="ul"
+            p="0"
+            css={{
               display: 'flex',
               flexWrap: 'wrap',
               justifyContent: 'space-between',
-              listStyle: 'none',
-              padding: 0,
-              margin: 0,
-              '> li': {
-                border,
-                borderRadius,
-                width: '49%' // WIP
-              }
-            })}
+              listStyle: 'none'
+            }}
           >
-            <li>
-              <h3>%REPO_NAME%</h3>
-              <p>%REPO_DESCRIPTION%</p>
-            </li>
-            <li>
-              <h3>%REPO_NAME%</h3>
-              <p>%REPO_DESCRIPTION%</p>
-            </li>
-            <li>
-              <h3>%REPO_NAME%</h3>
-              <p>%REPO_DESCRIPTION%</p>
-            </li>
-            <li>
-              <h3>%REPO_NAME%</h3>
-              <p>%REPO_DESCRIPTION%</p>
-            </li>
-            <li>
-              <h3>%REPO_NAME%</h3>
-              <p>%REPO_DESCRIPTION%</p>
-            </li>
-          </ul>
-        </div>
-        <div>
+            {Array.from(Array(5).keys()).map((_, i) => (
+              <Box as="li" key={i} width="50%" mb="3">
+                <Box
+                  border="gray"
+                  borderRadius="3"
+                  ml={i % 2 !== 0 && 2}
+                  mr={i % 2 === 0 && 2}
+                  p="3"
+                >
+                  <h3>%REPO_NAME%</h3>
+                  <p>%REPO_DESCRIPTION%</p>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box>
           <h2>N contributions in the last year</h2>
-          <div>GRAPH</div>
-        </div>
-      </div>
-    </div>
+          <Box>GRAPH</Box>
+        </Box>
+      </Box>
+    </Box>
   </InnerContainer>
 )
 
