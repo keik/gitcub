@@ -30,13 +30,14 @@ const User = () => (
           </h1>
           <Box>
             <Box mt="3">%BIO%</Box>
-            <ul
+            <Box
+              as="ul"
+              p="0"
+              mt="3"
               css={({ theme: { space } }) => ({
                 display: 'flex',
                 flexDirection: 'column',
                 listStyle: 'none',
-                padding: 0,
-                margin: `${space[3]}px 0 0 0`,
                 '> li': {
                   marginBottom: space[1]
                 }
@@ -58,53 +59,45 @@ const User = () => (
                 <GoLink />
                 %LINK%
               </li>
-            </ul>
+            </Box>
             <button>Edit</button>
           </Box>
           <hr />
           <Box>
             <h2 css={{ fontSize: '16px' }}>Organizations</h2>
-            <ul
-              css={({ theme: { borderRadius, space } }) => ({
+            <Box
+              as="ul"
+              p="0"
+              css={{
                 display: 'flex',
-                listStyle: 'none',
-                padding: 0,
-                margin: 0,
-                '> li': {
-                  marginRight: space[0],
-                  '> img': {
-                    display: 'block',
-                    width: '36px',
-                    height: '36px',
-                    borderRadius: borderRadius,
-                    backgroundColor: '#ccc'
-                  }
-                }
-              })}
+                listStyle: 'none'
+              }}
             >
-              <li>
-                <img alt="ORG" />
-              </li>
-              <li>
-                <img alt="ORG" />
-              </li>
-              <li>
-                <img alt="ORG" />
-              </li>
-            </ul>
+              {Array.from(Array(3).keys()).map((_, i) => (
+                <Box as="li" key={i} mr="1">
+                  <Box
+                    as="img"
+                    alt="ORG"
+                    borderRadius={3}
+                    height="36px"
+                    width="36px"
+                  />
+                </Box>
+              ))}
+            </Box>
           </Box>
         </Box>
       </Box>
       <Box width="3/4">
         <Box borderBottom="gray">
-          <ul
+          <Box
+            as="ul"
+            p="0"
             css={({ theme: { space } }) => ({
               display: 'flex',
               listStyle: 'none',
-              padding: 0,
-              margin: 0,
               '> li': {
-                marginRight: space[2],
+                marginRight: space[3],
                 '> a': {
                   display: 'block',
                   padding: `${space[2]}px ${space[1]}px`
@@ -127,7 +120,7 @@ const User = () => (
             <li>
               <a href="#">Following</a>
             </li>
-          </ul>
+          </Box>
         </Box>
         <Box>
           <h2>Pinned repositories</h2>

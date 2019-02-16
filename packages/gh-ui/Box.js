@@ -11,7 +11,7 @@ import {
 } from 'styled-system'
 
 const Box = styled.div`
-  ${({ inline }) => inline && 'display: inline-block;'}
+  display: ${({ inline }) => (inline ? 'inline-block' : 'block')};
   ${borders}
   ${borderRadius}
   ${color}
