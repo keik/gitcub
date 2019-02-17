@@ -13,7 +13,7 @@ import Panel from '../common/blocks/Panel'
 import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
 import type { ReducersStateT } from '../../ducks'
 import * as EntriesAction from '../../ducks/repository/entries'
-import type { EntryT } from '../../../types/gh'
+import type { EntryT } from 'gh-types/gh'
 
 type Props = {
   contributors: Array<string>,

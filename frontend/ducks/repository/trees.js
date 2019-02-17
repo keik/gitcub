@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 
-import type { TreeT } from '../../../types/gh'
+import type { TreeT } from 'gh-types/gh'
 
 export const FETCH: 'TREES/FETCH' = 'TREES/FETCH'
 

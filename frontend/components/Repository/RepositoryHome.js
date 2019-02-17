@@ -22,7 +22,7 @@ import type {
   CommitObj,
   ParentObj,
   TagObj
-} from '../../../types/nodegit'
+} from 'gh-types/nodegit'
 
 const { HOST, PORT } = config.env[process.env.NODE_ENV || 'development']
 

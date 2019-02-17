@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 
-import type { RepositoryT } from '../../types/gh'
+import type { RepositoryT } from 'gh-types/gh'
 
 export const FETCH = 'FETCH'
 

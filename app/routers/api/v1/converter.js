@@ -7,7 +7,7 @@ import {
   API_REPOS_COMMITS
 } from '../../../../constants/api'
 
-import type { Commit } from '../../../../types/nodegit'
+import type { Commit } from 'gh-types/nodegit'
 
 export function convertCommitToReposCommitObject(
   commit: Commit,

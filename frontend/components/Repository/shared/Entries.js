@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 import Panel from '../../common/blocks/Panel'
 import { parseEntriesByDirLevel } from '../../../../shared/utils'
-import type { Tree$Entry$WithLastCommitT } from '../../../../types/gh'
+import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
 
 const Entries = ({
   entries,
