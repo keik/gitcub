@@ -151,7 +151,7 @@ declare class express$Router extends express$Route {
   use(...middleware: Array<express$Middleware>): this;
   use(path: express$Path|express$Path[], ...middleware: Array<express$Middleware>): this;
   use(path: string, router: express$Router): this;
-  handle(req: http$IncomingMessage, res: http$ServerResponse, next: express$NextFunction): void;
+  handle(req: http$IncomingMessage<>, res: http$ServerResponse, next: express$NextFunction): void;
   param(
     param: string,
     callback: (
@@ -161,7 +161,7 @@ declare class express$Router extends express$Route {
       id: string
     ) => mixed
   ): void;
-  (req: http$IncomingMessage, res: http$ServerResponse, next?: ?express$NextFunction): void;
+  (req: http$IncomingMessage<>, res: http$ServerResponse, next?: ?express$NextFunction): void;
 }
 
 declare class express$Application extends express$Router mixins events$EventEmitter {
@@ -184,9 +184,9 @@ declare class express$Application extends express$Router mixins events$EventEmit
   //   get(name: string): mixed;
   set(name: string, value: mixed): mixed;
   render(name: string, optionsOrFunction: {[name: string]: mixed}, callback: express$RenderCallback): void;
-  handle(req: http$IncomingMessage, res: http$ServerResponse, next?: ?express$NextFunction): void;
+  handle(req: http$IncomingMessage<>, res: http$ServerResponse, next?: ?express$NextFunction): void;
   // callable signature is not inherited
-  (req: http$IncomingMessage, res: http$ServerResponse, next?: ?express$NextFunction): void;
+  (req: http$IncomingMessage<>, res: http$ServerResponse, next?: ?express$NextFunction): void;
 }
 
 declare module 'express' {
