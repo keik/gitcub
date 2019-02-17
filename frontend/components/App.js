@@ -31,7 +31,7 @@ export const AppContainer = withRouter(
     session
   }))(
     class $App extends React.Component<*, { isLoading: boolean }> {
-      state = { isLoading: false }
+      state = { isLoading: true }
 
       async componentDidMount() {
         const { dispatch } = this.props
