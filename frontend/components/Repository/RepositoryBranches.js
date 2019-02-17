@@ -9,7 +9,7 @@ import List from '../common/blocks/List'
 import Panel from '../common/blocks/Panel'
 import type { ReducersStateT } from '../../ducks'
 import * as BranchesAction from '../../ducks/repository/branches'
-import type { BranchT } from '../../../types/gh'
+import type { BranchT } from 'gh-types/gh'
 
 type Props = {
   branches: Array<BranchT>,

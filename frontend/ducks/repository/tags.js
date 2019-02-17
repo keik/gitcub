@@ -4,7 +4,7 @@ import axios from 'axios'
 
 import { API_GIT_REFS } from '../../../constants/api'
 import { genAPIStr } from '../../../shared/utils'
-import type { TagT } from '../../../types/gh'
+import type { TagT } from 'gh-types/gh'
 
 export const FETCH: 'TAGS/FETCH' = 'TAGS/FETCH'
 

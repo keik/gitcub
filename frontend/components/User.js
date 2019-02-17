@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 import InnerContainer from './common/layouts/InnerContainer'
 import type { ReducersStateT } from '../ducks'
 import * as UsersAction from '../ducks/users'
-import type { UserT } from '../../types/gh'
+import type { UserT } from 'gh-types/gh'
 
 const User = ({ user }: { user: UserT }) => (
   <InnerContainer>

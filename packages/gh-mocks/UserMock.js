@@ -1,7 +1,6 @@
 // @flow
 
-// TODO: not import directly
-import type { UserT } from '../../types/gh'
+import type { UserT } from 'gh-types/gh'
 
 export default ({
   bio:

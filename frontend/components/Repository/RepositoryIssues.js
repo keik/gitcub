@@ -7,7 +7,7 @@ import { Link, type Match } from 'react-router-dom'
 import Button from '../common/atoms/Button'
 import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
 
-import type { IssueObj } from '../../../types/nodegit'
+import type { IssueObj } from 'gh-types/nodegit'
 
 const RepositoryIssues = ({
   issues = [],

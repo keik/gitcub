@@ -10,7 +10,7 @@ import Button from '../common/atoms/Button'
 import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
 import type { ReducersStateT } from '../../ducks'
 import * as CommitsAction from '../../ducks/repository/commits'
-import type { CommitT } from '../../../types/gh'
+import type { CommitT } from 'gh-types/gh'
 
 type Props = {
   commits: Array<CommitT>,

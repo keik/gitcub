@@ -4,7 +4,7 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import type { Dispatch } from 'redux'
 
-import type { RepositoryT } from '../../types/gh'
+import type { RepositoryT } from 'gh-types/gh'
 import type { ReducersStateT } from '../ducks'
 import * as RepositoriesAction from '../ducks/repositories'
 import InnerContainer from '../components/common/layouts/InnerContainer'

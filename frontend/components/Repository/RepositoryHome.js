@@ -17,12 +17,7 @@ import * as TagsAction from '../../ducks/repository/tags'
 import * as TreesAction from '../../ducks/repository/trees'
 import config from '../../../config'
 import type { ReducersStateT } from '../../ducks'
-import type {
-  BranchObj,
-  CommitObj,
-  ParentObj,
-  TagObj
-} from '../../../types/nodegit'
+import type { BranchObj, CommitObj, ParentObj, TagObj } from 'gh-types/nodegit'
 
 const { HOST, PORT } = config.env[process.env.NODE_ENV || 'development']
 
