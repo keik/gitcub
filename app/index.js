@@ -15,10 +15,9 @@ if (process.env.NODE_ENV === 'development') {
   watcher.on('ready', () =>
     watcher.on('all', (event, filepath) => {
       console.log(`File ${filepath} changed. Clear module cache...`)
-      ;['app/app.js', filepath].forEach(
-        f =>
-          delete require.cache[require.resolve(f, { paths: [process.cwd()] })]
-      )
+      Object.keys(require.cache).forEach(id => {
+        if (!id.includes('node_modules')) delete require.cache[id]
+      })
     })
   )
 }

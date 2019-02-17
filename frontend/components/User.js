@@ -3,6 +3,7 @@
 import Box from 'gh-ui/Box'
 import * as React from 'react'
 import { GoLink, GoLocation, GoMail, GoOrganization } from 'react-icons/go'
+import { connect } from 'react-redux'
 
 import InnerContainer from './common/layouts/InnerContainer'
 
@@ -158,5 +159,3 @@ const User = () => (
     </Box>
   </InnerContainer>
 )
-
-export default User

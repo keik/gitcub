@@ -16,3 +16,6 @@ export const API_REPOS = {
 export const API_REPOS_BRANCHES = '/api/v1/repos/:owner/:repo/branches'
 export const API_REPOS_COMMITS = '/api/v1/repos/:owner/:repo/commits(/:sha)?'
 export const API_REPOS_CONTENTS = '/api/v1/repos/:owner/:repo/contents/?*'
+
+// Users API
+export const API_USERS = '/api/v1/users/:username'
