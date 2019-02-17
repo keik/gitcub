@@ -13,7 +13,7 @@ import type { UserT } from '../../types/gh'
 const User = ({ user }: { user: UserT }) => (
   <InnerContainer>
     <Box css={{ display: 'flex' }} mt="3">
-      <Box mr="3" width="1/4">
+      <Box mr="3" width={1 / 4}>
         <Box border="gray" borderRadius="3">
           <img
             alt="avator"
@@ -68,7 +68,7 @@ const User = ({ user }: { user: UserT }) => (
               {user.blog && (
                 <li>
                   <GoLink />
-                  %LINK%
+                  {user.blog}
                 </li>
               )}
             </Box>
@@ -100,7 +100,7 @@ const User = ({ user }: { user: UserT }) => (
           </Box>
         </Box>
       </Box>
-      <Box width="3/4">
+      <Box width={3 / 4}>
         <Box borderBottom="gray">
           <Box
             as="ul"
