@@ -10,7 +10,7 @@ export default new Router().get(API_USERS, asyncWrapper(onGet))
 
 async function onGet(req: express$Request, res: express$Response) {
   const { username } = req.params
-  const user = await models.User.find({ where: { id: username } })
-  debugger
-  return res.json(user)
+  const user = await models.User.find({ where: { login: username } })
+
+  return user ? res.json(user) : res.status(404).end()
 }

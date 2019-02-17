@@ -9,6 +9,7 @@ import reposBranches from './repos/branches'
 import reposCommits from './repos/commits'
 import reposContents from './repos/contents'
 import repos from './repos/repos'
+import users from './users'
 
 export default [
   gitBlobs,
@@ -19,5 +20,6 @@ export default [
   reposBranches,
   reposCommits,
   reposContents,
-  repos
+  repos,
+  users
 ]
