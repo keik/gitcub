@@ -3730,7 +3730,7 @@ exports[`Storyshots User with default 1`] = `
 .c2 {
   display: block;
   margin-right: 16px;
-  width: 1/4;
+  width: 25%;
 }
 
 .c3 {
@@ -3772,7 +3772,7 @@ exports[`Storyshots User with default 1`] = `
 
 .c14 {
   display: block;
-  width: 3/4;
+  width: 75%;
 }
 
 .c15 {
@@ -3894,7 +3894,7 @@ exports[`Storyshots User with default 1`] = `
   >
     <div
       className="c2"
-      width="1/4"
+      width={0.25}
     >
       <div
         className="c3"
@@ -3912,14 +3912,14 @@ exports[`Storyshots User with default 1`] = `
             className="c6"
             fontSize="4"
           >
-            %NAME%
+            John Doe
           </div>
           <div
             className="c7"
             color="gray"
             fontSize="3"
           >
-            %ID%
+            john
           </div>
         </h1>
         <div
@@ -3928,7 +3928,7 @@ exports[`Storyshots User with default 1`] = `
           <div
             className="c8"
           >
-            %BIO%
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
           <ul
             className="c9"
@@ -3952,7 +3952,7 @@ exports[`Storyshots User with default 1`] = `
                   fillRule="evenodd"
                 />
               </svg>
-              %ORGANZATION%
+              POMPOM Inc.
             </li>
             <li>
               <svg
@@ -3973,7 +3973,7 @@ exports[`Storyshots User with default 1`] = `
                   fillRule="evenodd"
                 />
               </svg>
-              %LOCATION%
+              Tokyo, Japan
             </li>
             <li>
               <svg
@@ -3994,7 +3994,7 @@ exports[`Storyshots User with default 1`] = `
                   fillRule="evenodd"
                 />
               </svg>
-              %EMAIL%
+              john@example.net
             </li>
             <li>
               <svg
@@ -4015,7 +4015,7 @@ exports[`Storyshots User with default 1`] = `
                   fillRule="evenodd"
                 />
               </svg>
-              %LINK%
+              https://example.net
             </li>
           </ul>
           <button>
@@ -4070,7 +4070,7 @@ exports[`Storyshots User with default 1`] = `
     </div>
     <div
       className="c14"
-      width="3/4"
+      width={0.75}
     >
       <div
         className="c15"

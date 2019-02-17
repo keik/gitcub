@@ -49,6 +49,16 @@ export type RepositoryT = {
   full_name: string
 }
 
+export type UserT = {
+  bio: string,
+  blog?: string, // TODO
+  company?: string, // TODO
+  email: string,
+  location?: string, // TODO
+  login: string,
+  name: string
+}
+
 // $FlowFixMe
 export type TagT = any
 
