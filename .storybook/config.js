@@ -1,8 +1,11 @@
 // @flow
 
-import * as React from 'react'
 import { addDecorator, configure } from '@storybook/react'
+import * as React from 'react'
+import { ThemeProvider } from 'styled-components'
+
 import GlobalStyles from '../frontend/GlobalStyles'
+import theme from '../frontend/theme'
 
 // automatically import all files ending in *.stories.js
 // $FlowFixMe
@@ -14,7 +17,7 @@ function loadStories() {
 addDecorator(storyFn => (
   <>
     <GlobalStyles />
-    {storyFn()}
+    <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
   </>
 ))
 
