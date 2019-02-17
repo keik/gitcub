@@ -26,7 +26,7 @@ import RepositoryWiki from './components/Repository/RepositoryWiki'
 import RepositoryPulse from './components/Repository/RepositoryPulse'
 import RepositoryGraphs from './components/Repository/RepositoryGraphs'
 import RepositorySettings from './components/Repository/RepositorySettings'
-import User from './components/User'
+import { UserContainer } from './components/User'
 import theme from './theme'
 
 const store = createConfigureStore({})
@@ -42,7 +42,7 @@ ReactDOM.render(
             <Route exact path="/" component={HomeContainer} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/new" component={New} />
-            <Route exact path="/:owner" component={User} />
+            <Route exact path="/:username" component={UserContainer} />
             <Route
               path="/:owner/:repo"
               component={() => (

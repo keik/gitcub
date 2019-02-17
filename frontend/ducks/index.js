@@ -9,7 +9,7 @@ import repositories from '../ducks/repositories'
 import session from '../ducks/session'
 import tags from './repository/tags'
 import trees from './repository/trees'
-import user from '../ducks/user'
+import users from '../ducks/users'
 
 const reducers = {
   branches,
@@ -19,7 +19,7 @@ const reducers = {
   session,
   tags,
   trees,
-  user
+  users
 }
 
 export type ReducersStateT = $ObjMap<typeof reducers, $ExtractFunctionReturn>
