@@ -63,7 +63,8 @@ npx sequelize db:migrate
 Watch changes and build incrementally with
 
 ```
-npm run watch
+npm run watch:js      # for frontend
+npm run watch:server  # for server
 ```
 
 
