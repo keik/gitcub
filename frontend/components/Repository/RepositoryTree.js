@@ -1,5 +1,7 @@
 // @flow
 
+import type { BranchObj, TagObj } from 'gh-types/nodegit'
+import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { Link, type Match } from 'react-router-dom'
@@ -14,8 +16,8 @@ import * as TagsAction from '../../ducks/repository/tags'
 import * as TreesAction from '../../ducks/repository/trees'
 
 type Props = {|
-  branches: $PropertyType<ReducersStateT, 'branches'>,
-  entries: $PropertyType<ReducersStateT, 'trees'>,
+  branches: $ReadOnlyArray<BranchObj>,
+  entries: $ReadOnlyArray<Tree$Entry$WithLastCommitT>,
   match: $Shape<
     Match<{
       owner: string,
@@ -24,7 +26,7 @@ type Props = {|
       path?: string
     }>
   >,
-  tags: $PropertyType<ReducersStateT, 'tags'>
+  tags: $ReadOnlyArray<TagObj>
 |}
 
 const RepositoryTree = (props: Props) => (
@@ -69,7 +71,14 @@ export const RepositoryTreeContainer = connect<_, _, *, _, *, _>(
     }
 
     render() {
-      return <RepositoryTree {...this.props} />
+      return (
+        <RepositoryTree
+          branches={this.props.branches}
+          entries={this.props.entries}
+          match={this.props.match}
+          tags={this.props.tags}
+        />
+      )
     }
   }
 )

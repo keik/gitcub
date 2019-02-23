@@ -59,7 +59,7 @@ export default Home
 
 export const HomeContainer = connect<_, _, *, _, *, _>(
   ({ repositories }: ReducersStateT) => ({
-    repositories: repositories.repositories
+    repositories
   })
 )(
   class $Home extends React.Component<{|
