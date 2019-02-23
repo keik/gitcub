@@ -48,7 +48,7 @@ function onPost(req: express$Request, res: express$Response) {
 async function _getRepos(
   owner = '*'
 ): Promise<
-  Array<{
+  $ReadOnlyArray<{
     full_name: string, // full name of repos like `user1/repo1`,
     name: string, // repo name like `repo1`
     owner: {
@@ -63,7 +63,7 @@ async function _getRepos(
     })
   })
 
-  const repoPaths: Array<string> = (await Promise.all(
+  const repoPaths: $ReadOnlyArray<string> = (await Promise.all(
     filepaths.map(async filepath => {
       const repo = await Git.Repository.openBare(filepath).catch(() => null)
       if (repo != null) return filepath

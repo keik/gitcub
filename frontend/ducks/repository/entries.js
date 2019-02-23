@@ -26,7 +26,7 @@ export async function fetch({
   }
 }
 
-type State = Array<EntryT>
+type State = $ReadOnlyArray<EntryT>
 
 const initialState = []
 

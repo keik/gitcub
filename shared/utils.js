@@ -15,7 +15,7 @@ const ROOT_URL = typeof window === 'undefined' ? `http://${HOST}:${PORT}` : ''
  * @returns {array<object>} parsed entries
  */
 export function parseEntriesByDirLevel(
-  entries: Array<Tree$Entry$WithLastCommitT>,
+  entries: $ReadOnlyArray<Tree$Entry$WithLastCommitT>,
   basedir: string
 ) {
   return entries.reduce((acc, entry) => {

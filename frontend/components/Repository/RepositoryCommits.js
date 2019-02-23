@@ -13,7 +13,7 @@ import * as CommitsAction from '../../ducks/repository/commits'
 import type { CommitT } from 'gh-types/gh'
 
 type Props = {
-  commits: Array<CommitT>,
+  commits: $ReadOnlyArray<CommitT>,
   match: $Shape<
     Match<{
       owner: string,

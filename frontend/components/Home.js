@@ -11,7 +11,11 @@ import InnerContainer from '../components/common/layouts/InnerContainer'
 import List from '../components/common/blocks/List'
 import Panel from '../components/common/blocks/Panel'
 
-const Home = ({ repositories }: { repositories: Array<RepositoryT> }) => (
+const Home = ({
+  repositories
+}: {
+  repositories: $ReadOnlyArray<RepositoryT>
+}) => (
   <InnerContainer>
     <div
       style={{
@@ -60,7 +64,7 @@ export const HomeContainer = connect<_, _, *, _, *, _>(
 )(
   class $Home extends React.Component<{
     dispatch: Dispatch<*>,
-    repositories: Array<RepositoryT>
+    repositories: $ReadOnlyArray<RepositoryT>
   }> {
     async componentDidMount() {
       const { dispatch } = this.props

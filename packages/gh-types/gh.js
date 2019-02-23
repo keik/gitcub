@@ -10,13 +10,13 @@ export type BranchT = {
 export type CommitT = {
   commit: CommitObj,
   html_url: string,
-  parents: Array<ParentObj>,
+  parents: $ReadOnlyArray<ParentObj>,
   sha: string,
   url: string
 }
 
 export type CommitWithDetailsT = CommitT & {
-  files: Array<{
+  files: $ReadOnlyArray<{
     additions: number,
     blob_url: string,
     changes: number,
@@ -62,7 +62,7 @@ export type UserT = {
 // $FlowFixMe
 export type TagT = any
 
-export type TreeT = Array<Tree$Entry$WithLastCommitT>
+export type TreeT = $ReadOnlyArray<Tree$Entry$WithLastCommitT>
 
 export type Tree$EntryT = {
   path: string,

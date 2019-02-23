@@ -10,14 +10,14 @@ import type { BranchObj, TagObj } from 'gh-types/nodegit'
 
 // eslint-disable-next-line
 export default class TreeSelector extends React.Component<{
-  branches: Array<BranchObj>,
+  branches: $ReadOnlyArray<BranchObj>,
   params: {
     owner: string,
     repo: string,
     tree?: string,
     path?: string
   },
-  tags: Array<TagObj>
+  tags: $ReadOnlyArray<TagObj>
 }> {
   render() {
     const {
