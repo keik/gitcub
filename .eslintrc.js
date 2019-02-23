@@ -37,6 +37,7 @@ module.exports = {
     'no-console': 'warn',
     'filenames/match-exported': 'error',
     'flowtype/require-valid-file-annotation': ['warn', 'always'],
+    'flowtype/require-exact-type': 'error',
     'react/no-deprecated': 'warn',
     'react/prefer-stateless-function': 'error'
   }
