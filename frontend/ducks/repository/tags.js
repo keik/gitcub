@@ -14,7 +14,7 @@ export async function fetch({
 }: {
   owner: string,
   repo: string
-}): Promise<StandardActionT<typeof FETCH, { tags: Array<TagT> }>> {
+}): Promise<StandardActionT<typeof FETCH, { tags: $ReadOnlyArray<TagT> }>> {
   // TODO get tags by refs API...
   const { data } = await axios.get(
     `${genAPIStr(API_GIT_REFS, { owner, repo, '*': 'tags' })}`
@@ -25,7 +25,7 @@ export async function fetch({
   }
 }
 
-type State = Array<TagT>
+type State = $ReadOnlyArray<TagT>
 
 const initialState = []
 

@@ -7,7 +7,7 @@ import type { RepositoryT } from 'gh-types/gh'
 export const FETCH = 'FETCH'
 
 export async function fetch(): Promise<
-  StandardActionT<typeof FETCH, { repositories: Array<RepositoryT> }>
+  StandardActionT<typeof FETCH, { repositories: $ReadOnlyArray<RepositoryT> }>
 > {
   const { data } = await axios.get(`/api/v1/repositories`)
   return {
@@ -17,7 +17,7 @@ export async function fetch(): Promise<
 }
 
 type State = {
-  repositories: Array<RepositoryT>
+  repositories: $ReadOnlyArray<RepositoryT>
 }
 
 export default function repositories(

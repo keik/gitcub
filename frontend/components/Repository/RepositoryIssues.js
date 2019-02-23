@@ -13,7 +13,7 @@ const RepositoryIssues = ({
   issues = [],
   match: { params }
 }: {
-  issues: Array<IssueObj>,
+  issues: $ReadOnlyArray<IssueObj>,
   match: $Shape<
     Match<{
       owner: string,

@@ -12,7 +12,7 @@ const Entries = ({
   entries,
   params
 }: {
-  entries: Array<Tree$Entry$WithLastCommitT>,
+  entries: $ReadOnlyArray<Tree$Entry$WithLastCommitT>,
   params: {
     owner: string,
     repo: string,

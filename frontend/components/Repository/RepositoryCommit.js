@@ -26,7 +26,7 @@ type Props = {
       sha: string
     }
   },
-  parents: Array<ParentObj>
+  parents: $ReadOnlyArray<ParentObj>
 }
 
 export const RepositoryCommit = (props: *) => {

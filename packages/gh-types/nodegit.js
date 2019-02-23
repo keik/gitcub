@@ -5,7 +5,7 @@ export type Commit = {
   committer: () => Signature,
   sha: () => string,
   message: () => string,
-  parents: () => Array<Oid>,
+  parents: () => $ReadOnlyArray<Oid>,
   treeId: () => Oid
 }
 

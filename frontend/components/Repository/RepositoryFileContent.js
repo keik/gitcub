@@ -16,7 +16,7 @@ import * as EntriesAction from '../../ducks/repository/entries'
 import type { EntryT } from 'gh-types/gh'
 
 type Props = {
-  contributors: Array<string>,
+  contributors: $ReadOnlyArray<string>,
   entry: ?EntryT,
   match: $Shape<
     Match<{

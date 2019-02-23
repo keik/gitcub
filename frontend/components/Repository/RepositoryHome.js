@@ -189,11 +189,11 @@ const NumbersSummary = ({
   match: { params },
   tags
 }: {
-  branches: Array<BranchObj>,
+  branches: $ReadOnlyArray<BranchObj>,
   // $FlowFixMe
-  commits: Array<{
+  commits: $ReadOnlyArray<{
     commit: CommitObj,
-    parents: Array<ParentObj>,
+    parents: $ReadOnlyArray<ParentObj>,
     sha: string,
     url: string
   }>,
@@ -206,7 +206,7 @@ const NumbersSummary = ({
       path?: string
     }>
   >,
-  tags: Array<TagObj>
+  tags: $ReadOnlyArray<TagObj>
 }) => (
   <ul
     css={css`

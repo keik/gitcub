@@ -12,7 +12,9 @@ export async function fetch({
 }: {
   owner: string,
   repo: string
-}): Promise<StandardActionT<typeof FETCH, { branches: Array<BranchT> }>> {
+}): Promise<
+  StandardActionT<typeof FETCH, { branches: $ReadOnlyArray<BranchT> }>
+> {
   const { data } = await axios.get(`/api/v1/repos/${owner}/${repo}/branches`)
   return {
     type: FETCH,
@@ -20,7 +22,7 @@ export async function fetch({
   }
 }
 
-type State = Array<BranchT>
+type State = $ReadOnlyArray<BranchT>
 
 const initialState = []
 

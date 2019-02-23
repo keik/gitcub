@@ -12,7 +12,7 @@ import * as BranchesAction from '../../ducks/repository/branches'
 import type { BranchT } from 'gh-types/gh'
 
 type Props = {
-  branches: Array<BranchT>,
+  branches: $ReadOnlyArray<BranchT>,
   defaultBranchName: string,
   match: $Shape<Match<{ owner: string, repo: string }>>
 }

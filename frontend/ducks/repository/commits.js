@@ -18,7 +18,9 @@ export async function fetch({
   owner: string,
   repo: string,
   tree?: string
-}): Promise<StandardActionT<typeof FETCH, { commits: Array<CommitT> }>> {
+}): Promise<
+  StandardActionT<typeof FETCH, { commits: $ReadOnlyArray<CommitT> }>
+> {
   const { data } = await axios.get(
     `/api/v1/repos/${owner}/${repo}/commits?sha=${tree}`
   )
@@ -48,7 +50,7 @@ export async function fetchOneWithDetails({
   }
 }
 
-type State = Array<CommitT | CommitWithDetailsT>
+type State = $ReadOnlyArray<CommitT | CommitWithDetailsT>
 
 const initialState = []
 
