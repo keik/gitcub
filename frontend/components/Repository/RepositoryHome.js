@@ -21,7 +21,7 @@ import type { BranchObj, CommitObj, ParentObj, TagObj } from 'gh-types/nodegit'
 
 const { HOST, PORT } = config.env[process.env.NODE_ENV || 'development']
 
-type Props = {
+type Props = {|
   branches: $PropertyType<ReducersStateT, 'branches'>,
   commits: $PropertyType<ReducersStateT, 'commits'>,
   contributorsCount: number,
@@ -35,7 +35,7 @@ type Props = {
     }>
   >,
   tags: $PropertyType<ReducersStateT, 'tags'>
-}
+|}
 
 const RepositoryHome = (props: Props) => {
   const {

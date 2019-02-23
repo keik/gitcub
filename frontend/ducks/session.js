@@ -4,13 +4,13 @@ import axios from 'axios'
 
 export const GET_CURRENT_USER = 'GET_CURRENT_USER'
 
-export type SessionT = {
+export type SessionT = {|
   bio: string,
   email: string,
   login: string,
   name: string,
   password: string
-}
+|}
 
 type State = ?SessionT
 

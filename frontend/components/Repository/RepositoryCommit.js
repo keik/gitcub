@@ -15,7 +15,7 @@ import * as CommitsAction from '../../ducks/repository/commits'
 import type { CommitWithDetailsT } from 'gh-types/gh'
 import type { ParentObj } from 'gh-types/nodegit'
 
-type Props = {
+type Props = {|
   commit: ?CommitWithDetailsT,
   dispatch: Dispatch<*>,
   match: {
@@ -27,7 +27,7 @@ type Props = {
     }
   },
   parents: $ReadOnlyArray<ParentObj>
-}
+|}
 
 export const RepositoryCommit = (props: *) => {
   const {

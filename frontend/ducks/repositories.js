@@ -16,9 +16,9 @@ export async function fetch(): Promise<
   }
 }
 
-type State = {
+type State = {|
   repositories: $ReadOnlyArray<RepositoryT>
-}
+|}
 
 export default function repositories(
   state: State = {

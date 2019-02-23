@@ -13,7 +13,7 @@ import * as CommitsAction from '../../ducks/repository/commits'
 import * as TagsAction from '../../ducks/repository/tags'
 import * as TreesAction from '../../ducks/repository/trees'
 
-type Props = {
+type Props = {|
   branches: $PropertyType<ReducersStateT, 'branches'>,
   entries: $PropertyType<ReducersStateT, 'trees'>,
   match: $Shape<
@@ -25,7 +25,7 @@ type Props = {
     }>
   >,
   tags: $PropertyType<ReducersStateT, 'tags'>
-}
+|}
 
 const RepositoryTree = (props: Props) => (
   <div>

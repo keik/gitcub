@@ -13,10 +13,10 @@ import type { SessionT } from '../ducks/session'
 const App = ({
   children,
   session
-}: {
+}: {|
   children: React.Node,
   session: ?SessionT
-}) => (
+|}) => (
   <div>
     <AppHeader session={session} />
     {children}
@@ -30,7 +30,7 @@ export const AppContainer = withRouter(
   connect<_, _, *, _, *, _>(({ session }: ReducersStateT) => ({
     session
   }))(
-    class $App extends React.Component<*, { isLoading: boolean }> {
+    class $App extends React.Component<*, {| isLoading: boolean |}> {
       state = { isLoading: true }
 
       async componentDidMount() {
