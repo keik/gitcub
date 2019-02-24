@@ -1,14 +1,16 @@
 // @flow
 
+import type { UserT } from 'gh-types/gh'
 import Box from 'gh-ui/Box'
 import * as React from 'react'
 import { GoLink, GoLocation, GoMail, GoOrganization } from 'react-icons/go'
 import { connect } from 'react-redux'
+import type { Match } from 'react-router-dom'
+import type { Dispatch } from 'redux'
 
 import InnerContainer from './common/layouts/InnerContainer'
 import type { ReducersStateT } from '../ducks'
 import * as UsersAction from '../ducks/users'
-import type { UserT } from 'gh-types/gh'
 
 const User = ({ user }: { user: UserT }) => (
   <InnerContainer>
@@ -178,7 +180,11 @@ export const UserContainer = connect<_, ReducersStateT, *, _, *, _>(
     users
   })
 )(
-  class $UserContainer extends React.Component<*> {
+  class $UserContainer extends React.Component<{
+    dispatch: Dispatch<*>,
+    match: $Shape<Match<{ username: string }>>,
+    users: $PropertyType<ReducersStateT, 'users'>
+  }> {
     async componentDidMount() {
       const { dispatch, match } = this.props
       dispatch(await UsersAction.getUser(match.params.username))
@@ -186,6 +192,7 @@ export const UserContainer = connect<_, ReducersStateT, *, _, *, _>(
 
     render() {
       const { match, users } = this.props
+
       const user = users[match.params.username]
 
       return user == null ? 'Loading...' : <User user={user} />

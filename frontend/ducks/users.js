@@ -8,7 +8,7 @@ export const GET_USER: 'USERS/GET_USER' = 'USERS/GET_USER'
 
 export async function getUser(
   username: string
-): Promise<StandardActionT<typeof GET_USER, { [string]: UserT }>> {
+): Promise<StandardActionT<typeof GET_USER, {| [string]: UserT |}>> {
   const res = await axios
     .get(`/api/v1/users/${username}`)
     .catch(e => e.response)
@@ -24,12 +24,12 @@ export async function getUser(
       }
 }
 
-const initialState = {}
+type State = { [name: string]: UserT }
 
 export default function users(
-  state: { name: string } = initialState,
+  state: State = {},
   action: $UnwrapPromise<$Call<typeof getUser, *>>
-) {
+): State {
   switch (action.type) {
     case GET_USER:
       return action.error ? state : { ...state, ...action.payload }

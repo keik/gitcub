@@ -12,8 +12,6 @@ export type SessionT = {|
   password: string
 |}
 
-type State = ?SessionT
-
 export const getCurrentUser = async () => {
   const res = await axios.get('/me').catch(e => e.response)
   return res.status < 400
@@ -24,6 +22,8 @@ export const getCurrentUser = async () => {
         payload: new Error('Not authorized')
       }
 }
+
+type State = ?SessionT
 
 export default function session(state: State = null, action: any): State {
   switch (action.type) {
