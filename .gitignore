@@ -1,7 +1,6 @@
 # storybook
 .cache
 
-coverage
 dist
 node_modules
 npm-debug.log
