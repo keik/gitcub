@@ -39,7 +39,6 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
       contributorsCount={-1}
       entries={[
         {
-          content: '#CONTENT_1',
           lastCommit: {
             author: {
               date: '#DATE_1',
@@ -48,7 +47,6 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
             sha: '#SHA_1',
             message: '#MESSAGE_1'
           },
-          name: '#NAME_1',
           path: '#PATH/#PATH_1',
           sha: '#SHA_1',
           size: 10,
@@ -56,7 +54,6 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
           url: '#URL_1'
         },
         {
-          content: '#CONTENT_2',
           lastCommit: {
             author: {
               date: '#DATE_1',
@@ -65,7 +62,6 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
             sha: '#SHA_1',
             message: '#MESSAGE_1'
           },
-          name: '#NAME_2',
           path: '#PATH_2',
           sha: '#SHA_2',
           size: 10,

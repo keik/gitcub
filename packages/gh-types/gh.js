@@ -2,21 +2,22 @@
 
 import type { CommitObj, ParentObj } from './nodegit'
 
-export type BranchT = {
+export type BranchT = {|
   commit: CommitObj,
   name: string
-}
+|}
 
-export type CommitT = {
+export type CommitT = {|
   commit: CommitObj,
   html_url: string,
   parents: $ReadOnlyArray<ParentObj>,
   sha: string,
   url: string
-}
+|}
 
-export type CommitWithDetailsT = CommitT & {
-  files: $ReadOnlyArray<{
+export type CommitWithDetailsT = {|
+  ...CommitT,
+  files: $ReadOnlyArray<{|
     additions: number,
     blob_url: string,
     changes: number,
@@ -27,15 +28,15 @@ export type CommitWithDetailsT = CommitT & {
     raw_url: string,
     sha: string,
     status: string // TODO enum
-  }>,
-  stats: {
+  |}>,
+  stats: {|
     additions: number,
     deletions: number,
     total: number
-  }
-}
+  |}
+|}
 
-export type EntryT = {
+export type EntryT = {|
   content: string,
   name: string,
   path: string,
@@ -43,13 +44,13 @@ export type EntryT = {
   size: number,
   type: string,
   url: string
-}
+|}
 
-export type RepositoryT = {
+export type RepositoryT = {|
   full_name: string
-}
+|}
 
-export type UserT = {
+export type UserT = {|
   bio: string,
   blog?: string, // TODO
   company?: string, // TODO
@@ -57,19 +58,22 @@ export type UserT = {
   location?: string, // TODO
   login: string,
   name: string
-}
+|}
 
 // $FlowFixMe
 export type TagT = any
 
 export type TreeT = $ReadOnlyArray<Tree$Entry$WithLastCommitT>
 
-export type Tree$EntryT = {
+export type Tree$EntryT = {|
   path: string,
   sha: string,
-  type: 'blob' | 'tree'
-}
+  size: number,
+  type: 'blob' | 'tree',
+  url: string
+|}
 
-export type Tree$Entry$WithLastCommitT = Tree$EntryT & {
+export type Tree$Entry$WithLastCommitT = {|
+  ...Tree$EntryT,
   lastCommit: CommitObj
-}
+|}
