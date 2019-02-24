@@ -4,15 +4,13 @@ import axios from 'axios'
 
 export const GET_CURRENT_USER = 'GET_CURRENT_USER'
 
-export type SessionT = {
+export type SessionT = {|
   bio: string,
   email: string,
   login: string,
   name: string,
   password: string
-}
-
-type State = ?SessionT
+|}
 
 export const getCurrentUser = async () => {
   const res = await axios.get('/me').catch(e => e.response)
@@ -24,6 +22,8 @@ export const getCurrentUser = async () => {
         payload: new Error('Not authorized')
       }
 }
+
+type State = ?SessionT
 
 export default function session(state: State = null, action: any): State {
   switch (action.type) {

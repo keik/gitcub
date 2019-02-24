@@ -8,7 +8,7 @@ import Dropdown from '../common/blocks/Dropdown'
 import InnerContainer from '../common/layouts/InnerContainer'
 import type { SessionT } from '../../ducks/session'
 
-const AppHeader = ({ session }: { session: ?SessionT }) =>
+const AppHeader = ({ session }: {| session: ?SessionT |}) =>
   session == null ? (
     <AppHeaderWithoutSession />
   ) : (
@@ -100,7 +100,7 @@ export const AppHeaderWithoutSession = () => (
   </div>
 )
 
-export const AppHeaderWithSession = ({ session }: { session: SessionT }) => (
+export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
   <div
     css={css`
       display: flex;

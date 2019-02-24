@@ -13,9 +13,9 @@ import Panel from '../components/common/blocks/Panel'
 
 const Home = ({
   repositories
-}: {
+}: {|
   repositories: $ReadOnlyArray<RepositoryT>
-}) => (
+|}) => (
   <InnerContainer>
     <div
       style={{
@@ -59,13 +59,13 @@ export default Home
 
 export const HomeContainer = connect<_, _, *, _, *, _>(
   ({ repositories }: ReducersStateT) => ({
-    repositories: repositories.repositories
+    repositories
   })
 )(
-  class $Home extends React.Component<{
+  class $Home extends React.Component<{|
     dispatch: Dispatch<*>,
     repositories: $ReadOnlyArray<RepositoryT>
-  }> {
+  |}> {
     async componentDidMount() {
       const { dispatch } = this.props
       dispatch(await RepositoriesAction.fetch())

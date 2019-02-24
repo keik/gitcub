@@ -16,7 +16,7 @@ export async function fetch({
   repo: string,
   path: string,
   branch: string
-}): Promise<StandardActionT<typeof FETCH, { entry: EntryT }>> {
+}): Promise<StandardActionT<typeof FETCH, {| entry: EntryT |}>> {
   const { data } = await axios.get(
     `/api/v1/repos/${owner}/${repo}/contents/${path}?ref=${branch}`
   )
@@ -28,10 +28,8 @@ export async function fetch({
 
 type State = $ReadOnlyArray<EntryT>
 
-const initialState = []
-
 export default function entries(
-  state: State = initialState,
+  state: State = [],
   action: $UnwrapPromise<$Call<typeof fetch, *>>
 ): State {
   if (action.error) return state

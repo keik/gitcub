@@ -1,10 +1,11 @@
 // @flow
 
+import type { BranchObj, CommitObj, TagObj } from 'gh-types/nodegit'
+import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
 import * as React from 'react'
 import { css } from 'styled-components'
 import { connect } from 'react-redux'
 import { Link, type Match } from 'react-router-dom'
-import type { Dispatch } from 'redux'
 
 import Button from '../common/atoms/Button'
 import Dropdown from '../common/blocks/Dropdown'
@@ -17,15 +18,14 @@ import * as TagsAction from '../../ducks/repository/tags'
 import * as TreesAction from '../../ducks/repository/trees'
 import config from '../../../config'
 import type { ReducersStateT } from '../../ducks'
-import type { BranchObj, CommitObj, ParentObj, TagObj } from 'gh-types/nodegit'
 
 const { HOST, PORT } = config.env[process.env.NODE_ENV || 'development']
 
-type Props = {
-  branches: $PropertyType<ReducersStateT, 'branches'>,
-  commits: $PropertyType<ReducersStateT, 'commits'>,
+type Props = {|
+  branches: $ReadOnlyArray<BranchObj>,
+  commits: $ReadOnlyArray<CommitObj>,
   contributorsCount: number,
-  entries: $PropertyType<ReducersStateT, 'trees'>,
+  entries: $ReadOnlyArray<Tree$Entry$WithLastCommitT>,
   match: $Shape<
     Match<{
       owner: string,
@@ -34,117 +34,132 @@ type Props = {
       path?: string
     }>
   >,
-  tags: $PropertyType<ReducersStateT, 'tags'>
-}
+  tags: $ReadOnlyArray<TagObj>
+|}
 
-const RepositoryHome = (props: Props) => {
-  const {
-    match: {
-      params: { owner, repo, tree = 'master' }
-    }
-  } = props
-  return (
-    <div>
-      <div
-        css={css`
-          font-size: 16px;
-          color: #666;
-        `}
-      >
-        <span>No description or website provided.</span>
-        <span>
-          - <button>Edit</button>
-        </span>
+const RepositoryHome = ({ branches, commits, entries, match, tags }: Props) => (
+  <div>
+    <div
+      css={css`
+        font-size: 16px;
+        color: #666;
+      `}
+    >
+      <span>No description or website provided.</span>
+      <span>
+        - <button>Edit</button>
+      </span>
+    </div>
+    <nav>
+      <NumbersSummary
+        branchesCount={branches.length}
+        commitsCount={commits.length}
+        contributorsCount={-1}
+        match={match}
+        tagsCount={tags.length}
+      />
+    </nav>
+    <div
+      css={css`
+        display: flex;
+        margin: 12px 0;
+        justify-content: space-between;
+      `}
+    >
+      <div>
+        <TreeSelector branches={branches} tags={tags} params={match.params} />
+        <Button
+          as="a"
+          css={css`
+            margin-left: 8px;
+          `}
+          href={`${match.params.owner}/${match.params.repo}/pull/new/${
+            match.params.tree || '' /* TODO: default branch */
+          }`}
+          small
+        >
+          New pull request
+        </Button>
       </div>
-      <nav>
-        <NumbersSummary {...props} />
-      </nav>
       <div
         css={css`
           display: flex;
-          margin: 12px 0;
-          justify-content: space-between;
         `}
       >
-        <div>
-          <TreeSelector {...props} params={{ ...props.match.params }} />
+        <SegmentedButtonsContainer>
+          <Button as="input" small type="submit" value="Create new file" />
           <Button
             as="a"
-            css={css`
-              margin-left: 8px;
-            `}
-            href={`${owner}/${repo}/pull/new/${tree}`}
+            href={`${match.params.owner}/${match.params.repo}/upload/${
+              match.params.tree || '' /* TODO: default branch */
+            }`}
             small
           >
-            New pull request
+            Upload files
           </Button>
-        </div>
+          <Button
+            as="a"
+            href={`${match.params.owner}/${match.params.repo}/find/${
+              match.params.tree || '' /* TODO: default branch */
+            }`}
+            small
+          >
+            Find file
+          </Button>
+        </SegmentedButtonsContainer>
         <div
           css={css`
-            display: flex;
+            margin-left: 8px;
           `}
         >
-          <SegmentedButtonsContainer>
-            <Button as="input" small type="submit" value="Create new file" />
-            <Button as="a" href={`${owner}/${repo}/upload/${tree}`} small>
-              Upload files
-            </Button>
-            <Button as="a" href={`${owner}/${repo}/find/${tree}`} small>
-              Find file
-            </Button>
-          </SegmentedButtonsContainer>
-          <div
-            css={css`
-              margin-left: 8px;
-            `}
+          <Dropdown
+            toggler={
+              <Button primary small>
+                Clone or download <i className="fa fa-caret-down" />
+              </Button>
+            }
+            width={300}
           >
-            <Dropdown
-              toggler={
-                <Button primary small>
-                  Clone or download <i className="fa fa-caret-down" />
-                </Button>
-              }
-              width={300}
-            >
-              <ul>
-                <li>
-                  <div
+            <ul>
+              <li>
+                <div
+                  css={css`
+                    padding: 12px;
+                    > h2 {
+                      margin: 0;
+                      font-size: 16px;
+                    }
+                    > p {
+                      margin: 4px 0;
+                      font-size: 12px;
+                    }
+                  `}
+                >
+                  <h2>Clone with HTTP</h2>
+                  <p>Use Git using the web URL.</p>
+                  <input
                     css={css`
-                      padding: 12px;
-                      > h2 {
-                        margin: 0;
-                        font-size: 16px;
-                      }
-                      > p {
-                        margin: 4px 0;
-                        font-size: 12px;
-                      }
+                      font-size: 12px;
+                      font-family: SFMono-Regular, Consolas, Liberation Mono,
+                        Menlo, Courier, monospace;
                     `}
-                  >
-                    <h2>Clone with HTTP</h2>
-                    <p>Use Git using the web URL.</p>
-                    <input
-                      css={css`
-                        font-size: 12px;
-                        font-family: SFMono-Regular, Consolas, Liberation Mono,
-                          Menlo, Courier, monospace;
-                      `}
-                      onClick={e => e.target.select()}
-                      readOnly
-                      type="text"
-                      value={`http:///${HOST}:${PORT}/${owner}/${repo}.git`}
-                    />
-                  </div>
-                </li>
-              </ul>
-            </Dropdown>
-          </div>
+                    onClick={e => e.target.select()}
+                    readOnly
+                    type="text"
+                    value={`http:///${HOST}:${PORT}/${match.params.owner}/${
+                      match.params.repo
+                    }.git`}
+                  />
+                </div>
+              </li>
+            </ul>
+          </Dropdown>
         </div>
       </div>
-      <Entries {...props} params={{ ...props.match.params }} />
     </div>
-  )
-}
+    <Entries entries={entries} params={match.params} />
+  </div>
+)
 
 export default RepositoryHome
 
@@ -156,9 +171,7 @@ export const RepositoryHomeContainer = connect<_, _, *, _, *, _>(
     entries: trees
   })
 )(
-  class $RepositoryHomeContainer extends React.Component<
-    Props & { dispatch: Dispatch<*> }
-  > {
+  class $RepositoryHomeContainer extends React.Component<*> {
     async componentDidMount() {
       const {
         dispatch,
@@ -177,26 +190,29 @@ export const RepositoryHomeContainer = connect<_, _, *, _, *, _>(
     }
 
     render() {
-      return <RepositoryHome {...this.props} />
+      return (
+        <RepositoryHome
+          branches={this.props.branches}
+          commits={this.props.commits}
+          contributorsCount={-1}
+          entries={this.props.entries}
+          match={this.props.match}
+          tags={this.props.tags}
+        />
+      )
     }
   }
 )
 
 const NumbersSummary = ({
-  branches,
-  commits,
+  branchesCount,
+  commitsCount,
   contributorsCount,
   match: { params },
-  tags
+  tagsCount
 }: {
-  branches: $ReadOnlyArray<BranchObj>,
-  // $FlowFixMe
-  commits: $ReadOnlyArray<{
-    commit: CommitObj,
-    parents: $ReadOnlyArray<ParentObj>,
-    sha: string,
-    url: string
-  }>,
+  branchesCount: number,
+  commitsCount: number,
   contributorsCount: number,
   match: $Shape<
     Match<{
@@ -206,7 +222,7 @@ const NumbersSummary = ({
       path?: string
     }>
   >,
-  tags: $ReadOnlyArray<TagObj>
+  tagsCount: number
 }) => (
   <ul
     css={css`
@@ -228,19 +244,19 @@ const NumbersSummary = ({
     <li>
       <Link to={`/${params.owner}/${params.repo}/commits`}>
         <i className="fa fa-clock-o" />
-        <span>{commits.length}</span> commits
+        <span>{commitsCount}</span> commits
       </Link>
     </li>
     <li>
       <Link to={`/${params.owner}/${params.repo}/branches`}>
         <i className="fa fa-code-fork" />
-        <span>{branches.length}</span> branches
+        <span>{branchesCount}</span> branches
       </Link>
     </li>
     <li>
       <Link to={`/${params.owner}/${params.repo}/releases`}>
         <i className="fa fa-tag" />
-        <span>{tags.length}</span> releases
+        <span>{tagsCount}</span> releases
       </Link>
     </li>
     <li>

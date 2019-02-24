@@ -14,7 +14,7 @@ export async function fetch({
   owner: string,
   repo: string,
   tree?: string
-}): Promise<StandardActionT<typeof FETCH, { tree: TreeT }>> {
+}): Promise<StandardActionT<typeof FETCH, {| tree: TreeT |}>> {
   const { data } = await axios.get(
     `/api/v1/repos/${owner}/${repo}/git/trees/${tree}?last_commit=1`
   )
@@ -26,10 +26,8 @@ export async function fetch({
 
 type State = TreeT
 
-const initialState = []
-
 export default function trees(
-  state: State = initialState,
+  state: State = [],
   action: $UnwrapPromise<$Call<typeof fetch, *>>
 ): State {
   if (action.error) return state

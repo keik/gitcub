@@ -11,11 +11,11 @@ import type { ReducersStateT } from '../../ducks'
 import * as BranchesAction from '../../ducks/repository/branches'
 import type { BranchT } from 'gh-types/gh'
 
-type Props = {
+type Props = {|
   branches: $ReadOnlyArray<BranchT>,
   defaultBranchName: string,
   match: $Shape<Match<{ owner: string, repo: string }>>
-}
+|}
 
 const RepositoryBranches = ({ branches, defaultBranchName, match }: Props) => {
   const defaultBranch: BranchT = branches.find(
@@ -103,7 +103,13 @@ export const RepositoryBranchesContainer = connect<
     }
 
     render() {
-      return <RepositoryBranches {...this.props} />
+      return (
+        <RepositoryBranches
+          branches={this.props.branches}
+          defaultBranchName="TODO"
+          match={this.props.match}
+        />
+      )
     }
   }
 )

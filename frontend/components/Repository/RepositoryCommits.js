@@ -12,7 +12,7 @@ import type { ReducersStateT } from '../../ducks'
 import * as CommitsAction from '../../ducks/repository/commits'
 import type { CommitT } from 'gh-types/gh'
 
-type Props = {
+type Props = {|
   commits: $ReadOnlyArray<CommitT>,
   match: $Shape<
     Match<{
@@ -20,7 +20,8 @@ type Props = {
       repo: string
     }>
   >
-}
+|}
+
 export const RepositoryCommits = ({ commits, match }: Props) => (
   <ul
     css={css`
@@ -134,7 +135,12 @@ export const RepositoryCommitsContainer = connect<_, _, *, _, *, _>(
     }
 
     render() {
-      return <RepositoryCommits {...this.props} />
+      return (
+        <RepositoryCommits
+          commits={this.props.commits}
+          match={this.props.match}
+        />
+      )
     }
   }
 )

@@ -19,7 +19,7 @@ export async function fetch({
   repo: string,
   tree?: string
 }): Promise<
-  StandardActionT<typeof FETCH, { commits: $ReadOnlyArray<CommitT> }>
+  StandardActionT<typeof FETCH, {| commits: $ReadOnlyArray<CommitT> |}>
 > {
   const { data } = await axios.get(
     `/api/v1/repos/${owner}/${repo}/commits?sha=${tree}`
@@ -39,7 +39,10 @@ export async function fetchOneWithDetails({
   repo: string,
   sha: string
 }): Promise<
-  StandardActionT<typeof FETCH_ONE_WITH_DETAILS, { commit: CommitWithDetailsT }>
+  StandardActionT<
+    typeof FETCH_ONE_WITH_DETAILS,
+    {| commit: CommitWithDetailsT |}
+  >
 > {
   const { data } = await axios.get(
     genAPIStr(API_REPOS_COMMITS, { owner, repo, sha })
@@ -52,10 +55,8 @@ export async function fetchOneWithDetails({
 
 type State = $ReadOnlyArray<CommitT | CommitWithDetailsT>
 
-const initialState = []
-
 export default function commits(
-  state: State = initialState,
+  state: State = [],
   action: $UnwrapPromise<$Call<typeof fetch, *>>
 ): State {
   if (action.error) return state

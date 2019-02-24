@@ -15,7 +15,7 @@ import type { ReducersStateT } from '../../ducks'
 import * as EntriesAction from '../../ducks/repository/entries'
 import type { EntryT } from 'gh-types/gh'
 
-type Props = {
+type Props = {|
   contributors: $ReadOnlyArray<string>,
   entry: ?EntryT,
   match: $Shape<
@@ -26,7 +26,7 @@ type Props = {
       path: string
     }>
   >
-}
+|}
 
 export const RepositoryFileContent = ({
   contributors = [],
@@ -158,7 +158,13 @@ export const RepositoryFileContentContainer = connect<_, _, *, _, *, _>(
     }
 
     render() {
-      return <RepositoryFileContent {...this.props} />
+      return (
+        <RepositoryFileContent
+          contributors={[]}
+          entry={this.props.entry}
+          match={this.props.match}
+        />
+      )
     }
   }
 )
