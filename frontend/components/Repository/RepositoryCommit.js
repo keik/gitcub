@@ -13,7 +13,6 @@ import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContain
 import type { ReducersStateT } from '../../ducks'
 import * as CommitsAction from '../../ducks/repository/commits'
 import type { CommitWithDetailsT } from 'gh-types/gh'
-import type { ParentObj } from 'gh-types/nodegit'
 
 type Props = {|
   commit: ?CommitWithDetailsT,
