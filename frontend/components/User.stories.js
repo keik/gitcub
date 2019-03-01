@@ -11,6 +11,6 @@ import User from './User'
 
 storiesOf(storyname(base, filename), module).add('with default', () => (
   <MemoryRouter>
-    <User user={UserMock}>children</User>
+    <User user={UserMock}>%CHILDREN%</User>
   </MemoryRouter>
 ))
