@@ -144,9 +144,10 @@ export const RepositoryFileContentContainer = connect<_, _, *, _, *, _>(
     entry: entries.find(e => (e.path = path))
   })
 )(
-  class $RepositoryFileContentContainer extends React.Component<
-    Props & { dispatch: Dispatch<*> }
-  > {
+  class $RepositoryFileContentContainer extends React.Component<{|
+    ...Props,
+    dispatch: Dispatch<*>
+  |}> {
     async componentDidMount() {
       const {
         dispatch,

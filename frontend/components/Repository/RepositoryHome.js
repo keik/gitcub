@@ -210,7 +210,7 @@ const NumbersSummary = ({
   contributorsCount,
   match: { params },
   tagsCount
-}: {
+}: {|
   branchesCount: number,
   commitsCount: number,
   contributorsCount: number,
@@ -223,7 +223,7 @@ const NumbersSummary = ({
     }>
   >,
   tagsCount: number
-}) => (
+|}) => (
   <ul
     css={css`
       display: flex;

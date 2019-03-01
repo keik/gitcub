@@ -11,7 +11,7 @@ import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
 const Entries = ({
   entries,
   params
-}: {
+}: {|
   entries: $ReadOnlyArray<Tree$Entry$WithLastCommitT>,
   params: {
     owner: string,
@@ -19,7 +19,7 @@ const Entries = ({
     tree?: string,
     path?: string
   }
-}) => {
+|}) => {
   const { owner, repo, tree = 'master' } = params
   if (entries.length === 0) return <p>No entries.</p>
 

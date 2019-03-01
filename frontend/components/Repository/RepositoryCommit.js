@@ -17,7 +17,6 @@ import type { ParentObj } from 'gh-types/nodegit'
 
 type Props = {|
   commit: ?CommitWithDetailsT,
-  dispatch: Dispatch<*>,
   match: {
     params: {
       owner: string,
@@ -25,11 +24,10 @@ type Props = {|
       tree?: string,
       sha: string
     }
-  },
-  parents: $ReadOnlyArray<ParentObj>
+  }
 |}
 
-export const RepositoryCommit = (props: *) => {
+export const RepositoryCommit = (props: Props) => {
   const {
     commit,
     match: {
@@ -170,7 +168,10 @@ export const RepositoryCommitContainer = connect<_, _, *, _, *, _>(
     commit: commits.find(c => c.sha === sha && c.hasOwnProperty('files'))
   })
 )(
-  class $RepositoryCommitContainer extends React.Component<Props> {
+  class $RepositoryCommitContainer extends React.Component<{|
+    ...Props,
+    dispatch: Dispatch<*>
+  |}> {
     async componentDidMount() {
       if (this.props.commit == null) {
         const {
@@ -195,7 +196,9 @@ export const RepositoryCommitContainer = connect<_, _, *, _, *, _>(
       }
     }
     render() {
-      return <RepositoryCommit {...this.props} />
+      return (
+        <RepositoryCommit commit={this.props.commit} match={this.props.match} />
+      )
     }
   }
 )

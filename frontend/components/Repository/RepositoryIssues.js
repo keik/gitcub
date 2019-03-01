@@ -12,7 +12,7 @@ import type { IssueObj } from 'gh-types/nodegit'
 const RepositoryIssues = ({
   issues = [],
   match: { params }
-}: {
+}: {|
   issues: $ReadOnlyArray<IssueObj>,
   match: $Shape<
     Match<{
@@ -20,7 +20,7 @@ const RepositoryIssues = ({
       repo: string
     }>
   >
-}) => (
+|}) => (
   <div>
     <div
       css={css`

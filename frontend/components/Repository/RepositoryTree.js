@@ -35,11 +35,15 @@ const RepositoryTree = (props: Props) => (
       style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}
     >
       <div style={{ marginRight: '12px' }}>
-        <TreeSelector {...props} params={{ ...props.match.params }} />
+        <TreeSelector
+          branches={props.branches}
+          params={{ ...props.match.params }}
+          tags={props.tags}
+        />
       </div>
       <Breadcrumbs {...props} />
     </div>
-    <Entries {...props} params={{ ...props.match.params }} />
+    <Entries entries={props.entries} params={{ ...props.match.params }} />
   </div>
 )
 
@@ -53,9 +57,10 @@ export const RepositoryTreeContainer = connect<_, _, *, _, *, _>(
     entries: trees
   })
 )(
-  class $RepositoryTreeContainer extends React.Component<
-    Props & { dispatch: Dispatch<*> }
-  > {
+  class $RepositoryTreeContainer extends React.Component<{|
+    ...Props,
+    dispatch: Dispatch<*>
+  |}> {
     async componentDidMount() {
       const {
         dispatch,
