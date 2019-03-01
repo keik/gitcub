@@ -1428,7 +1428,7 @@ exports[`Storyshots Repository with default 1`] = `
   <div
     className="c1"
   >
-    children
+    %CHILDREN%
   </div>
 </div>
 `;
@@ -4118,6 +4118,7 @@ exports[`Storyshots User with default 1`] = `
       <div
         className="c5"
       >
+        %CHILDREN%
         <h2>
           Pinned repositories
         </h2>
