@@ -89,9 +89,10 @@ export const RepositoryBranchesContainer = connect<
 >(({ branches }) => ({
   branches
 }))(
-  class $RepositoryBranchesContainer extends React.Component<
-    Props & { dispatch: Dispatch<*> }
-  > {
+  class $RepositoryBranchesContainer extends React.Component<{|
+    ...Props,
+    dispatch: Dispatch<*>
+  |}> {
     async componentDidMount() {
       const {
         dispatch,

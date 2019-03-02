@@ -15,7 +15,7 @@ const RepositoryHeader = ({
   },
   staredCount,
   watchedCount
-}: {
+}: {|
   forkedCount: number,
   match: {
     params: {
@@ -25,7 +25,7 @@ const RepositoryHeader = ({
   },
   staredCount: number,
   watchedCount: number
-}) => (
+|}) => (
   <InnerContainer>
     <div
       css={`

@@ -12,7 +12,7 @@ import InnerContainer from './common/layouts/InnerContainer'
 import type { ReducersStateT } from '../ducks'
 import * as UsersAction from '../ducks/users'
 
-const User = ({ user }: { user: UserT }) => (
+const User = ({ children, user }: {| children: React.Node, user: UserT |}) => (
   <InnerContainer>
     <Box css={{ display: 'flex' }} mt="3">
       <Box mr="3" width={1 / 4}>
@@ -137,6 +137,7 @@ const User = ({ user }: { user: UserT }) => (
           </Box>
         </Box>
         <Box>
+          {children}
           <h2>Pinned repositories</h2>
           <Box
             as="ul"
@@ -180,22 +181,23 @@ export const UserContainer = connect<_, ReducersStateT, *, _, *, _>(
     users
   })
 )(
-  class $UserContainer extends React.Component<{
+  class $UserContainer extends React.Component<{|
+    children: React.Node,
     dispatch: Dispatch<*>,
     match: $Shape<Match<{ username: string }>>,
     users: $PropertyType<ReducersStateT, 'users'>
-  }> {
+  |}> {
     async componentDidMount() {
       const { dispatch, match } = this.props
       dispatch(await UsersAction.getUser(match.params.username))
     }
 
     render() {
-      const { match, users } = this.props
+      const { children, match, users } = this.props
 
       const user = users[match.params.username]
 
-      return user == null ? 'Loading...' : <User user={user} />
+      return user == null ? 'Loading...' : <User user={user}>{children}</User>
     }
   }
 )

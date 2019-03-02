@@ -12,7 +12,7 @@ import { API_REPOS } from '../../constants/api'
 
 const d = debug('keik:gh:components:new')
 
-export class New extends React.Component<{}> {
+export class New extends React.Component<{||}> {
   onSubmit = (e: any) => {
     e.preventDefault()
     const names = Array.from(

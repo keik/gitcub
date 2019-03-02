@@ -121,9 +121,10 @@ export const RepositoryCommitsContainer = connect<_, _, *, _, *, _>(
     commits
   })
 )(
-  class $RepositoryCommitsContainer extends React.Component<
-    Props & { dispatch: Dispatch<*> }
-  > {
+  class $RepositoryCommitsContainer extends React.Component<{|
+    ...Props,
+    dispatch: Dispatch<*>
+  |}> {
     async componentDidMount() {
       const {
         dispatch,

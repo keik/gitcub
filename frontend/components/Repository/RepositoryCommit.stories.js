@@ -43,13 +43,5 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
       url: '$URL'
     }}
     match={{ params: { owner: '$OWNER', repo: '$REPO', sha: '$SHA' } }}
-    parents={[
-      {
-        sha: '$PARENT_SHA_1'
-      },
-      {
-        sha: '$PARENT_SHA_2'
-      }
-    ]}
   />
 ))

@@ -11,11 +11,11 @@ const Repository = ({
   children,
   match,
   session
-}: {
+}: {|
   children: React.Node,
   match: $Shape<Match<{ owner: string, repo: string }>>,
   session?: any
-}) => (
+|}) => (
   <div>
     <div
       css={`

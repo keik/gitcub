@@ -18,10 +18,9 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
           tree: '$TREE'
         }
       }}
-      routes={[{}]}
       session={{}}
     >
-      children
+      %CHILDREN%
     </Repository>
   </MemoryRouter>
 ))
