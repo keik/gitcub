@@ -1,3 +1,5 @@
+// @flow
+
 module.exports = {
   entry: ['@babel/polyfill', './frontend'],
   output: {

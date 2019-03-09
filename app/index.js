@@ -1,3 +1,5 @@
+// @flow
+
 require('@babel/polyfill')
 require('@babel/register')
 
@@ -5,7 +7,7 @@ const chokidar = require('chokidar')
 const fs = require('fs')
 const http = require('http')
 
-const config = require('../config').env[process.env.NODE_ENV]
+const config = require('../config').env[process.env.NODE_ENV || 'development']
 const PORT = process.env.PORT || config.PORT
 const REPO_ROOT = config.REPO_ROOT
 
