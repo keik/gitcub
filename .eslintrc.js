@@ -32,7 +32,7 @@ module.exports = {
     }
   },
   rules: {
-    'no-console': 'warn',
+    'no-console': 'off',
     'filenames/match-exported': 'error',
     'flowtype/require-valid-file-annotation': ['warn', 'always'],
     'flowtype/require-exact-type': 'error',
