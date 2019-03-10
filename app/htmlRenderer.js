@@ -35,6 +35,9 @@ export function renderFullPage(bust: number | string) {
      <div id="app"></div>
      <script src="${
        process.env.NODE_ENV === 'development' ? 'http://localhost:8080' : ''
+     }/vendor.js?${bust}"></script>
+     <script src="${
+       process.env.NODE_ENV === 'development' ? 'http://localhost:8080' : ''
      }/main.js?${bust}"></script>
    </body>
  </html>
