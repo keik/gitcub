@@ -1,5 +1,3 @@
-const package = require('./package.json')
-
 module.exports = {
   parser: 'babel-eslint',
   env: {
@@ -27,18 +25,20 @@ module.exports = {
     },
     sourceType: 'module'
   },
-  plugins: ['filenames'],
+  plugins: ['filenames', 'react-hooks'],
   settings: {
     react: {
-      version: package.dependencies.react
+      version: 'detect'
     }
   },
   rules: {
-    'no-console': 'warn',
+    'no-console': 'off',
     'filenames/match-exported': 'error',
     'flowtype/require-valid-file-annotation': ['warn', 'always'],
     'flowtype/require-exact-type': 'error',
     'react/no-deprecated': 'warn',
-    'react/prefer-stateless-function': 'error'
+    'react/prefer-stateless-function': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   }
 }

@@ -29,24 +29,15 @@ export default App
 export const AppContainer = withRouter(
   connect<_, _, *, _, *, _>(({ session }: ReducersStateT) => ({
     session
-  }))(
-    class $App extends React.Component<*, {| isLoading: boolean |}> {
-      state = { isLoading: true }
-
-      async componentDidMount() {
-        const { dispatch } = this.props
-        this.setState({ isLoading: true })
+  }))(({ dispatch, ...props }) => {
+    const [isLoading, setIsLoading] = React.useState(true)
+    React.useEffect(() => {
+      ;(async () => {
+        setIsLoading(true)
         dispatch(await SessionAction.getCurrentUser())
-        this.setState({ isLoading: false })
-      }
-
-      render() {
-        return this.state.isLoading ? (
-          <div>Loading...</div>
-        ) : (
-          <App {...this.props} />
-        )
-      }
-    }
-  )
+        setIsLoading(false)
+      })()
+    }, [])
+    return isLoading ? <div>Loading...</div> : <App {...props} />
+  })
 )
