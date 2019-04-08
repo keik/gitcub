@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots New with default 1`] = `
+<div
+  className="InnerContainer___default-yh8td3-0 jfPiqN"
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #e5e5e5",
+        "marginBottom": "32px",
+        "marginTop": "24px",
+        "paddingBottom": "8px",
+      }
+    }
+  >
+    <h2
+      style={
+        Object {
+          "marginBottom": "0",
+        }
+      }
+    >
+      Create a new repository
+    </h2>
+    <p
+      className="P-sc-1ematb3-0 hZyzKr"
+    >
+      A repository contains all the files for your project, including the revision history.
+    </p>
+  </div>
+  <form
+    action="/api/v1/user/repos"
+    method="post"
+    onSubmit={[Function]}
+  >
+    <input
+      name="authenticity_token"
+      type="hidden"
+      value="TRUE"
+    />
+    <div>
+      <div
+        className="FormGroup-kp6edz-0 ilxwhU"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <label
+          htmlFor="owner"
+        >
+          Owner
+        </label>
+        <input
+          id="owner"
+          name="owner"
+          type="text"
+        />
+      </div>
+      <span>
+         / 
+      </span>
+      <div
+        className="FormGroup-kp6edz-0 eYxiUY"
+      >
+        <label
+          htmlFor="name"
+        >
+          Repository name
+        </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="FormGroup-kp6edz-0 ilxwhU"
+    >
+      <label
+        htmlFor="description"
+      >
+        Description (optional)
+      </label>
+      <input
+        id="description"
+        name="description"
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </div>
+    <hr />
+    <div
+      className="FormGroup-kp6edz-0 ilxwhU"
+    >
+      <label>
+        <input
+          name="public"
+          type="radio"
+          value="true"
+        />
+        Public
+      </label>
+      <p
+        className="P-sc-1ematb3-0 hZyzKr"
+      >
+        Anyone can see this repository. You choose who can commit.
+      </p>
+    </div>
+    <div
+      className="FormGroup-kp6edz-0 ilxwhU"
+    >
+      <label>
+        <input
+          name="public"
+          type="radio"
+          value="false"
+        />
+        Private
+      </label>
+      <p
+        className="P-sc-1ematb3-0 hZyzKr"
+      >
+        You choose who can see and commit to this repository.
+      </p>
+    </div>
+    <hr />
+    <button
+      className="Button__Elem-sc-1xxl18f-0 jCZCvk"
+    >
+      Create repository
+    </button>
+  </form>
+</div>
+`;

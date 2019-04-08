@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Repository/RepositoryMilestones with default 1`] = `
+<div>
+  <h2>
+    milestones
+  </h2>
+</div>
+`;

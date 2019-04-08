@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Repository/RepositoryIssues with default 1`] = `
+<div>
+  <div
+    className="sc-Rmtcm eUTWqk"
+  >
+    <div
+      className="sc-bRBYWo dNUjXB"
+    >
+      <button
+        className="sc-hzDkRC ifREco Button__Elem-sc-1xxl18f-0 hchnBn"
+      >
+        Filters
+      </button>
+      <form
+        className="sc-jhAzac dTqbgn"
+      >
+        <i
+          className="fa fa-search"
+        />
+        <input
+          className="sc-fBuWsC kwrgse"
+        />
+      </form>
+    </div>
+    <div
+      className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+    >
+      <a
+        className="Button__Elem-sc-1xxl18f-0 kVPGTa"
+        href="/$OWNER/$REPO/labels"
+        onClick={[Function]}
+        transparent="true"
+      >
+        Labels
+      </a>
+      <a
+        className="Button__Elem-sc-1xxl18f-0 kVPGTa"
+        href="/$OWNER/$REPO/milestones"
+        onClick={[Function]}
+        transparent="true"
+      >
+        Milestones
+      </a>
+    </div>
+  </div>
+  <div
+    className="sc-fMiknA dCeGbh"
+  >
+    <div>
+      <a
+        href="/$OWNER/$REPO/issues?q=is:open is:issue"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-exclamation-circle"
+        />
+         
+        2
+         Open
+      </a>
+    </div>
+    <div>
+      <a
+        href="/$OWNER/$REPO/issues?q=is:closed is:issue"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-check"
+        />
+         
+        -1
+         Closed
+      </a>
+    </div>
+  </div>
+  <ul
+    className="sc-dVhcbM bvprPP"
+  >
+    <li
+      className="sc-eqIVtm kNXSik"
+    >
+      <div
+        className="sc-fAjcbJ eyaEsq"
+      >
+        <i
+          className="fa fa-exclamation-circle"
+        />
+      </div>
+      <div
+        className="sc-caSCKo kHnPFS"
+      >
+        <div
+          className="sc-gisBJw fhfwrO"
+        >
+          <a
+            href="/$OWNER/$REPO/issues/1"
+            onClick={[Function]}
+          >
+            $TITLE_1
+          </a>
+        </div>
+        <div
+          className="sc-kjoXOD iiRNGy"
+        >
+          <span>
+            #
+            1
+          </span>
+           opened
+           
+          <time-ago
+            datetime="$CREATED_AT_1"
+          />
+           by
+           
+          <a
+            href="/$CREATED_BY_1"
+            onClick={[Function]}
+          >
+            $CREATED_BY_1
+          </a>
+        </div>
+      </div>
+      <div
+        className="sc-cHGsZl fvEOsb"
+      >
+        <div>
+          <a
+            href="/$OWNER/$REPO/issues/1"
+            onClick={[Function]}
+          >
+            <i
+              className="fa fa-comment-o"
+            />
+             
+            1
+          </a>
+        </div>
+      </div>
+    </li>
+    <li
+      className="sc-eqIVtm kNXSik"
+    >
+      <div
+        className="sc-fAjcbJ eyaEsq"
+      >
+        <i
+          className="fa fa-exclamation-circle"
+        />
+      </div>
+      <div
+        className="sc-caSCKo kHnPFS"
+      >
+        <div
+          className="sc-gisBJw fhfwrO"
+        >
+          <a
+            href="/$OWNER/$REPO/issues/2"
+            onClick={[Function]}
+          >
+            $TITLE_2
+          </a>
+        </div>
+        <div
+          className="sc-kjoXOD iiRNGy"
+        >
+          <span>
+            #
+            2
+          </span>
+           opened
+           
+          <time-ago
+            datetime="$CREATED_AT_2"
+          />
+           by
+           
+          <a
+            href="/$CREATED_BY_2"
+            onClick={[Function]}
+          >
+            $CREATED_BY_2
+          </a>
+        </div>
+      </div>
+      <div
+        className="sc-cHGsZl fvEOsb"
+      >
+        <div>
+          <a
+            href="/$OWNER/$REPO/issues/2"
+            onClick={[Function]}
+          >
+            <i
+              className="fa fa-comment-o"
+            />
+             
+            2
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

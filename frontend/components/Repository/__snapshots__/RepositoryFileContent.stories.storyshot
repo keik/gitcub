@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Repository/RepositoryFileContent with default 1`] = `
+<div>
+  <div
+    className="sc-jzJRlG jTCqMT"
+  >
+    <div
+      className="sc-cSHVUG fMZqea"
+    >
+      commit tease
+    </div>
+    <div
+      className="sc-kAzzGY jqJNyV"
+    >
+      <button>
+        2
+         contributors
+      </button>
+      <a
+        href="/$CONTRIBUTOR_1"
+        onClick={[Function]}
+      >
+        <img
+          alt="$CONTRIBUTOR_1"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+      </a>
+      <a
+        href="/$CONTRIBUTOR_2"
+        onClick={[Function]}
+      >
+        <img
+          alt="$CONTRIBUTOR_2"
+          style={
+            Object {
+              "background": "#ccc",
+              "height": 20,
+              "verticalAlign": "middle",
+              "width": 20,
+            }
+          }
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="sc-jzJRlG jTCqMT"
+  >
+    <div
+      className="sc-cSHVUG hAtYNz"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div>
+          1
+           line | 
+          10
+           bytes
+        </div>
+        <div
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+          >
+            <a
+              className="Button__Elem-sc-1xxl18f-0 hchnBn"
+              href="/{params.owner}/$REPO/raw/$BRANCH/$PATH"
+              onClick={[Function]}
+              small="true"
+            >
+              Raw
+            </a>
+            <a
+              className="Button__Elem-sc-1xxl18f-0 hchnBn"
+              href="/$OWNER/$REPO/blame/$BRANCH/$PATH"
+              onClick={[Function]}
+              small="true"
+            >
+              Blame
+            </a>
+            <a
+              className="Button__Elem-sc-1xxl18f-0 hchnBn"
+              href="/$OWNER/$REPO/commits/$BRANCH/$PATH"
+              onClick={[Function]}
+              small="true"
+            >
+              History
+            </a>
+          </div>
+          <button
+            style={
+              Object {
+                "margin": "0 6px",
+              }
+            }
+          >
+            <i
+              className="fa fa-pencil"
+            />
+          </button>
+          <button>
+            <i
+              className="fa fa-trash"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-kAzzGY jqJNyV"
+    >
+      <pre
+        className="Code-sc-1s5fbrb-0 bkUgzU"
+      >
+        <ul
+          className="Code__Lines-sc-1s5fbrb-1 fItEer"
+        >
+          <li>
+            1
+          </li>
+        </ul>
+        <code
+          className="hljs Code__Body-sc-1s5fbrb-2 eTRaNg"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "$CONTENT",
+            }
+          }
+          id="content"
+        />
+      </pre>
+    </div>
+  </div>
+</div>
+`;

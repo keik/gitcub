@@ -1,9 +1,12 @@
 // @flow
 
-import initStoryshots from '@storybook/addon-storyshots'
+import initStoryshots, {
+  multiSnapshotWithOptions
+} from '@storybook/addon-storyshots'
+import registerRequireContextHook from 'babel-plugin-require-context-hook/register'
 import 'jest-styled-components'
 
-const registerRequireContextHook = require('babel-plugin-require-context-hook/register')
-
 registerRequireContextHook()
-initStoryshots()
+initStoryshots({
+  test: multiSnapshotWithOptions({})
+})

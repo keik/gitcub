@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Repository/RepositoryBranches with default 1`] = `
+<div>
+  <div
+    className="sc-jzJRlG jTCqMT"
+  >
+    <div
+      className="sc-cSHVUG hAtYNz"
+    >
+      Default branch
+    </div>
+    <div
+      className="sc-kAzzGY jqJNyV"
+    >
+      <ul
+        className="sc-fjdhpX eOvOXo"
+      >
+        <li>
+          <a
+            href="/$OWNER/$REPO/tree/"
+          >
+            
+          </a>
+            Updated
+           
+          <time-ago
+            datetime=""
+          />
+           by 
+          <a
+            href="/"
+          >
+            
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="sc-jzJRlG jTCqMT"
+  >
+    <div
+      className="sc-cSHVUG hAtYNz"
+    >
+      Active branches
+    </div>
+    <div
+      className="sc-kAzzGY jqJNyV"
+    >
+      <ul
+        className="sc-fjdhpX eOvOXo"
+      >
+        <li>
+          <a
+            href="/$OWNER/$REPO/tree/$BRANCH"
+          >
+            $BRANCH
+          </a>
+            Updated 
+          <time-ago
+            datetime="$DATE"
+          />
+           
+          by 
+          <a
+            href="/$AUTHOR"
+          >
+            $AUTHOR
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

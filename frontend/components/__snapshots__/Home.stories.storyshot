@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Home default 1`] = `
+<div
+  className="InnerContainer___default-yh8td3-0 jfPiqN"
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "marginTop": "24px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "flexGrow": 1,
+        }
+      }
+    >
+      <ul
+        className="sc-fjdhpX eOvOXo"
+      >
+        <li>
+          ACTIVITY_1
+        </li>
+        <li>
+          ACTIVITY_2
+        </li>
+        <li>
+          ACTIVITY_3
+        </li>
+      </ul>
+    </div>
+    <div
+      style={
+        Object {
+          "marginLeft": "24px",
+          "width": "320px",
+        }
+      }
+    >
+      <div
+        className="sc-jzJRlG jTCqMT"
+      >
+        <div
+          className="sc-cSHVUG hAtYNz"
+        >
+          Public Repositories
+        </div>
+        <div
+          className="sc-kAzzGY cekdOz"
+        >
+          <ul
+            className="sc-fjdhpX caYFfH"
+          >
+            <li>
+              <i
+                className="fa fa-folder-open-o"
+              />
+               
+              <a
+                href="/FULL_NAME1"
+              >
+                FULL_NAME1
+              </a>
+            </li>
+            <li>
+              <i
+                className="fa fa-folder-open-o"
+              />
+               
+              <a
+                href="/FULL_NAME2"
+              >
+                FULL_NAME2
+              </a>
+            </li>
+            <li>
+              <i
+                className="fa fa-folder-open-o"
+              />
+               
+              <a
+                href="/FULL_NAME3"
+              >
+                FULL_NAME3
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

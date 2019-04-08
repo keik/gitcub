@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Login without session 1`] = `
+<div
+  className="sc-chPdSV kHQoSX"
+>
+  <h1>
+    Sign in to GH
+  </h1>
+  <div
+    className="sc-jzJRlG jTCqMT"
+  >
+    <div
+      className="sc-kAzzGY jqJNyV"
+    >
+      <form
+        action="/session"
+        method="post"
+      >
+        <div
+          className="FormGroup-kp6edz-0 ilxwhU"
+        >
+          <label
+            htmlFor="login"
+          >
+            Username or email address
+          </label>
+          <input
+            id="login"
+            name="login"
+            type="text"
+          />
+        </div>
+        <div
+          className="FormGroup-kp6edz-0 ilxwhU"
+        >
+          <label
+            htmlFor="id"
+          >
+            Password
+          </label>
+          <input
+            id="password"
+            name="password"
+            type="text"
+          />
+        </div>
+        <button
+          className="Button__Elem-sc-1xxl18f-0 jCZCvk"
+        >
+          Sign in
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

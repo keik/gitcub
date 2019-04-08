@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Repository/RepositoryCommits with default 1`] = `
+<ul
+  className="sc-kgoBCf mSzHB"
+>
+  <li
+    className="sc-kGXeez qLXdD"
+  >
+    <div
+      className="sc-kpOJdX jNGiee"
+    >
+      <div>
+        <div
+          className="sc-dxgOiQ dWvagZ"
+        >
+          $MESSAGE_1
+        </div>
+        <div
+          className="sc-ckVGcZ besKCT"
+        >
+          <a
+            href="/$NAME_1}"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              src=""
+            />
+          </a>
+          $NAME_1
+           commited on
+           
+          <time-ago
+            datetime="$DATE_1"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-jKJlTe gIcDLN"
+    >
+      <div
+        className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+      >
+        <button
+          className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+        >
+          <i
+            className="fa fa-clipboard"
+          />
+        </button>
+        <a
+          className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+          href="/$OWNER/$REPO/commit/$SHA_1"
+          onClick={[Function]}
+          small="true"
+          transparent="true"
+        >
+          $SHA_1
+        </a>
+      </div>
+      <a
+        className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+        href="/$OWNER/$REPO/tree/$SHA_1"
+        onClick={[Function]}
+        small="true"
+        style={
+          Object {
+            "marginLeft": "12px",
+          }
+        }
+        transparent="true"
+      >
+        <i
+          className="fa fa-code"
+        />
+      </a>
+    </div>
+  </li>
+  <li
+    className="sc-kGXeez qLXdD"
+  >
+    <div
+      className="sc-kpOJdX jNGiee"
+    >
+      <div>
+        <div
+          className="sc-dxgOiQ dWvagZ"
+        >
+          $MESSAGE_2
+        </div>
+        <div
+          className="sc-ckVGcZ besKCT"
+        >
+          <a
+            href="/$NAME_2}"
+            onClick={[Function]}
+          >
+            <img
+              alt=""
+              src=""
+            />
+          </a>
+          $NAME_2
+           commited on
+           
+          <time-ago
+            datetime="$DATE_2"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-jKJlTe gIcDLN"
+    >
+      <div
+        className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+      >
+        <button
+          className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+        >
+          <i
+            className="fa fa-clipboard"
+          />
+        </button>
+        <a
+          className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+          href="/$OWNER/$REPO/commit/$SHA_2"
+          onClick={[Function]}
+          small="true"
+          transparent="true"
+        >
+          $SHA_2
+        </a>
+      </div>
+      <a
+        className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+        href="/$OWNER/$REPO/tree/$SHA_2"
+        onClick={[Function]}
+        small="true"
+        style={
+          Object {
+            "marginLeft": "12px",
+          }
+        }
+        transparent="true"
+      >
+        <i
+          className="fa fa-code"
+        />
+      </a>
+    </div>
+  </li>
+</ul>
+`;

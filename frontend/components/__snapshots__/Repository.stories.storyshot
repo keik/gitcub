@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Repository with default 1`] = `
+<div>
+  <div
+    className="sc-hqyNC dKybUd"
+  >
+    <div
+      className="InnerContainer___default-yh8td3-0 jfPiqN"
+    >
+      <div
+        className="sc-TOsTZ cLpyff"
+      >
+        <h1
+          className="sc-kgAjT kYGMnR"
+        >
+          <a
+            href="/$OWNER"
+          >
+            $OWNER
+          </a>
+          <span
+            className="sc-cJSrbW ghRxYJ"
+          >
+            /
+          </span>
+          <a
+            href="/$OWNER/$REPO"
+          >
+            $REPO
+          </a>
+        </h1>
+        <nav>
+          <ul
+            className="sc-ksYbfQ gnPQGn"
+          >
+            <li>
+              <div
+                className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+              >
+                <button
+                  className="Button__Elem-sc-1xxl18f-0 hchnBn"
+                  onClick={[Function]}
+                >
+                  <i
+                    className="fa fa-eye"
+                  />
+                  Watch
+                  <i
+                    className="fa fa-caret-down sc-hmzhuo jxAzNp"
+                  />
+                </button>
+                <a
+                  className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+                  href="#"
+                >
+                  -1
+                </a>
+              </div>
+            </li>
+            <li>
+              <div
+                className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+              >
+                <button
+                  className="Button__Elem-sc-1xxl18f-0 hchnBn"
+                >
+                  <i
+                    className="fa fa-star"
+                  />
+                  Star
+                </button>
+                <a
+                  className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+                  href="#"
+                >
+                  -1
+                </a>
+              </div>
+            </li>
+            <li>
+              <div
+                className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+              >
+                <button
+                  className="Button__Elem-sc-1xxl18f-0 hchnBn"
+                >
+                  <i
+                    className="fa fa-code-fork"
+                  />
+                  Fork
+                </button>
+                <a
+                  className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+                  href="#"
+                >
+                  -1
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div
+      className="InnerContainer___default-yh8td3-0 jfPiqN"
+    >
+      <nav>
+        <ul
+          className="sc-kvZOFW rgFbC"
+        >
+          <li>
+            <a
+              className=""
+              href="/$OWNER/$REPO"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-code"
+              />
+              Code
+            </a>
+          </li>
+          <li>
+            <a
+              className=""
+              href="/$OWNER/$REPO/issues"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-exclamation-circle"
+              />
+              Issues -1
+            </a>
+          </li>
+          <li>
+            <a
+              className=""
+              href="/$OWNER/$REPO/pulls"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-code-fork"
+              />
+              Pull requests -1
+            </a>
+          </li>
+          <li>
+            <a
+              className=""
+              href="/$OWNER/$REPO/projects"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-group"
+              />
+              Projects -1
+            </a>
+          </li>
+          <li>
+            <a
+              className=""
+              href="/$OWNER/$REPO/wiki"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-book"
+              />
+              Wiki
+            </a>
+          </li>
+          <li>
+            <a
+              className=""
+              href="/$OWNER/$REPO/pulse"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-line-chart"
+              />
+              Pulse
+            </a>
+          </li>
+          <li>
+            <a
+              className=""
+              href="/$OWNER/$REPO/graphs"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-bar-chart"
+              />
+              Graphs
+            </a>
+          </li>
+          <li>
+            <a
+              className=""
+              href="/$OWNER/$REPO/settings"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-gear"
+              />
+              Settings
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="InnerContainer___default-yh8td3-0 jfPiqN"
+  >
+    %CHILDREN%
+  </div>
+</div>
+`;

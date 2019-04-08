@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
+<div>
+  <div
+    className="sc-jzJRlG jTCqMT"
+  >
+    <div
+      className="sc-cSHVUG fMZqea"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <h1
+          style={
+            Object {
+              "color": "#213f4d",
+              "fontSize": "18px",
+              "fontWeight": "bold",
+              "margin": "0",
+            }
+          }
+        >
+          $MESSAGE
+        </h1>
+        <a
+          className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+          href="/$OWNER/$REPO/tree/$SHA"
+          style={
+            Object {
+              "float": "right",
+            }
+          }
+        >
+          Browse files
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "color": "#818c90",
+            "fontSize": "12px",
+            "margin": "0",
+            "minHeight": "18px",
+          }
+        }
+      >
+        <i
+          className="fa fa-code-fork"
+        />
+         master
+      </div>
+    </div>
+    <div
+      className="sc-kAzzGY jqJNyV"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div>
+          <img
+            alt="$NAME"
+            style={
+              Object {
+                "background": "#ccc",
+                "height": 20,
+                "verticalAlign": "middle",
+                "width": 20,
+              }
+            }
+          />
+           
+          $NAME
+           commited on
+           
+          <time-ago
+            datetime="$DATE"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "color": "#767676",
+              "fontFamily": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
+              "fontSize": "12px",
+              "lineHeight": "24px",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "marginRight": "12px",
+              }
+            }
+          >
+            0
+             parent
+          </span>
+          <span>
+            commit 
+            $SHA
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <i
+        className="fa fa-file-text-o"
+      />
+       Showing N changed file with N addition and N deletion.
+    </div>
+    <div>
+      <div
+        className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+      >
+        <button
+          className="Button__Elem-sc-1xxl18f-0 hchnBn"
+        >
+          Unified
+        </button>
+        <button
+          className="Button__Elem-sc-1xxl18f-0 hchnBn"
+        >
+          Split
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    id="patches"
+  >
+    <div
+      className="sc-jzJRlG jTCqMT"
+    >
+      <div
+        className="sc-cSHVUG hAtYNz"
+      >
+        $FILENAME
+      </div>
+      <div
+        className="sc-kAzzGY jqJNyV"
+      >
+        <pre
+          className="Code-sc-1s5fbrb-0 bkUgzU"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <ul
+            className="Code__Lines-sc-1s5fbrb-1 fItEer"
+          >
+            <li>
+              ...
+            </li>
+            <li>
+              1
+            </li>
+            <li>
+              2
+            </li>
+            <li>
+              3
+            </li>
+            <li>
+              4
+            </li>
+            <li>
+              5
+            </li>
+            <li>
+              6
+            </li>
+            <li>
+              7
+            </li>
+            <li>
+              8
+            </li>
+            <li>
+              9
+            </li>
+            <li>
+              10
+            </li>
+            <li>
+              11
+            </li>
+          </ul>
+          <code
+            className="hljs Code__Body-sc-1s5fbrb-2 eTRaNg"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "$PATCH",
+              }
+            }
+          />
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+`;
