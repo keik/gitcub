@@ -11,7 +11,7 @@ import Button from '../common/atoms/Button'
 import Code from '../common/blocks/Code'
 import Panel from '../common/blocks/Panel'
 import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
-import type { ReducersStateT } from '../../ducks'
+import rootReducer from '../../ducks'
 import * as EntriesAction from '../../ducks/repository/entries'
 import type { EntryT } from 'gh-types/gh'
 
@@ -134,7 +134,7 @@ export default RepositoryFileContent
 
 export const RepositoryFileContentContainer = connect<_, _, *, _, *, _>(
   (
-    { entries }: ReducersStateT,
+    { entries }: $Call<typeof rootReducer>,
     {
       match: {
         params: { path }

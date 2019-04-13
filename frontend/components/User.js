@@ -9,7 +9,7 @@ import type { Match } from 'react-router-dom'
 import type { Dispatch } from 'redux'
 
 import InnerContainer from './common/layouts/InnerContainer'
-import type { ReducersStateT } from '../ducks'
+import rootReducer from '../ducks'
 import * as UsersAction from '../ducks/users'
 
 const User = ({ children, user }: {| children: React.Node, user: UserT |}) => (
@@ -176,8 +176,8 @@ const User = ({ children, user }: {| children: React.Node, user: UserT |}) => (
 
 export default User
 
-export const UserContainer = connect<_, ReducersStateT, *, _, *, _>(
-  ({ users }) => ({
+export const UserContainer = connect<_, _, *, _, *, _>(
+  ({ users }: $Call<typeof rootReducer>) => ({
     users
   })
 )(
@@ -185,7 +185,7 @@ export const UserContainer = connect<_, ReducersStateT, *, _, *, _>(
     children: React.Node,
     dispatch: Dispatch<*>,
     match: $Shape<Match<{ username: string }>>,
-    users: $PropertyType<ReducersStateT, 'users'>
+    users: $PropertyType<$Call<typeof rootReducer>, 'users'>
   |}> {
     async componentDidMount() {
       const { dispatch, match } = this.props

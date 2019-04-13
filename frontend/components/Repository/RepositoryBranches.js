@@ -7,7 +7,7 @@ import type { Dispatch } from 'redux'
 
 import List from '../common/blocks/List'
 import Panel from '../common/blocks/Panel'
-import type { ReducersStateT } from '../../ducks'
+import rootReducer from '../../ducks'
 import * as BranchesAction from '../../ducks/repository/branches'
 import type { BranchT } from 'gh-types/gh'
 
@@ -79,16 +79,11 @@ const RepositoryBranches = ({ branches, defaultBranchName, match }: Props) => {
 
 export default RepositoryBranches
 
-export const RepositoryBranchesContainer = connect<
-  _,
-  ReducersStateT,
-  *,
-  _,
-  *,
-  _
->(({ branches }) => ({
-  branches
-}))(
+export const RepositoryBranchesContainer = connect<_, _, *, _, *, _>(
+  ({ branches }: $Call<typeof rootReducer>) => ({
+    branches
+  })
+)(
   class $RepositoryBranchesContainer extends React.Component<{|
     ...Props,
     dispatch: Dispatch<*>
