@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Repository/RepositoryTree with 3rd level path 1`] = `
+<div>
+  <strong>
+    <a
+      href="/foo/bar/tree/TREE"
+      onClick={[Function]}
+    >
+      bar
+    </a>
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <a
+    href="/foo/bar/tree/TREE/a"
+    onClick={[Function]}
+  >
+    a
+  </a>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <a
+    href="/foo/bar/tree/TREE/a/b"
+    onClick={[Function]}
+  >
+    b
+  </a>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <strong>
+    c
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositoryTree with default 1`] = `
+<div>
+  <strong>
+    <a
+      href="/foo/bar/tree/TREE"
+      onClick={[Function]}
+    >
+      bar
+    </a>
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <strong>
+    PATH
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+</div>
+`;

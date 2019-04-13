@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Repository/shared/TreeSelector with default 1`] = `
+<button
+  className="Button__Elem-sc-1xxl18f-0 hchnBn"
+  onClick={[Function]}
+>
+  <i>
+    Branch: 
+  </i>
+  <span>
+    $TREE
+     
+  </span>
+  <i
+    className="fa fa-caret-down"
+  />
+</button>
+`;
