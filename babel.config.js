@@ -15,20 +15,26 @@ module.exports = {
     '@babel/preset-react'
   ],
   plugins: [
-    'babel-plugin-macros',
     '@babel/plugin-proposal-class-properties',
-    '@babel/plugin-proposal-object-rest-spread',
+    'babel-plugin-macros',
+    'babel-plugin-styled-components',
     'react-hot-loader/babel'
   ],
   env: {
-    production: {
-      plugins: ['babel-plugin-styled-components']
-    },
-    development: {
-      plugins: ['babel-plugin-styled-components']
-    },
     test: {
-      plugins: ['babel-plugin-styled-components', 'require-context-hook']
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            targets: {
+              node: 'current'
+            }
+          }
+        ],
+        '@babel/preset-flow',
+        '@babel/preset-react'
+      ],
+      plugins: ['require-context-hook']
     }
   }
 }
