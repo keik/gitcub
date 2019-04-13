@@ -4,9 +4,6 @@ import { combineReducers } from 'redux'
 
 import entries from './entries'
 
-const reducers = {
+export default combineReducers<*, *>({
   entries
-}
-
-export type ReducersStateT = $ObjMap<typeof reducers, $ExtractFunctionReturn>
-export default combineReducers<typeof reducers, *>(reducers)
+})

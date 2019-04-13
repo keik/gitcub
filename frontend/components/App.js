@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom'
 
 import AppFooter from './App/AppFooter'
 import AppHeader from './App/AppHeader'
-import type { ReducersStateT } from '../ducks'
+import rootReducer from '../ducks'
 import * as SessionAction from '../ducks/session'
 import type { SessionT } from '../ducks/session'
 
@@ -27,7 +27,7 @@ const App = ({
 export default App
 
 export const AppContainer = withRouter(
-  connect<_, _, *, _, *, _>(({ session }: ReducersStateT) => ({
+  connect<_, _, *, _, *, _>(({ session }: $Call<typeof rootReducer>) => ({
     session
   }))(({ dispatch, ...props }) => {
     const [isLoading, setIsLoading] = React.useState(true)

@@ -17,7 +17,7 @@ import * as CommitsAction from '../../ducks/repository/commits'
 import * as TagsAction from '../../ducks/repository/tags'
 import * as TreesAction from '../../ducks/repository/trees'
 import config from '../../../config'
-import type { ReducersStateT } from '../../ducks'
+import rootReducer from '../../ducks'
 
 const { HOST, PORT } = config.env[process.env.NODE_ENV || 'development']
 
@@ -164,7 +164,7 @@ const RepositoryHome = ({ branches, commits, entries, match, tags }: Props) => (
 export default RepositoryHome
 
 export const RepositoryHomeContainer = connect<_, _, *, _, *, _>(
-  ({ branches, commits, tags, trees }: ReducersStateT) => ({
+  ({ branches, commits, tags, trees }: $Call<typeof rootReducer>) => ({
     branches,
     commits,
     tags,

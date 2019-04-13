@@ -8,7 +8,7 @@ import type { Dispatch } from 'redux'
 
 import Button from '../common/atoms/Button'
 import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
-import type { ReducersStateT } from '../../ducks'
+import rootReducer from '../../ducks'
 import * as CommitsAction from '../../ducks/repository/commits'
 import type { CommitT } from 'gh-types/gh'
 
@@ -117,7 +117,7 @@ export const RepositoryCommits = ({ commits, match }: Props) => (
 export default RepositoryCommits
 
 export const RepositoryCommitsContainer = connect<_, _, *, _, *, _>(
-  ({ commits }: ReducersStateT) => ({
+  ({ commits }: $Call<typeof rootReducer>) => ({
     commits
   })
 )(

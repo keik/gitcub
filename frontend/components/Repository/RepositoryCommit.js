@@ -10,7 +10,7 @@ import Code from '../common/blocks/Code'
 import Panel from '../common/blocks/Panel'
 import Button from '../common/atoms/Button'
 import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
-import type { ReducersStateT } from '../../ducks'
+import rootReducer from '../../ducks'
 import * as CommitsAction from '../../ducks/repository/commits'
 import type { CommitWithDetailsT } from 'gh-types/gh'
 
@@ -157,7 +157,7 @@ export default RepositoryCommit
 
 export const RepositoryCommitContainer = connect<_, _, *, _, *, _>(
   (
-    { commits }: ReducersStateT,
+    { commits }: $Call<typeof rootReducer>,
     {
       match: {
         params: { sha }

@@ -11,7 +11,7 @@ import tags from './repository/tags'
 import trees from './repository/trees'
 import users from '../ducks/users'
 
-const reducers = {
+export default combineReducers<*, *>({
   branches,
   commits,
   entries,
@@ -20,7 +20,4 @@ const reducers = {
   tags,
   trees,
   users
-}
-
-export type ReducersStateT = $ObjMap<typeof reducers, $ExtractFunctionReturn>
-export default combineReducers<typeof reducers, *>(reducers)
+})

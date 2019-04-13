@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import type { Dispatch } from 'redux'
 
 import type { RepositoryT } from 'gh-types/gh'
-import type { ReducersStateT } from '../ducks'
+import rootReducer from '../ducks'
 import * as RepositoriesAction from '../ducks/repositories'
 import InnerContainer from '../components/common/layouts/InnerContainer'
 import List from '../components/common/blocks/List'
@@ -58,9 +58,11 @@ const Home = ({
 export default Home
 
 export const HomeContainer = connect<_, _, *, _, *, _>(
-  ({ repositories }: ReducersStateT) => ({
-    repositories
-  })
+  ({ repositories }: $Call<typeof rootReducer>) => {
+    return {
+      repositories
+    }
+  }
 )(
   class $Home extends React.Component<{|
     dispatch: Dispatch<*>,
