@@ -25,7 +25,7 @@ module.exports = {
     },
     sourceType: 'module'
   },
-  plugins: ['filenames', 'react-hooks'],
+  plugins: ['filenames', 'import-order-alphabetical', 'react-hooks'],
   settings: {
     react: {
       version: 'detect'
@@ -36,6 +36,7 @@ module.exports = {
     'filenames/match-exported': 'error',
     'flowtype/require-valid-file-annotation': ['warn', 'always'],
     'flowtype/require-exact-type': 'error',
+    'import-order-alphabetical/order': 'error',
     'react/no-deprecated': 'warn',
     'react/prefer-stateless-function': 'error',
     'react-hooks/rules-of-hooks': 'error',

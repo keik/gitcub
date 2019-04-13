@@ -1,16 +1,17 @@
 // @flow
 
-import test from 'tape'
+import fs from 'fs'
+import path from 'path'
+
 import axios from 'axios'
 import bodyParser from 'body-parser'
 import Express from 'express'
-import fs from 'fs'
-import path from 'path'
 import rimraf from 'rimraf'
+import test from 'tape'
 
+import config from '../../../../../config'
 import { API_REPOS } from '../../../../../constants/api'
 import reposRouter from './repos'
-import config from '../../../../../config'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

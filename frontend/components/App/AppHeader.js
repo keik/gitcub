@@ -3,10 +3,10 @@
 import * as React from 'react'
 import { css } from 'styled-components'
 
+import type { SessionT } from '../../ducks/session'
 import Logo from '../common/atoms/Logo'
 import Dropdown from '../common/blocks/Dropdown'
 import InnerContainer from '../common/layouts/InnerContainer'
-import type { SessionT } from '../../ducks/session'
 
 const AppHeader = ({ session }: {| session: ?SessionT |}) =>
   session == null ? (

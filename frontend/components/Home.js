@@ -1,15 +1,15 @@
 // @flow
 
+import type { RepositoryT } from 'gh-types/gh'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import type { Dispatch } from 'redux'
 
-import type { RepositoryT } from 'gh-types/gh'
-import rootReducer from '../ducks'
-import * as RepositoriesAction from '../ducks/repositories'
-import InnerContainer from '../components/common/layouts/InnerContainer'
 import List from '../components/common/blocks/List'
 import Panel from '../components/common/blocks/Panel'
+import InnerContainer from '../components/common/layouts/InnerContainer'
+import rootReducer from '../ducks'
+import * as RepositoriesAction from '../ducks/repositories'
 
 const Home = ({
   repositories

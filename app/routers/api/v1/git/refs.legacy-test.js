@@ -1,8 +1,8 @@
 // @flow
 
-import test from 'tape'
 import axios from 'axios'
 import Express from 'express'
+import test from 'tape'
 
 import { API_GIT_REFS } from '../../../../../constants/api'
 import refsRouter from './refs'

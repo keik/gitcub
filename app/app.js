@@ -1,22 +1,23 @@
 // @flow
 
-import bodyParser from 'body-parser'
 import { spawn } from 'child_process'
+import { exists } from 'fs'
+import { join } from 'path'
+import zlib from 'zlib'
+
+import bodyParser from 'body-parser'
 import connectRedis from 'connect-redis'
 import Express from 'express'
 import expressListRoutes from 'express-list-routes'
 import session from 'express-session'
-import { exists } from 'fs'
 import gitBackend from 'git-http-backend'
 import morgan from 'morgan'
-import { join } from 'path'
 import passport from 'passport'
-import zlib from 'zlib'
 
+import config from '../config'
 import errorHandlingMiddleware from './errorHandlingMiddleware'
 import htmlRenderer from './htmlRenderer'
 import routers from './routers'
-import config from '../config'
 
 const { REPO_ROOT } = config.env[process.env.NODE_ENV || 'development']
 

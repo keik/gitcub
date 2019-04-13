@@ -1,13 +1,12 @@
 // @flow
 
+import type { IssueObj } from 'gh-types/nodegit'
 import * as React from 'react'
-import { css } from 'styled-components'
 import { Link, type Match } from 'react-router-dom'
+import { css } from 'styled-components'
 
 import Button from '../common/atoms/Button'
 import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
-
-import type { IssueObj } from 'gh-types/nodegit'
 
 const RepositoryIssues = ({
   issues = [],

@@ -1,18 +1,18 @@
 // @flow
 
+import type { CommitWithDetailsT } from 'gh-types/gh'
 import { highlight } from 'highlight.js'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import type { Dispatch } from 'redux'
 
-import Code from '../common/blocks/Code'
-import Panel from '../common/blocks/Panel'
-import Button from '../common/atoms/Button'
-import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
 import rootReducer from '../../ducks'
 import * as CommitsAction from '../../ducks/repository/commits'
-import type { CommitWithDetailsT } from 'gh-types/gh'
+import Button from '../common/atoms/Button'
+import Code from '../common/blocks/Code'
+import Panel from '../common/blocks/Panel'
+import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
 
 type Props = {|
   commit: ?CommitWithDetailsT,

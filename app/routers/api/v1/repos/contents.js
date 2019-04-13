@@ -1,13 +1,14 @@
 // @flow
 
-import { Router } from 'express'
-import Git from 'nodegit'
 import { join } from 'path'
 import { parse } from 'url'
 
-import asyncWrapper from '../../../../asyncWrapper'
+import { Router } from 'express'
+import Git from 'nodegit'
+
 import config from '../../../../../config'
 import { API_REPOS_CONTENTS } from '../../../../../constants/api'
+import asyncWrapper from '../../../../asyncWrapper'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

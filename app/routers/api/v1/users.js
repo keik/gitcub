@@ -2,9 +2,9 @@
 
 import { Router } from 'express'
 
-import asyncWrapper from '../../../asyncWrapper'
 import { API_USERS } from '../../../../constants/api'
 import models from '../../../../models'
+import asyncWrapper from '../../../asyncWrapper'
 
 export default new Router().get(API_USERS, asyncWrapper(onGet))
 

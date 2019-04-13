@@ -8,9 +8,9 @@ import { connect } from 'react-redux'
 import type { Match } from 'react-router-dom'
 import type { Dispatch } from 'redux'
 
-import InnerContainer from './common/layouts/InnerContainer'
 import rootReducer from '../ducks'
 import * as UsersAction from '../ducks/users'
+import InnerContainer from './common/layouts/InnerContainer'
 
 const User = ({ children, user }: {| children: React.Node, user: UserT |}) => (
   <InnerContainer>

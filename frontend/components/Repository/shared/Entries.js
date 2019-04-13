@@ -1,12 +1,12 @@
 // @flow
 
-import * as React from 'react'
-import { css } from 'styled-components'
-import { Link } from 'react-router-dom'
-
-import Panel from '../../common/blocks/Panel'
-import { parseEntriesByDirLevel } from '../../../../shared/utils'
 import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
+import * as React from 'react'
+import { Link } from 'react-router-dom'
+import { css } from 'styled-components'
+
+import { parseEntriesByDirLevel } from '../../../../shared/utils'
+import Panel from '../../common/blocks/Panel'
 
 const Entries = ({
   entries,
