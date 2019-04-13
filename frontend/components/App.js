@@ -4,11 +4,11 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 
-import AppFooter from './App/AppFooter'
-import AppHeader from './App/AppHeader'
 import rootReducer from '../ducks'
 import * as SessionAction from '../ducks/session'
 import type { SessionT } from '../ducks/session'
+import AppFooter from './App/AppFooter'
+import AppHeader from './App/AppHeader'
 
 const App = ({
   children,

@@ -1,15 +1,15 @@
 // @flow
 
+import type { BranchT } from 'gh-types/gh'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { type Match } from 'react-router-dom'
 import type { Dispatch } from 'redux'
 
-import List from '../common/blocks/List'
-import Panel from '../common/blocks/Panel'
 import rootReducer from '../../ducks'
 import * as BranchesAction from '../../ducks/repository/branches'
-import type { BranchT } from 'gh-types/gh'
+import List from '../common/blocks/List'
+import Panel from '../common/blocks/Panel'
 
 type Props = {|
   branches: $ReadOnlyArray<BranchT>,

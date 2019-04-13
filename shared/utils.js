@@ -1,8 +1,8 @@
 // @flow
 
-import config from '../config'
-
 import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
+
+import config from '../config'
 
 let { HOST, PORT } = config.env[process.env.NODE_ENV || 'development']
 PORT = process.env.PORT || PORT

@@ -1,14 +1,15 @@
 // @flow
 
+import { join } from 'path'
+
 import { Router } from 'express'
 import { merge } from 'lodash'
 import Git from 'nodegit'
-import { join } from 'path'
 
-import { genAPIStr } from '../../../../../shared/utils'
-import { API_GIT_TREES } from '../../../../../constants/api'
-import { convertCommitToGitCommitObject } from '../converter'
 import config from '../../../../../config'
+import { API_GIT_TREES } from '../../../../../constants/api'
+import { genAPIStr } from '../../../../../shared/utils'
+import { convertCommitToGitCommitObject } from '../converter'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

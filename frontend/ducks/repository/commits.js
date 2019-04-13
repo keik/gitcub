@@ -1,10 +1,10 @@
 // @flow
 
 import axios from 'axios'
+import type { CommitT, CommitWithDetailsT } from 'gh-types/gh'
 
 import { API_REPOS_COMMITS } from '../../../constants/api'
 import { genAPIStr } from '../../../shared/utils'
-import type { CommitT, CommitWithDetailsT } from 'gh-types/gh'
 
 export const FETCH: 'COMMITS/FETCH' = 'COMMITS/FETCH'
 export const FETCH_ONE_WITH_DETAILS: 'COMMITS/FETCH_ONE_WITH_DETAILS' =

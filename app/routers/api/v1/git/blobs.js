@@ -1,8 +1,9 @@
 // @flow
 
+import { join } from 'path'
+
 import { Router } from 'express'
 import Git from 'nodegit'
-import { join } from 'path'
 
 import config from '../../../../../config'
 import { API_GIT_BLOBS } from '../../../../../constants/api'

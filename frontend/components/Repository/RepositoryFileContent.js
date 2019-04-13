@@ -1,19 +1,20 @@
 // @flow
 
+import { extname } from 'path'
+
+import type { EntryT } from 'gh-types/gh'
 import { highlight, getLanguage } from 'highlight.js'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { Link, type Match } from 'react-router-dom'
 import type { Dispatch } from 'redux'
-import { extname } from 'path'
 
+import rootReducer from '../../ducks'
+import * as EntriesAction from '../../ducks/repository/entries'
 import Button from '../common/atoms/Button'
 import Code from '../common/blocks/Code'
 import Panel from '../common/blocks/Panel'
 import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
-import rootReducer from '../../ducks'
-import * as EntriesAction from '../../ducks/repository/entries'
-import type { EntryT } from 'gh-types/gh'
 
 type Props = {|
   contributors: $ReadOnlyArray<string>,

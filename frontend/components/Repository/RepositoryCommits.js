@@ -1,16 +1,16 @@
 // @flow
 
+import type { CommitT } from 'gh-types/gh'
 import * as React from 'react'
-import { css } from 'styled-components'
 import { connect } from 'react-redux'
 import { Link, type Match } from 'react-router-dom'
 import type { Dispatch } from 'redux'
+import { css } from 'styled-components'
 
-import Button from '../common/atoms/Button'
-import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
 import rootReducer from '../../ducks'
 import * as CommitsAction from '../../ducks/repository/commits'
-import type { CommitT } from 'gh-types/gh'
+import Button from '../common/atoms/Button'
+import SegmentedButtonsContainer from '../common/layouts/SegmentedButtonsContainer'
 
 type Props = {|
   commits: $ReadOnlyArray<CommitT>,

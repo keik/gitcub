@@ -1,11 +1,11 @@
 // @flow
 
-require('@babel/polyfill')
-require('@babel/register')
-
-const chokidar = require('chokidar')
 const fs = require('fs')
 const http = require('http')
+
+require('@babel/polyfill')
+require('@babel/register')
+const chokidar = require('chokidar')
 
 const config = require('../config').env[process.env.NODE_ENV || 'development']
 const PORT = process.env.PORT || config.PORT

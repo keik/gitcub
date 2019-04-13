@@ -1,18 +1,18 @@
 // @flow
 
-import { Router } from 'express'
-import Git from 'nodegit'
 import { join } from 'path'
 
-import logger from '../../../../logger'
+import { Router } from 'express'
+import Git from 'nodegit'
 
+import config from '../../../../../config'
 import {
   API_GIT_COMMITS,
   API_GIT_REFS,
   API_GIT_TAGS
 } from '../../../../../constants/api'
 import { genAPIStr } from '../../../../../shared/utils'
-import config from '../../../../../config'
+import logger from '../../../../logger'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

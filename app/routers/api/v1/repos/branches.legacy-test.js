@@ -1,11 +1,11 @@
 // @flow
 
-import test from 'tape'
 import axios from 'axios'
 import Express from 'express'
+import test from 'tape'
 
-import branchesRouter from './branches'
 import { API_REPOS_BRANCHES } from '../../../../../constants/api'
+import branchesRouter from './branches'
 
 let app
 let PORT

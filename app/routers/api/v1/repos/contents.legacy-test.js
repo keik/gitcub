@@ -1,8 +1,8 @@
 // @flow
 
-import test from 'tape'
 import axios from 'axios'
 import Express from 'express'
+import test from 'tape'
 
 import { API_REPOS_CONTENTS } from '../../../../../constants/api'
 import contentsRouter from './contents'

@@ -1,12 +1,13 @@
 // @flow
 
-import { Router } from 'express'
-import Git from 'nodegit'
 import { join } from 'path'
 
-import { convertCommitToGitCommitObject } from '../converter'
+import { Router } from 'express'
+import Git from 'nodegit'
+
 import config from '../../../../../config'
 import { API_GIT_COMMITS } from '../../../../../constants/api'
+import { convertCommitToGitCommitObject } from '../converter'
 
 const REPO_ROOT = config.env[process.env.NODE_ENV || 'development'].REPO_ROOT
 

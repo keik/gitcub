@@ -1,19 +1,19 @@
 // @flow
 
-import type { BranchObj, TagObj } from 'gh-types/nodegit'
 import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
+import type { BranchObj, TagObj } from 'gh-types/nodegit'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { Link, type Match } from 'react-router-dom'
 import type { Dispatch } from 'redux'
 
-import Entries from './shared/Entries'
-import TreeSelector from './shared/TreeSelector'
 import rootReducer from '../../ducks'
 import * as BranchesAction from '../../ducks/repository/branches'
 import * as CommitsAction from '../../ducks/repository/commits'
 import * as TagsAction from '../../ducks/repository/tags'
 import * as TreesAction from '../../ducks/repository/trees'
+import Entries from './shared/Entries'
+import TreeSelector from './shared/TreeSelector'
 
 type Props = {|
   branches: $ReadOnlyArray<BranchObj>,
