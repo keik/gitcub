@@ -1,6 +1,224 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Repository/RepositoryTree with 3rd level path 1`] = `
+exports[`Storyshots Repository/RepositoryTree with default 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "marginBottom": "12px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "marginRight": "12px",
+        }
+      }
+    >
+      <button
+        className="Button__Elem-sc-1xxl18f-0 hchnBn"
+        onClick={[Function]}
+      >
+        <i>
+          Branch: 
+        </i>
+        <span>
+          #TREE
+           
+        </span>
+        <i
+          className="fa fa-caret-down"
+        />
+      </button>
+    </div>
+    <div>
+      <strong>
+        <a
+          href="/#OWNER/#REPO/tree/#TREE"
+          onClick={[Function]}
+        >
+          #REPO
+        </a>
+      </strong>
+      <span
+        style={
+          Object {
+            "margin": "0 6px",
+          }
+        }
+      >
+        /
+      </span>
+      <strong>
+        #PATH
+      </strong>
+      <span
+        style={
+          Object {
+            "margin": "0 6px",
+          }
+        }
+      >
+        /
+      </span>
+    </div>
+  </div>
+  <div>
+    <div
+      className="sc-jzJRlG jTCqMT"
+    >
+      <div
+        className="sc-cSHVUG fMZqea"
+      >
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <div>
+            <img
+              alt="#NAME_1"
+              syle={
+                Object {
+                  "background": "#ccc",
+                  "height": 20,
+                  "verticalAlign": "middle",
+                  "width": 20,
+                }
+              }
+            />
+             
+            <a
+              href="/#NAME_1"
+            >
+              #NAME_1
+            </a>
+             
+            <a
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #MESSAGE_1
+            </a>
+          </div>
+          <div>
+            Latest commit 
+            <a
+              className="sc-eNQAEJ gwuXcB"
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #SHA_1
+            </a>
+             
+            <time-ago
+              datetime="#DATE_1"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-kAzzGY cekdOz"
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td
+                className="sc-hMqMXs bwvsVu"
+              >
+                <i
+                  className="fa fa-file-text-o sc-kEYyzF iBzrhm"
+                />
+              </td>
+              <td
+                className="name"
+              >
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_1"
+                  onClick={[Function]}
+                >
+                  #PATH_1
+                </a>
+              </td>
+              <td
+                className="sc-kkGfuU gFhsQg"
+              >
+                <a
+                  className="sc-iAyFgw cKTKLt"
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="sc-hSdWYo ecfdgP"
+              >
+                <span
+                  className="sc-eHgmQL jGOiod"
+                >
+                  <time-ago
+                    datetime="#DATE_1"
+                  />
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td
+                className="sc-hMqMXs bwvsVu"
+              >
+                <i
+                  className="fa fa-file-text-o sc-kEYyzF iBzrhm"
+                />
+              </td>
+              <td
+                className="name"
+              >
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
+                  onClick={[Function]}
+                >
+                  #PATH_2
+                </a>
+              </td>
+              <td
+                className="sc-kkGfuU gFhsQg"
+              >
+                <a
+                  className="sc-iAyFgw cKTKLt"
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="sc-hSdWYo ecfdgP"
+              >
+                <span
+                  className="sc-eHgmQL jGOiod"
+                >
+                  <time-ago
+                    datetime="#DATE_1"
+                  />
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositoryTree.Breadcrumbs with 3rd level path 1`] = `
 <div>
   <strong>
     <a
@@ -64,7 +282,7 @@ exports[`Storyshots Repository/RepositoryTree with 3rd level path 1`] = `
 </div>
 `;
 
-exports[`Storyshots Repository/RepositoryTree with default 1`] = `
+exports[`Storyshots Repository/RepositoryTree.Breadcrumbs with default 1`] = `
 <div>
   <strong>
     <a

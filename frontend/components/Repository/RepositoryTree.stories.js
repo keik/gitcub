@@ -80,7 +80,7 @@ storiesOf(storyname(base, filename), module).add('with default', () => (
   </MemoryRouter>
 ))
 
-storiesOf(storyname(base, filename), module)
+storiesOf(storyname(base, filename) + '.Breadcrumbs', module)
   .add('with default', () => (
     <MemoryRouter>
       <Breadcrumbs
