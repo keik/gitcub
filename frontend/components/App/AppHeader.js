@@ -147,7 +147,9 @@ export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
       <label htmlFor="input-search-query">This repository</label>
       <input id="input-search-query" type="text" placeholder="Search" />
     </form>
-    <nav css={headerNavStyles}>
+    <nav
+      css={{ ...headerNavStyles }} // prevent crash on storybook for some reasons...
+    >
       <ul>
         <li>
           <a to="#">Pull requests</a>
@@ -232,19 +234,19 @@ export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
   </div>
 )
 
-const headerNavStyles = css`
-  display: flex;
-  align-items: center;
-  > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    > li {
-      display: inline-block;
-      font-weight: bold;
-      + li {
-        margin-left: 12px;
+const headerNavStyles = {
+  display: 'flex',
+  alignItems: 'center',
+  '> ul': {
+    margin: 0,
+    padding: 0,
+    listStyle: 'none',
+    '> li': {
+      display: 'inline-block',
+      fontWeight: 'bold',
+      '+ li': {
+        marginLeft: 12
       }
     }
   }
-`
+}
