@@ -9,7 +9,7 @@ export default function errorHandlingMiddleware(
   // eslint-disable-next-line
   next: express$NextFunction
 ) {
-  console.log(err.stack)
+  if (process.env.NODE_ENV !== 'test') console.log(err.stack)
 
   // $FlowFixMe
   if (err.errno === Git.Error.CODE.ENOTFOUND)

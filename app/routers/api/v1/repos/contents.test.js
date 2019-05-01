@@ -2,25 +2,12 @@
 
 import assert from 'assert'
 import axios from 'axios'
-import Express from 'express'
 
 import { API_REPOS_CONTENTS } from '../../../../../constants/api'
-import contentsRouter from './contents'
-
-let app
-let PORT
-beforeAll(done => {
-  app = Express()
-    .use(contentsRouter)
-    .listen(0)
-  // $FlowFixMe
-  PORT = app.address().port
-  done()
-})
 
 test(`GET ${API_REPOS_CONTENTS} with no params should return files in root directory`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/contents`
+    `http://localhost:8001/api/v1/repos/user1/repo1/contents`
   )
   assert.deepEqual(res.data, [
     {
@@ -68,7 +55,7 @@ test(`GET ${API_REPOS_CONTENTS} with no params should return files in root direc
 
 test(`GET ${API_REPOS_CONTENTS} with ROOT_PATH should return files in root directory`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/contents/`
+    `http://localhost:8001/api/v1/repos/user1/repo1/contents/`
   )
   assert.deepEqual(res.data, [
     {
@@ -116,7 +103,7 @@ test(`GET ${API_REPOS_CONTENTS} with ROOT_PATH should return files in root direc
 
 test(`GET ${API_REPOS_CONTENTS} with DIR_PATH should return files in specified directory`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/contents/d`
+    `http://localhost:8001/api/v1/repos/user1/repo1/contents/d`
   )
   assert.deepEqual(res.data, [
     {
@@ -140,7 +127,7 @@ test(`GET ${API_REPOS_CONTENTS} with DIR_PATH should return files in specified d
 
 test(`GET ${API_REPOS_CONTENTS} with FILE_PATH directory should return file content`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/contents/file1`
+    `http://localhost:8001/api/v1/repos/user1/repo1/contents/file1`
   )
   assert.deepEqual(res.data, {
     content: 'hello\n',
@@ -155,7 +142,7 @@ test(`GET ${API_REPOS_CONTENTS} with FILE_PATH directory should return file cont
 
 test(`GET ${API_REPOS_CONTENTS} with DIR_PATH/FILE_PATH should return file contents`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/contents/d/file3`
+    `http://localhost:8001/api/v1/repos/user1/repo1/contents/d/file3`
   )
   assert.deepEqual(res.data, {
     content: 'in dir\n',
@@ -170,7 +157,7 @@ test(`GET ${API_REPOS_CONTENTS} with DIR_PATH/FILE_PATH should return file conte
 
 test(`GET ${API_REPOS_CONTENTS} with DIR_PATH?ref=REF should return files in specified directory`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/contents/d?ref=feature`
+    `http://localhost:8001/api/v1/repos/user1/repo1/contents/d?ref=feature`
   )
   assert.deepEqual(res.data, [
     {
@@ -186,7 +173,7 @@ test(`GET ${API_REPOS_CONTENTS} with DIR_PATH?ref=REF should return files in spe
 
 test(`GET ${API_REPOS_CONTENTS} with DIR_PATH?ref=SHA should return files in specified directory`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/contents/d?ref=0100c14d9341db683c43e47c6944ecb1616005bd`
+    `http://localhost:8001/api/v1/repos/user1/repo1/contents/d?ref=0100c14d9341db683c43e47c6944ecb1616005bd`
   )
   assert.deepEqual(res.data, [
     {
@@ -212,7 +199,7 @@ test(`GET ${API_REPOS_CONTENTS} with DIR_PATH?ref=SHA should return files in spe
 
 test(`GET ${API_REPOS_CONTENTS} with FILE_PATH?ref=REF should return file contents`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/contents/file2?ref=feature`
+    `http://localhost:8001/api/v1/repos/user1/repo1/contents/file2?ref=feature`
   )
   assert.deepEqual(res.data, {
     content: 'world!\n',
@@ -227,7 +214,7 @@ test(`GET ${API_REPOS_CONTENTS} with FILE_PATH?ref=REF should return file conten
 
 test(`GET ${API_REPOS_CONTENTS} with FILE_PATH?ref=SHA should return file contents`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/contents/file2?ref=297862f2168af863ae0e2735caabe8b7461f188f`
+    `http://localhost:8001/api/v1/repos/user1/repo1/contents/file2?ref=297862f2168af863ae0e2735caabe8b7461f188f`
   )
   assert.deepEqual(res.data, {
     content: 'world\n',
@@ -243,11 +230,7 @@ test(`GET ${API_REPOS_CONTENTS} with FILE_PATH?ref=SHA should return file conten
 
 test(`GET ${API_REPOS_CONTENTS} from no exists repo should return 404`, async () => {
   const res = await axios
-    .get(`http://localhost:${PORT}/api/v1/repos/no_exists_user/foo/contents`)
+    .get(`http://localhost:8001/api/v1/repos/no_exists_user/foo/contents`)
     .catch(e => e.response)
-  assert(res.status === 500) // TODO: 404
-})
-
-afterAll(() => {
-  if (app) app.close()
+  assert(res.status === 404)
 })

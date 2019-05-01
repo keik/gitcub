@@ -14,9 +14,8 @@
     "lint": "eslint .",
     "typecheck": "flow",
     "typecheck:coverage": "flow-coverage-report -i '{app,constants,frontend,migrations,models,seeders,shared}/**/*.js' -x '*/**/*.test.js'",
-    "test": "run-p test:jest:*",
-    "test:jest:frontend": "jest app",
-    "test:jest:server": "jest frontend",
+    "test": "jest --forceExit",
+    "test:coverage": "jest --forceExit --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

@@ -2,25 +2,12 @@
 
 import assert from 'assert'
 import axios from 'axios'
-import Express from 'express'
 
 import { API_GIT_TREES } from '../../../../../constants/api'
-import treesRouter from './trees'
-
-let app
-let PORT
-beforeAll(done => {
-  app = Express()
-    .use(treesRouter)
-    .listen(0)
-  // $FlowFixMe
-  PORT = app.address().port
-  done()
-})
 
 test(`GET ${API_GIT_TREES} with no parameter should return name of entries in default branch`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/trees`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/trees`
   )
   res.data.tree.sort((a, b) => a.path > b.path)
   // console.log(require('util').inspect(res.data, false, null))
@@ -74,7 +61,7 @@ test(`GET ${API_GIT_TREES} with no parameter should return name of entries in de
 
 test(`GET ${API_GIT_TREES} with SHA should return name of entries`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/trees/297862f2168af863ae0e2735caabe8b7461f188f`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/trees/297862f2168af863ae0e2735caabe8b7461f188f`
   )
   res.data.tree.sort((a, b) => a.path > b.path)
   // console.log(require('util').inspect(res.data, false, null))
@@ -109,7 +96,7 @@ test(`GET ${API_GIT_TREES} with SHA should return name of entries`, async () => 
 
 test(`GET ${API_GIT_TREES} with REFERENCE should return name of entries`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/trees/feature`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/trees/feature`
   )
   res.data.tree.sort((a, b) => a.path > b.path)
   // console.log(require('util').inspect(res.data, false, null))
@@ -143,7 +130,7 @@ test(`GET ${API_GIT_TREES} with REFERENCE should return name of entries`, async 
 
 test(`GET ${API_GIT_TREES} with REFERENCE?last_commit should return name of entries with last_commit`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/trees/297862f2168af863ae0e2735caabe8b7461f188f?last_commit=1`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/trees/297862f2168af863ae0e2735caabe8b7461f188f?last_commit=1`
   )
   // console.log(require('util').inspect(res.data, false, null))
   res.data.tree.sort((a, b) => a.path > b.path)
@@ -285,13 +272,7 @@ test(`GET ${API_GIT_TREES} with REFERENCE?last_commit should return name of entr
 
 test(`GET ${API_GIT_TREES} from no exists repo should return 404`, async () => {
   const res = await axios
-    .get(
-      `http://localhost:${PORT}/api/v1/repos/no_exists_user/foo/git/treesaaa`
-    )
+    .get(`http://localhost:8001/api/v1/repos/no_exists_user/foo/git/treesaaa`)
     .catch(e => e.response)
   assert(res.status === 404)
-})
-
-afterAll(() => {
-  if (app) app.close()
 })

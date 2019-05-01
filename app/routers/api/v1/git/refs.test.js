@@ -2,25 +2,12 @@
 
 import assert from 'assert'
 import axios from 'axios'
-import Express from 'express'
 
 import { API_GIT_REFS } from '../../../../../constants/api'
-import refsRouter from './refs'
-
-let app
-let PORT
-beforeAll(done => {
-  app = Express()
-    .use(refsRouter)
-    .listen(0)
-  // $FlowFixMe
-  PORT = app.address().port
-  done()
-})
 
 test(`GET ${API_GIT_REFS} with no param should return list of all refs`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/refs`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/refs`
   )
   // console.log(require('util').inspect(res.data, false, null))
   assert.deepEqual(
@@ -65,7 +52,7 @@ test(`GET ${API_GIT_REFS} with no param should return list of all refs`, async (
 
 test(`GET ${API_GIT_REFS} with /heads should return list of all branches`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/refs/heads`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/refs/heads`
   )
   // console.log(require('util').inspect(res.data, false, null))
   assert.deepEqual(
@@ -99,7 +86,7 @@ test(`GET ${API_GIT_REFS} with /heads should return list of all branches`, async
 
 test(`GET ${API_GIT_REFS} with /tags should return list of all tags`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/refs/tags`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/refs/tags`
   )
   // console.log(require('util').inspect(res.data, false, null))
   assert.deepEqual(
@@ -122,7 +109,7 @@ test(`GET ${API_GIT_REFS} with /tags should return list of all tags`, async () =
 
 test(`GET ${API_GIT_REFS} with /heads/BRANCH_NAME should return a specified ref`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/refs/heads/feature`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/refs/heads/feature`
   )
   // console.log(require('util').inspect(res.data, false, null))
   assert.deepEqual(res.data, {
@@ -140,7 +127,7 @@ test(`GET ${API_GIT_REFS} with /heads/BRANCH_NAME should return a specified ref`
 
 test(`GET ${API_GIT_REFS} with /heads/PARTIAL_BRANCH_NAME should return partial matched refs`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/refs/heads/feat`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/refs/heads/feat`
   )
   // console.log(require('util').inspect(res.data, false, null))
   assert.deepEqual(res.data, [
@@ -160,7 +147,7 @@ test(`GET ${API_GIT_REFS} with /heads/PARTIAL_BRANCH_NAME should return partial 
 
 test(`GET ${API_GIT_REFS} with /tags/PARTIAL_TAG_NAME should return partial matched refs`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/refs/tags/v1`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/refs/tags/v1`
   )
   // console.log(require('util').inspect(res.data, false, null))
   assert.deepEqual(
@@ -184,7 +171,7 @@ test(`GET ${API_GIT_REFS} with /tags/PARTIAL_TAG_NAME should return partial matc
 test(`GET ${API_GIT_REFS} with NOT_EXISTS_REF should return 404`, async () => {
   const res = await axios
     .get(
-      `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/refs/no_exists_ref`
+      `http://localhost:8001/api/v1/repos/user1/repo1/git/refs/no_exists_ref`
     )
     .catch(e => e.response)
   assert(res.status === 404)
@@ -192,11 +179,7 @@ test(`GET ${API_GIT_REFS} with NOT_EXISTS_REF should return 404`, async () => {
 
 test(`GET ${API_GIT_REFS} from no exists repo should return 404`, async () => {
   const res = await axios
-    .get(`http://localhost:${PORT}/api/v1/repos/no_exists_user/foo/git/refs`)
+    .get(`http://localhost:8001/api/v1/repos/no_exists_user/foo/git/refs`)
     .catch(e => e.response)
   assert(res.status === 404)
-})
-
-afterAll(() => {
-  if (app) app.close()
 })

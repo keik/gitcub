@@ -2,25 +2,12 @@
 
 import assert from 'assert'
 import axios from 'axios'
-import Express from 'express'
 
 import { API_GIT_COMMITS } from '../../../../../constants/api'
-import commitsRouter from './commits'
-
-let app
-let PORT
-beforeAll(done => {
-  app = Express()
-    .use(commitsRouter)
-    .listen(0)
-  // $FlowFixMe
-  PORT = app.address().port
-  done()
-})
 
 test(`GET ${API_GIT_COMMITS} with SHA should return a specified commit`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/commits/0100c14d9341db683c43e47c6944ecb1616005bd`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/commits/0100c14d9341db683c43e47c6944ecb1616005bd`
   )
   // console.log(require('util').inspect(res.data, false, null))
   assert.deepEqual(res.data, {
@@ -56,12 +43,8 @@ test(`GET ${API_GIT_COMMITS} with SHA should return a specified commit`, async (
 test(`GET ${API_GIT_COMMITS} from no exists repo should return 404`, async () => {
   const res = await axios
     .get(
-      `http://localhost:${PORT}/api/v1/repos/no_exists_user/foo/git/commits/0100c14d9341db683c43e47c6944ecb1616005bd`
+      `http://localhost:8001/api/v1/repos/no_exists_user/foo/git/commits/0100c14d9341db683c43e47c6944ecb1616005bd`
     )
     .catch(e => e.response)
   assert(res.status === 404)
-})
-
-afterAll(() => {
-  if (app) app.close()
 })

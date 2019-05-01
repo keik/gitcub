@@ -2,26 +2,12 @@
 
 import assert from 'assert'
 import axios from 'axios'
-import Express from 'express'
 
 import { API_REPOS_BRANCHES } from '../../../../../constants/api'
-import branchesRouter from './branches'
-
-let app
-let PORT
-
-beforeAll(done => {
-  app = Express()
-    .use(branchesRouter)
-    .listen(0)
-  // $FlowFixMe
-  PORT = app.address().port
-  done()
-})
 
 test(`GET ${API_REPOS_BRANCHES} with no param should return branches in default branch`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/branches`
+    `http://localhost:8001/api/v1/repos/user1/repo1/branches`
   )
   // console.log(require('util').inspect(res.data, false, null))
   assert.deepEqual(
@@ -107,11 +93,7 @@ test(`GET ${API_REPOS_BRANCHES} with no param should return branches in default 
 
 test(`GET ${API_REPOS_BRANCHES} from no exists repo should return 404`, async () => {
   const res = await axios
-    .get(`http://localhost:${PORT}/api/v1/repos/no_exists_user/foo/branches`)
+    .get(`http://localhost:8001/api/v1/repos/no_exists_user/foo/branches`)
     .catch(e => e.response)
-  assert(res.status === 500) // TODO: 404
-})
-
-afterAll(() => {
-  if (app) app.close()
+  assert(res.status === 404)
 })

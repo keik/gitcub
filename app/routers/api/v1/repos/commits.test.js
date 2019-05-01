@@ -2,25 +2,12 @@
 
 import assert from 'assert'
 import axios from 'axios'
-import Express from 'express'
 
 import { API_REPOS_COMMITS } from '../../../../../constants/api'
-import commitsRouter from './commits'
-
-let app
-let PORT
-beforeAll(done => {
-  app = Express()
-    .use(commitsRouter)
-    .listen(0)
-  // $FlowFixMe
-  PORT = app.address().port
-  done()
-})
 
 test(`GET ${API_REPOS_COMMITS} with no param should return commits in default branch`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/commits`
+    `http://localhost:8001/api/v1/repos/user1/repo1/commits`
   )
 
   // console.log(require('util').inspect(res.data[0], false, null))
@@ -71,7 +58,7 @@ test(`GET ${API_REPOS_COMMITS} with no param should return commits in default br
 
 test(`GET ${API_REPOS_COMMITS}/sha=SHA should return commits from specified SHA`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/commits?sha=2394f21336aec34a5a225f1e8b9039593f1d1e27`
+    `http://localhost:8001/api/v1/repos/user1/repo1/commits?sha=2394f21336aec34a5a225f1e8b9039593f1d1e27`
   )
   // console.log(require('util').inspect(res.data[0], false, null))
   assert(res.data.length === 5)
@@ -121,7 +108,7 @@ test(`GET ${API_REPOS_COMMITS}/sha=SHA should return commits from specified SHA`
 
 test(`GET ${API_REPOS_COMMITS}/sha=REF should return commits from specified SHA`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/commits?sha=feature`
+    `http://localhost:8001/api/v1/repos/user1/repo1/commits?sha=feature`
   )
   // console.log(require('util').inspect(res.data[0], false, null))
   assert(res.data.length === 5)
@@ -171,7 +158,7 @@ test(`GET ${API_REPOS_COMMITS}/sha=REF should return commits from specified SHA`
 
 test(`GET ${API_REPOS_COMMITS} with SHA should return a specified commit`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/commits/f1582566910f7a5d41b47f0c93ed560e1e1fd8d0`
+    `http://localhost:8001/api/v1/repos/user1/repo1/commits/f1582566910f7a5d41b47f0c93ed560e1e1fd8d0`
   )
   // console.log(require('util').inspect(res.data, false, null))
   res.data.files.sort((a, b) => a.filename > b.filename)
@@ -271,11 +258,7 @@ test(`GET ${API_REPOS_COMMITS} with SHA should return a specified commit`, async
 
 test(`GET ${API_REPOS_COMMITS} from no exists repo should return 404`, async () => {
   const res = await axios
-    .get(`http://localhost:${PORT}/api/v1/repos/no_exists_user/foo/commits`)
+    .get(`http://localhost:8001/api/v1/repos/no_exists_user/foo/commits`)
     .catch(e => e.response)
-  assert(res.status === 500) // TODO: 404
-})
-
-afterAll(() => {
-  if (app) app.close()
+  assert(res.status === 404)
 })

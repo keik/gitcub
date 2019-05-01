@@ -2,32 +2,19 @@
 
 import assert from 'assert'
 import axios from 'axios'
-import Express from 'express'
 
 import { API_GIT_BLOBS } from '../../../../../constants/api'
-import blobsRouter from './blobs'
-
-let app
-let PORT
-beforeAll(done => {
-  app = Express()
-    .use(blobsRouter)
-    .listen(0)
-  // $FlowFixMe
-  PORT = app.address().port
-  done()
-})
 
 test(`GET ${API_GIT_BLOBS} with no parameter should return 404`, async () => {
   const res = await axios
-    .get(`http://localhost:${PORT}/api/v1/repos/user1/repo1/git/blobs`)
+    .get(`http://localhost:8001/api/v1/repos/user1/repo1/git/blobs`)
     .catch(e => e.response)
   assert(res.status === 404)
 })
 
 test(`GET ${API_GIT_BLOBS} with SHA should return file info`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/blobs/b97038f29f6d581aa86d6417f9ed464c1cdfeba2`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/blobs/b97038f29f6d581aa86d6417f9ed464c1cdfeba2`
   )
   assert.deepEqual(res.data, {
     bytes: 18,
@@ -39,7 +26,7 @@ test(`GET ${API_GIT_BLOBS} with SHA should return file info`, async () => {
 
 test(`GET ${API_GIT_BLOBS} with REFERENCE/PATH should return file info`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/blobs/master/file1`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/blobs/master/file1`
   )
   assert.deepEqual(res.data, {
     bytes: 6,
@@ -51,7 +38,7 @@ test(`GET ${API_GIT_BLOBS} with REFERENCE/PATH should return file info`, async (
 
 test(`GET ${API_GIT_BLOBS} with REFERENCE/NESTED_PATH should return file info`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/blobs/master/d/dd/nested`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/blobs/master/d/dd/nested`
   )
   assert.deepEqual(res.data, {
     bytes: 8,
@@ -63,7 +50,7 @@ test(`GET ${API_GIT_BLOBS} with REFERENCE/NESTED_PATH should return file info`, 
 
 test(`GET ${API_GIT_BLOBS} with SHA/PATH should return file info`, async () => {
   const res = await axios.get(
-    `http://localhost:${PORT}/api/v1/repos/user1/repo1/git/blobs/f1582566910f7a5d41b47f0c93ed560e1e1fd8d0/file1`
+    `http://localhost:8001/api/v1/repos/user1/repo1/git/blobs/f1582566910f7a5d41b47f0c93ed560e1e1fd8d0/file1`
   )
   assert.deepEqual(res.data, {
     bytes: 6,
@@ -76,13 +63,9 @@ test(`GET ${API_GIT_BLOBS} with SHA/PATH should return file info`, async () => {
 test(`GET ${API_GIT_BLOBS} from no exists repo should return 404`, async () => {
   const res = await axios
     .get(
-      `http://localhost:${PORT}/api/v1/repos/no_exists_user/foo/git/blobs/b97038f29f6d581aa86d6417f9ed464c1cdfeba2`
+      `http://localhost:8001/api/v1/repos/no_exists_user/foo/git/blobs/b97038f29f6d581aa86d6417f9ed464c1cdfeba2`
     )
     .catch(e => e.response)
 
   assert(res.status === 404)
-})
-
-afterAll(async () => {
-  if (app) app.close()
 })
