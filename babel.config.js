@@ -31,8 +31,7 @@ module.exports = {
             }
           }
         ],
-        '@babel/preset-flow',
-        '@babel/preset-react'
+        'power-assert'
       ],
       plugins: ['require-context-hook']
     }
