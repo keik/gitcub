@@ -4,6 +4,8 @@ import * as React from 'react'
 import { hot } from 'react-hot-loader/root'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { applyMiddleware, compose, createStore } from 'redux'
+import logger from 'redux-logger'
 import { ThemeProvider } from 'styled-components'
 import 'time-elements'
 
@@ -25,11 +27,19 @@ import RepositorySettings from './components/Repository/RepositorySettings'
 import { RepositoryTreeContainer } from './components/Repository/RepositoryTree'
 import RepositoryWiki from './components/Repository/RepositoryWiki'
 import { UserContainer } from './components/User'
+import rootReducer from './ducks'
 import GlobalStyles from './GlobalStyles'
-import createConfigureStore from './store'
 import theme from './theme'
 
-const store = createConfigureStore({})
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+const store = createStore(
+  rootReducer,
+  composeEnhancers(
+    applyMiddleware(
+      ...[...(process.env.NODE_ENV === 'development' ? [logger] : [])]
+    )
+  )
+)
 
 // prettier-ignore
 const App = () => (

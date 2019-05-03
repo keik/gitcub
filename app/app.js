@@ -51,7 +51,7 @@ app.use(
 )
 
 // add request logger
-app.use(morgan('combined'))
+if (process.env.NODE_ENV !== 'test') app.use(morgan('combined'))
 
 // add static directories
 app.use(Express.static('dist'))
@@ -97,7 +97,7 @@ app.use(
 // add routers
 routers.forEach(router => {
   app.use(router)
-  expressListRoutes(router)
+  if (process.env.NODE_ENV !== 'test') expressListRoutes(router)
 })
 
 // apply HTML renderer middleware

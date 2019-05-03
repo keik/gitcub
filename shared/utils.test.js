@@ -1,6 +1,6 @@
 // @flow
 
-import test from 'tape'
+import assert from 'assert'
 
 import * as utils from './utils'
 
@@ -79,9 +79,9 @@ const entries = [
   }
 ]
 
-test('parse entries by root', t => {
+test('parse entries by root', () => {
   const parsed_root = utils.parseEntriesByDirLevel((entries: any), '')
-  t.deepEqual(parsed_root, [
+  assert.deepEqual(parsed_root, [
     {
       path: 'file1',
       sha: 'ce013625030ba8dba906f756967f9e9ca394464a',
@@ -133,12 +133,11 @@ test('parse entries by root', t => {
       type: 'tree'
     }
   ])
-  t.end()
 })
 
-test('parse entries by 1-level dir (1)', t => {
+test('parse entries by 1-level dir (1)', () => {
   const parsed_codes = utils.parseEntriesByDirLevel((entries: any), 'codes')
-  t.deepEqual(parsed_codes, [
+  assert.deepEqual(parsed_codes, [
     {
       path: 'file.js',
       sha: 'deb8561a16afdee514523b1f3ea6bd32d3287fa2',
@@ -170,11 +169,11 @@ test('parse entries by 1-level dir (1)', t => {
       type: 'blob'
     }
   ])
-  t.end()
 })
-test('parse entries by 1-level dir (2)', t => {
+
+test('parse entries by 1-level dir (2)', () => {
   const parsed_d = utils.parseEntriesByDirLevel((entries: any), 'd')
-  t.deepEqual(parsed_d, [
+  assert.deepEqual(parsed_d, [
     {
       path: 'file3',
       sha: 'd2cebd4f0a9e97a48a6139d09cafdb513ad8fee3',
@@ -196,11 +195,11 @@ test('parse entries by 1-level dir (2)', t => {
       type: 'tree'
     }
   ])
-  t.end()
 })
-test('parse entries by 2-level dir', t => {
+
+test('parse entries by 2-level dir', () => {
   const parsed_d_dd = utils.parseEntriesByDirLevel((entries: any), 'd/dd')
-  t.deepEqual(parsed_d_dd, [
+  assert.deepEqual(parsed_d_dd, [
     {
       path: 'nested',
       sha: '319b14e6a0dfee9ed07d56a90d40ff852ec63672',
@@ -212,5 +211,4 @@ test('parse entries by 2-level dir', t => {
       type: 'blob'
     }
   ])
-  t.end()
 })
