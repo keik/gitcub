@@ -1,6 +1,7 @@
 // @flow
 
 import http from 'http'
+import axios from 'axios'
 
 require('@babel/register')
 
@@ -9,8 +10,9 @@ module.exports = async () => {
     require('./app').default(...arguments)
   })
   server.listen(8001, '0.0.0.0')
-  console.log('Server is starting...')
-  global.__APP_SERVER__ = server
-  await new Promise(r => setTimeout(r, 10000))
   console.log('Server started with port 8001')
+  global.__APP_SERVER__ = server
+
+  // warm up (without this, request tests will be failed for some reason...)
+  await axios.get('http://localhost:8001')
 }
