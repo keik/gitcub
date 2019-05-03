@@ -7,7 +7,7 @@
     "postinstall": "npm rebuild nodegit",
     "clean": "rm -rf dist",
     "build": "run-s build:*",
-    "build:js": "webpack --mode production --progress",
+    "build:js": "webpack --mode production",
     "watch:js": "webpack-dev-server --progress --hot",
     "watch:server": "NODE_ENV=development node --inspect app",
     "start": "NODE_ENV=production node app",
