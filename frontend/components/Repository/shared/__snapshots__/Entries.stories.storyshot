@@ -1,12 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Repository/shared/Entries with default 1`] = `
+.c0 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c1 {
+  padding: 12px;
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c3 {
+  padding: 0;
+  background-color: #fff;
+}
+
+.c3 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c3 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c3 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c2 {
+  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  font-size: 90%;
+  color: #445055;
+}
+
+.c4 {
+  width: 18px;
+}
+
+.c5 {
+  padding-left: 12px;
+}
+
+.c6 {
+  padding-left: 12px;
+}
+
+.c7 {
+  color: #888;
+}
+
+.c8 {
+  width: 120px;
+  text-align: right;
+}
+
+.c9 {
+  padding-right: 12px;
+}
+
 <div>
   <div
-    className="sc-jzJRlG jTCqMT"
+    className="c0"
   >
     <div
-      className="sc-cSHVUG fMZqea"
+      className="c1"
     >
       <div
         style={
@@ -45,7 +111,7 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
         <div>
           Latest commit 
           <a
-            className="sc-eNQAEJ gwuXcB"
+            className="c2"
             href="/#OWNER/#REPO/commit/#SHA_1"
             onClick={[Function]}
           >
@@ -59,16 +125,16 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
       </div>
     </div>
     <div
-      className="sc-kAzzGY cekdOz"
+      className="c3"
     >
       <table>
         <tbody>
           <tr>
             <td
-              className="sc-hMqMXs bwvsVu"
+              className="c4"
             >
               <i
-                className="fa fa-file-text-o sc-kEYyzF iBzrhm"
+                className="fa fa-file-text-o c5"
               />
             </td>
             <td
@@ -82,10 +148,10 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
               </a>
             </td>
             <td
-              className="sc-kkGfuU gFhsQg"
+              className="c6"
             >
               <a
-                className="sc-iAyFgw cKTKLt"
+                className="c7"
                 href="/#OWNER/#REPO/commit/#SHA_1"
                 onClick={[Function]}
               >
@@ -93,10 +159,10 @@ exports[`Storyshots Repository/shared/Entries with default 1`] = `
               </a>
             </td>
             <td
-              className="sc-hSdWYo ecfdgP"
+              className="c8"
             >
               <span
-                className="sc-eHgmQL jGOiod"
+                className="c9"
               >
                 <time-ago
                   datetime="#DATE_1"

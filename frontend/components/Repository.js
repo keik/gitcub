@@ -18,11 +18,11 @@ const Repository = ({
 |}) => (
   <div>
     <div
-      css={`
-        margin-bottom: 24px;
-        background-color: #fafafa;
-        border-bottom: 1px solid #eee;
-      `}
+      css={({ theme }) => ({
+        marginBottom: theme.space[4],
+        backgroundColor: '#fafafa',
+        borderBottom: '1px solid #eee'
+      })}
     >
       <RepositoryHeader
         forkedCount={-1}

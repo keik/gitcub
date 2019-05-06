@@ -1,17 +1,140 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Repository/RepositoryFileContent with default 1`] = `
+.c0 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c3 {
+  padding: 12px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c1 {
+  padding: 12px;
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c2 {
+  padding: 12px;
+  background-color: #fff;
+}
+
+.c2 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c2 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c2 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c6 {
+  margin: 0;
+}
+
+.c7 {
+  float: left;
+  min-width: 48px;
+  padding: 0.5em;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+  text-align: right;
+  border-right: 1px solid #eee;
+}
+
+.c8 {
+  background-color: white;
+}
+
+.c4 a,
+.c4 button,
+.c4 input[type='submit'] {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c4 >:first-child a,
+.c4 >:first-child button,
+.c4 >:first-child input[type='submit'] {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c4 > a:first-child,
+.c4 > button:first-child,
+.c4 > input[type='submit']:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c4 >:last-child a,
+.c4 >:last-child button,
+.c4 >:last-child input[type='submit'] {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c4 > a:last-child,
+.c4 > button:last-child,
+.c4 > input[type='submit']:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c5 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c5:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <div>
   <div
-    className="sc-jzJRlG jTCqMT"
+    className="c0"
   >
     <div
-      className="sc-cSHVUG fMZqea"
+      className="c1"
     >
       commit tease
     </div>
     <div
-      className="sc-kAzzGY jqJNyV"
+      className="c2"
     >
       <button>
         2
@@ -52,10 +175,10 @@ exports[`Storyshots Repository/RepositoryFileContent with default 1`] = `
     </div>
   </div>
   <div
-    className="sc-jzJRlG jTCqMT"
+    className="c0"
   >
     <div
-      className="sc-cSHVUG hAtYNz"
+      className="c3"
     >
       <div
         style={
@@ -79,10 +202,10 @@ exports[`Storyshots Repository/RepositoryFileContent with default 1`] = `
           }
         >
           <div
-            className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+            className="c4"
           >
             <a
-              className="Button__Elem-sc-1xxl18f-0 hchnBn"
+              className="c5"
               href="/{params.owner}/$REPO/raw/$BRANCH/$PATH"
               onClick={[Function]}
               small="true"
@@ -90,7 +213,7 @@ exports[`Storyshots Repository/RepositoryFileContent with default 1`] = `
               Raw
             </a>
             <a
-              className="Button__Elem-sc-1xxl18f-0 hchnBn"
+              className="c5"
               href="/$OWNER/$REPO/blame/$BRANCH/$PATH"
               onClick={[Function]}
               small="true"
@@ -98,7 +221,7 @@ exports[`Storyshots Repository/RepositoryFileContent with default 1`] = `
               Blame
             </a>
             <a
-              className="Button__Elem-sc-1xxl18f-0 hchnBn"
+              className="c5"
               href="/$OWNER/$REPO/commits/$BRANCH/$PATH"
               onClick={[Function]}
               small="true"
@@ -126,20 +249,20 @@ exports[`Storyshots Repository/RepositoryFileContent with default 1`] = `
       </div>
     </div>
     <div
-      className="sc-kAzzGY jqJNyV"
+      className="c2"
     >
       <pre
-        className="Code-sc-1s5fbrb-0 bkUgzU"
+        className="c6"
       >
         <ul
-          className="Code__Lines-sc-1s5fbrb-1 fItEer"
+          className="c7"
         >
           <li>
             1
           </li>
         </ul>
         <code
-          className="hljs Code__Body-sc-1s5fbrb-2 eTRaNg"
+          className="hljs c8"
           dangerouslySetInnerHTML={
             Object {
               "__html": "$CONTENT",

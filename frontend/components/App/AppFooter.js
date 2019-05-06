@@ -1,7 +1,6 @@
 // @flow
 
 import * as React from 'react'
-import { css } from 'styled-components'
 
 import Logo from '../common/atoms/Logo'
 import InnerContainer from '../common/layouts/InnerContainer'
@@ -9,27 +8,27 @@ import InnerContainer from '../common/layouts/InnerContainer'
 const AppFooter = () => (
   <InnerContainer>
     <div
-      css={css`
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 24px 0;
-        margin-top: 36px;
-        border-top: 1px solid #eee;
-        color: #767676;
-        font-size: 12px;
-        > ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          > li {
-            display: inline-block;
-            + li {
-              margin-left: 10px;
+      css={({ theme }) => ({
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        padding: `${theme.space[3]} 0`,
+        marginTop: theme.space[4],
+        borderTop: '1px solid #eee',
+        color: '#767676',
+        fontSize: '12px',
+        '> ul': {
+          listStyle: 'none',
+          padding: 0,
+          margin: 0,
+          '> li': {
+            display: 'inline-block',
+            '+ li': {
+              marginLeft: theme.space[2]
             }
           }
         }
-      `}
+      })}
     >
       <ul>
         <li>&copy; 2016 keik</li>

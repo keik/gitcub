@@ -1,20 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Repository/RepositoryBranches with default 1`] = `
+.c3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c3 li {
+  padding: 12px 0;
+}
+
+.c3 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c0 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c1 {
+  padding: 12px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c2 {
+  padding: 12px;
+  background-color: #fff;
+}
+
+.c2 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c2 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c2 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
 <div>
   <div
-    className="sc-jzJRlG jTCqMT"
+    className="c0"
   >
     <div
-      className="sc-cSHVUG hAtYNz"
+      className="c1"
     >
       Default branch
     </div>
     <div
-      className="sc-kAzzGY jqJNyV"
+      className="c2"
     >
       <ul
-        className="sc-fjdhpX eOvOXo"
+        className="c3"
       >
         <li>
           <a
@@ -38,18 +87,18 @@ exports[`Storyshots Repository/RepositoryBranches with default 1`] = `
     </div>
   </div>
   <div
-    className="sc-jzJRlG jTCqMT"
+    className="c0"
   >
     <div
-      className="sc-cSHVUG hAtYNz"
+      className="c1"
     >
       Active branches
     </div>
     <div
-      className="sc-kAzzGY jqJNyV"
+      className="c2"
     >
       <ul
-        className="sc-fjdhpX eOvOXo"
+        className="c3"
       >
         <li>
           <a

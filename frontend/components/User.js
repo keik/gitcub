@@ -114,7 +114,7 @@ const User = ({ children, user }: {| children: React.Node, user: UserT |}) => (
                 marginRight: space[3],
                 '> a': {
                   display: 'block',
-                  padding: `${space[2]}px ${space[1]}px`
+                  padding: `${space[2]} ${space[1]}`
                 }
               }
             })}

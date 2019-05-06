@@ -1,23 +1,135 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Repository/RepositoryCommits with default 1`] = `
+.c6 a,
+.c6 button,
+.c6 input[type='submit'] {
+  border-right-width: 0;
+  border-radius: 0;
+}
+
+.c6 >:first-child a,
+.c6 >:first-child button,
+.c6 >:first-child input[type='submit'] {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c6 > a:first-child,
+.c6 > button:first-child,
+.c6 > input[type='submit']:first-child {
+  border-right-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c6 >:last-child a,
+.c6 >:last-child button,
+.c6 >:last-child input[type='submit'] {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c6 > a:last-child,
+.c6 > button:last-child,
+.c6 > input[type='submit']:last-child {
+  border-right-width: 1px;
+  border-radius: 0 3px 3px 0;
+}
+
+.c0 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 8px;
+  border-top: 1px solid #eee;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.c4 {
+  font-weight: normal;
+  color: #767676;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c7 {
+  display: inline-block;
+  color: #333;
+  background-color: transparent;
+  background-image: none;
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <ul
-  className="sc-kgoBCf mSzHB"
+  className="c0"
 >
   <li
-    className="sc-kGXeez qLXdD"
+    className="c1"
   >
     <div
-      className="sc-kpOJdX jNGiee"
+      className="c2"
     >
       <div>
         <div
-          className="sc-dxgOiQ dWvagZ"
+          className="c3"
         >
           $MESSAGE_1
         </div>
         <div
-          className="sc-ckVGcZ besKCT"
+          className="c4"
         >
           <a
             href="/$NAME_1}"
@@ -38,20 +150,20 @@ exports[`Storyshots Repository/RepositoryCommits with default 1`] = `
       </div>
     </div>
     <div
-      className="sc-jKJlTe gIcDLN"
+      className="c5"
     >
       <div
-        className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+        className="c6"
       >
         <button
-          className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+          className="c7"
         >
           <i
             className="fa fa-clipboard"
           />
         </button>
         <a
-          className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+          className="c7"
           href="/$OWNER/$REPO/commit/$SHA_1"
           onClick={[Function]}
           small="true"
@@ -61,7 +173,7 @@ exports[`Storyshots Repository/RepositoryCommits with default 1`] = `
         </a>
       </div>
       <a
-        className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+        className="c7"
         href="/$OWNER/$REPO/tree/$SHA_1"
         onClick={[Function]}
         small="true"
@@ -79,19 +191,19 @@ exports[`Storyshots Repository/RepositoryCommits with default 1`] = `
     </div>
   </li>
   <li
-    className="sc-kGXeez qLXdD"
+    className="c1"
   >
     <div
-      className="sc-kpOJdX jNGiee"
+      className="c2"
     >
       <div>
         <div
-          className="sc-dxgOiQ dWvagZ"
+          className="c3"
         >
           $MESSAGE_2
         </div>
         <div
-          className="sc-ckVGcZ besKCT"
+          className="c4"
         >
           <a
             href="/$NAME_2}"
@@ -112,20 +224,20 @@ exports[`Storyshots Repository/RepositoryCommits with default 1`] = `
       </div>
     </div>
     <div
-      className="sc-jKJlTe gIcDLN"
+      className="c5"
     >
       <div
-        className="SegmentedButtonsContainer-sc-1b88fwp-0 ibIufw"
+        className="c6"
       >
         <button
-          className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+          className="c7"
         >
           <i
             className="fa fa-clipboard"
           />
         </button>
         <a
-          className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+          className="c7"
           href="/$OWNER/$REPO/commit/$SHA_2"
           onClick={[Function]}
           small="true"
@@ -135,7 +247,7 @@ exports[`Storyshots Repository/RepositoryCommits with default 1`] = `
         </a>
       </div>
       <a
-        className="Button__Elem-sc-1xxl18f-0 hpjZpH"
+        className="c7"
         href="/$OWNER/$REPO/tree/$SHA_2"
         onClick={[Function]}
         small="true"

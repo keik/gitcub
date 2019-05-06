@@ -1,24 +1,111 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Login without session 1`] = `
+.c2 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c3 {
+  padding: 12px;
+  background-color: #fff;
+}
+
+.c3 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c3 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c3 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c5 {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.c5 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.c1 {
+  text-align: center;
+}
+
+.c4 {
+  background-color: #fff;
+}
+
+.c6 {
+  display: inline-block;
+  color: #fff;
+  background-image: linear-gradient(#8add6d,#60b044);
+  position: relative;
+  padding: 6px 12px;
+  border: 1px solid #5aad35;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c6:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <div
-  className="sc-chPdSV kHQoSX"
+  className="c0"
 >
-  <h1>
+  <h1
+    className="c1"
+  >
     Sign in to GH
   </h1>
   <div
-    className="sc-jzJRlG jTCqMT"
+    className="c2"
   >
     <div
-      className="sc-kAzzGY jqJNyV"
+      className="c3"
     >
       <form
         action="/session"
+        className="c4"
         method="post"
       >
         <div
-          className="FormGroup-kp6edz-0 ilxwhU"
+          className="c5"
         >
           <label
             htmlFor="login"
@@ -32,7 +119,7 @@ exports[`Storyshots Login without session 1`] = `
           />
         </div>
         <div
-          className="FormGroup-kp6edz-0 ilxwhU"
+          className="c5"
         >
           <label
             htmlFor="id"
@@ -46,7 +133,7 @@ exports[`Storyshots Login without session 1`] = `
           />
         </div>
         <button
-          className="Button__Elem-sc-1xxl18f-0 jCZCvk"
+          className="c6"
         >
           Sign in
         </button>

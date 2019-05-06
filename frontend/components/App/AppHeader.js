@@ -1,7 +1,6 @@
 // @flow
 
 import * as React from 'react'
-import { css } from 'styled-components'
 
 import type { SessionT } from '../../ducks/session'
 import Logo from '../common/atoms/Logo'
@@ -18,19 +17,18 @@ export default AppHeader
 
 export const AppHeaderWithoutSession = () => (
   <div
-    css={css`
-      padding: 16px 0;
-      background-color: #24292e;
-      font-size: 13px;
-
-      a {
-        color: #fff;
-        &:hover {
-          text-decoration: none;
-          color: rgba(255, 255, 255, 0.75);
+    css={({ theme }) => ({
+      padding: `${theme.space[3]} 0`,
+      backgroundColor: '#24292e',
+      fontSize: '13px',
+      a: {
+        color: '#fff',
+        '&:hover': {
+          textDecoration: 'none',
+          color: 'rgba(255, 255, 255, 0.75)'
         }
       }
-    `}
+    })}
   >
     <InnerContainer
       css={{
@@ -51,15 +49,15 @@ export const AppHeaderWithoutSession = () => (
         }}
       >
         <form
-          css={css`
-            display: flex;
-            background-color: hsla(0, 0%, 100%, 0.125);
-            border-radius: 3px;
-            input {
-              border: none;
-              min-height: 26px;
+          css={{
+            display: 'flex',
+            backgroundColor: 'hsla(0, 0%, 100%, 0.125)',
+            borderRadius: '3px',
+            input: {
+              border: 'none',
+              minHeight: '26px'
             }
-          `}
+          }}
         >
           <label>
             <input
@@ -102,47 +100,46 @@ export const AppHeaderWithoutSession = () => (
 
 export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
   <div
-    css={css`
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      > *:last-child {
-        margin-left: auto;
-      }
-      padding: 12px;
-      background-color: #24292e;
-      border-bottom: 1px solid #e5e5e5;
-      font-size: 13px;
-
-      a {
-        color: #fff;
-        &:hover {
-          text-decoration: none;
-          color: rgba(255, 255, 255, 0.75);
+    css={({ theme }) => ({
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      '> *:last-child': {
+        marginLeft: 'auto'
+      },
+      padding: theme.space[2],
+      backgroundColor: '#24292e',
+      borderBottom: '1px solid #e5e5e5',
+      fontSize: '13px',
+      a: {
+        color: '#fff',
+        '&:hover': {
+          textDecoration: 'none',
+          color: 'rgba(255, 255, 255, 0.75)'
         }
       }
-    `}
+    })}
   >
     <Logo href="/">GH</Logo>
     <form
-      css={css`
-        display: flex;
-        align-items: center;
-        margin: 0 12px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        label {
-          border-right: 1px solid #ddd;
-          padding: 4px 8px;
-          color: #767676;
-          font-size: 12px;
+      css={({ theme }) => ({
+        display: 'flex',
+        alignItems: 'center',
+        margin: `0 ${theme.space[2]}`,
+        backgroundColor: '#fff',
+        border: '1px solid #ddd',
+        borderRadius: '3px',
+        label: {
+          borderRight: '1px solid #ddd',
+          padding: `${theme.space[1]} ${theme.space[2]}`,
+          color: '#767676',
+          fontSize: '12px'
+        },
+        input: {
+          border: 'none',
+          minHeight: '26px'
         }
-        input {
-          border: none;
-          min-height: 26px;
-        }
-      `}
+      })}
     >
       <label htmlFor="input-search-query">This repository</label>
       <input id="input-search-query" type="text" placeholder="Search" />

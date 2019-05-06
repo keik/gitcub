@@ -1,8 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots New with default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c2 {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.c2 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.c3 {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.c3 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 14px;
+  color: #767676;
+}
+
+.c4 {
+  display: inline-block;
+  color: #fff;
+  background-image: linear-gradient(#8add6d,#60b044);
+  position: relative;
+  padding: 6px 12px;
+  border: 1px solid #5aad35;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c4:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <div
-  className="InnerContainer___default-yh8td3-0 jfPiqN"
+  className="c0"
 >
   <div
     style={
@@ -24,7 +83,7 @@ exports[`Storyshots New with default 1`] = `
       Create a new repository
     </h2>
     <p
-      className="P-sc-1ematb3-0 hZyzKr"
+      className="c1"
     >
       A repository contains all the files for your project, including the revision history.
     </p>
@@ -41,7 +100,7 @@ exports[`Storyshots New with default 1`] = `
     />
     <div>
       <div
-        className="FormGroup-kp6edz-0 ilxwhU"
+        className="c2"
         style={
           Object {
             "display": "inline-block",
@@ -63,7 +122,7 @@ exports[`Storyshots New with default 1`] = `
          / 
       </span>
       <div
-        className="FormGroup-kp6edz-0 eYxiUY"
+        className="c3"
       >
         <label
           htmlFor="name"
@@ -78,7 +137,7 @@ exports[`Storyshots New with default 1`] = `
       </div>
     </div>
     <div
-      className="FormGroup-kp6edz-0 ilxwhU"
+      className="c2"
     >
       <label
         htmlFor="description"
@@ -98,7 +157,7 @@ exports[`Storyshots New with default 1`] = `
     </div>
     <hr />
     <div
-      className="FormGroup-kp6edz-0 ilxwhU"
+      className="c2"
     >
       <label>
         <input
@@ -109,13 +168,13 @@ exports[`Storyshots New with default 1`] = `
         Public
       </label>
       <p
-        className="P-sc-1ematb3-0 hZyzKr"
+        className="c1"
       >
         Anyone can see this repository. You choose who can commit.
       </p>
     </div>
     <div
-      className="FormGroup-kp6edz-0 ilxwhU"
+      className="c2"
     >
       <label>
         <input
@@ -126,14 +185,14 @@ exports[`Storyshots New with default 1`] = `
         Private
       </label>
       <p
-        className="P-sc-1ematb3-0 hZyzKr"
+        className="c1"
       >
         You choose who can see and commit to this repository.
       </p>
     </div>
     <hr />
     <button
-      className="Button__Elem-sc-1xxl18f-0 jCZCvk"
+      className="c4"
     >
       Create repository
     </button>

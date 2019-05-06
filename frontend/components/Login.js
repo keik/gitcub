@@ -8,24 +8,29 @@ import Panel from './common/blocks/Panel'
 
 const Login = () => (
   <div
-    css={`
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      width: 300px;
-
-      > form {
-        background-color: #fff;
-      }
-      h1 {
-        text-align: center;
-      }
-    `}
+    css={{
+      display: 'flex',
+      flexDirection: 'column',
+      margin: '0 auto',
+      width: '300px'
+    }}
   >
-    <h1>Sign in to GH</h1>
+    <h1
+      css={{
+        textAlign: 'center'
+      }}
+    >
+      Sign in to GH
+    </h1>
     <Panel>
       <Panel.Body>
-        <form action="/session" method="post">
+        <form
+          action="/session"
+          method="post"
+          css={{
+            backgroundColor: '#fff'
+          }}
+        >
           <FormGroup>
             <label htmlFor="login">Username or email address</label>
             <input id="login" name="login" type="text" />
