@@ -1,5 +1,6 @@
 // @flow
 
+import css from '@styled-system/css'
 import * as React from 'react'
 
 import Button from '../common/atoms/Button'
@@ -34,9 +35,9 @@ const RepositoryHeader = ({
       }}
     >
       <h1
-        css={({ theme }) => ({
+        css={css({
           display: 'inline-block',
-          color: theme.color.gray,
+          color: 'gray',
           fontSize: '18px'
         })}
       >

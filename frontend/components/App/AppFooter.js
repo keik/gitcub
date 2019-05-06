@@ -1,5 +1,6 @@
 // @flow
 
+import css from '@styled-system/css'
 import * as React from 'react'
 
 import Logo from '../common/atoms/Logo'
@@ -8,12 +9,12 @@ import InnerContainer from '../common/layouts/InnerContainer'
 const AppFooter = () => (
   <InnerContainer>
     <div
-      css={({ theme }) => ({
+      css={css({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: `${theme.space[3]} 0`,
-        marginTop: theme.space[4],
+        py: 3,
+        mt: 4,
         borderTop: '1px solid #eee',
         color: '#767676',
         fontSize: '12px',
@@ -24,7 +25,7 @@ const AppFooter = () => (
           '> li': {
             display: 'inline-block',
             '+ li': {
-              marginLeft: theme.space[2]
+              ml: 2
             }
           }
         }
