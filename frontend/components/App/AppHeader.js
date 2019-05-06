@@ -1,5 +1,6 @@
 // @flow
 
+import css from '@styled-system/css'
 import * as React from 'react'
 
 import type { SessionT } from '../../ducks/session'
@@ -17,8 +18,8 @@ export default AppHeader
 
 export const AppHeaderWithoutSession = () => (
   <div
-    css={({ theme }) => ({
-      padding: `${theme.space[3]} 0`,
+    css={css({
+      py: 3,
       backgroundColor: '#24292e',
       fontSize: '13px',
       a: {
@@ -100,14 +101,14 @@ export const AppHeaderWithoutSession = () => (
 
 export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
   <div
-    css={({ theme }) => ({
+    css={css({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
       '> *:last-child': {
         marginLeft: 'auto'
       },
-      padding: theme.space[2],
+      p: 2,
       backgroundColor: '#24292e',
       borderBottom: '1px solid #e5e5e5',
       fontSize: '13px',
@@ -122,16 +123,17 @@ export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
   >
     <Logo href="/">GH</Logo>
     <form
-      css={({ theme }) => ({
+      css={css({
         display: 'flex',
         alignItems: 'center',
-        margin: `0 ${theme.space[2]}`,
+        mx: 2,
         backgroundColor: '#fff',
         border: '1px solid #ddd',
         borderRadius: '3px',
         label: {
           borderRight: '1px solid #ddd',
-          padding: `${theme.space[1]} ${theme.space[2]}`,
+          py: 1,
+          px: 2,
           color: '#767676',
           fontSize: '12px'
         },

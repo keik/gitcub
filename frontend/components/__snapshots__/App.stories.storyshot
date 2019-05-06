@@ -38,7 +38,8 @@ exports[`Storyshots App with session 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-top: 32px;
   border-top: 1px solid #eee;
   color: #767676;
@@ -47,8 +48,8 @@ exports[`Storyshots App with session 1`] = `
 
 .c6 > ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .c6 > ul > li {
@@ -101,7 +102,8 @@ exports[`Storyshots App with session 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 8px;
+  margin-left: 8px;
+  margin-right: 8px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
@@ -109,7 +111,10 @@ exports[`Storyshots App with session 1`] = `
 
 .c2 label {
   border-right: 1px solid #ddd;
-  padding: 4px 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
   color: #767676;
   font-size: 12px;
 }
@@ -349,7 +354,8 @@ exports[`Storyshots App without session 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-top: 32px;
   border-top: 1px solid #eee;
   color: #767676;
@@ -358,8 +364,8 @@ exports[`Storyshots App without session 1`] = `
 
 .c9 > ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .c9 > ul > li {
@@ -371,7 +377,8 @@ exports[`Storyshots App without session 1`] = `
 }
 
 .c0 {
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #24292e;
   font-size: 13px;
 }

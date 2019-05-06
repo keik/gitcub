@@ -1,5 +1,6 @@
 // @flow
 
+import css from '@styled-system/css'
 import type { RepositoryT } from 'gh-types/gh'
 import * as React from 'react'
 import { connect } from 'react-redux'
@@ -18,9 +19,9 @@ const Home = ({
 |}) => (
   <InnerContainer>
     <div
-      css={({ theme }) => ({
+      css={css({
         display: 'flex',
-        marginTop: theme.space[4]
+        mt: 4
       })}
     >
       <div css={{ flexGrow: 1 }}>
@@ -31,9 +32,9 @@ const Home = ({
         </List>
       </div>
       <div
-        css={({ theme }) => ({
+        css={css({
           width: '320px',
-          marginLeft: theme.space[4]
+          ml: 4
         })}
       >
         <Panel>

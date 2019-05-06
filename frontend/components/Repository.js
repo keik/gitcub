@@ -1,5 +1,6 @@
 // @flow
 
+import css from '@styled-system/css'
 import * as React from 'react'
 import { withRouter, type Match } from 'react-router-dom'
 
@@ -18,8 +19,8 @@ const Repository = ({
 |}) => (
   <div>
     <div
-      css={({ theme }) => ({
-        marginBottom: theme.space[4],
+      css={css({
+        mb: 4,
         backgroundColor: '#fafafa',
         borderBottom: '1px solid #eee'
       })}

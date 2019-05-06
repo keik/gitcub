@@ -1,5 +1,6 @@
 // @flow
 
+import css from '@styled-system/css'
 import type { UserT } from 'gh-types/gh'
 import Box from 'gh-ui/Box'
 import * as React from 'react'
@@ -40,12 +41,12 @@ const User = ({ children, user }: {| children: React.Node, user: UserT |}) => (
               as="ul"
               p="0"
               mt="3"
-              css={({ theme: { space } }) => ({
+              css={css({
                 display: 'flex',
                 flexDirection: 'column',
                 listStyle: 'none',
                 '> li': {
-                  marginBottom: space[1]
+                  mb: 1
                 }
               })}
             >
@@ -107,14 +108,15 @@ const User = ({ children, user }: {| children: React.Node, user: UserT |}) => (
           <Box
             as="ul"
             p="0"
-            css={({ theme: { space } }) => ({
+            css={css({
               display: 'flex',
               listStyle: 'none',
               '> li': {
-                marginRight: space[3],
+                mr: 3,
                 '> a': {
                   display: 'block',
-                  padding: `${space[2]} ${space[1]}`
+                  py: 2,
+                  px: 1
                 }
               }
             })}
