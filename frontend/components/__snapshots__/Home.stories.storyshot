@@ -1,8 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Home default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c1 li {
+  padding: 12px 0;
+}
+
+.c1 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c5 li {
+  padding: 12px 12px;
+}
+
+.c5 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c2 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c3 {
+  padding: 12px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c4 {
+  padding: 0;
+  background-color: #fff;
+}
+
+.c4 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c4 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c4 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
 <div
-  className="InnerContainer___default-yh8td3-0 jfPiqN"
+  className="c0"
 >
   <div
     style={
@@ -20,7 +89,7 @@ exports[`Storyshots Home default 1`] = `
       }
     >
       <ul
-        className="sc-fjdhpX eOvOXo"
+        className="c1"
       >
         <li>
           ACTIVITY_1
@@ -42,18 +111,18 @@ exports[`Storyshots Home default 1`] = `
       }
     >
       <div
-        className="sc-jzJRlG jTCqMT"
+        className="c2"
       >
         <div
-          className="sc-cSHVUG hAtYNz"
+          className="c3"
         >
           Public Repositories
         </div>
         <div
-          className="sc-kAzzGY cekdOz"
+          className="c4"
         >
           <ul
-            className="sc-fjdhpX caYFfH"
+            className="c5"
           >
             <li>
               <i

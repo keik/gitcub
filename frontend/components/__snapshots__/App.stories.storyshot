@@ -1,18 +1,188 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots App with session 1`] = `
+.c1 {
+  padding: 0 8px;
+  margin-right: 12px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #ccc;
+  font-size: 22px;
+  font-family: 'Rajdhani',sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  border-color: #4078c0;
+}
+
+.c5 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 0;
+  margin-top: 36px;
+  border-top: 1px solid #eee;
+  color: #767676;
+  font-size: 12px;
+}
+
+.c6 > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c6 > ul > li {
+  display: inline-block;
+}
+
+.c6 > ul > li + li {
+  margin-left: 10px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #24292e;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 13px;
+}
+
+.c0 > *:last-child {
+  margin-left: auto;
+}
+
+.c0 a {
+  color: #fff;
+}
+
+.c0 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: rgba(255,255,255,0.75);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.c2 label {
+  border-right: 1px solid #ddd;
+  padding: 4px 8px;
+  color: #767676;
+  font-size: 12px;
+}
+
+.c2 input {
+  border: none;
+  min-height: 26px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c3 > ul > li {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.c3 > ul > li + li {
+  margin-left: 12px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c4 > ul > li {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.c4 > ul > li + li {
+  margin-left: 12px;
+}
+
 <div>
   <div
-    className="sc-iwsKbI fKYVxP"
+    className="c0"
   >
     <a
-      className="Logo-sc-1wig2db-0 bulBUi"
+      className="c1"
       href="/"
     >
       GH
     </a>
     <form
-      className="sc-gZMcBi ntcEK"
+      className="c2"
     >
       <label
         htmlFor="input-search-query"
@@ -26,7 +196,7 @@ exports[`Storyshots App with session 1`] = `
       />
     </form>
     <nav
-      className="sc-gqjmRU eNyTHt"
+      className="c3"
     >
       <ul>
         <li>
@@ -46,7 +216,7 @@ exports[`Storyshots App with session 1`] = `
       </ul>
     </nav>
     <nav
-      className="sc-VigVT fsRoRT"
+      className="c4"
     >
       <ul>
         <li>
@@ -97,10 +267,10 @@ exports[`Storyshots App with session 1`] = `
   </div>
   %CHILDREN%
   <div
-    className="InnerContainer___default-yh8td3-0 jfPiqN"
+    className="c5"
   >
     <div
-      className="sc-bdVaJa eXgKiV"
+      className="c6"
     >
       <ul>
         <li>
@@ -115,7 +285,7 @@ exports[`Storyshots App with session 1`] = `
         </li>
       </ul>
       <a
-        className="Logo-sc-1wig2db-0 bulBUi"
+        className="c1"
         href="#"
       >
         GH
@@ -142,40 +312,186 @@ exports[`Storyshots App with session 1`] = `
 `;
 
 exports[`Storyshots App without session 1`] = `
+.c2 {
+  padding: 0 8px;
+  margin-right: 12px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #ccc;
+  font-size: 22px;
+  font-family: 'Rajdhani',sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:hover {
+  border-color: #4078c0;
+}
+
+.c8 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 0;
+  margin-top: 36px;
+  border-top: 1px solid #eee;
+  color: #767676;
+  font-size: 12px;
+}
+
+.c9 > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c9 > ul > li {
+  display: inline-block;
+}
+
+.c9 > ul > li + li {
+  margin-left: 10px;
+}
+
+.c0 {
+  padding: 16px 0;
+  background-color: #24292e;
+  font-size: 13px;
+}
+
+.c0 a {
+  color: #fff;
+}
+
+.c0 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: rgba(255,255,255,0.75);
+}
+
+.c1 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 > *:lastChild {
+  margin-left: auto;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: hsla(0,0%,100%,0.125);
+  border-radius: 3px;
+}
+
+.c4 input {
+  border: none;
+  min-height: 26px;
+}
+
+.c5 {
+  padding: 8px;
+  background: none;
+}
+
+.c6 {
+  padding: 4px 8px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.c7 {
+  padding: 4px 8px;
+  background-color: transparent;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 <div>
   <div
-    className="sc-bxivhb gDYBDp"
+    className="c0"
   >
     <div
-      className="InnerContainer___default-yh8td3-0 sc-ifAKCX jprSTt"
+      className="c1"
     >
       <a
-        className="Logo-sc-1wig2db-0 bulBUi"
+        className="c2"
         href="/"
       >
         GH
       </a>
       <div
-        className="sc-EHOje cdrGxe"
+        className="c3"
       >
         <form
-          className="sc-bZQynM FGYfE"
+          className="c4"
         >
           <label>
             <input
-              className="sc-gzVnrw frldfY"
+              className="c5"
               placeholder="Search"
             />
           </label>
         </form>
         <a
-          className="sc-htoDjs dIBbWc"
+          className="c6"
           href="/login"
         >
           Sign in
         </a>
         <a
-          className="sc-dnqmqq fdWWEX"
+          className="c7"
           href="/join"
         >
           Sign up
@@ -185,10 +501,10 @@ exports[`Storyshots App without session 1`] = `
   </div>
   %CHILDREN%
   <div
-    className="InnerContainer___default-yh8td3-0 jfPiqN"
+    className="c8"
   >
     <div
-      className="sc-bdVaJa eXgKiV"
+      className="c9"
     >
       <ul>
         <li>
@@ -203,7 +519,7 @@ exports[`Storyshots App without session 1`] = `
         </li>
       </ul>
       <a
-        className="Logo-sc-1wig2db-0 bulBUi"
+        className="c2"
         href="#"
       >
         GH
