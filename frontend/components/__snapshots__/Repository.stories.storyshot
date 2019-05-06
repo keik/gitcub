@@ -55,7 +55,7 @@ exports[`Storyshots Repository with default 1`] = `
 
 .c3 {
   display: inline-block;
-  color: #666;
+  color: #666666;
   font-size: 18px;
 }
 
@@ -70,7 +70,7 @@ exports[`Storyshots Repository with default 1`] = `
 
 .c5 > li {
   display: inline-block;
-  margin-left: 12px;
+  margin-left: 16px;
 }
 
 .c5 > li i:first-of-type {
@@ -111,7 +111,7 @@ exports[`Storyshots Repository with default 1`] = `
 }
 
 .c0 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   background-color: #fafafa;
   border-bottom: 1px solid #eee;
 }

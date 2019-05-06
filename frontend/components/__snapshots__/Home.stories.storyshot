@@ -7,89 +7,100 @@ exports[`Storyshots Home default 1`] = `
   margin-left: auto;
 }
 
-.c1 {
+.c3 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.c1 li {
+.c3 li {
   padding: 12px 0;
 }
 
-.c1 li + li {
+.c3 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c8 li {
+  padding: 12px 12px;
+}
+
+.c8 li + li {
   border-top: 1px solid #f1f1f1;
 }
 
 .c5 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.c5 li {
-  padding: 12px 12px;
-}
-
-.c5 li + li {
-  border-top: 1px solid #f1f1f1;
-}
-
-.c2 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 24px;
 }
 
-.c3 {
+.c6 {
   padding: 12px;
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
-.c4 {
+.c7 {
   padding: 0;
   background-color: #fff;
 }
 
-.c4 > table {
+.c7 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.c4 > table > tbody > tr:first-of-type td {
+.c7 > table > tbody > tr:first-of-type td {
   border: none;
 }
 
-.c4 > table > tbody > tr > td {
+.c7 > table > tbody > tr > td {
   padding: 6px 3px;
   border-top: 1px solid #eee;
   color: #888;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  width: 320px;
+  margin-left: 32px;
 }
 
 <div
   className="c0"
 >
   <div
-    style={
-      Object {
-        "display": "flex",
-        "marginTop": "24px",
-      }
-    }
+    className="c1"
   >
     <div
-      style={
-        Object {
-          "flexGrow": 1,
-        }
-      }
+      className="c2"
     >
       <ul
-        className="c1"
+        className="c3"
       >
         <li>
           ACTIVITY_1
@@ -103,26 +114,21 @@ exports[`Storyshots Home default 1`] = `
       </ul>
     </div>
     <div
-      style={
-        Object {
-          "marginLeft": "24px",
-          "width": "320px",
-        }
-      }
+      className="c4"
     >
       <div
-        className="c2"
+        className="c5"
       >
         <div
-          className="c3"
+          className="c6"
         >
           Public Repositories
         </div>
         <div
-          className="c4"
+          className="c7"
         >
           <ul
-            className="c5"
+            className="c8"
           >
             <li>
               <i

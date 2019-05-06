@@ -5,7 +5,7 @@ const theme = {
   color: {
     gray: '#666666'
   },
-  space: [0, 4, 8, 16, 32]
+  space: ['0px', '4px', '8px', '16px', '32px']
 }
 
 export default theme

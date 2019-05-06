@@ -18,12 +18,12 @@ const Home = ({
 |}) => (
   <InnerContainer>
     <div
-      style={{
+      css={({ theme }) => ({
         display: 'flex',
-        marginTop: '24px'
-      }}
+        marginTop: theme.space[4]
+      })}
     >
-      <div style={{ flexGrow: 1 }}>
+      <div css={{ flexGrow: 1 }}>
         <List lined>
           <li>ACTIVITY_1</li>
           <li>ACTIVITY_2</li>
@@ -31,10 +31,10 @@ const Home = ({
         </List>
       </div>
       <div
-        style={{
+        css={({ theme }) => ({
           width: '320px',
-          marginLeft: '24px'
-        }}
+          marginLeft: theme.space[4]
+        })}
       >
         <Panel>
           <Panel.Header>Public Repositories</Panel.Header>

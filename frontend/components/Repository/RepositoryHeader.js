@@ -28,23 +28,23 @@ const RepositoryHeader = ({
 |}) => (
   <InnerContainer>
     <div
-      css={`
-        display: flex;
-        justify-content: space-between;
-      `}
+      css={{
+        display: 'flex',
+        justifyContent: 'space-between'
+      }}
     >
       <h1
-        css={`
-          display: inline-block;
-          color: #666;
-          font-size: 18px;
-        `}
+        css={({ theme }) => ({
+          display: 'inline-block',
+          color: theme.color.gray,
+          fontSize: '18px'
+        })}
       >
         <a href={`/${owner}`}>{owner}</a>
         <span
-          css={`
-            margin: 0 4px;
-          `}
+          css={({ theme }) => ({
+            margin: `0 ${theme.space[1]}`
+          })}
         >
           /
         </span>
@@ -52,18 +52,17 @@ const RepositoryHeader = ({
       </h1>
       <nav>
         <ul
-          css={`
-            list-style: none;
-            padding: 0;
-            > li {
-              display: inline-block;
-              margin-left: 12px;
-
-              i:first-of-type {
-                margin-right: 4px;
+          css={({ theme }) => ({
+            listStyle: 'none',
+            padding: 0,
+            '> li': {
+              display: 'inline-block',
+              marginLeft: theme.space[3],
+              'i:first-of-type': {
+                marginRight: theme.space[1]
               }
             }
-          `}
+          })}
         >
           <li>
             <SegmentedButtonsContainer>
@@ -74,9 +73,9 @@ const RepositoryHeader = ({
                     Watch
                     <i
                       className="fa fa-caret-down"
-                      css={`
-                        margin-left: 4px;
-                      `}
+                      css={({ theme }) => ({
+                        marginLeft: theme.space[1]
+                      })}
                     />
                   </Button>
                 }
@@ -86,26 +85,26 @@ const RepositoryHeader = ({
                   <Panel.Header>Notifications</Panel.Header>
                   <Panel.Body noPadding>
                     <ul
-                      css={`
-                        list-style: none;
-                        padding: 0;
-                        > li {
-                          padding: 8px;
-                          :not(:last-child) {
-                            border-bottom: 1px solid #eee;
-                          }
-                          > a {
-                            color: inherit;
-                            > h2 {
-                              margin: 0;
-                              font-size: 14px;
-                            }
-                            > span {
-                              font-size: 12px;
+                      css={({ theme }) => ({
+                        listStyle: 'none',
+                        padding: 0,
+                        '> li': {
+                          padding: theme.space[2],
+                          ':not(:last-child)': {
+                            borderBottom: '1px solid #eee'
+                          },
+                          '> a': {
+                            color: 'inherit',
+                            '> h2': {
+                              margin: 0,
+                              fontSize: '14px'
+                            },
+                            '> span': {
+                              fontSize: '12px'
                             }
                           }
                         }
-                      `}
+                      })}
                     >
                       <li>
                         <a href="#TODO">

@@ -101,7 +101,7 @@ exports[`Storyshots User with default 1`] = `
 .c9 {
   display: block;
   margin-top: 16px;
-  padding: 0;
+  padding: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -122,7 +122,7 @@ exports[`Storyshots User with default 1`] = `
 
 .c11 {
   display: block;
-  padding: 0;
+  padding: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -132,7 +132,7 @@ exports[`Storyshots User with default 1`] = `
 
 .c16 {
   display: block;
-  padding: 0;
+  padding: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,7 +151,7 @@ exports[`Storyshots User with default 1`] = `
 
 .c17 {
   display: block;
-  padding: 0;
+  padding: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
