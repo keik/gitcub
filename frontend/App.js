@@ -7,7 +7,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { applyMiddleware, compose, createStore } from 'redux'
 import logger from 'redux-logger'
 import { ThemeProvider } from 'styled-components'
-import 'time-elements'
 
 import { AppContainer } from './components/App'
 import { HomeContainer } from './components/Home'
