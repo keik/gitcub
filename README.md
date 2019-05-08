@@ -1,6 +1,6 @@
 # gh
 
-[![Travis CI](https://img.shields.io/travis/keik/gh.svg?style=flat-square)](https://travis-ci.org/keik/gh)
+[![CircleCI](https://circleci.com/gh/keik/gh/tree/develop.svg?style=svg)](https://circleci.com/gh/keik/gh/tree/develop)
 [![Coverage Status](https://img.shields.io/coveralls/keik/gh.svg?style=flat-square)](https://coveralls.io/github/keik/gh)
 
 Performant GitHub clone application powered by React + Express as universal JavaScript.
