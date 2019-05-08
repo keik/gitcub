@@ -2,6 +2,7 @@
 
 import css from '@styled-system/css'
 import * as React from 'react'
+import { connect } from 'react-redux'
 
 import type { SessionT } from '../../ducks/session'
 import Logo from '../common/atoms/Logo'
@@ -232,6 +233,12 @@ export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
     </nav>
   </div>
 )
+
+export const AppHeaderContainer = connect<_, _, *, _, *, _>(
+  ({ session }: $Call<typeof rootReducer>) => ({
+    session
+  })
+)(AppHeader)
 
 const headerNavStyles = {
   display: 'flex',

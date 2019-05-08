@@ -5,7 +5,7 @@ import { base, filename } from 'paths.macro'
 import * as React from 'react'
 import { storyname } from 'storybook-utils'
 
-import App from './App'
+import { App } from './App'
 
 storiesOf(storyname(base, filename), module)
   .add('without session', () => <App session={null}>%CHILDREN%</App>)
