@@ -6,11 +6,9 @@ import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { applyMiddleware, compose, createStore } from 'redux'
 import logger from 'redux-logger'
-import { ThemeProvider } from 'styled-components'
 
 import rootReducer from '../ducks'
 import * as SessionAction from '../ducks/session'
-import theme from '../theme'
 import AppFooter from './App/AppFooter'
 import { AppHeaderContainer } from './App/AppHeader'
 import { HomeContainer } from './Home'
@@ -45,41 +43,39 @@ const store = createStore(
 export const App = () => (
   <Provider store={store}>
      <BrowserRouter>
-       <ThemeProvider theme={theme}>
-         <>
-           <AppHeaderContainer />
-           <Switch>
-             <Route exact path="/" component={HomeContainer} />
-             <Route exact path="/login" component={Login} />
-             <Route exact path="/new" component={New} />
-             <Route exact path="/:username" component={UserContainer} />
-             <Route
-               path="/:owner/:repo"
-               component={() => (
-                 <RepositoryContainer>
-                   <Switch>
-                     <Route exact path="/:owner/:repo" component={RepositoryHomeContainer} />
-                     <Route exact path="/:owner/:repo/blob/:branch/:path*" component={RepositoryFileContentContainer} />
-                     <Route exact path="/:owner/:repo/branches" component={RepositoryBranchesContainer} />
-                     <Route exact path="/:owner/:repo/commit/:sha" component={RepositoryCommitContainer} />
-                     <Route exact path="/:owner/:repo/commits" component={RepositoryCommitsContainer} />
-                     <Route exact path="/:owner/:repo/graphs" component={RepositoryGraphs} />
-                     <Route exact path="/:owner/:repo/issues" component={RepositoryIssues} />
-                     <Route exact path="/:owner/:repo/projects" component={RepositoryProjects} />
-                     <Route exact path="/:owner/:repo/pulls" component={RepositoryIssues} />
-                     <Route exact path="/:owner/:repo/pulse" component={RepositoryPulse} />
-                     <Route exact path="/:owner/:repo/settings" component={RepositorySettings} />
-                     <Route exact path="/:owner/:repo/tree/:tree" component={RepositoryHomeContainer} />
-                     <Route exact path="/:owner/:repo/tree/:tree/:path*" component={RepositoryTreeContainer} />
-                     <Route exact path="/:owner/:repo/wiki" component={RepositoryWiki} />
-                   </Switch>
-                 </RepositoryContainer>
-               )}
-             />
-           </Switch>
-           <AppFooter />
-         </>
-       </ThemeProvider>
+        <>
+          <AppHeaderContainer />
+          <Switch>
+            <Route exact path="/" component={HomeContainer} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/new" component={New} />
+            <Route exact path="/:username" component={UserContainer} />
+            <Route
+              path="/:owner/:repo"
+              component={() => (
+                <RepositoryContainer>
+                  <Switch>
+                    <Route exact path="/:owner/:repo" component={RepositoryHomeContainer} />
+                    <Route exact path="/:owner/:repo/blob/:branch/:path*" component={RepositoryFileContentContainer} />
+                    <Route exact path="/:owner/:repo/branches" component={RepositoryBranchesContainer} />
+                    <Route exact path="/:owner/:repo/commit/:sha" component={RepositoryCommitContainer} />
+                    <Route exact path="/:owner/:repo/commits" component={RepositoryCommitsContainer} />
+                    <Route exact path="/:owner/:repo/graphs" component={RepositoryGraphs} />
+                    <Route exact path="/:owner/:repo/issues" component={RepositoryIssues} />
+                    <Route exact path="/:owner/:repo/projects" component={RepositoryProjects} />
+                    <Route exact path="/:owner/:repo/pulls" component={RepositoryIssues} />
+                    <Route exact path="/:owner/:repo/pulse" component={RepositoryPulse} />
+                    <Route exact path="/:owner/:repo/settings" component={RepositorySettings} />
+                    <Route exact path="/:owner/:repo/tree/:tree" component={RepositoryHomeContainer} />
+                    <Route exact path="/:owner/:repo/tree/:tree/:path*" component={RepositoryTreeContainer} />
+                    <Route exact path="/:owner/:repo/wiki" component={RepositoryWiki} />
+                  </Switch>
+                </RepositoryContainer>
+              )}
+            />
+          </Switch>
+          <AppFooter />
+        </>
      </BrowserRouter>
   </Provider>
 )
