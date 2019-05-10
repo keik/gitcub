@@ -37,7 +37,7 @@ export const AppHeaderWithoutSession = () => (
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        '> *:lastChild': {
+        '> *:last-child': {
           marginLeft: 'auto'
         }
       }}
