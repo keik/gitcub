@@ -7,7 +7,7 @@ import { storyname } from 'storybook-utils'
 
 const App =
   process.env.NODE_ENV === 'development'
-    ? require('inject-loader!./App')({
+    ? (require('inject-loader!./App'): any)({
         './User': { UserContainer: () => 'MOCKED' }
       }).default
     : require('./App').default

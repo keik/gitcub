@@ -12,6 +12,8 @@
 [lints]
 
 [options]
+module.name_mapper='^inject-loader!\(.+\)$' -> '\1'
 server.max_workers=4
+
 
 [strict]

@@ -4,6 +4,7 @@ import css from '@styled-system/css'
 import * as React from 'react'
 import { connect } from 'react-redux'
 
+import rootReducer from '../../ducks'
 import type { SessionT } from '../../ducks/session'
 import Logo from '../common/atoms/Logo'
 import Dropdown from '../common/blocks/Dropdown'
