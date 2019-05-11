@@ -3,7 +3,18 @@
 import * as React from 'react'
 import ReactDOM from 'react-dom'
 import 'time-elements'
+import { ThemeProvider } from 'styled-components'
 
-import App from './App'
+import { AppContainer } from './components/App'
+import GlobalStyles from './components/GlobalStyles'
+import theme from './theme'
 
-ReactDOM.render(<App />, global.document.getElementById('app'))
+ReactDOM.render(
+  <>
+    <GlobalStyles />
+    <ThemeProvider theme={theme}>
+      <AppContainer />
+    </ThemeProvider>
+  </>,
+  global.document.getElementById('app')
+)

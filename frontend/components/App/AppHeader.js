@@ -2,7 +2,9 @@
 
 import css from '@styled-system/css'
 import * as React from 'react'
+import { connect } from 'react-redux'
 
+import rootReducer from '../../ducks'
 import type { SessionT } from '../../ducks/session'
 import Logo from '../common/atoms/Logo'
 import Dropdown from '../common/blocks/Dropdown'
@@ -36,7 +38,7 @@ export const AppHeaderWithoutSession = () => (
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        '> *:lastChild': {
+        '> *:last-child': {
           marginLeft: 'auto'
         }
       }}
@@ -232,6 +234,12 @@ export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
     </nav>
   </div>
 )
+
+export const AppHeaderContainer = connect<_, _, *, _, *, _>(
+  ({ session }: $Call<typeof rootReducer>) => ({
+    session
+  })
+)(AppHeader)
 
 const headerNavStyles = {
   display: 'flex',

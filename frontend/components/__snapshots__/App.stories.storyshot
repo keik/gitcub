@@ -1,323 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots App with session 1`] = `
-.c1 {
-  padding: 0 8px;
-  margin-right: 12px;
-  line-height: 28px;
-  vertical-align: middle;
-  color: #ccc;
-  font-size: 22px;
-  font-family: 'Rajdhani',sans-serif;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1:hover {
-  border-color: #4078c0;
-}
-
-.c5 {
-  width: 980px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-top: 32px;
-  border-top: 1px solid #eee;
-  color: #767676;
-  font-size: 12px;
-}
-
-.c6 > ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.c6 > ul > li {
-  display: inline-block;
-}
-
-.c6 > ul > li + li {
-  margin-left: 8px;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 8px;
-  background-color: #24292e;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 13px;
-}
-
-.c0 > *:last-child {
-  margin-left: auto;
-}
-
-.c0 a {
-  color: #fff;
-}
-
-.c0 a:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: rgba(255,255,255,0.75);
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 8px;
-  margin-right: 8px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-}
-
-.c2 label {
-  border-right: 1px solid #ddd;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  color: #767676;
-  font-size: 12px;
-}
-
-.c2 input {
-  border: none;
-  min-height: 26px;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.c3 > ul > li {
-  display: inline-block;
-  font-weight: bold;
-}
-
-.c3 > ul > li + li {
-  margin-left: 12px;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.c4 > ul > li {
-  display: inline-block;
-  font-weight: bold;
-}
-
-.c4 > ul > li + li {
-  margin-left: 12px;
-}
-
-<div>
-  <div
-    className="c0"
-  >
-    <a
-      className="c1"
-      href="/"
-    >
-      GH
-    </a>
-    <form
-      className="c2"
-    >
-      <label
-        htmlFor="input-search-query"
-      >
-        This repository
-      </label>
-      <input
-        id="input-search-query"
-        placeholder="Search"
-        type="text"
-      />
-    </form>
-    <nav
-      className="c3"
-    >
-      <ul>
-        <li>
-          <a
-            to="#"
-          >
-            Pull requests
-          </a>
-        </li>
-        <li>
-          <a
-            to="#"
-          >
-            Issues
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <nav
-      className="c4"
-    >
-      <ul>
-        <li>
-          <a
-            href="#"
-          >
-            <i
-              className="fa fa-bell"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            onClick={[Function]}
-          >
-            <i
-              className="fa fa-plus"
-            />
-             
-            <i
-              className="fa fa-caret-down"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            onClick={[Function]}
-          >
-            <img
-              alt="%LOGIN%"
-              style={
-                Object {
-                  "backgroundColor": "#ccc",
-                  "height": 20,
-                  "verticalAlign": "top",
-                  "width": 20,
-                }
-              }
-            />
-             
-            <i
-              className="fa fa-caret-down"
-            />
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  %CHILDREN%
-  <div
-    className="c5"
-  >
-    <div
-      className="c6"
-    >
-      <ul>
-        <li>
-          © 2016 keik
-        </li>
-        <li>
-          <a
-            href="#"
-          >
-            Help
-          </a>
-        </li>
-      </ul>
-      <a
-        className="c1"
-        href="#"
-      >
-        GH
-      </a>
-      <ul>
-        <li>
-          <a
-            href="#"
-          >
-            API
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-          >
-            About
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots App without session 1`] = `
-.c2 {
+exports[`Storyshots App default 1`] = `
+Array [
+  .c2 {
   padding: 0 8px;
   margin-right: 12px;
   line-height: 28px;
@@ -335,47 +20,6 @@ exports[`Storyshots App without session 1`] = `
   border-color: #4078c0;
 }
 
-.c8 {
-  width: 980px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-top: 32px;
-  border-top: 1px solid #eee;
-  color: #767676;
-  font-size: 12px;
-}
-
-.c9 > ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.c9 > ul > li {
-  display: inline-block;
-}
-
-.c9 > ul > li + li {
-  margin-left: 8px;
-}
-
 .c0 {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -411,7 +55,7 @@ exports[`Storyshots App without session 1`] = `
   justify-content: space-between;
 }
 
-.c1 > *:lastChild {
+.c1 > *:last-child {
   margin-left: auto;
 }
 
@@ -465,8 +109,7 @@ exports[`Storyshots App without session 1`] = `
   line-height: 24px;
 }
 
-<div>
-  <div
+<div
     className="c0"
   >
     <div
@@ -505,13 +148,205 @@ exports[`Storyshots App without session 1`] = `
         </a>
       </div>
     </div>
-  </div>
-  %CHILDREN%
-  <div
-    className="c8"
+  </div>,
+  .c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c3 li {
+  padding: 12px 0;
+}
+
+.c3 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c8 li {
+  padding: 12px 12px;
+}
+
+.c8 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c5 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.c6 {
+  padding: 12px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c7 {
+  padding: 0;
+  background-color: #fff;
+}
+
+.c7 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c7 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c7 > table > tbody > tr > td {
+  padding: 6px 3px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  width: 320px;
+  margin-left: 32px;
+}
+
+<div
+    className="c0"
   >
     <div
-      className="c9"
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <ul
+          className="c3"
+        >
+          <li>
+            ACTIVITY_1
+          </li>
+          <li>
+            ACTIVITY_2
+          </li>
+          <li>
+            ACTIVITY_3
+          </li>
+        </ul>
+      </div>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            Public Repositories
+          </div>
+          <div
+            className="c7"
+          >
+            <ul
+              className="c8"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c2 {
+  padding: 0 8px;
+  margin-right: 12px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #ccc;
+  font-size: 22px;
+  font-family: 'Rajdhani',sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:hover {
+  border-color: #4078c0;
+}
+
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 32px;
+  border-top: 1px solid #eee;
+  color: #767676;
+  font-size: 12px;
+}
+
+.c1 > ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.c1 > ul > li {
+  display: inline-block;
+}
+
+.c1 > ul > li + li {
+  margin-left: 8px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
     >
       <ul>
         <li>
@@ -548,6 +383,6 @@ exports[`Storyshots App without session 1`] = `
         </li>
       </ul>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;

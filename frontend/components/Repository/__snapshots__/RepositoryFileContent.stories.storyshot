@@ -43,27 +43,6 @@ exports[`Storyshots Repository/RepositoryFileContent with default 1`] = `
   color: #888;
 }
 
-.c6 {
-  margin: 0;
-}
-
-.c7 {
-  float: left;
-  min-width: 48px;
-  padding: 0.5em;
-  margin: 0;
-  list-style: none;
-  font-size: 12px;
-  line-height: 18px;
-  color: rgba(0,0,0,0.3);
-  text-align: right;
-  border-right: 1px solid #eee;
-}
-
-.c8 {
-  background-color: white;
-}
-
 .c4 a,
 .c4 button,
 .c4 input[type='submit'] {
@@ -97,6 +76,27 @@ exports[`Storyshots Repository/RepositoryFileContent with default 1`] = `
 .c4 > input[type='submit']:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
+}
+
+.c6 {
+  margin: 0;
+}
+
+.c7 {
+  float: left;
+  min-width: 48px;
+  padding: 0.5em;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+  text-align: right;
+  border-right: 1px solid #eee;
+}
+
+.c8 {
+  background-color: white;
 }
 
 .c5 {
