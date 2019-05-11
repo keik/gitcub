@@ -5,20 +5,11 @@ import { base, filename } from 'paths.macro'
 import * as React from 'react'
 import { storyname } from 'storybook-utils'
 
-import { App } from './App'
+const App =
+  process.env.NODE_ENV === 'development'
+    ? require('inject-loader!./App')({
+        './User': { UserContainer: () => 'MOCKED' }
+      }).default
+    : require('./App').default
 
-storiesOf(storyname(base, filename), module)
-  .add('without session', () => <App session={null}>%CHILDREN%</App>)
-  .add('with session', () => (
-    <App
-      session={{
-        bio: '%BIO%',
-        email: '%EMAIL%',
-        login: '%LOGIN%',
-        name: '%STRING%',
-        password: '%PASSWORD%'
-      }}
-    >
-      %CHILDREN%
-    </App>
-  ))
+storiesOf(storyname(base, filename), module).add('default', () => <App />)
