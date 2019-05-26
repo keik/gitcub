@@ -3,6 +3,7 @@
 import css from '@styled-system/css'
 import type { RepositoryT } from 'gh-types/gh'
 import * as React from 'react'
+import { FaRegFolderOpen } from 'react-icons/fa'
 import { connect } from 'react-redux'
 import type { Dispatch } from 'redux'
 
@@ -42,9 +43,14 @@ const Home = ({
           <Panel.Body noPadding>
             <List lined withLRPadding>
               {repositories.map((repo, i) => (
-                <li key={i}>
-                  <i className="fa fa-folder-open-o" />
-                  &nbsp;
+                <li
+                  css={{
+                    display: 'flex',
+                    alignItems: 'center'
+                  }}
+                  key={i}
+                >
+                  <FaRegFolderOpen css={css({ mr: 1 })} />
                   <a href={`/${repo.full_name}`}>{repo.full_name}</a>
                 </li>
               ))}
