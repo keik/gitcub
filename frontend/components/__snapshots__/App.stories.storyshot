@@ -187,18 +187,18 @@ Array [
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .c6 {
-  padding: 12px;
+  padding: 8px;
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
 .c7 {
-  padding: 0;
+  padding: 0px;
   background-color: #fff;
 }
 
@@ -213,7 +213,10 @@ Array [
 }
 
 .c7 > table > tbody > tr > td {
-  padding: 6px 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
   border-top: 1px solid #eee;
   color: #888;
 }
