@@ -1,6 +1,7 @@
 // @flow
 
 const TerserPlugin = require('terser-webpack-plugin')
+const { UnusedFilesWebpackPlugin } = require('unused-files-webpack-plugin')
 
 module.exports = {
   entry: ['@babel/polyfill', './frontend'],
@@ -34,5 +35,10 @@ module.exports = {
       'Access-Control-Allow-Origin': '*'
     }
   },
-  devtool: 'eval-source-map'
+  devtool: process.env.NODE_ENV === 'production' ? false : 'eval-source-map',
+  plugins: [
+    new UnusedFilesWebpackPlugin({
+      patterns: ['frontend/**/*.js', '!**/*.stories.js', '!**/*.test.js']
+    })
+  ]
 }
