@@ -1,7 +1,6 @@
 // @flow
 
 import axios from 'axios'
-import debug from 'debug'
 import * as React from 'react'
 
 import { API_REPOS } from '../../constants/api'
@@ -9,8 +8,6 @@ import Button from './common/atoms/Button'
 import FormGroup from './common/blocks/FormGroup'
 import P from './common/blocks/P'
 import InnerContainer from './common/layouts/InnerContainer'
-
-const d = debug('keik:gh:components:new')
 
 export class New extends React.Component<{||}> {
   onSubmit = (e: any) => {
@@ -55,7 +52,6 @@ export class New extends React.Component<{||}> {
   }
 
   render() {
-    d('render')
     return (
       <InnerContainer>
         <div
