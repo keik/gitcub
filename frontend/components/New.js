@@ -1,7 +1,7 @@
 // @flow
 
+import css from '@styled-system/css'
 import axios from 'axios'
-import debug from 'debug'
 import * as React from 'react'
 
 import { API_REPOS } from '../../constants/api'
@@ -9,8 +9,6 @@ import Button from './common/atoms/Button'
 import FormGroup from './common/blocks/FormGroup'
 import P from './common/blocks/P'
 import InnerContainer from './common/layouts/InnerContainer'
-
-const d = debug('keik:gh:components:new')
 
 export class New extends React.Component<{||}> {
   onSubmit = (e: any) => {
@@ -55,18 +53,12 @@ export class New extends React.Component<{||}> {
   }
 
   render() {
-    d('render')
     return (
       <InnerContainer>
         <div
-          style={{
-            marginTop: '24px',
-            marginBottom: '32px',
-            paddingBottom: '8px',
-            borderBottom: '1px solid #e5e5e5'
-          }}
+          css={css({ mt: 3, mb: 4, pb: 2, borderBottom: '1px solid #e5e5e5' })}
         >
-          <h2 style={{ marginBottom: '0' }}>Create a new repository</h2>
+          <h2 css={css({ mb: 0 })}>Create a new repository</h2>
           <P gray>
             A repository contains all the files for your project, including the
             revision history.
@@ -94,7 +86,7 @@ export class New extends React.Component<{||}> {
           <FormGroup>
             <label htmlFor="description">Description (optional)</label>
             <input
-              style={{ width: '100%' }}
+              css={{ width: '100%' }}
               id="description"
               name="description"
               type="text"

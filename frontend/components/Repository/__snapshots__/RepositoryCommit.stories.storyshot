@@ -5,84 +5,87 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
-.c6 {
-  padding: 12px;
+.c13 {
+  padding: 8px;
   background-color: #f7f7f7;
   border-bottom: 1px solid;
   border-color: #d8d8d8;
 }
 
 .c1 {
-  padding: 12px;
+  padding: 8px;
   background-color: #f2f9fc;
   border-bottom: 1px solid;
   border-color: #c9e6f2;
 }
 
-.c3 {
-  padding: 12px;
+.c6 {
+  padding: 8px;
   background-color: #fff;
 }
 
-.c3 > table {
+.c6 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.c3 > table > tbody > tr:first-of-type td {
+.c6 > table > tbody > tr:first-of-type td {
   border: none;
 }
 
-.c3 > table > tbody > tr > td {
-  padding: 6px 3px;
+.c6 > table > tbody > tr > td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
   border-top: 1px solid #eee;
   color: #888;
 }
 
-.c4 a,
-.c4 button,
-.c4 input[type='submit'] {
+.c11 a,
+.c11 button,
+.c11 input[type='submit'] {
   border-right-width: 0;
   border-radius: 0;
 }
 
-.c4 >:first-child a,
-.c4 >:first-child button,
-.c4 >:first-child input[type='submit'] {
+.c11 >:first-child a,
+.c11 >:first-child button,
+.c11 >:first-child input[type='submit'] {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.c4 > a:first-child,
-.c4 > button:first-child,
-.c4 > input[type='submit']:first-child {
+.c11 > a:first-child,
+.c11 > button:first-child,
+.c11 > input[type='submit']:first-child {
   border-right-width: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.c4 >:last-child a,
-.c4 >:last-child button,
-.c4 >:last-child input[type='submit'] {
+.c11 >:last-child a,
+.c11 >:last-child button,
+.c11 >:last-child input[type='submit'] {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
 
-.c4 > a:last-child,
-.c4 > button:last-child,
-.c4 > input[type='submit']:last-child {
+.c11 > a:last-child,
+.c11 > button:last-child,
+.c11 > input[type='submit']:last-child {
   border-right-width: 1px;
   border-radius: 0 3px 3px 0;
 }
 
-.c7 {
+.c14 {
   margin: 0;
 }
 
-.c8 {
+.c15 {
   float: left;
   min-width: 48px;
   padding: 0.5em;
@@ -95,37 +98,69 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
   border-right: 1px solid #eee;
 }
 
-.c9 {
+.c16 {
   background-color: white;
 }
 
 .c2 {
-  display: inline-block;
-  color: #333;
-  background-color: transparent;
-  background-image: none;
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c2:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
+.c3 {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #213f4d;
+}
+
+.c4 {
+  float: right;
 }
 
 .c5 {
+  min-height: 18px;
+  margin: 0px;
+  font-size: 12px;
+  color: #818c90;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+}
+
+.c9 {
+  font-size: 12px;
+  line-height: 24px;
+  color: #767676;
+  font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+
+.c10 {
+  margin-right: 8px;
+}
+
+.c12 {
   display: inline-block;
   color: #333;
   background-image: linear-gradient(#fcfcfc,#eee);
@@ -145,7 +180,7 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
   user-select: none;
 }
 
-.c5:hover {
+.c12:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -158,46 +193,22 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
       className="c1"
     >
       <div
-        style={
-          Object {
-            "display": "flex",
-            "justifyContent": "space-between",
-          }
-        }
+        className="c2"
       >
         <h1
-          style={
-            Object {
-              "color": "#213f4d",
-              "fontSize": "18px",
-              "fontWeight": "bold",
-              "margin": "0",
-            }
-          }
+          className="c3"
         >
           $MESSAGE
         </h1>
         <a
-          className="c2"
+          className="c4"
           href="/$OWNER/$REPO/tree/$SHA"
-          style={
-            Object {
-              "float": "right",
-            }
-          }
         >
           Browse files
         </a>
       </div>
       <div
-        style={
-          Object {
-            "color": "#818c90",
-            "fontSize": "12px",
-            "margin": "0",
-            "minHeight": "18px",
-          }
-        }
+        className="c5"
       >
         <i
           className="fa fa-code-fork"
@@ -206,27 +217,15 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
       </div>
     </div>
     <div
-      className="c3"
+      className="c6"
     >
       <div
-        style={
-          Object {
-            "display": "flex",
-            "justifyContent": "space-between",
-          }
-        }
+        className="c7"
       >
         <div>
           <img
             alt="$NAME"
-            style={
-              Object {
-                "background": "#ccc",
-                "height": 20,
-                "verticalAlign": "middle",
-                "width": 20,
-              }
-            }
+            className="c8"
           />
            
           $NAME
@@ -237,21 +236,10 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
           />
         </div>
         <div
-          style={
-            Object {
-              "color": "#767676",
-              "fontFamily": "Consolas, \\"Liberation Mono\\", Menlo, Courier, monospace",
-              "fontSize": "12px",
-              "lineHeight": "24px",
-            }
-          }
+          className="c9"
         >
           <span
-            style={
-              Object {
-                "marginRight": "12px",
-              }
-            }
+            className="c10"
           >
             0
              parent
@@ -273,15 +261,15 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
     </div>
     <div>
       <div
-        className="c4"
+        className="c11"
       >
         <button
-          className="c5"
+          className="c12"
         >
           Unified
         </button>
         <button
-          className="c5"
+          className="c12"
         >
           Split
         </button>
@@ -295,15 +283,15 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
       className="c0"
     >
       <div
-        className="c6"
+        className="c13"
       >
         $FILENAME
       </div>
       <div
-        className="c3"
+        className="c6"
       >
         <pre
-          className="c7"
+          className="c14"
           style={
             Object {
               "margin": 0,
@@ -311,7 +299,7 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
           }
         >
           <ul
-            className="c8"
+            className="c15"
           >
             <li>
               ...
@@ -351,7 +339,7 @@ exports[`Storyshots Repository/RepositoryCommit with default 1`] = `
             </li>
           </ul>
           <code
-            className="hljs c9"
+            className="hljs c16"
             dangerouslySetInnerHTML={
               Object {
                 "__html": "$PATCH",

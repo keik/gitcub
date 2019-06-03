@@ -1,5 +1,6 @@
 // @flow
 
+import css from '@styled-system/css'
 import type { CommitWithDetailsT } from 'gh-types/gh'
 import { highlight } from 'highlight.js'
 import * as React from 'react'
@@ -40,14 +41,14 @@ export const RepositoryCommit = (props: Props) => {
     <div>
       <Panel>
         <Panel.Header info>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div css={{ display: 'flex', justifyContent: 'space-between' }}>
             <h1
-              style={{
-                margin: '0',
+              css={css({
+                m: 0,
                 fontSize: '18px',
                 fontWeight: 'bold',
                 color: '#213f4d'
-              }}
+              })}
             >
               {commit.commit.message}
             </h1>
@@ -55,29 +56,29 @@ export const RepositoryCommit = (props: Props) => {
               as="a"
               small
               transparent
-              style={{ float: 'right' }}
+              css={{ float: 'right' }}
               href={`/${owner}/${repo}/tree/${sha}`}
             >
               Browse files
             </Button>
           </div>
           <div
-            style={{
+            css={css({
               minHeight: '18px',
-              margin: '0',
+              m: 0,
               fontSize: '12px',
               color: '#818c90'
-            }}
+            })}
           >
             <i className="fa fa-code-fork" /> master
           </div>
         </Panel.Header>
         <Panel.Body>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div css={{ display: 'flex', justifyContent: 'space-between' }}>
             <div>
               <img
                 alt={commit.commit.author.name}
-                style={{
+                css={{
                   verticalAlign: 'middle',
                   width: 20,
                   height: 20,
@@ -88,7 +89,7 @@ export const RepositoryCommit = (props: Props) => {
               <time-ago datetime={commit.commit.author.date} />
             </div>
             <div
-              style={{
+              css={{
                 fontSize: '12px',
                 lineHeight: '24px',
                 color: '#767676',
@@ -96,7 +97,7 @@ export const RepositoryCommit = (props: Props) => {
                   'Consolas, "Liberation Mono", Menlo, Courier, monospace'
               }}
             >
-              <span style={{ marginRight: '12px' }}>
+              <span css={css({ mr: 2 })}>
                 {commit.parents.length} parent
                 {commit.parents.map(p => (
                   <Link key={p.sha} to={`/${owner}/${repo}/commit/${p.sha}`}>
