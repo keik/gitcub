@@ -1,18 +1,15 @@
-import * as React from 'react';
+import * as React from 'react'
 
 export interface Props {
-  name: string;
+  name: string
 }
 
 function Hello({ name }: Props) {
   return (
     <div className="hello">
-      <div className="greeting">
-        Hello {name}
-      </div>
+      <div className="greeting">Hello {name}</div>
     </div>
-  );
+  )
 }
 
-export default Hello;
-
+export default Hello
