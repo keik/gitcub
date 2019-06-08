@@ -4,5 +4,5 @@ import * as React from 'react'
 import { Hello, StyledHello } from './Hello'
 
 storiesOf('Hello', module)
-  .add('all', () => <Hello name="a" />)
-  .add('all', () => <StyledHello name="a" />)
+  .add('default', () => <Hello name="a" />)
+  .add('styled', () => <StyledHello name="a" />)

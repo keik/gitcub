@@ -1,18 +1,12 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "declaration": true,
     "jsx": "react",
-    "lib": ["es2018", "dom"],
     "module": "commonjs",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "outDir": "./lib",
-    "sourceMap": true,
+    "noEmit": true,
     "strict": true,
-    "target": "es5",
     "types": ["react", "jest"] // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/33311#issuecomment-466731156
   },
-  "exclude": ["node_modules", "src/**/*.test.tsx", "src/**/*.stories.tsx"],
+  "exclude": ["node_modules"],
   "include": ["src/**/*"]
 }
