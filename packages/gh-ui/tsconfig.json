@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "lib": ["es2018", "dom"],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "types": ["react", "jest"], // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/33311#issuecomment-466731156
+    "jsx": "react",
+    // "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "src/**/*.test.tsx", "src/**/*.stories.tsx"],
+  "include": ["src/**/*"]
+}
