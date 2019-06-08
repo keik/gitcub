@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
-    "outDir": "./lib",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
     "lib": ["es2018", "dom"],
-    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
-    "declaration": true,
-    "sourceMap": true,
-    "types": ["react", "jest"], // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/33311#issuecomment-466731156
-    "jsx": "react",
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "allowSyntheticDefaultImports": true,
-    "noEmitOnError": true,
-    "esModuleInterop": true
+    "outDir": "./lib",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5",
+    "types": ["react", "jest"] // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/33311#issuecomment-466731156
   },
   "exclude": ["node_modules", "src/**/*.test.tsx", "src/**/*.stories.tsx"],
   "include": ["src/**/*"]
