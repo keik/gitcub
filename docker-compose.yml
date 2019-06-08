@@ -1,0 +1,22 @@
+# for development environments
+
+version: '3'
+
+services:
+  redis:
+    image: redis:4.0.2
+    ports:
+      - "6379:6379"
+
+  db:
+    image: mysql:5.7
+    ports:
+      - 3398:3306
+    volumes:
+      - dbdata:/data/db
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysql
+
+volumes:
+  dbdata:
+    driver: local
