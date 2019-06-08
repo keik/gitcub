@@ -36,6 +36,14 @@ Application configurations are available by `config.json`
 
 ## Development
 
+### Run dependent services
+
+Run MySQL and Redis by Docker
+
+```
+docker-compose up -d
+```
+
 ### Initiaize database
 
 
