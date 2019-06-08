@@ -1,9 +1,15 @@
 import * as React from 'react'
+import styled from 'styled-components'
 
 export interface Props {
+  className?: string
   name: string
 }
 
-const Hello: React.FC<Props> = ({ name }: Props) => <div>Hello {name}</div>
+export const Hello: React.FC<Props> = ({ className, name }: Props) => (
+  <div className={className}>Hello {name}</div>
+)
 
-export default Hello
+export const StyledHello = styled(Hello)`
+  color: blue;
+`
