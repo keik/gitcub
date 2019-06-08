@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build": "tsc",
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
