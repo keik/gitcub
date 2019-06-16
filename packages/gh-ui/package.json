@@ -8,6 +8,7 @@
     "storybook": "start-storybook -p 6006",
     "typecheck": "tsc -b tsconfig.typecheck.json"
   },
+  "main": "lib",
   "devDependencies": {
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
