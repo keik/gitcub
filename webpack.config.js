@@ -38,7 +38,11 @@ module.exports = {
   devtool: process.env.NODE_ENV === 'production' ? false : 'eval-source-map',
   plugins: [
     new UnusedFilesWebpackPlugin({
-      patterns: ['frontend/**/*.js', '!**/*.stories.js', '!**/*.test.js']
+      patterns: [
+        'frontend/**/*.js',
+        '!frontend/**/*.stories.js',
+        '!frontend/**/*.test.js'
+      ]
     })
   ]
 }
