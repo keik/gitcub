@@ -1,36 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Repository/RepositoryHome with default 1`] = `
-.c9 {
+.c8 {
   position: relative;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-bottom: 16px;
 }
 
-.c10 {
+.c9 {
   padding: 8px;
   background-color: #f2f9fc;
   border-bottom: 1px solid;
   border-color: #c9e6f2;
 }
 
-.c12 {
+.c11 {
   padding: 0px;
   background-color: #fff;
 }
 
-.c12 > table {
+.c11 > table {
   width: 100%;
   border-collapse: collapse;
   line-height: 20px;
 }
 
-.c12 > table > tbody > tr:first-of-type td {
+.c11 > table > tbody > tr:first-of-type td {
   border: none;
 }
 
-.c12 > table > tbody > tr > td {
+.c11 > table > tbody > tr > td {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 4px;
@@ -74,14 +74,18 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
   border-radius: 0 3px 3px 0;
 }
 
-.c11 {
+.c10 {
   font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
   font-size: 90%;
   color: #445055;
 }
 
-.c13 {
+.c12 {
   width: 18px;
+}
+
+.c13 {
+  padding-left: 12px;
 }
 
 .c14 {
@@ -89,19 +93,15 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
 }
 
 .c15 {
-  padding-left: 12px;
-}
-
-.c16 {
   color: #888;
 }
 
-.c17 {
+.c16 {
   width: 120px;
   text-align: right;
 }
 
-.c18 {
+.c17 {
   padding-right: 12px;
 }
 
@@ -123,7 +123,29 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
 }
 
 .c4 {
+  background-color: #eeeeee;
+  color: #333;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid rgba(32,32,32,0.2);
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 8px;
+}
+
+.c4:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c5 {
@@ -182,31 +204,6 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
 }
 
 .c3:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c8 {
-  display: inline-block;
-  color: #fff;
-  background-image: linear-gradient(#8add6d,#60b044);
-  position: relative;
-  padding: 3px 10px;
-  border: 1px solid #5aad35;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c8:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -307,7 +304,7 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
         />
       </button>
       <a
-        className="c4"
+        className="Button-sc-1uj7tjm-0 c4"
         href="#OWNER/#REPO/pull/new/#TREE"
       >
         New pull request
@@ -320,18 +317,18 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
         className="c6"
       >
         <input
-          className="c3"
+          className="Button-sc-1uj7tjm-0 dlzYOQ"
           type="submit"
           value="Create new file"
         />
         <a
-          className="c3"
+          className="Button-sc-1uj7tjm-0 dlzYOQ"
           href="#OWNER/#REPO/upload/#TREE"
         >
           Upload files
         </a>
         <a
-          className="c3"
+          className="Button-sc-1uj7tjm-0 dlzYOQ"
           href="#OWNER/#REPO/find/#TREE"
         >
           Find file
@@ -341,7 +338,7 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
         className="c7"
       >
         <button
-          className="c8"
+          className="Button-sc-1uj7tjm-0 cTwARW"
           onClick={[Function]}
         >
           Clone or download 
@@ -354,10 +351,10 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
   </div>
   <div>
     <div
-      className="c9"
+      className="c8"
     >
       <div
-        className="c10"
+        className="c9"
       >
         <div
           style={
@@ -396,7 +393,7 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
           <div>
             Latest commit 
             <a
-              className="c11"
+              className="c10"
               href="/#OWNER/#REPO/commit/#SHA_1"
               onClick={[Function]}
             >
@@ -410,16 +407,16 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <table>
           <tbody>
             <tr>
               <td
-                className="c13"
+                className="c12"
               >
                 <i
-                  className="fa fa-file-text-o c14"
+                  className="fa fa-file-text-o c13"
                 />
               </td>
               <td
@@ -433,10 +430,10 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
                 </a>
               </td>
               <td
-                className="c15"
+                className="c14"
               >
                 <a
-                  className="c16"
+                  className="c15"
                   href="/#OWNER/#REPO/commit/#SHA_1"
                   onClick={[Function]}
                 >
@@ -444,10 +441,10 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
                 </a>
               </td>
               <td
-                className="c17"
+                className="c16"
               >
                 <span
-                  className="c18"
+                  className="c17"
                 >
                   <time-ago
                     datetime="#DATE_1"
@@ -457,10 +454,10 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
             </tr>
             <tr>
               <td
-                className="c13"
+                className="c12"
               >
                 <i
-                  className="fa fa-file-text-o c14"
+                  className="fa fa-file-text-o c13"
                 />
               </td>
               <td
@@ -474,10 +471,10 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
                 </a>
               </td>
               <td
-                className="c15"
+                className="c14"
               >
                 <a
-                  className="c16"
+                  className="c15"
                   href="/#OWNER/#REPO/commit/#SHA_1"
                   onClick={[Function]}
                 >
@@ -485,10 +482,10 @@ exports[`Storyshots Repository/RepositoryHome with default 1`] = `
                 </a>
               </td>
               <td
-                className="c17"
+                className="c16"
               >
                 <span
-                  className="c18"
+                  className="c17"
                 >
                   <time-ago
                     datetime="#DATE_1"

@@ -7,81 +7,6 @@ exports[`Storyshots User with default 1`] = `
   margin-left: auto;
 }
 
-.c2 {
-  display: block;
-  margin-right: 16px;
-  width: 25%;
-}
-
-.c3 {
-  display: block;
-  border: 1px solid #e1e4e8;
-  border-radius: 3;
-}
-
-.c5 {
-  display: block;
-}
-
-.c6 {
-  display: block;
-  font-size: 24px;
-}
-
-.c7 {
-  display: block;
-  color: gray;
-  font-size: 20px;
-}
-
-.c8 {
-  display: block;
-  margin-top: 16px;
-}
-
-.c12 {
-  display: block;
-  margin-right: 4px;
-}
-
-.c13 {
-  display: block;
-  border-radius: 3px;
-  width: 36px;
-}
-
-.c14 {
-  display: block;
-  width: 75%;
-}
-
-.c15 {
-  display: block;
-  border-bottom: 1px solid #e1e4e8;
-}
-
-.c18 {
-  display: block;
-  margin-bottom: 16px;
-  width: 50%;
-}
-
-.c19 {
-  display: block;
-  border: 1px solid #e1e4e8;
-  border-radius: 3;
-  margin-right: 8px;
-  padding: 16px;
-}
-
-.c20 {
-  display: block;
-  border: 1px solid #e1e4e8;
-  border-radius: 3;
-  margin-left: 8px;
-  padding: 16px;
-}
-
 .c1 {
   display: block;
   margin-top: 16px;
@@ -91,14 +16,14 @@ exports[`Storyshots User with default 1`] = `
   display: flex;
 }
 
-.c4 {
+.c2 {
   display: block;
   width: 240px;
   height: 240px;
   background-color: #ccc;
 }
 
-.c9 {
+.c3 {
   display: block;
   margin-top: 16px;
   padding: 0px;
@@ -112,15 +37,15 @@ exports[`Storyshots User with default 1`] = `
   list-style: none;
 }
 
-.c9 > li {
+.c3 > li {
   margin-bottom: 4px;
 }
 
-.c10 {
+.c4 {
   font-size: 16px;
 }
 
-.c11 {
+.c5 {
   display: block;
   padding: 0px;
   display: -webkit-box;
@@ -130,7 +55,7 @@ exports[`Storyshots User with default 1`] = `
   list-style: none;
 }
 
-.c16 {
+.c6 {
   display: block;
   padding: 0px;
   display: -webkit-box;
@@ -140,11 +65,11 @@ exports[`Storyshots User with default 1`] = `
   list-style: none;
 }
 
-.c16 > li {
+.c6 > li {
   margin-right: 16px;
 }
 
-.c16 > li > a {
+.c6 > li > a {
   display: block;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -152,7 +77,7 @@ exports[`Storyshots User with default 1`] = `
   padding-right: 4px;
 }
 
-.c17 {
+.c7 {
   display: block;
   padding: 0px;
   display: -webkit-box;
@@ -173,32 +98,32 @@ exports[`Storyshots User with default 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="Box-aty0du-0 c1"
   >
     <div
-      className="c2"
+      className="Box-aty0du-0 mwMaU"
       width={0.25}
     >
       <div
-        className="c3"
+        className="Box-aty0du-0 btkkfj"
       >
         <img
           alt="avator"
-          className="c4"
+          className="c2"
         />
       </div>
       <div
-        className="c5"
+        className="Box-aty0du-0 gDxzYG"
       >
         <h1>
           <div
-            className="c6"
+            className="Box-aty0du-0 ewULWW"
             fontSize="4"
           >
             John Doe
           </div>
           <div
-            className="c7"
+            className="Box-aty0du-0 llpSeA"
             color="gray"
             fontSize="3"
           >
@@ -206,15 +131,15 @@ exports[`Storyshots User with default 1`] = `
           </div>
         </h1>
         <div
-          className="c5"
+          className="Box-aty0du-0 gDxzYG"
         >
           <div
-            className="c8"
+            className="Box-aty0du-0 hoNNBu"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
           <ul
-            className="c9"
+            className="Box-aty0du-0 c3"
           >
             <li>
               <svg
@@ -311,42 +236,42 @@ exports[`Storyshots User with default 1`] = `
         </div>
         <hr />
         <div
-          className="c5"
+          className="Box-aty0du-0 gDxzYG"
         >
           <h2
-            className="c10"
+            className="c4"
           >
             Organizations
           </h2>
           <ul
-            className="c11"
+            className="Box-aty0du-0 c5"
           >
             <li
-              className="c12"
+              className="Box-aty0du-0 koNJYv"
             >
               <img
                 alt="ORG"
-                className="c13"
+                className="Box-aty0du-0 jyNhBF"
                 height="36px"
                 width="36px"
               />
             </li>
             <li
-              className="c12"
+              className="Box-aty0du-0 koNJYv"
             >
               <img
                 alt="ORG"
-                className="c13"
+                className="Box-aty0du-0 jyNhBF"
                 height="36px"
                 width="36px"
               />
             </li>
             <li
-              className="c12"
+              className="Box-aty0du-0 koNJYv"
             >
               <img
                 alt="ORG"
-                className="c13"
+                className="Box-aty0du-0 jyNhBF"
                 height="36px"
                 width="36px"
               />
@@ -356,14 +281,14 @@ exports[`Storyshots User with default 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="Box-aty0du-0 jJAFQl"
       width={0.75}
     >
       <div
-        className="c15"
+        className="Box-aty0du-0 NxaGY"
       >
         <ul
-          className="c16"
+          className="Box-aty0du-0 c6"
         >
           <li>
             <a
@@ -403,21 +328,21 @@ exports[`Storyshots User with default 1`] = `
         </ul>
       </div>
       <div
-        className="c5"
+        className="Box-aty0du-0 gDxzYG"
       >
         %CHILDREN%
         <h2>
           Pinned repositories
         </h2>
         <ul
-          className="c17"
+          className="Box-aty0du-0 c7"
         >
           <li
-            className="c18"
+            className="Box-aty0du-0 hwyxmh"
             width="50%"
           >
             <div
-              className="c19"
+              className="Box-aty0du-0 ilutIn"
             >
               <h3>
                 %REPO_NAME%
@@ -428,11 +353,11 @@ exports[`Storyshots User with default 1`] = `
             </div>
           </li>
           <li
-            className="c18"
+            className="Box-aty0du-0 hwyxmh"
             width="50%"
           >
             <div
-              className="c20"
+              className="Box-aty0du-0 hzxeZO"
             >
               <h3>
                 %REPO_NAME%
@@ -443,11 +368,11 @@ exports[`Storyshots User with default 1`] = `
             </div>
           </li>
           <li
-            className="c18"
+            className="Box-aty0du-0 hwyxmh"
             width="50%"
           >
             <div
-              className="c19"
+              className="Box-aty0du-0 ilutIn"
             >
               <h3>
                 %REPO_NAME%
@@ -458,11 +383,11 @@ exports[`Storyshots User with default 1`] = `
             </div>
           </li>
           <li
-            className="c18"
+            className="Box-aty0du-0 hwyxmh"
             width="50%"
           >
             <div
-              className="c20"
+              className="Box-aty0du-0 hzxeZO"
             >
               <h3>
                 %REPO_NAME%
@@ -473,11 +398,11 @@ exports[`Storyshots User with default 1`] = `
             </div>
           </li>
           <li
-            className="c18"
+            className="Box-aty0du-0 hwyxmh"
             width="50%"
           >
             <div
-              className="c19"
+              className="Box-aty0du-0 ilutIn"
             >
               <h3>
                 %REPO_NAME%
@@ -490,13 +415,13 @@ exports[`Storyshots User with default 1`] = `
         </ul>
       </div>
       <div
-        className="c5"
+        className="Box-aty0du-0 gDxzYG"
       >
         <h2>
           N contributions in the last year
         </h2>
         <div
-          className="c5"
+          className="Box-aty0du-0 gDxzYG"
         >
           GRAPH
         </div>
