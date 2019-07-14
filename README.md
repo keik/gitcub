@@ -75,6 +75,14 @@ npm run watch:js      # for frontend
 npm run watch:server  # for server
 ```
 
+Also watch internal package `gh-ui`, add follows
+
+
+```
+cd packages/gh-ui
+npx tsc -w
+```
+
 
 ## Test
 

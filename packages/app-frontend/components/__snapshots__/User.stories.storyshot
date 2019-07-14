@@ -1,0 +1,863 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ../../components/User with default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c1 {
+  display: block;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  display: block;
+  width: 240px;
+  height: 240px;
+  background-color: #ccc;
+}
+
+.c3 {
+  display: block;
+  padding: 0px;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+}
+
+.c3 > li {
+  margin-bottom: 4px;
+}
+
+.c4 {
+  font-size: 16px;
+}
+
+.c5 {
+  display: block;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.c6 {
+  display: block;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.c6 > li {
+  margin-right: 16px;
+}
+
+.c6 > li > a {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c7 {
+  display: block;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="Box-aty0du-0 c1"
+  >
+    <div
+      className="Box-aty0du-0 mwMaU"
+      width={0.25}
+    >
+      <div
+        className="Box-aty0du-0 cePqaC"
+      >
+        <img
+          alt="avator"
+          className="c2"
+        />
+      </div>
+      <div
+        className="Box-aty0du-0 gDxzYG"
+      >
+        <h1>
+          <div
+            className="Box-aty0du-0 ewULWW"
+            fontSize="4"
+          >
+            John Doe
+          </div>
+          <div
+            className="Box-aty0du-0 llpSeA"
+            color="gray"
+            fontSize="3"
+          >
+            john
+          </div>
+        </h1>
+        <div
+          className="Box-aty0du-0 gDxzYG"
+        >
+          <div
+            className="Box-aty0du-0 hoNNBu"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <ul
+            className="Box-aty0du-0 c3"
+          >
+            <li>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 16 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              POMPOM Inc.
+            </li>
+            <li>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 12 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              Tokyo, Japan
+            </li>
+            <li>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 14 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              john@example.net
+            </li>
+            <li>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 16 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              https://example.net
+            </li>
+          </ul>
+          <button>
+            Edit
+          </button>
+        </div>
+        <hr />
+        <div
+          className="Box-aty0du-0 gDxzYG"
+        >
+          <h2
+            className="c4"
+          >
+            Organizations
+          </h2>
+          <ul
+            className="Box-aty0du-0 c5"
+          >
+            <li
+              className="Box-aty0du-0 koNJYv"
+            >
+              <img
+                alt="ORG"
+                className="Box-aty0du-0 fdWKYv"
+                height="36px"
+                width="36px"
+              />
+            </li>
+            <li
+              className="Box-aty0du-0 koNJYv"
+            >
+              <img
+                alt="ORG"
+                className="Box-aty0du-0 fdWKYv"
+                height="36px"
+                width="36px"
+              />
+            </li>
+            <li
+              className="Box-aty0du-0 koNJYv"
+            >
+              <img
+                alt="ORG"
+                className="Box-aty0du-0 fdWKYv"
+                height="36px"
+                width="36px"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Box-aty0du-0 jJAFQl"
+      width={0.75}
+    >
+      <div
+        className="Box-aty0du-0 edoYum"
+      >
+        <ul
+          className="Box-aty0du-0 c6"
+        >
+          <li>
+            <a
+              href="#"
+            >
+              Overview
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Repositories
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Stars
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Followers
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Following
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="Box-aty0du-0 gDxzYG"
+      >
+        %CHILDREN%
+        <h2>
+          Pinned repositories
+        </h2>
+        <ul
+          className="Box-aty0du-0 c7"
+        >
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 eabJWk"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 BVRkA"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 eabJWk"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 BVRkA"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 eabJWk"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="Box-aty0du-0 gDxzYG"
+      >
+        <h2>
+          N contributions in the last year
+        </h2>
+        <div
+          className="Box-aty0du-0 gDxzYG"
+        >
+          GRAPH
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots User with default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c1 {
+  display: block;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  display: block;
+  width: 240px;
+  height: 240px;
+  background-color: #ccc;
+}
+
+.c3 {
+  display: block;
+  margin-top: 16px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+}
+
+.c3 > li {
+  margin-bottom: 4px;
+}
+
+.c4 {
+  font-size: 16px;
+}
+
+.c5 {
+  display: block;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.c6 {
+  display: block;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.c6 > li {
+  margin-right: 16px;
+}
+
+.c6 > li > a {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c7 {
+  display: block;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="Box-aty0du-0 c1"
+  >
+    <div
+      className="Box-aty0du-0 mwMaU"
+      width={0.25}
+    >
+      <div
+        className="Box-aty0du-0 btkkfj"
+      >
+        <img
+          alt="avator"
+          className="c2"
+        />
+      </div>
+      <div
+        className="Box-aty0du-0 gDxzYG"
+      >
+        <h1>
+          <div
+            className="Box-aty0du-0 ewULWW"
+            fontSize="4"
+          >
+            John Doe
+          </div>
+          <div
+            className="Box-aty0du-0 llpSeA"
+            color="gray"
+            fontSize="3"
+          >
+            john
+          </div>
+        </h1>
+        <div
+          className="Box-aty0du-0 gDxzYG"
+        >
+          <div
+            className="Box-aty0du-0 hoNNBu"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <ul
+            className="Box-aty0du-0 c3"
+          >
+            <li>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 16 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              POMPOM Inc.
+            </li>
+            <li>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 12 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              Tokyo, Japan
+            </li>
+            <li>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 14 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              john@example.net
+            </li>
+            <li>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 16 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              https://example.net
+            </li>
+          </ul>
+          <button>
+            Edit
+          </button>
+        </div>
+        <hr />
+        <div
+          className="Box-aty0du-0 gDxzYG"
+        >
+          <h2
+            className="c4"
+          >
+            Organizations
+          </h2>
+          <ul
+            className="Box-aty0du-0 c5"
+          >
+            <li
+              className="Box-aty0du-0 koNJYv"
+            >
+              <img
+                alt="ORG"
+                className="Box-aty0du-0 jyNhBF"
+                height="36px"
+                width="36px"
+              />
+            </li>
+            <li
+              className="Box-aty0du-0 koNJYv"
+            >
+              <img
+                alt="ORG"
+                className="Box-aty0du-0 jyNhBF"
+                height="36px"
+                width="36px"
+              />
+            </li>
+            <li
+              className="Box-aty0du-0 koNJYv"
+            >
+              <img
+                alt="ORG"
+                className="Box-aty0du-0 jyNhBF"
+                height="36px"
+                width="36px"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Box-aty0du-0 jJAFQl"
+      width={0.75}
+    >
+      <div
+        className="Box-aty0du-0 NxaGY"
+      >
+        <ul
+          className="Box-aty0du-0 c6"
+        >
+          <li>
+            <a
+              href="#"
+            >
+              Overview
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Repositories
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Stars
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Followers
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Following
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="Box-aty0du-0 gDxzYG"
+      >
+        %CHILDREN%
+        <h2>
+          Pinned repositories
+        </h2>
+        <ul
+          className="Box-aty0du-0 c7"
+        >
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 ilutIn"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 hzxeZO"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 ilutIn"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 hzxeZO"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+          <li
+            className="Box-aty0du-0 hwyxmh"
+            width="50%"
+          >
+            <div
+              className="Box-aty0du-0 ilutIn"
+            >
+              <h3>
+                %REPO_NAME%
+              </h3>
+              <p>
+                %REPO_DESCRIPTION%
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="Box-aty0du-0 gDxzYG"
+      >
+        <h2>
+          N contributions in the last year
+        </h2>
+        <div
+          className="Box-aty0du-0 gDxzYG"
+        >
+          GRAPH
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

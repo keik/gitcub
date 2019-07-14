@@ -11,15 +11,15 @@ start: build
 
 build: node_modules
 	@echo $(TAG)$@$(END)
-	npm run clean
+	npx lerna run build
+	npx lerna run test
 	npm run lint
 	npm run typecheck
-	npm run test
-	npm run build
 
 node_modules: FORCE
 	@echo $(TAG)$@$(END)
 	npm i
+	npx lerna bootstrap
 
 clean:
 	@echo $(TAG)$@$(END)

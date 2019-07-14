@@ -1,0 +1,821 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ../../components/Repository/RepositoryTree with default 1`] = `
+.c1 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.c2 {
+  padding: 8px;
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c4 {
+  padding: 0px;
+  background-color: #fff;
+}
+
+.c4 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c4 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c4 > table > tbody > tr > td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c3 {
+  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  font-size: 90%;
+  color: #445055;
+}
+
+.c5 {
+  width: 18px;
+}
+
+.c6 {
+  padding-left: 12px;
+}
+
+.c7 {
+  padding-left: 12px;
+}
+
+.c8 {
+  color: #888;
+}
+
+.c9 {
+  width: 120px;
+  text-align: right;
+}
+
+.c10 {
+  padding-right: 12px;
+}
+
+.c0 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "marginBottom": "12px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "marginRight": "12px",
+        }
+      }
+    >
+      <button
+        className="c0"
+        onClick={[Function]}
+      >
+        <i>
+          Branch: 
+        </i>
+        <span>
+          #TREE
+           
+        </span>
+        <i
+          className="fa fa-caret-down"
+        />
+      </button>
+    </div>
+    <div>
+      <strong>
+        <a
+          href="/#OWNER/#REPO/tree/#TREE"
+          onClick={[Function]}
+        >
+          #REPO
+        </a>
+      </strong>
+      <span
+        style={
+          Object {
+            "margin": "0 6px",
+          }
+        }
+      >
+        /
+      </span>
+      <strong>
+        #PATH
+      </strong>
+      <span
+        style={
+          Object {
+            "margin": "0 6px",
+          }
+        }
+      >
+        /
+      </span>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <div>
+            <img
+              alt="#NAME_1"
+              syle={
+                Object {
+                  "background": "#ccc",
+                  "height": 20,
+                  "verticalAlign": "middle",
+                  "width": 20,
+                }
+              }
+            />
+             
+            <a
+              href="/#NAME_1"
+            >
+              #NAME_1
+            </a>
+             
+            <a
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #MESSAGE_1
+            </a>
+          </div>
+          <div>
+            Latest commit 
+            <a
+              className="c3"
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #SHA_1
+            </a>
+             
+            <time-ago
+              datetime="#DATE_1"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="c4"
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td
+                className="c5"
+              >
+                <i
+                  className="fa fa-file-text-o c6"
+                />
+              </td>
+              <td
+                className="name"
+              >
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_1"
+                  onClick={[Function]}
+                >
+                  #PATH_1
+                </a>
+              </td>
+              <td
+                className="c7"
+              >
+                <a
+                  className="c8"
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="c9"
+              >
+                <span
+                  className="c10"
+                >
+                  <time-ago
+                    datetime="#DATE_1"
+                  />
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td
+                className="c5"
+              >
+                <i
+                  className="fa fa-file-text-o c6"
+                />
+              </td>
+              <td
+                className="name"
+              >
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
+                  onClick={[Function]}
+                >
+                  #PATH_2
+                </a>
+              </td>
+              <td
+                className="c7"
+              >
+                <a
+                  className="c8"
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="c9"
+              >
+                <span
+                  className="c10"
+                >
+                  <time-ago
+                    datetime="#DATE_1"
+                  />
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ../../components/Repository/RepositoryTree.Breadcrumbs with 3rd level path 1`] = `
+<div>
+  <strong>
+    <a
+      href="/foo/bar/tree/TREE"
+      onClick={[Function]}
+    >
+      bar
+    </a>
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <a
+    href="/foo/bar/tree/TREE/a"
+    onClick={[Function]}
+  >
+    a
+  </a>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <a
+    href="/foo/bar/tree/TREE/a/b"
+    onClick={[Function]}
+  >
+    b
+  </a>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <strong>
+    c
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+</div>
+`;
+
+exports[`Storyshots ../../components/Repository/RepositoryTree.Breadcrumbs with default 1`] = `
+<div>
+  <strong>
+    <a
+      href="/foo/bar/tree/TREE"
+      onClick={[Function]}
+    >
+      bar
+    </a>
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <strong>
+    PATH
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositoryTree with default 1`] = `
+.c1 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.c2 {
+  padding: 8px;
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c4 {
+  padding: 0px;
+  background-color: #fff;
+}
+
+.c4 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c4 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c4 > table > tbody > tr > td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c3 {
+  font-family: Consolas,'Liberation Mono',Menlo,Courier,monospace;
+  font-size: 90%;
+  color: #445055;
+}
+
+.c5 {
+  width: 18px;
+}
+
+.c6 {
+  padding-left: 12px;
+}
+
+.c7 {
+  padding-left: 12px;
+}
+
+.c8 {
+  color: #888;
+}
+
+.c9 {
+  width: 120px;
+  text-align: right;
+}
+
+.c10 {
+  padding-right: 12px;
+}
+
+.c0 {
+  display: inline-block;
+  color: #333;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  position: relative;
+  padding: 3px 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "marginBottom": "12px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "marginRight": "12px",
+        }
+      }
+    >
+      <button
+        className="c0"
+        onClick={[Function]}
+      >
+        <i>
+          Branch: 
+        </i>
+        <span>
+          #TREE
+           
+        </span>
+        <i
+          className="fa fa-caret-down"
+        />
+      </button>
+    </div>
+    <div>
+      <strong>
+        <a
+          href="/#OWNER/#REPO/tree/#TREE"
+          onClick={[Function]}
+        >
+          #REPO
+        </a>
+      </strong>
+      <span
+        style={
+          Object {
+            "margin": "0 6px",
+          }
+        }
+      >
+        /
+      </span>
+      <strong>
+        #PATH
+      </strong>
+      <span
+        style={
+          Object {
+            "margin": "0 6px",
+          }
+        }
+      >
+        /
+      </span>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <div>
+            <img
+              alt="#NAME_1"
+              syle={
+                Object {
+                  "background": "#ccc",
+                  "height": 20,
+                  "verticalAlign": "middle",
+                  "width": 20,
+                }
+              }
+            />
+             
+            <a
+              href="/#NAME_1"
+            >
+              #NAME_1
+            </a>
+             
+            <a
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #MESSAGE_1
+            </a>
+          </div>
+          <div>
+            Latest commit 
+            <a
+              className="c3"
+              href="/#OWNER/#REPO/commit/#SHA_1"
+              onClick={[Function]}
+            >
+              #SHA_1
+            </a>
+             
+            <time-ago
+              datetime="#DATE_1"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="c4"
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td
+                className="c5"
+              >
+                <i
+                  className="fa fa-file-text-o c6"
+                />
+              </td>
+              <td
+                className="name"
+              >
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_1"
+                  onClick={[Function]}
+                >
+                  #PATH_1
+                </a>
+              </td>
+              <td
+                className="c7"
+              >
+                <a
+                  className="c8"
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="c9"
+              >
+                <span
+                  className="c10"
+                >
+                  <time-ago
+                    datetime="#DATE_1"
+                  />
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td
+                className="c5"
+              >
+                <i
+                  className="fa fa-file-text-o c6"
+                />
+              </td>
+              <td
+                className="name"
+              >
+                <a
+                  href="/#OWNER/#REPO/blob/#TREE/#PATH/#PATH_2"
+                  onClick={[Function]}
+                >
+                  #PATH_2
+                </a>
+              </td>
+              <td
+                className="c7"
+              >
+                <a
+                  className="c8"
+                  href="/#OWNER/#REPO/commit/#SHA_1"
+                  onClick={[Function]}
+                >
+                  #MESSAGE_1
+                </a>
+              </td>
+              <td
+                className="c9"
+              >
+                <span
+                  className="c10"
+                >
+                  <time-ago
+                    datetime="#DATE_1"
+                  />
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositoryTree.Breadcrumbs with 3rd level path 1`] = `
+<div>
+  <strong>
+    <a
+      href="/foo/bar/tree/TREE"
+      onClick={[Function]}
+    >
+      bar
+    </a>
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <a
+    href="/foo/bar/tree/TREE/a"
+    onClick={[Function]}
+  >
+    a
+  </a>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <a
+    href="/foo/bar/tree/TREE/a/b"
+    onClick={[Function]}
+  >
+    b
+  </a>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <strong>
+    c
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+</div>
+`;
+
+exports[`Storyshots Repository/RepositoryTree.Breadcrumbs with default 1`] = `
+<div>
+  <strong>
+    <a
+      href="/foo/bar/tree/TREE"
+      onClick={[Function]}
+    >
+      bar
+    </a>
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+  <strong>
+    PATH
+  </strong>
+  <span
+    style={
+      Object {
+        "margin": "0 6px",
+      }
+    }
+  >
+    /
+  </span>
+</div>
+`;

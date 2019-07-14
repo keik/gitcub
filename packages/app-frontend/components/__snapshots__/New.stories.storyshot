@@ -1,0 +1,401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ../../components/New with default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c4 {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.c4 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.c5 {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.c5 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 14px;
+  color: #767676;
+}
+
+.c1 {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.c2 {
+  margin-bottom: 0px;
+}
+
+.c6 {
+  width: 100%;
+}
+
+.c7 {
+  display: inline-block;
+  color: #fff;
+  background-image: linear-gradient(#8add6d,#60b044);
+  position: relative;
+  padding: 6px 12px;
+  border: 1px solid #5aad35;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <h2
+      className="c2"
+    >
+      Create a new repository
+    </h2>
+    <p
+      className="c3"
+    >
+      A repository contains all the files for your project, including the revision history.
+    </p>
+  </div>
+  <form
+    action="/api/v1/user/repos"
+    method="post"
+    onSubmit={[Function]}
+  >
+    <input
+      name="authenticity_token"
+      type="hidden"
+      value="TRUE"
+    />
+    <div>
+      <div
+        className="c4"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <label
+          htmlFor="owner"
+        >
+          Owner
+        </label>
+        <input
+          id="owner"
+          name="owner"
+          type="text"
+        />
+      </div>
+      <span>
+         / 
+      </span>
+      <div
+        className="c5"
+      >
+        <label
+          htmlFor="name"
+        >
+          Repository name
+        </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="c4"
+    >
+      <label
+        htmlFor="description"
+      >
+        Description (optional)
+      </label>
+      <input
+        className="c6"
+        id="description"
+        name="description"
+        type="text"
+      />
+    </div>
+    <hr />
+    <div
+      className="c4"
+    >
+      <label>
+        <input
+          name="public"
+          type="radio"
+          value="true"
+        />
+        Public
+      </label>
+      <p
+        className="c3"
+      >
+        Anyone can see this repository. You choose who can commit.
+      </p>
+    </div>
+    <div
+      className="c4"
+    >
+      <label>
+        <input
+          name="public"
+          type="radio"
+          value="false"
+        />
+        Private
+      </label>
+      <p
+        className="c3"
+      >
+        You choose who can see and commit to this repository.
+      </p>
+    </div>
+    <hr />
+    <button
+      className="c7"
+    >
+      Create repository
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Storyshots New with default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c4 {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.c4 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.c5 {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.c5 > label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 14px;
+  color: #767676;
+}
+
+.c1 {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.c2 {
+  margin-bottom: 0px;
+}
+
+.c6 {
+  width: 100%;
+}
+
+.c7 {
+  display: inline-block;
+  color: #fff;
+  background-image: linear-gradient(#8add6d,#60b044);
+  position: relative;
+  padding: 6px 12px;
+  border: 1px solid #5aad35;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <h2
+      className="c2"
+    >
+      Create a new repository
+    </h2>
+    <p
+      className="c3"
+    >
+      A repository contains all the files for your project, including the revision history.
+    </p>
+  </div>
+  <form
+    action="/api/v1/user/repos"
+    method="post"
+    onSubmit={[Function]}
+  >
+    <input
+      name="authenticity_token"
+      type="hidden"
+      value="TRUE"
+    />
+    <div>
+      <div
+        className="c4"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <label
+          htmlFor="owner"
+        >
+          Owner
+        </label>
+        <input
+          id="owner"
+          name="owner"
+          type="text"
+        />
+      </div>
+      <span>
+         / 
+      </span>
+      <div
+        className="c5"
+      >
+        <label
+          htmlFor="name"
+        >
+          Repository name
+        </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="c4"
+    >
+      <label
+        htmlFor="description"
+      >
+        Description (optional)
+      </label>
+      <input
+        className="c6"
+        id="description"
+        name="description"
+        type="text"
+      />
+    </div>
+    <hr />
+    <div
+      className="c4"
+    >
+      <label>
+        <input
+          name="public"
+          type="radio"
+          value="true"
+        />
+        Public
+      </label>
+      <p
+        className="c3"
+      >
+        Anyone can see this repository. You choose who can commit.
+      </p>
+    </div>
+    <div
+      className="c4"
+    >
+      <label>
+        <input
+          name="public"
+          type="radio"
+          value="false"
+        />
+        Private
+      </label>
+      <p
+        className="c3"
+      >
+        You choose who can see and commit to this repository.
+      </p>
+    </div>
+    <hr />
+    <button
+      className="c7"
+    >
+      Create repository
+    </button>
+  </form>
+</div>
+`;
