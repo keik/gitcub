@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 // import { hot } from 'react-hot-loader/root'
-import { Provider } from 'react-redux'
+import { Provider, useDispatch } from 'react-redux'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { applyMiddleware, compose, createStore } from 'redux'
 import logger from 'redux-logger'
@@ -43,7 +43,7 @@ const store = createStore(
 const App = () => (
   <Provider store={store}>
     <BrowserRouter>
-      <>
+      <AppInner>
         <AppHeaderContainer />
         <Switch>
           <Route exact path="/" component={HomeContainer} />
@@ -75,24 +75,25 @@ const App = () => (
           />
         </Switch>
         <AppFooter />
-      </>
+      </AppInner>
     </BrowserRouter>
   </Provider>
 )
 
 export default App
 
-export const AppContainer = () => {
+export const AppInner = ({ children }: { children: React.Node }) => {
   const [isLoading, setIsLoading] = React.useState(true)
+  const dispatch = useDispatch()
   React.useEffect(() => {
     ;(async () => {
       setIsLoading(true)
-      store.dispatch(await SessionAction.getCurrentUser())
+      dispatch(await SessionAction.getCurrentUser())
       setIsLoading(false)
     })()
-  }, [])
+  }, [dispatch])
 
-  return isLoading ? <div>Loading...</div> : <App />
+  return isLoading ? <div>Loading...</div> : children
 }
 
 // TODO: broken develop and test environments. disabled temporary.
