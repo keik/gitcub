@@ -11,11 +11,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:import/errors',
     'plugin:react/recommended',
-    'plugin:flowtype/recommended',
 
     // suppress conflicted rules
     'plugin:prettier/recommended',
-    'prettier/flowtype',
     'prettier/react'
   ],
   parserOptions: {
@@ -34,8 +32,6 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'filenames/match-exported': 'error',
-    'flowtype/require-valid-file-annotation': ['warn', 'always'],
-    'flowtype/require-exact-type': 'error',
     'import-order-alphabetical/order': 'error',
     'react/no-deprecated': 'warn',
     'react/prefer-stateless-function': 'error',
