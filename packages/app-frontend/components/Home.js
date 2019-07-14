@@ -4,8 +4,7 @@ import type { RepositoryT } from '@gitcub/types/gh'
 import css from '@styled-system/css'
 import * as React from 'react'
 import { FaRegFolderOpen } from 'react-icons/fa'
-import { connect } from 'react-redux'
-import type { Dispatch } from 'redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 import List from '../components/common/blocks/List'
 import Panel from '../components/common/blocks/Panel'
@@ -64,25 +63,16 @@ const Home = ({
 
 export default Home
 
-export const HomeContainer = connect<_, _, *, _, *, _>(
-  ({ repositories }: $Call<typeof rootReducer>) => {
-    return {
-      repositories
-    }
-  }
-)(
-  class $Home extends React.Component<{|
-    dispatch: Dispatch<*>,
-    repositories: $ReadOnlyArray<RepositoryT>
-  |}> {
-    async componentDidMount() {
-      const { dispatch } = this.props
+export const HomeContainer = () => {
+  const dispatch = useDispatch()
+  React.useEffect(() => {
+    ;(async () => {
       dispatch(await RepositoriesAction.fetch())
-    }
+    })()
+  }, [dispatch])
 
-    render() {
-      const { repositories } = this.props
-      return <Home repositories={repositories} />
-    }
-  }
-)
+  const repositories = useSelector(
+    (state: $Call<typeof rootReducer>) => state.repositories
+  )
+  return <Home repositories={repositories} />
+}
