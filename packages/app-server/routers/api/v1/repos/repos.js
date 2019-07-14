@@ -3,7 +3,7 @@
 import fs from 'fs'
 import { join } from 'path'
 
-import { API_REPOS } from 'app-constants/api'
+import { API_REPOS } from '@gitcub/constants/api'
 import { Router } from 'express'
 import glob from 'glob'
 import Git from 'nodegit'

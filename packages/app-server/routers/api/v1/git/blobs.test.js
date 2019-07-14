@@ -1,7 +1,7 @@
 // @flow
 
 import assert from 'assert'
-import { API_GIT_BLOBS } from 'app-constants/api'
+import { API_GIT_BLOBS } from '@gitcub/constants/api'
 import axios from 'axios'
 
 test(`GET ${API_GIT_BLOBS} with no parameter should return 404`, async () => {

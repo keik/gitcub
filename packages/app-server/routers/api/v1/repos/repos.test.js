@@ -4,7 +4,7 @@ import assert from 'assert'
 import fs from 'fs'
 import path from 'path'
 
-import { API_REPOS } from 'app-constants/api'
+import { API_REPOS } from '@gitcub/constants/api'
 import axios from 'axios'
 import rimraf from 'rimraf'
 

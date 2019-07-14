@@ -3,7 +3,7 @@
 import { join } from 'path'
 import { parse } from 'url'
 
-import { API_REPOS_CONTENTS } from 'app-constants/api'
+import { API_REPOS_CONTENTS } from '@gitcub/constants/api'
 import { Router } from 'express'
 import Git from 'nodegit'
 

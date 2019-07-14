@@ -1,5 +1,5 @@
 {
-  "name": "app-constants",
+  "name": "@gitcub/constants",
   "version": "0.0.0",
   "private": true
 }

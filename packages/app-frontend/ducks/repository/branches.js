@@ -1,8 +1,7 @@
 // @flow
 
+import type { BranchT } from '@gitcub/types/gh'
 import axios from 'axios'
-
-import type { BranchT } from 'gh-types/gh'
 
 export const FETCH: 'BRANCHES/FETCH' = 'BRANCHES/FETCH'
 

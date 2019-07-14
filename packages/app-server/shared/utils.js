@@ -1,3 +1,4 @@
+// @flow
 const config = require('../../../config')
 
 let { HOST, PORT } = config.env[process.env.NODE_ENV || 'development']

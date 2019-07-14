@@ -1,6 +1,6 @@
 // @flow
 
-import { API_GIT_TAGS } from 'app-constants/api'
+import { API_GIT_TAGS } from '@gitcub/constants/api'
 import { Router } from 'express'
 
 export default Router().get(API_GIT_TAGS, (onGet: any))

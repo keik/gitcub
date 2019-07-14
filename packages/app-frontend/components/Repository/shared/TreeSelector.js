@@ -1,6 +1,6 @@
 // @flow
 
-import type { BranchObj, TagObj } from 'gh-types/nodegit'
+import type { BranchObj, TagObj } from '@gitcub/types/nodegit'
 import * as React from 'react'
 import { css } from 'styled-components'
 

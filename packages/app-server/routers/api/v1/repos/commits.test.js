@@ -1,7 +1,7 @@
 // @flow
 
 import assert from 'assert'
-import { API_REPOS_COMMITS } from 'app-constants/api'
+import { API_REPOS_COMMITS } from '@gitcub/constants/api'
 import axios from 'axios'
 
 test(`GET ${API_REPOS_COMMITS} with no param should return commits in default branch`, async () => {

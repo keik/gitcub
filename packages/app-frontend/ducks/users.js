@@ -1,8 +1,7 @@
 // @flow
 
+import type { UserT } from '@gitcub/types/gh'
 import axios from 'axios'
-
-import type { UserT } from 'gh-types/gh'
 
 export const GET_USER: 'USERS/GET_USER' = 'USERS/GET_USER'
 

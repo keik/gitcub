@@ -43,7 +43,7 @@ app.use(
     store: new RedisStore({
       host: 'localhost',
       port: '6379',
-      prefix: 'gh:sess:'
+      prefix: 'gitcub:sess:'
     }),
     secret: 'keyboard cat',
     resave: false

@@ -1,6 +1,6 @@
 // @flow
 
-import type { BranchT } from 'gh-types/gh'
+import type { BranchT } from '@gitcub/types/gh'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { type Match } from 'react-router-dom'

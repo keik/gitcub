@@ -1,7 +1,7 @@
 // @flow
 
 import assert from 'assert'
-import { API_REPOS_CONTENTS } from 'app-constants/api'
+import { API_REPOS_CONTENTS } from '@gitcub/constants/api'
 import axios from 'axios'
 
 test(`GET ${API_REPOS_CONTENTS} with no params should return files in root directory`, async () => {

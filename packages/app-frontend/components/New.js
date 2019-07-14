@@ -1,7 +1,7 @@
 // @flow
 
+import { API_REPOS } from '@gitcub/constants/api'
 import css from '@styled-system/css'
-import { API_REPOS } from 'app-constants/api'
 import axios from 'axios'
 import * as React from 'react'
 

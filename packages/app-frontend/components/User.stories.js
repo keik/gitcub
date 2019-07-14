@@ -1,7 +1,7 @@
 // @flow
 
+import UserMock from '@gitcub/mocks/UserMock'
 import { storiesOf } from '@storybook/react'
-import UserMock from 'gh-mocks/UserMock'
 import { base, filename } from 'paths.macro'
 import * as React from 'react'
 import { MemoryRouter } from 'react-router-dom'

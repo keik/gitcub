@@ -1,8 +1,8 @@
 // @flow
 
-import { API_GIT_REFS } from 'app-constants/api'
+import { API_GIT_REFS } from '@gitcub/constants/api'
+import type { TagT } from '@gitcub/types/gh'
 import axios from 'axios'
-import type { TagT } from 'gh-types/gh'
 
 // TODO: bad dependencies
 import { genAPIStr } from '../../../app-server/shared/utils'

@@ -1,8 +1,8 @@
 // @flow
 
-import { API_REPOS_COMMITS } from 'app-constants/api'
+import { API_REPOS_COMMITS } from '@gitcub/constants/api'
+import type { CommitT, CommitWithDetailsT } from '@gitcub/types/gh'
 import axios from 'axios'
-import type { CommitT, CommitWithDetailsT } from 'gh-types/gh'
 
 // TODO: bad dependencies
 import { genAPIStr } from '../../../app-server/shared/utils'

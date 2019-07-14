@@ -1,8 +1,8 @@
 // @flow
 
+import type { UserT } from '@gitcub/types/gh'
+import { Box } from '@gitcub/ui'
 import css from '@styled-system/css'
-import type { UserT } from 'gh-types/gh'
-import Box from 'gh-ui/Box'
 import * as React from 'react'
 import { GoLink, GoLocation, GoMail, GoOrganization } from 'react-icons/go'
 import { connect } from 'react-redux'
