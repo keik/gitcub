@@ -7,11 +7,3 @@ exports[`Storyshots ../../components/Repository/RepositoryProjects with default 
   </h2>
 </div>
 `;
-
-exports[`Storyshots Repository/RepositoryProjects with default 1`] = `
-<div>
-  <h2>
-    projects
-  </h2>
-</div>
-`;
