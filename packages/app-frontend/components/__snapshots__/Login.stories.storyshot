@@ -94,7 +94,7 @@ exports[`Storyshots ../../components/Login without session 1`] = `
   <h1
     className="c1"
   >
-    Sign in to GH
+    Sign in to GitCub
   </h1>
   <div
     className="c2"
