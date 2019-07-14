@@ -1,4 +1,4 @@
 /dist
 /flow-typed
-/node_modules
-/packages
+node_modules
+packages/gh-ui/lib

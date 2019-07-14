@@ -11,7 +11,7 @@
     "sourceMap": true,
     "strict": true,
     "target": "es5",
-    "types": ["react", "jest"] // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/33311#issuecomment-466731156
+    "types": ["react"]
   },
   "exclude": ["node_modules", "src/**/*.test.tsx", "src/**/*.stories.tsx"],
   "include": ["src/**/*"]
