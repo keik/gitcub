@@ -37,7 +37,7 @@ const AppFooter = () => (
           <a href="#">Help</a>
         </li>
       </ul>
-      <Logo href="#">GH</Logo>
+      <Logo href="#">GitCub</Logo>
       <ul>
         <li>
           <a href="#">API</a>

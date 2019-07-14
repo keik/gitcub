@@ -60,7 +60,7 @@ export const AppHeaderWithoutSession = () => (
         }
       }}
     >
-      <Logo href="/">GH</Logo>
+      <Logo href="/">GitCub</Logo>
       <div
         css={{
           display: 'flex',
@@ -140,7 +140,7 @@ export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
       }
     })}
   >
-    <Logo href="/">GH</Logo>
+    <Logo href="/">GitCub</Logo>
     <form
       css={css({
         display: 'flex',
