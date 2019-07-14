@@ -1,6 +1,5 @@
 {
   "name": "app-constants",
   "version": "0.0.0",
-  "private": true,
-  "author": "keik <keik@c-fo.com>"
+  "private": true
 }

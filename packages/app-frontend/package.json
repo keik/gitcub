@@ -2,7 +2,6 @@
   "name": "app-frontend",
   "version": "0.0.0",
   "private": true,
-  "author": "keik <keik@c-fo.com>",
   "scripts": {
     "watch": "webpack-dev-server --progress",
     "test": "jest",

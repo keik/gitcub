@@ -2,7 +2,6 @@
   "name": "app-server",
   "version": "0.0.0",
   "private": true,
-  "author": "keik <keik@c-fo.com>",
   "scripts": {
     "watch": "NODE_ENV=development node --inspect index.js",
     "test": "jest --forceExit"
