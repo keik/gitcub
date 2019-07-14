@@ -1,6 +1,6 @@
 // @flow
 
-import { API_USERS } from 'app-constants/api'
+import { API_USERS } from '@gitcub/constants/api'
 import { Router } from 'express'
 
 import asyncWrapper from '../../../asyncWrapper'

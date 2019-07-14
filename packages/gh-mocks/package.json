@@ -1,8 +1,0 @@
-{
-  "name": "gh-mocks",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "gh-types": "^1.0.0"
-  }
-}

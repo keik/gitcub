@@ -1,8 +1,7 @@
 // @flow
 
+import type { TreeT } from '@gitcub/types/gh'
 import axios from 'axios'
-
-import type { TreeT } from 'gh-types/gh'
 
 export const FETCH: 'TREES/FETCH' = 'TREES/FETCH'
 

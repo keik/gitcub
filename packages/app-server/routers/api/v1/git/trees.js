@@ -2,7 +2,7 @@
 
 import { join } from 'path'
 
-import { API_GIT_TREES } from 'app-constants/api'
+import { API_GIT_TREES } from '@gitcub/constants/api'
 import { Router } from 'express'
 import { merge } from 'lodash'
 import Git from 'nodegit'

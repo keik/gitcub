@@ -1,4 +1,4 @@
-# gh-ui
+# @gitcub/ui
 
 UI library powered by TypeScript and styled-components.
 

@@ -1,6 +1,6 @@
 // @flow
 
-import type { IssueObj } from 'gh-types/nodegit'
+import type { IssueObj } from '@gitcub/types/nodegit'
 import * as React from 'react'
 import { Link, type Match } from 'react-router-dom'
 import { css } from 'styled-components'

@@ -1,27 +1,18 @@
 {
-  "name": "app-frontend",
+  "name": "@gitcub/app-frontend",
   "version": "0.0.0",
-  "private": true,
-  "author": "keik <keik@c-fo.com>",
-  "scripts": {
-    "watch": "webpack-dev-server --progress",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
   "dependencies": {
     "@babel/core": "^7.4.4",
     "@babel/polyfill": "^7.4.4",
     "@babel/register": "^7.4.4",
+    "@gitcub/constants": "^0.0.0",
+    "@gitcub/mocks": "^0.0.0",
+    "@gitcub/types": "^0.0.0",
+    "@gitcub/ui": "^0.0.0",
     "@styled-system/css": "^2.0.0",
-    "app-constants": "^0.0.0",
     "axios": "^0.18.0",
     "body-parser": "^1.15.2",
     "connect-redis": "^3.4.0",
-    "gh-mocks": "^0.0.0",
-    "gh-types": "^1.0.0",
-    "gh-ui": "^0.0.0",
     "glob": "^7.1.1",
     "highlight.js": "^9.7.0",
     "jest-styled-components": "^6.3.1",
@@ -68,5 +59,13 @@
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0",
     "webpack-dev-server": "^3.2.0"
+  },
+  "private": true,
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "watch": "webpack-dev-server --progress"
   }
 }

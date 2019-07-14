@@ -1,7 +1,7 @@
 // @flow
 
+import type { CommitWithDetailsT } from '@gitcub/types/gh'
 import css from '@styled-system/css'
-import type { CommitWithDetailsT } from 'gh-types/gh'
 import { highlight } from 'highlight.js'
 import * as React from 'react'
 import { connect } from 'react-redux'

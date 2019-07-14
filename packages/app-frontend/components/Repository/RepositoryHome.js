@@ -1,8 +1,8 @@
 // @flow
 
-import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
-import type { BranchObj, CommitObj, TagObj } from 'gh-types/nodegit'
-import { Button } from 'gh-ui'
+import type { Tree$Entry$WithLastCommitT } from '@gitcub/types/gh'
+import type { BranchObj, CommitObj, TagObj } from '@gitcub/types/nodegit'
+import { Button } from '@gitcub/ui'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { Link, type Match } from 'react-router-dom'

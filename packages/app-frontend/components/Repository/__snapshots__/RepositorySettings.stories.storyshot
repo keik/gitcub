@@ -7,11 +7,3 @@ exports[`Storyshots ../../components/Repository/RepositorySettings with default 
   </h2>
 </div>
 `;
-
-exports[`Storyshots Repository/RepositorySettings with default 1`] = `
-<div>
-  <h2>
-    settings
-  </h2>
-</div>
-`;

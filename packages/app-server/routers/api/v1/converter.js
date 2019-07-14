@@ -4,8 +4,8 @@ import {
   API_GIT_COMMITS,
   API_GIT_TREES,
   API_REPOS_COMMITS
-} from 'app-constants/api'
-import type { Commit } from 'gh-types/nodegit'
+} from '@gitcub/constants/api'
+import type { Commit } from '@gitcub/types/nodegit'
 
 import { genAPIStr } from '../../../shared/utils'
 

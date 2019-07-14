@@ -2,7 +2,7 @@
 
 import { extname } from 'path'
 
-import type { EntryT } from 'gh-types/gh'
+import type { EntryT } from '@gitcub/types/gh'
 import { highlight, getLanguage } from 'highlight.js'
 import * as React from 'react'
 import { connect } from 'react-redux'

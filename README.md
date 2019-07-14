@@ -1,7 +1,7 @@
-# gh
+# GitCub
 
-[![CircleCI](https://circleci.com/gh/keik/gh/tree/develop.svg?style=svg)](https://circleci.com/gh/keik/gh/tree/develop)
-[![Coverage Status](https://img.shields.io/coveralls/keik/gh.svg?style=flat-square)](https://coveralls.io/github/keik/gh)
+[![CircleCI](https://circleci.com/gh/keik/gitcub/tree/develop.svg?style=svg)](https://circleci.com/gh/keik/gitcub/tree/develop)
+[![Coverage Status](https://img.shields.io/coveralls/keik/gitcub.svg?style=flat-square)](https://coveralls.io/github/keik/gitcub)
 
 Performant GitHub clone application powered by React + Express as universal JavaScript.
 
@@ -75,11 +75,11 @@ npm run watch:js      # for frontend
 npm run watch:server  # for server
 ```
 
-Also watch internal package `gh-ui`, add follows
+Also watch internal package `@gitcub/ui`, add follows
 
 
 ```
-cd packages/gh-ui
+cd packages/ui
 npx tsc -w
 ```
 

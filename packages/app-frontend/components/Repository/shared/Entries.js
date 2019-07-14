@@ -1,6 +1,6 @@
 // @flow
 
-import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
+import type { Tree$Entry$WithLastCommitT } from '@gitcub/types/gh'
 import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { css } from 'styled-components'

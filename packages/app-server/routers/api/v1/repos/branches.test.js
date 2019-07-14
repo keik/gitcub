@@ -1,7 +1,7 @@
 // @flow
 
 import assert from 'assert'
-import { API_REPOS_BRANCHES } from 'app-constants/api'
+import { API_REPOS_BRANCHES } from '@gitcub/constants/api'
 import axios from 'axios'
 
 test(`GET ${API_REPOS_BRANCHES} with no param should return branches in default branch`, async () => {

@@ -26,7 +26,7 @@ export function renderFullPage(bust: number | string) {
  <html>
    <head>
      <meta charset="utf-8">
-     <title>gh</title>
+     <title>GitCub</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github.min.css">
      <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet" />

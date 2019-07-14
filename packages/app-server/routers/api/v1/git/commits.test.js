@@ -1,7 +1,7 @@
 // @flow
 
 import assert from 'assert'
-import { API_GIT_COMMITS } from 'app-constants/api'
+import { API_GIT_COMMITS } from '@gitcub/constants/api'
 import axios from 'axios'
 
 test(`GET ${API_GIT_COMMITS} with SHA should return a specified commit`, async () => {

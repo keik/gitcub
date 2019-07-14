@@ -1,7 +1,7 @@
 // @flow
 
 import assert from 'assert'
-import { API_GIT_TREES } from 'app-constants/api'
+import { API_GIT_TREES } from '@gitcub/constants/api'
 import axios from 'axios'
 
 test(`GET ${API_GIT_TREES} with no parameter should return name of entries in default branch`, async () => {

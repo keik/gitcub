@@ -2,7 +2,11 @@
 
 import { join } from 'path'
 
-import { API_GIT_COMMITS, API_GIT_REFS, API_GIT_TAGS } from 'app-constants/api'
+import {
+  API_GIT_COMMITS,
+  API_GIT_REFS,
+  API_GIT_TAGS
+} from '@gitcub/constants/api'
 import { Router } from 'express'
 import Git from 'nodegit'
 

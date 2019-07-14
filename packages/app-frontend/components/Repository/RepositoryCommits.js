@@ -1,6 +1,6 @@
 // @flow
 
-import type { CommitT } from 'gh-types/gh'
+import type { CommitT } from '@gitcub/types/gh'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { Link, type Match } from 'react-router-dom'

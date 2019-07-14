@@ -2,7 +2,7 @@
 
 import { join } from 'path'
 
-import { API_REPOS_BRANCHES } from 'app-constants/api'
+import { API_REPOS_BRANCHES } from '@gitcub/constants/api'
 import { Router } from 'express'
 import Git from 'nodegit'
 

@@ -1,7 +1,7 @@
 // @flow
 
+import type { RepositoryT } from '@gitcub/types/gh'
 import css from '@styled-system/css'
-import type { RepositoryT } from 'gh-types/gh'
 import * as React from 'react'
 import { FaRegFolderOpen } from 'react-icons/fa'
 import { connect } from 'react-redux'

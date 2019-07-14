@@ -1,7 +1,7 @@
 // @flow
 
 import assert from 'assert'
-import { API_GIT_REFS } from 'app-constants/api'
+import { API_GIT_REFS } from '@gitcub/constants/api'
 import axios from 'axios'
 
 test(`GET ${API_GIT_REFS} with no param should return list of all refs`, async () => {

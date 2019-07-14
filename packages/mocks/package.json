@@ -1,0 +1,8 @@
+{
+  "name": "@gitcub/mocks",
+  "version": "0.0.0",
+  "dependencies": {
+    "@gitcub/types": "^0.0.0"
+  },
+  "private": true
+}
