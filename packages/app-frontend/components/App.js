@@ -1,14 +1,14 @@
 // @flow
 
 import * as React from 'react'
-import { hot } from 'react-hot-loader/root'
+// import { hot } from 'react-hot-loader/root'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { applyMiddleware, compose, createStore } from 'redux'
 import logger from 'redux-logger'
 
 import rootReducer from '../ducks'
-import * as SessionAction from '../ducks/session'
+// import * as SessionAction from '../ducks/session'
 import AppFooter from './App/AppFooter'
 import { AppHeaderContainer } from './App/AppHeader'
 import { HomeContainer } from './Home'
@@ -82,15 +82,18 @@ const App = () => (
 
 export default App
 
-export const AppContainer = hot(() => {
-  const [isLoading, setIsLoading] = React.useState(true)
-  React.useEffect(() => {
-    ;(async () => {
-      setIsLoading(true)
-      store.dispatch(await SessionAction.getCurrentUser())
-      setIsLoading(false)
-    })()
-  }, [])
+export const AppContainer = App
 
-  return isLoading ? <div>Loading...</div> : <App />
-})
+// TODO: broken develop and test environments. disabled temporary.
+// export const AppContainer = hot(() => {
+//   const [isLoading, setIsLoading] = React.useState(true)
+//   React.useEffect(() => {
+//     ;(async () => {
+//       setIsLoading(true)
+//       store.dispatch(await SessionAction.getCurrentUser())
+//       setIsLoading(false)
+//     })()
+//   }, [])
+//
+//   return isLoading ? <div>Loading...</div> : <App />
+// })

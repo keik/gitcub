@@ -1,5 +1,170 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots ../../components/common/blocks/Panel default 1`] = `
+.c0 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.c1 {
+  padding: 8px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c2 {
+  padding: 8px;
+  background-color: #fff;
+}
+
+.c2 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c2 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c2 > table > tbody > tr > td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    HEADER
+  </div>
+  <div
+    className="c2"
+  >
+    BODY
+  </div>
+</div>
+`;
+
+exports[`Storyshots ../../components/common/blocks/Panel info 1`] = `
+.c0 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.c1 {
+  padding: 8px;
+  background-color: #f2f9fc;
+  border-bottom: 1px solid;
+  border-color: #c9e6f2;
+}
+
+.c2 {
+  padding: 8px;
+  background-color: #fff;
+}
+
+.c2 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c2 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c2 > table > tbody > tr > td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    HEADER
+  </div>
+  <div
+    className="c2"
+  >
+    BODY
+  </div>
+</div>
+`;
+
+exports[`Storyshots ../../components/common/blocks/Panel noPadidng 1`] = `
+.c0 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.c1 {
+  padding: 0px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c2 {
+  padding: 0px;
+  background-color: #fff;
+}
+
+.c2 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c2 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c2 > table > tbody > tr > td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    HEADER
+  </div>
+  <div
+    className="c2"
+  >
+    BODY
+  </div>
+</div>
+`;
+
 exports[`Storyshots common/blocks/Panel default 1`] = `
 .c0 {
   position: relative;

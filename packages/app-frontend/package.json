@@ -4,12 +4,9 @@
   "private": true,
   "author": "keik <keik@c-fo.com>",
   "scripts": {
-    "clean": "rm -rf dist",
-    "build": "webpack --mode production",
-    "watch": "webpack-dev-server --progress --hot",
-    "start": "NODE_ENV=production node app",
-    "test": "jest --forceExit",
-    "test:coverage": "jest --forceExit --coverage",
+    "watch": "webpack-dev-server --progress",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

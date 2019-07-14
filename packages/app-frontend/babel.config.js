@@ -17,8 +17,9 @@ module.exports = {
   plugins: [
     '@babel/plugin-proposal-class-properties',
     'babel-plugin-macros',
-    'babel-plugin-styled-components',
-    'react-hot-loader/babel'
+    'babel-plugin-styled-components'
+    // TODO: broken develop and test environments. disabled temporary.
+    // 'react-hot-loader/babel'
   ],
   env: {
     test: {

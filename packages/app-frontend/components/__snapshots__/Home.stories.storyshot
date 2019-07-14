@@ -1,5 +1,248 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots ../../components/Home default 1`] = `
+.c0 {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c3 li {
+  padding: 12px 0;
+}
+
+.c3 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c8 li {
+  padding: 12px 12px;
+}
+
+.c8 li + li {
+  border-top: 1px solid #f1f1f1;
+}
+
+.c5 {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.c6 {
+  padding: 8px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #d8d8d8;
+}
+
+.c7 {
+  padding: 0px;
+  background-color: #fff;
+}
+
+.c7 > table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.c7 > table > tbody > tr:first-of-type td {
+  border: none;
+}
+
+.c7 > table > tbody > tr > td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-top: 1px solid #eee;
+  color: #888;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  width: 320px;
+  margin-left: 32px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  margin-right: 4px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <ul
+        className="c3"
+      >
+        <li>
+          ACTIVITY_1
+        </li>
+        <li>
+          ACTIVITY_2
+        </li>
+        <li>
+          ACTIVITY_3
+        </li>
+      </ul>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+        >
+          Public Repositories
+        </div>
+        <div
+          className="c7"
+        >
+          <ul
+            className="c8"
+          >
+            <li
+              className="c9"
+            >
+              <svg
+                _css3={[Function]}
+                className="c10"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M527.9 224H480v-48c0-26.5-21.5-48-48-48H272l-64-64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h400c16.5 0 31.9-8.5 40.7-22.6l79.9-128c20-31.9-3-73.4-40.7-73.4zM48 118c0-3.3 2.7-6 6-6h134.1l64 64H426c3.3 0 6 2.7 6 6v42H152c-16.8 0-32.4 8.8-41.1 23.2L48 351.4zm400 282H72l77.2-128H528z"
+                />
+              </svg>
+              <a
+                href="/FULL_NAME1"
+              >
+                FULL_NAME1
+              </a>
+            </li>
+            <li
+              className="c9"
+            >
+              <svg
+                _css3={[Function]}
+                className="c10"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M527.9 224H480v-48c0-26.5-21.5-48-48-48H272l-64-64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h400c16.5 0 31.9-8.5 40.7-22.6l79.9-128c20-31.9-3-73.4-40.7-73.4zM48 118c0-3.3 2.7-6 6-6h134.1l64 64H426c3.3 0 6 2.7 6 6v42H152c-16.8 0-32.4 8.8-41.1 23.2L48 351.4zm400 282H72l77.2-128H528z"
+                />
+              </svg>
+              <a
+                href="/FULL_NAME2"
+              >
+                FULL_NAME2
+              </a>
+            </li>
+            <li
+              className="c9"
+            >
+              <svg
+                _css3={[Function]}
+                className="c10"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 576 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M527.9 224H480v-48c0-26.5-21.5-48-48-48H272l-64-64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h400c16.5 0 31.9-8.5 40.7-22.6l79.9-128c20-31.9-3-73.4-40.7-73.4zM48 118c0-3.3 2.7-6 6-6h134.1l64 64H426c3.3 0 6 2.7 6 6v42H152c-16.8 0-32.4 8.8-41.1 23.2L48 351.4zm400 282H72l77.2-128H528z"
+                />
+              </svg>
+              <a
+                href="/FULL_NAME3"
+              >
+                FULL_NAME3
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Home default 1`] = `
 .c0 {
   width: 980px;

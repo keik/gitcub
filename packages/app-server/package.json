@@ -4,7 +4,8 @@
   "private": true,
   "author": "keik <keik@c-fo.com>",
   "scripts": {
-    "watch": "NODE_ENV=development node --inspect index.js"
+    "watch": "NODE_ENV=development node --inspect index.js",
+    "test": "jest --forceExit"
   },
   "dependencies": {
     "@babel/core": "^7.4.4",

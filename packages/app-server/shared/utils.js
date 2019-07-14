@@ -1,8 +1,4 @@
-// @flow
-
-import type { Tree$Entry$WithLastCommitT } from 'gh-types/gh'
-
-import config from '../../../config'
+const config = require('../../../config')
 
 let { HOST, PORT } = config.env[process.env.NODE_ENV || 'development']
 PORT = process.env.PORT || PORT
@@ -14,10 +10,7 @@ const ROOT_URL = typeof window === 'undefined' ? `http://${HOST}:${PORT}` : ''
  * @param {string} basedir base directory to parse
  * @returns {array<object>} parsed entries
  */
-export function parseEntriesByDirLevel(
-  entries: $ReadOnlyArray<Tree$Entry$WithLastCommitT>,
-  basedir: string
-) {
+export function parseEntriesByDirLevel(entries, basedir) {
   return entries.reduce((acc, entry) => {
     const path = entry.path
     if (!RegExp(`^${basedir}`).test(path)) return acc
@@ -41,7 +34,7 @@ export function parseEntriesByDirLevel(
 /**
  * TODO
  */
-export function genAPIStr(API_STR: string, values: any) {
+export function genAPIStr(API_STR, values) {
   const keys = Object.keys(values)
   return (
     ROOT_URL +
