@@ -6,6 +6,7 @@ module.exports = {
     password: 'mysql',
     database: 'gh_development',
     host: '127.0.0.1',
+    port: '3398',
     dialect: 'mysql'
   },
   test: {
