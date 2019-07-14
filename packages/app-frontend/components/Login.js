@@ -20,7 +20,7 @@ const Login = () => (
         textAlign: 'center'
       }}
     >
-      Sign in to GH
+      Sign in to GitCub
     </h1>
     <Panel>
       <Panel.Body>

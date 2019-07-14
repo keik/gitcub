@@ -2,7 +2,7 @@
 
 import css from '@styled-system/css'
 import * as React from 'react'
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 import rootReducer from '../../ducks'
 import type { SessionT } from '../../ducks/session'
@@ -60,7 +60,7 @@ export const AppHeaderWithoutSession = () => (
         }
       }}
     >
-      <Logo href="/">GH</Logo>
+      <Logo href="/">GitCub</Logo>
       <div
         css={{
           display: 'flex',
@@ -140,7 +140,7 @@ export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
       }
     })}
   >
-    <Logo href="/">GH</Logo>
+    <Logo href="/">GitCub</Logo>
     <form
       css={css({
         display: 'flex',
@@ -250,8 +250,9 @@ export const AppHeaderWithSession = ({ session }: {| session: SessionT |}) => (
   </div>
 )
 
-export const AppHeaderContainer = connect<_, _, *, _, *, _>(
-  ({ session }: $Call<typeof rootReducer>) => ({
-    session
-  })
-)(AppHeader)
+export const AppHeaderContainer = () => {
+  const session = useSelector(
+    (state: $Call<typeof rootReducer>) => state.session
+  )
+  return <AppHeader session={session} />
+}

@@ -2,13 +2,13 @@
 
 import * as React from 'react'
 // import { hot } from 'react-hot-loader/root'
-import { Provider } from 'react-redux'
+import { Provider, useDispatch } from 'react-redux'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { applyMiddleware, compose, createStore } from 'redux'
 import logger from 'redux-logger'
 
 import rootReducer from '../ducks'
-// import * as SessionAction from '../ducks/session'
+import * as SessionAction from '../ducks/session'
 import AppFooter from './App/AppFooter'
 import { AppHeaderContainer } from './App/AppHeader'
 import { HomeContainer } from './Home'
@@ -43,7 +43,7 @@ const store = createStore(
 const App = () => (
   <Provider store={store}>
     <BrowserRouter>
-      <>
+      <AppInner>
         <AppHeaderContainer />
         <Switch>
           <Route exact path="/" component={HomeContainer} />
@@ -75,14 +75,26 @@ const App = () => (
           />
         </Switch>
         <AppFooter />
-      </>
+      </AppInner>
     </BrowserRouter>
   </Provider>
 )
 
 export default App
 
-export const AppContainer = App
+export const AppInner = ({ children }: { children: React.Node }) => {
+  const [isLoading, setIsLoading] = React.useState(true)
+  const dispatch = useDispatch()
+  React.useEffect(() => {
+    ;(async () => {
+      setIsLoading(true)
+      dispatch(await SessionAction.getCurrentUser())
+      setIsLoading(false)
+    })()
+  }, [dispatch])
+
+  return isLoading ? <div>Loading...</div> : children
+}
 
 // TODO: broken develop and test environments. disabled temporary.
 // export const AppContainer = hot(() => {
